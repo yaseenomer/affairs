@@ -1,4 +1,6 @@
-<?php  $this->load->view('app/layout/parts/top');main_header(array('الترقيات'));canvas_header('الترقيات ') ?>
+<?php $this->load->view('app/layout/parts/top');
+main_header(array('الترقيات'));
+canvas_header('الترقيات ') ?>
 
 
     <div class="row">
@@ -11,43 +13,141 @@
 
                 <li class=""><a href="#profile" data-toggle="tab">
                         <i class="fa fa-graduation-cap"></i>
-                         معلومات عن مقدم الطلب
+                        معلومات عن مقدم الطلب
+                    </a>
+                </li>
+
+                <li class=""><a href="#unv" data-toggle="tab">
+                        <i class="fa fa-graduation-cap"></i>
+                       التعيين بغير الجامعة
                     </a>
                 </li>
 
                 <li class=""><a href="#holiday" data-toggle="tab">
                         <i class="fa fa-graduation-cap"></i>
-                           الإجازات
+                        الإجازات
                     </a>
                 </li>
             </ul>
         </div>
         <div class="col-md-9 col-sm-9 col-xs-9">
             <div class="tab-content">
+
                 <div class="tab-pane fade active in" id="coll">
-                    الاساسية
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label>الكلية</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <label>القسم</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+
+                        <div class="col-md-4">
+                            <label>التخصص</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                    </div>
                 </div>
 
                 <div class="tab-pane fade" id="profile">
-                     الاكاديمية
+                    <div class="row">
+                        <div class=" form-group col-md-6">
+                            <label>الاسم </label>
+                            <input type="text" class="form-control">
+                        </div>
+
+
+                        <div class=" form-group col-md-6">
+                            <label> رقم الهاتف  </label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class=" form-group col-md-4">
+                            <label>تاريخ التعيين بالجامعة  </label>
+                            <input type="date" class="form-control">
+                        </div>
+
+
+                        <div class=" form-group col-md-4">
+                            <label> تاريخ في حالة الفصل أو الإستقالة    </label>
+                            <input type="date" class="form-control">
+                        </div>
+
+                        <div class=" form-group col-md-4">
+                            <label> تاريخ  إعادة التعيين </label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label>الدرجة الحالية  </label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>تاريخ الترقي لها   </label>
+                            <input type="date" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label>  الدرجة التي يود الترقي لها    </label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tab-pane fade" id="unv">
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>التاريخ </label>
+                            <input type="date" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>الجهة  </label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group col-md-12">
+                            <label>طبيعة العمل في هذه الفترة   </label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tab-pane fade" id="holiday">
-                     الاكاديمية
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <label > في إجازة بدون راتب إعتبارا من  </label>
+                            <input  type="date" class="form-control">
+                        </div>
+                    </div>
+
                 </div>
+
+
+                </div>
+
             </div>
         </div>
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-<?php  canvas_footer(); $this->load->view('app/layout/parts/footer'); ?>
+<?php canvas_footer();
+$this->load->view('app/layout/parts/footer'); ?>
