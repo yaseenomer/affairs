@@ -1,3 +1,3 @@
 # affairs
 
-## Scientific Affairs System
+Scientific Affairs System

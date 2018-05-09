@@ -4,40 +4,6 @@ canvas_header(iconv('windows-1256', 'utf-8', $all->EMP_NAME), array("<span class
 
 <div id="schol">
 
-
-    <?php flashs($success, $error) ?>
-
-
-    <?php function chart($detail = null)
-    {
-        if ($detail != null) {
-            $rsum = strtotime(date('Y-m-d')) - strtotime($detail->START_DATE);
-            $long = strtotime($detail->END_DATE) - strtotime($detail->START_DATE);
-            $x = floor($rsum / $long * 100);
-            if ($x > 100) {
-                echo 100;
-            } elseif ($x < 0) {
-                echo 0;
-            } else {
-                echo $x;
-            }
-
-
-        }
-
-
-    } ?>
-
-    <div class="row">
-        <div class="col-md-12">
-            <div class="h_main text-center">
-                <span class="easy-pie-chart" data-percent="<?php chart($detail) ?>"><span
-                        class="cart-span" <?php tip('النسبة المئوية حالة تقدم البعثة      ') ?>><?php chart($detail) ?>
-                        % </span></span>
-            </div>
-        </div>
-    </div>
-    <br>
     <div class="row">
         <div class="col-md-3 col-sm-3 col-xs-3">
             <ul class="nav nav-tabs tabs-left">
