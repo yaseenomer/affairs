@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/test/trr.php" afterPath="$PROJECT_DIR$/application/views/Scholarship/test/trr.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" afterPath="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -538,12 +535,20 @@
       <workItem from="1525172593102" duration="11946000" />
       <workItem from="1525589164195" duration="10490000" />
       <workItem from="1525683521994" duration="11771000" />
-      <workItem from="1525847362593" duration="5515000" />
+      <workItem from="1525847362593" duration="5755000" />
     </task>
+    <task id="LOCAL-00001" summary="update readme">
+      <created>1525865663041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525865663041</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="551473000" />
+    <option name="totallyTimeSpent" value="551713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -586,6 +591,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
