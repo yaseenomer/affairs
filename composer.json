@@ -1,0 +1,6 @@
+{
+    "require": {
+        "symfony/filesystem": "^4.0"
+    }
+
+}

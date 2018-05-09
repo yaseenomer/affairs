@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/application/controllers/reports/Courses_candicate_report.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/helpers/reports_helper.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/libraries/MYPDF.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/models/affirs/M_Scholarship.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/models/reports/Courses_candicate_model.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/views/reports/candicate_Main.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/views/reports/candicate_choose2.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/views/reports/candidate_course_print.php" charset="UTF-8" />
+  </component>
+</project>

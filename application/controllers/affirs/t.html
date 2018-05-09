@@ -1,0 +1,43 @@
+<div class="row" v-if="<?=$depdec->DECISION?> == 1">
+    <form action="<?=base_url('affirs/ScolDecisions/decDepart')?>" method="post">
+        <input type="hidden" value="<?=$all->SCHOLAR_ID?>" name="SCHOLAR_ID">
+        <div class="form-group col-md-6">
+            <label class="main_color">رئيس القسم </label>
+            <input type="text" class="form-control" value="<?=$dep->EMP_NO?>" readonly>
+        </div>
+
+
+        <div class="form-group col-md-6">
+            <label class="main_color">التاريخ </label>
+            <input type="date" class="form-control" value="<?=$dep->DECISION_DATE?>" readonly>
+        </div>
+
+
+        <div class="form-group col-md-6">
+            <label class="main_color">التوصية </label>
+            <input type="text" class="form-control" value="<?=$dep->RECOMMENDATION?>" readonly>
+        </div>
+
+
+
+        <div class="form-group col-md-6">
+            <label class="main_color">الاولوية </label>
+            <br>
+            <input type="radio" class="form-control" value="<?=$dep->CANDIDACY_TYPE?>"> اساسي
+
+            <input type="radio" class="form-control" value="<?=$dep->CANDIDACY_TYPE?>"> إحطياطي
+
+            <input type="radio" class="form-control" value="<?=$dep->CANDIDACY_TYPE?>"> رفض
+        </div>
+
+        <div class="form-group col-md-6">
+            <label class="main_color">القرار  </label>
+            <br>
+            <input type="radio" class="form-control" value="<?=$dep->DECISION?>"> مقبول
+
+            <input type="radio" class="form-control" value="<?=$dep->DECISION?>"> رفض
+        </div>
+
+    </form>
+
+</div>
