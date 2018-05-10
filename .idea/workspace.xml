@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Cv.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/models/upgrades/M_CV.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/cv/cv1.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
-      <change beforePath="$PROJECT_DIR$/application/models/upgrades/M_Apply.php" afterPath="$PROJECT_DIR$/application/models/upgrades/M_Apply.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" afterPath="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,8 +76,8 @@
       <file leaf-file-name="apply.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/apply/apply.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
+            <state relative-caret-position="184">
+              <caret line="43" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="179" selection-end-column="48" />
               <folding>
                 <element signature="e#209#1376#0#HTML" expanded="false" />
                 <element signature="e#1482#2213#0#HTML" expanded="false" />
@@ -99,12 +99,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Apply.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Apply.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="400">
               <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cv.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Cv.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="M_CV.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_CV.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cv1.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/upgrades/cv/cv1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="972">
+              <caret line="179" column="48" lean-forward="false" selection-start-line="179" selection-start-column="48" selection-end-line="179" selection-end-column="48" />
+              <folding>
+                <element signature="e#1483#2214#0#HTML" expanded="false" />
+                <element signature="e#2232#4291#0#HTML" expanded="false" />
+                <element signature="e#4309#5151#0#HTML" expanded="false" />
+                <element signature="e#5169#5536#0#HTML" expanded="false" />
+                <element signature="e#5554#6472#0#HTML" expanded="false" />
+                <element signature="e#5814#5832#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,9 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/Scholarship/create3_2.php" />
-        <option value="$PROJECT_DIR$/application/views/Scholarship/create.php" />
-        <option value="$PROJECT_DIR$/assets/css/main.css" />
         <option value="$PROJECT_DIR$/application/views/Scholarship/create3_3.php" />
         <option value="$PROJECT_DIR$/application/views/Scholarship/test.php" />
         <option value="$PROJECT_DIR$/application/helpers/validation_helper.php" />
@@ -198,6 +232,9 @@
         <option value="$PROJECT_DIR$/application/models/upgrades/M_Apply.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/Cv.php" />
+        <option value="$PROJECT_DIR$/application/models/upgrades/M_CV.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/cv/cv1.php" />
       </list>
     </option>
   </component>
@@ -262,6 +299,17 @@
               <item name="affirs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affirs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="affirs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="affirs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="affirs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="affirs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -283,19 +331,19 @@
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\affirs\application\models\upgrades" />
+      <recent name="C:\wamp64\www\affirs\application\controllers\upgrades" />
+      <recent name="C:\wamp64\www\affirs\application\views\Scholarship\test" />
+      <recent name="C:\wamp64\www\affirs\Extention\Bootstrap" />
+      <recent name="C:\wamp64\www\affirs\application\views\Scholarship" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\affirs\application\controllers\affirs\zip" />
       <recent name="C:\wamp64\www\affirs\application\controllers\affirs" />
       <recent name="C:\wamp64\www\affirs\application\controllers" />
       <recent name="C:\wamp64\www\affirs\Extention\Bootstrap" />
       <recent name="C:\wamp64\www\sust\application\views\app\layout\test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\affirs\application\controllers\upgrades" />
-      <recent name="C:\wamp64\www\affirs\application\views\Scholarship\test" />
-      <recent name="C:\wamp64\www\affirs\Extention\Bootstrap" />
-      <recent name="C:\wamp64\www\affirs\application\views\Scholarship" />
-      <recent name="C:\wamp64\www\affirs\application\models\users" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -409,7 +457,7 @@
       <workItem from="1525589164195" duration="10490000" />
       <workItem from="1525683521994" duration="11771000" />
       <workItem from="1525847362593" duration="13532000" />
-      <workItem from="1525936977149" duration="3957000" />
+      <workItem from="1525936977149" duration="4764000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -422,7 +470,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="563447000" />
+    <option name="totallyTimeSpent" value="564254000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -435,7 +483,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -476,15 +524,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/alchemy/zippy/src/ProcessBuilder/ProcessBuilderFactory.php" />
-    <entry file="file://$PROJECT_DIR$/application/controllers/affirs/ScholarshipTest.php" />
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -783,20 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/apply/apply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-          <folding>
-            <element signature="e#209#1376#0#HTML" expanded="false" />
-            <element signature="e#1482#2213#0#HTML" expanded="false" />
-            <element signature="e#2231#4290#0#HTML" expanded="false" />
-            <element signature="e#4308#5150#0#HTML" expanded="false" />
-            <element signature="e#5810#5828#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Apply.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -810,6 +835,51 @@
         <state relative-caret-position="400">
           <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Cv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_CV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/apply/apply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="179" selection-end-column="48" />
+          <folding>
+            <element signature="e#209#1376#0#HTML" expanded="false" />
+            <element signature="e#1482#2213#0#HTML" expanded="false" />
+            <element signature="e#2231#4290#0#HTML" expanded="false" />
+            <element signature="e#4308#5150#0#HTML" expanded="false" />
+            <element signature="e#5810#5828#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/cv/cv1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="179" column="48" lean-forward="false" selection-start-line="179" selection-start-column="48" selection-end-line="179" selection-end-column="48" />
+          <folding>
+            <element signature="e#1483#2214#0#HTML" expanded="false" />
+            <element signature="e#2232#4291#0#HTML" expanded="false" />
+            <element signature="e#4309#5151#0#HTML" expanded="false" />
+            <element signature="e#5169#5536#0#HTML" expanded="false" />
+            <element signature="e#5554#6472#0#HTML" expanded="false" />
+            <element signature="e#5814#5832#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
