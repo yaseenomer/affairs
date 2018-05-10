@@ -15,6 +15,11 @@ canvas_header('إستمارة طلب ترقي ') ?>
                 <li class=""><a href="#profile" data-toggle="tab">
                         <i class="fa fa-graduation-cap"></i>
                         معلومات عن مقدم الطلب
+
+
+
+
+
                     </a>
                 </li>
 
