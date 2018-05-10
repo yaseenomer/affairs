@@ -35,4 +35,9 @@ class Apply  extends CI_Controller
         $this->load->view('upgrades/apply/apply');
     }
 
+    public function insert()
+    {
+        var_dump($this->input->post());
+    }
+
 }

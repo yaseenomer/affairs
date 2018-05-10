@@ -4,6 +4,7 @@ canvas_header('الترقيات ') ?>
 
 
     <div class="row">
+        <?php echo form_open(base_url('upgrades/Apply/insert'))?>
         <div class="col-md-3 col-sm-3 col-xs-3">
             <ul class="nav nav-tabs tabs-left">
                 <li class="active"><a href="#coll" data-toggle="tab">
@@ -28,9 +29,16 @@ canvas_header('الترقيات ') ?>
                         الإجازات
                     </a>
                 </li>
+
+                <li class=""><a href="#type" data-toggle="tab">
+                        <i class="fa fa-graduation-cap"></i>
+                        طريقة الترقي
+                    </a>
+                </li>
             </ul>
         </div>
         <div class="col-md-9 col-sm-9 col-xs-9">
+
             <div class="tab-content">
 
                 <div class="tab-pane fade active in" id="coll">
@@ -141,13 +149,32 @@ canvas_header('الترقيات ') ?>
 
                 </div>
 
+                <div class="tab-pane fade" id="type">
+
+                    <div class="row">
+                       <div class="form-group col-md-12">
+                           <label > طريقة الترقي </label>
+                           <select name="" class="form-control" style="width:100%" >
+                                   <option value="1"> بالبحث العلمي المتميز </option>
+                                   <option value="2">بالمساهمة في التدريس والبحث والخبرة المهنية </option>
+                                   <option value="3">بالخدمة الطويلة الممتازة </option>
+                           </select>
+                       </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-12">
+                            <input type="submit" class="btn btn-success" value="حفــــظ">
+                        </div>
+                    </div>
 
                 </div>
 
             </div>
-        </div>
-    </div>
 
+        </div>
+        <?php echo form_close()?>
+    </div>
 
 <?php canvas_footer();
 $this->load->view('app/layout/parts/footer'); ?>

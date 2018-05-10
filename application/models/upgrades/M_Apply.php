@@ -12,6 +12,12 @@ class M_Apply extends CI_Model
 {
 
 
+    public function insert($data)
+    {
+        $this->db->insert('APPLICATION_FORM', $data);
+    }
+
+
 
 
 }
