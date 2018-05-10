@@ -1,6 +1,6 @@
 <?php $this->load->view('app/layout/parts/top');
 main_header(array('الترقيات'));
-canvas_header('الترقيات ') ?>
+canvas_header('إستمارة طلب ترقي ') ?>
 
 
     <div class="row">
