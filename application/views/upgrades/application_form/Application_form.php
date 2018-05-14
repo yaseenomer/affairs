@@ -169,41 +169,41 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             </select>
 
                         </div>
+                        <div class="row">
+                            <div class=" form-group col-md-4">
+                                <label> من   </label>
+                                <input type="date"  name="PRE_EDU_START" class="form-control">
+                            </div>
+
+
+                            <div class=" form-group col-md-4">
+                                <label> الى    </label>
+                                <input type="date"  name="PRE_EDU_END" class="form-control">
+                            </div>
+
+                            <div class=" form-group col-md-4">
+                                <label> التقدير </label>
+                                <input type="date"  name="PRE_EDU_GRADE" class="form-control">
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>أرفق  ملف السيرة الذاتية</label>
+                                <input type="file"  name="FILE_BATH" class="form-control">
+                            </div>
+
+                        </div>
+                        <br>  <br>
+
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <input type="submit" class="btn btn-success" value="حفــــظ">
+                            </div>
+                        </div>
+
                     </form>
-                    <div class="row">
-                        <div class=" form-group col-md-4">
-                            <label>تاريخ التعيين بالجامعة  </label>
-                            <input type="date" class="form-control">
-                        </div>
-
-
-                        <div class=" form-group col-md-4">
-                            <label> تاريخ في حالة الفصل أو الإستقالة    </label>
-                            <input type="date" class="form-control">
-                        </div>
-
-                        <div class=" form-group col-md-4">
-                            <label> تاريخ  إعادة التعيين </label>
-                            <input type="date" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="form-group col-md-4">
-                            <label>الدرجة الحالية  </label>
-                            <input type="text" class="form-control">
-                        </div>
-
-                        <div class="form-group col-md-4">
-                            <label>تاريخ الترقي لها   </label>
-                            <input type="date" class="form-control">
-                        </div>
-
-                        <div class="form-group col-md-4">
-                            <label>  الدرجة التي يود الترقي لها    </label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </div>
 
 
                 </div>
