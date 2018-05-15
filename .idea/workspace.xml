@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/models/upgrades/M_APPLICATION_UNIV_EDU.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/desktop.ini" afterPath="$PROJECT_DIR$/application/controllers/desktop.ini" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" />
-      <change beforePath="$PROJECT_DIR$/application/models/desktop.ini" afterPath="$PROJECT_DIR$/application/models/desktop.ini" />
-      <change beforePath="$PROJECT_DIR$/application/models/upgrades/M_Application_Form.php" afterPath="$PROJECT_DIR$/application/models/upgrades/M_Application_Form.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/desktop.ini" afterPath="$PROJECT_DIR$/application/views/desktop.ini" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -231,7 +223,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="160" />
     <option name="y" value="34" />
     <option name="width" value="1164" />
@@ -461,7 +453,7 @@
       <workItem from="1526280911839" duration="705000" />
       <workItem from="1526290306798" duration="414000" />
       <workItem from="1526294122666" duration="1504000" />
-      <workItem from="1526366022069" duration="452000" />
+      <workItem from="1526366022069" duration="677000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -491,14 +483,22 @@
       <option name="project" value="LOCAL" />
       <updated>1526294474166</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add page">
+      <created>1526366484955</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526366484955</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="582077000" />
+    <option name="totallyTimeSpent" value="582302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12556732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -832,6 +832,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="517">
           <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
