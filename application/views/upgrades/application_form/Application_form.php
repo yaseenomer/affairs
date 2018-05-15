@@ -18,6 +18,8 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                 <li class=""><a href="#publication" data-toggle="tab"><i class="fa fa-graduation-cap"></i> النشرات ومؤتمرات وبحوث  </a></li>
 
+                <li class=""><a href="#pubmember" data-toggle="tab"><i class="fa fa-graduation-cap"></i> المشاركون في النشر  </a></li>
+
                 <li class=""><a href="#siminars" data-toggle="tab"><i class="fa fa-graduation-cap"></i> السمنارات و الندوات و المؤتمرات  </a></li>
 
                 <li class=""><a href="#personnals" data-toggle="tab"><i class="fa fa-graduation-cap"></i> أشخاص يمكن الرجوع اليهم  </a></li>
@@ -390,12 +392,10 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <label>الوصف  </label>
                             <textarea class="form-control" name="DESCRIPTION"></textarea>
                         </div>
-                        
 
-                        
-                         <div class="row">
+                     <div class="row">
                         <div class="col-md-4">
-                            <label>أرفق  ملف السيرة الذاتية</label>
+                            <label>أرفق  ملف </label>
                             <input type="file"  name="FILE_BATH" class="form-control">
                         </div>
 
@@ -414,16 +414,51 @@ canvas_header('السيرة الذاتية /CV ') ?>
                 <div class="tab-pane fade" id="publication">
                     <form name="form6" action="<?= base_url('upgrades/APP_PUBLICATIONS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
-                        <div class="form-group col-md-12">
-                            <label > طريقة الترقي </label>
-                            <select name="" class="form-control" style="width:100%" >
-                                <option value="1"> بالبحث العلمي المتميز </option>
-                                <option value="2">بالمساهمة في التدريس والبحث والخبرة المهنية </option>
-                                <option value="3">بالخدمة الطويلة الممتازة </option>
-                            </select>
-                        </div>
-                    </div>
+                        <label> نوع النشرات  </label>
+                        <input type="radio" name="PUB_TYP" value="1" /> مؤتمر
 
+                        <input type="radio" name="PUB_TYP" value="2" />نشاط
+
+                        <input type="radio" name="PUB_TYP" value="3" />ورقة علمية
+
+                        <input type="radio" name="PUB_TYP" value="4" />سمنار
+
+                        <input type="radio" name="PUB_TYP" value="5" />اجتماعيات
+                    </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label > التاريخ    </label>
+                                <input  type="date" class="form-control" name="DATE_OF_PUB">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label>المكان  </label>
+                                <input type="text" class="form-control" name="PLACE_OF_PUB">
+                            </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>اللغة  </label>
+                            <input type="text" class="form-control" name="PUB_LANGUGE">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label>العنوان  </label>
+                            <!--<textarea class="form-control" name="TITLE"></textarea>-->
+                            <input type="text"class="form-control" name="TITLE">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>الوصف  </label>
+                            <textarea class="form-control" name="DESCRIPTION"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>أرفق  الملف </label>
+                                <input type="file"  name="FILE_BATH" class="form-control">
+                            </div>
+
+                        </div>
+                        <br>  <br>
                     <div class="row">
                         <div class="form-group col-md-12">
                             <input type="submit" class="btn btn-success" value="حفــــظ">
@@ -434,38 +469,180 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                 <!------------------------------------------------------->
 
-                <div class="tab-pane fade" id="siminars">
+                <div class="tab-pane fade" id="pubmember">
+                    <form name="form7" action="<?= base_url('upgrades/PUBLICATIONS_PARTS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                        <div class="row">
 
-                    <div class="row">
-                        <div class="form-group col-md-12">
-                            <label > طريقة الترقي </label>
-                            <select name="" class="form-control" style="width:100%" >
-                                <option value="1"> بالبحث العلمي المتميز </option>
-                                <option value="2">بالمساهمة في التدريس والبحث والخبرة المهنية </option>
-                                <option value="3">بالخدمة الطويلة الممتازة </option>
-                            </select>
+                            <div class="col-md-3">
+                                <label>Fourth Name</label>
+                                <input type="text"  name="LST_NAME_ENG" class="form-control">
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Third Name</label>
+                                <input type="text"  name="THR_NAME_ENG" class="form-control">
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>Second Name</label>
+                                <input type="text"  name="SND_NAME_ENG" class="form-control">
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>First Name</label>
+                                <input type="text"  name="FRT_NAME_ENG" class="form-control">
+                            </div>
+
+
                         </div>
-                    </div>
+                        <br>
+                        <!----- names  arabic-->
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>الأسم الأول </label>
+                                <input type="text"  name="FRT_NAME_AR" class="form-control">
+                            </div>
 
+
+                            <div class="col-md-3">
+                                <label>الأسم الثاني </label>
+                                <input type="text"  name="SND_NAME_AR" class="form-control">
+                            </div>
+
+
+                            <div class="col-md-3">
+                                <label>الأسم الثالث </label>
+                                <input type="text"  name="THR_NAME_AR" class="form-control">
+                            </div>
+
+                            <div class="col-md-3">
+                                <label>الأسم الرابع </label>
+                                <input type="text"  name="LST_NAME_AR" class="form-control">
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>أرفق  الملف </label>
+                                <input type="file"  name="FILE_BATH" class="form-control">
+                            </div>
+
+                        </div>
+                        <br>  <br>
                     <div class="row">
                         <div class="form-group col-md-12">
                             <input type="submit" class="btn btn-success" value="حفــــظ">
                         </div>
                     </div>
+                    </form>
+                </div>
+
+                <!------------------------------------------------------->
+                <!------------------------------------------------------->
+
+                <div class="tab-pane fade" id="siminars">
+                    <form name="form8" action="<?= base_url('upgrades/APP_OTHER_EXPRIENCES/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                        <div class="row">
+                            <label> نوع الخبرة  </label>
+                            <input type="radio" name="EXP_TYPE" value="1" /> ادارية
+
+                            <input type="radio" name="EXP_TYPE" value="2" />مهنية
+
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>الوصف  </label>
+                                <textarea class="form-control" name="DESCRIPTION"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label > تاريخ البداية    </label>
+                                <input  type="date" class="form-control" name="EXP_START_DATE">
+                            </div>
+
+                                <div class="form-group col-md-6">
+                                    <label > تاريخ النهاية    </label>
+                                    <input  type="date" class="form-control" name="EXP_END_DATE">
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-6">
+                                <label>مكان الخبرة  </label>
+                                <!--<textarea class="form-control" name="TITLE"></textarea>-->
+                                <input type="text"class="form-control" name="EXP_PLACE">
+                            </div>
+
+                            <div class=" form-group col-md-6">
+                                <label>  الجامعة </label>
+                                <select name="UNV_ID"class="form-control">
+                                    <option value=""></option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label>أرفق  الملف </label>
+                                <input type="file"  name="FILE_BATH" class="form-control">
+                            </div>
+
+                        </div>
+                        <br>  <br>
+                        <div class="row">
+                            <div class="form-group col-md-12">
+                                <input type="submit" class="btn btn-success" value="حفــــظ">
+                            </div>
+                        </div>
+                    </form>
+
 
                 </div>
 
                 <!------------------------------------------------------->
 
                 <div class="tab-pane fade" id="personnals">
+                    <form name="form9" action="<?= base_url('upgrades/APP_CV_REFERENCES/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>الاسم   </label>
+                            <input type="text"class="form-control" name="EMP_NAME">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>العنوان الحالي   </label>
+                            <input type="text"class="form-control" name="ADDRESS">
+                        </div>
+                    </div>
 
                     <div class="row">
-                        <div class="form-group col-md-12">
-                            <label > طريقة الترقي </label>
-                            <select name="" class="form-control" style="width:100%" >
-                                <option value="1"> بالبحث العلمي المتميز </option>
-                                <option value="2">بالمساهمة في التدريس والبحث والخبرة المهنية </option>
-                                <option value="3">بالخدمة الطويلة الممتازة </option>
+                        <div class="form-group col-md-6">
+                            <label>الهاتف   </label>
+                            <input type="text"class="form-control" name="REL_PHONE">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>البريد الالكتروني    </label>
+                            <input type="text"class="form-control" name="E_MAIL">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>الوظيفة   </label>
+                            <input type="text"class="form-control" name="REF_JOB">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>مكان العمل    </label>
+                            <input type="text"class="form-control" name="WORK_PLC">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label> الدرجة العلمية    </label>
+                            <select name="CURRENT_DEG" >
+                                <option></option>
                             </select>
                         </div>
                     </div>
