@@ -3,7 +3,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_Application_Form extends CI_Model
+class M_APPLICATION_UNIV_EDU extends CI_Model
 {
 
 
@@ -15,32 +15,32 @@ class M_Application_Form extends CI_Model
     /**********************************/
     public function GetData()
     {
-        return  $query = $this->db->get('APPLICATION_FORM_CD')->result();
+        return  $query = $this->db->get('APPLICATION_UNIV_EDU')->result();
     }
     /**********************************/
 
     public function GetDataWhere($id)
     {
         $this->db->where('APP_ID', $id);
-        return $this->db->get('APPLICATION_FORM_CD')->result();
+        return $this->db->get('APPLICATION_UNIV_EDU')->result();
     }
     /**********************************/
 
     public function AddData($data)
     {
-        $this->db->insert('APPLICATION_FORM_CD', $data);
+        $this->db->insert('APPLICATION_UNIV_EDU', $data);
 
     }
     /**********************************/
     public function Updatedata($conid,$data)
     {
         $this->db->where('APP_ID', $conid);
-        $this->db->update('APPLICATION_FORM_CD', $data);
+        $this->db->update('APPLICATION_UNIV_EDU', $data);
     }
     /**********************************/
     public function DeleteData($APP_ID)
     {
-        return  $this->db->delete('APPLICATION_FORM_CD', array('APP_ID' => $APP_ID));
+        return  $this->db->delete('APPLICATION_UNIV_EDU', array('APP_ID' => $APP_ID));
     }
     /**********************************/
 
