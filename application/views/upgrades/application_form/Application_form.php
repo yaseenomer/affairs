@@ -132,14 +132,13 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                             </select>
                         </div>
-                    </div>
-                        <br>
-                        <div class="row">
+
                         <div class=" form-group col-md-6">
                             <label> اسم المدرسة / School Name  </label>
                             <input type="text"  name="SCHOOL_NAME" class="form-control">
                         </div>
                     </div>
+                        <br>
                         <div class="row" class=" form-group col-md-6">
                             <label for="item">الدولة / Country</label>
                             <select name="COUNTRY_NO"  class="form-control"  style="width:60%"  id="lev1">
@@ -212,9 +211,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                             </select>
                         </div>
-                </div>
-                        <br>
-                    <div class="row">
+
                         <div class=" form-group col-md-4">
                             <label>  الجامعة </label>
                             <select name="UNV_ID"class="form-control">
@@ -222,20 +219,17 @@ canvas_header('السيرة الذاتية /CV ') ?>
                                 
 
                             </select>
-                        </div></div>
-                        <br>
-
-                        <div class="row">
-                        <div class=" form-group col-md-8">
+                        </div>
+                        <div class=" form-group col-md-4">
                             <label>  الدولة </label>
                             <select name="COUNTRY_NO"class="form-control">
                                 <option value=""></option>
                                 
 
                             </select>
-                        </div></div>
-                            <br>
-                        <div class="row">
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="form-group col-md-5">
                             <label>الكلية </label>
                             <input type="text" class="form-control" name="UNIV_EDU_COLLEGE">
@@ -245,7 +239,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <label>التخصص  </label>
                             <input type="text" class="form-control" name="UNIV_EDU_SPECIAL">
                         </div>
-                        </div>
+                    </div>
                     <br>
                     <div class="row">
                         <div class="form-group col-md-5">
@@ -292,15 +286,14 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <label> نوع الخبرة  </label>
                        <input type="radio" name="UNI_EXP_TYPE" value="1" /> تدريس
                        
-                        <label> نوع الخبرة  </label>
                        <input type="radio" name="UNI_EXP_TYPE" value="2" />اشراف داخلي
                        
-                        <label> نوع الخبرة  </label>
                        <input type="radio" name="UNI_EXP_TYPE" value="3" />اشراف خارجي
 
                     </div>
                         <br>  <br>
-                         <div class=" form-group col-md-6">
+                    <div class="row">
+                         <div class=" form-group col-md-4">
                             <label> نوع المؤهل  </label>
                             <select name="UNI_EXP_SUB_TYPE"class="form-control">
                                 <option value=""></option>
@@ -311,16 +304,13 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                             </select>
                         </div>
-                        <br>
-                        <div class="row">
-                        <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-4">
                             <label > تاريخ البداية  </label>
                             <input  type="date" class="form-control" name="START_DATE">
                         </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="form-group col-md-12">
+
+                        <div class="form-group col-md-4">
                             <label > تاريخ النهاية </label>
                             <input  type="date" class="form-control" name="END_DATE">
                         </div>
@@ -335,13 +325,13 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                             </select>
                         </div>
-                        <br>
-                        <div class="row">
                         <div class="form-group col-md-6">
                             <label>الكلية </label>
                             <input type="text" class="form-control" name="UNIV_EXP_COLLEGE">
                         </div>
 
+                    </div>
+                        <div class="row">
                         <div class="form-group col-md-6">
                             <label>القسم  </label>
                             <input type="text" class="form-control" name="UNIV_EXP_DEPART">
@@ -349,18 +339,22 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class="form-group col-md-6">
                             <label>التخصص  </label>
                             <input type="text" class="form-control" name="UNIV_EXP_SPECIAL">
-                        </div>
+                        </div></div>
+                    <div class="row">
                         <div class="form-group col-md-6">
                             <label>الكورسات التى درسها  </label>
                             <textarea class="form-control" name="EXP_COURCES"></textarea>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-4">
                             <label>عدد المشاريع المشرف عليها </label>
                             <input type="text" class="form-control" name="PROJECTS_NUMBERS">
                         </div>
+                    </div>
+                        <div class="row">
                         <div class="form-group col-md-6">
                             <label>ملاحظات  </label>
                             <textarea class="form-control" name="NOTES"></textarea>
+                        </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-12">
@@ -376,9 +370,15 @@ canvas_header('السيرة الذاتية /CV ') ?>
                 <div class="tab-pane fade" id="prosearch">
                  <form name="form5" action="<?= base_url('upgrades/APP_PROJECTS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
-                        <div class="form-group col-md-12">
+                        <div class="form-group col-md-6">
                             <label > تاريخ المشروع   </label>
                             <input  type="date" class="form-control" name="DATE_OF_PRO">
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label>أسم الباحث الرئيسي  </label>
+                            <!--<textarea class="form-control" name="RESEARCHER_NAME"></textarea>-->
+                            <input type="text" class="form-control" name="RESEARCHER_NAME">
                         </div>
                     </div>
                         <div class="form-group col-md-6">
@@ -391,10 +391,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <textarea class="form-control" name="DESCRIPTION"></textarea>
                         </div>
                         
-                        <div class="form-group col-md-6">
-                            <label>أسم الباحث الرئيسي  </label>
-                            <textarea class="form-control" name="RESEARCHER_NAME"></textarea>
-                        </div>
+
                         
                          <div class="row">
                         <div class="col-md-4">
