@@ -212,6 +212,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                             </select>
                         </div>
+                </div>
                         <br>
                     <div class="row">
                         <div class=" form-group col-md-4">
@@ -221,7 +222,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                                 
 
                             </select>
-                        </div>
+                        </div></div>
                         <br>
 
                         <div class="row">
@@ -232,39 +233,39 @@ canvas_header('السيرة الذاتية /CV ') ?>
                                 
 
                             </select>
-                        </div>
+                        </div></div>
                             <br>
-                    <div class="row">
-                        <div class="form-group col-md-8">
+                        <div class="row">
+                        <div class="form-group col-md-5">
                             <label>الكلية </label>
                             <input type="text" class="form-control" name="UNIV_EDU_COLLEGE">
                         </div>
 
-                        <div class="form-group col-md-8">
+                        <div class="form-group col-md-5">
                             <label>التخصص  </label>
                             <input type="text" class="form-control" name="UNIV_EDU_SPECIAL">
                         </div>
-                    
-
-                        <div class="form-group col-md-12">
+                        </div>
+                    <br>
+                    <div class="row">
+                        <div class="form-group col-md-5">
                             <label>تاريخ الحصول عليه </label>
                             <input type="date" class="form-control" name="DATE_OF_ISSUED">
                         </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="form-group col-md-6">
+
+
+                        <div class="form-group col-md-5">
                             <label>التقدير </label>
                             <input type="text" class="form-control" name="UNIV_EDU_GRADE">
                         </div>
-
-                        <div class="form-group col-md-6">
-                            <label>عنوان الاطروحة  </label>
-                            <textarea class="form-control" name="THESIS_TITLE"></textarea>
-                        </div>
-                    
-
                     </div>
+                            <br>
+                            <div class="row">
+                              <div class="form-group col-md-10">
+                                <label>عنوان الاطروحة  </label>
+                                   <textarea class="form-control" name="THESIS_TITLE"></textarea>
+                              </div>
+                            </div>
                      <br>
                     <div class="row">
                         <div class="col-md-4">
@@ -280,9 +281,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                                 <input type="submit" class="btn btn-success" value="حفــــظ">
                             </div>
                         </div>
-                </div>
-                    </div>
-                </form>
+                     </form>
                 </div>
 
     <!------------------------------------------------------->
