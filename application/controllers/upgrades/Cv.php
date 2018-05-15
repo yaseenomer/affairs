@@ -30,8 +30,10 @@ class Cv  extends CI_Controller
 
     }
 
-    public function create()
+    public function create1()
     {
+
+
 
     }
 

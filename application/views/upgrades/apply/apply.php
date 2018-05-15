@@ -1,6 +1,6 @@
 <?php $this->load->view('app/layout/parts/top');
 main_header(array('الترقيات'));
-canvas_header('إستمارة طلب ترقي ') ?>
+canvas_header(' إستمارة التقديم للترقي ') ?>
 
 
     <div class="row">
@@ -15,8 +15,6 @@ canvas_header('إستمارة طلب ترقي ') ?>
                 <li class=""><a href="#profile" data-toggle="tab">
                         <i class="fa fa-graduation-cap"></i>
                         معلومات عن مقدم الطلب
-
-
                     </a>
                 </li>
 
@@ -48,13 +46,13 @@ canvas_header('إستمارة طلب ترقي ') ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label>الكلية</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" value="<?php echo  $emp_details->LOC_NAME ?>">
                         </div>
 
 
                         <div class="col-md-4">
                             <label>القسم</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" value="<?php echo  $emp_details->DEP_NAME ?>">
                         </div>
 
 
@@ -70,20 +68,20 @@ canvas_header('إستمارة طلب ترقي ') ?>
                     <div class="row">
                         <div class=" form-group col-md-6">
                             <label>الاسم </label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" value="<?php echo  iconv('windows-1256','utf-8',$emp_info->EMP_NAME)?>">
                         </div>
 
 
                         <div class=" form-group col-md-6">
                             <label> رقم الهاتف  </label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" value="<?php echo $emp_info->REL_PHONE?>">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class=" form-group col-md-4">
                             <label>تاريخ التعيين بالجامعة  </label>
-                            <input type="date" class="form-control">
+                            <input type="text" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->HIRE_DATE))?>" >
                         </div>
 
 
@@ -101,12 +99,12 @@ canvas_header('إستمارة طلب ترقي ') ?>
                     <div class="row">
                         <div class="form-group col-md-4">
                             <label>الدرجة الحالية  </label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" value="<?php echo  iconv('windows-1256','utf-8',$emp_grades->GRADE_NAME)?>">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label>تاريخ الترقي لها   </label>
-                            <input type="date" class="form-control">
+                            <input type="date" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->APP_DATE))?>" >
                         </div>
 
                         <div class="form-group col-md-4">
