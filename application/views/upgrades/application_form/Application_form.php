@@ -16,11 +16,11 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                 <li class=""><a href="#prosearch" data-toggle="tab"><i class="fa fa-graduation-cap"></i>    المشروعات البحثية</a></li>
 
-                <li class=""><a href="#publication" data-toggle="tab"><i class="fa fa-graduation-cap"></i> النشرات ومؤتمرات وبحوث  </a></li>
+                <li class=""><a href="#publication" data-toggle="tab"><i class="fa fa-graduation-cap"></i> النشرات والمؤتمرات والبحوث  </a></li>
 
                 <li class=""><a href="#pubmember" data-toggle="tab"><i class="fa fa-graduation-cap"></i> المشاركون في النشر  </a></li>
 
-                <li class=""><a href="#siminars" data-toggle="tab"><i class="fa fa-graduation-cap"></i> السمنارات و الندوات و المؤتمرات  </a></li>
+                <li class=""><a href="#siminars" data-toggle="tab"><i class="fa fa-graduation-cap"></i> الخبرات المهنية و الادارية  </a></li>
 
                 <li class=""><a href="#personnals" data-toggle="tab"><i class="fa fa-graduation-cap"></i> أشخاص يمكن الرجوع اليهم  </a></li>
             </ul>
@@ -181,7 +181,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <br>
                     <div class="row">
                         <div class="col-md-4">
-                            <label>أرفق  ملف السيرة الذاتية</label>
+                            <label>أرفق  الشهادة </label>
                             <input type="file"  name="FILE_BATH" class="form-control">
                         </div>
 
@@ -210,6 +210,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                                 <option value="بكلاريوس 5 سنة">بكلاريوس 5 سنة</option>
                                 <option value="ماجستير">ماجستير</option>
                                 <option value="دكتوراة">دكتوراة</option>
+                                <option value="دبلوم عالي">دبلوم عالي</option>
 
                             </select>
                         </div>
@@ -258,14 +259,14 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <br>
                             <div class="row">
                               <div class="form-group col-md-10">
-                                <label>عنوان الاطروحة  </label>
+                                <label>عنوان الاطروحة / البحث  </label>
                                    <textarea class="form-control" name="THESIS_TITLE"></textarea>
                               </div>
                             </div>
                      <br>
                     <div class="row">
                         <div class="col-md-4">
-                            <label>أرفق  ملف  </label>
+                            <label>أرفق  ملف البحث  </label>
                             <input type="file"  name="FILE_BATH" class="form-control">
                         </div>
 
@@ -300,7 +301,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <select name="UNI_EXP_SUB_TYPE"class="form-control">
                                 <option value=""></option>
                                 <option value="دبلوم  ">  دبلوم</option>
-                                <option value="بكالريوس">بكالريوس </option>
+                                <option value="بكالوريوس">بكالوريوس </option>
                                 <option value="ماجستير">ماجستير</option>
                                 <option value="دكتوراة">دكتوراة</option>
 
@@ -395,7 +396,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                      <div class="row">
                         <div class="col-md-4">
-                            <label>أرفق  ملف </label>
+                            <label>أرفق  ملف المشروع</label>
                             <input type="file"  name="FILE_BATH" class="form-control">
                         </div>
 
@@ -423,7 +424,15 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                         <input type="radio" name="PUB_TYP" value="4" />سمنار
 
-                        <input type="radio" name="PUB_TYP" value="5" />اجتماعيات
+                        <input type="radio" name="PUB_TYP" value="5" />منشور
+
+                        <input type="radio" name="PUB_TYP" value="6" />كتاب
+
+                        <input type="radio" name="PUB_TYP" value="7" />مجلة
+
+                        <input type="radio" name="PUB_TYP" value="8" />ندوة
+
+
                     </div>
                         <div class="row">
                             <div class="form-group col-md-6">
@@ -453,7 +462,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                         <div class="row">
                             <div class="col-md-4">
-                                <label>أرفق  الملف </label>
+                                <label>أرفق  ملف المنشور </label>
                                 <input type="file"  name="FILE_BATH" class="form-control">
                             </div>
 
@@ -522,13 +531,13 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                         </div>
                         <br>
-                        <div class="row">
+                      <!--  <div class="row">
                             <div class="col-md-4">
                                 <label>أرفق  الملف </label>
                                 <input type="file"  name="FILE_BATH" class="form-control">
                             </div>
 
-                        </div>
+                        </div>-->
                         <br>  <br>
                     <div class="row">
                         <div class="form-group col-md-12">
@@ -585,7 +594,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <label>أرفق  الملف </label>
+                                <label>أرفق  الشهادة  </label>
                                 <input type="file"  name="FILE_BATH" class="form-control">
                             </div>
 
