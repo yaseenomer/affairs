@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="Add cv">
+    <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2831445e-3af4-49ee-ac3f-1e51556ec993.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/2831445e-3af4-49ee-ac3f-1e51556ec993.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2831445e-3af4-49ee-ac3f-1e51556ec993/storage_v2/_src_/schema/ACD_AFF.ZCe05A.meta" afterPath="$PROJECT_DIR$/.idea/dataSources/2831445e-3af4-49ee-ac3f-1e51556ec993/storage_v2/_src_/schema/ACD_AFF.ZCe05A.meta" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" afterPath="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,14 +50,14 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="affires" type="feb32156:DbDataSourceImpl" />
         <item name="ACD_AFF: schema" type="ac44c5e0:OracleImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="affires" type="feb32156:DbDataSourceImpl" />
         <item name="ACD_AFF: schema" type="ac44c5e0:OracleImplModel$Schema" />
-        <item name="views" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="EMP_HOLYDAIES_VIEW: view" type="6fea42a3:OracleImplModel$View" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="APPLICATION_FORM: table" type="be4db629:OracleImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -63,24 +67,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="apply.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="apply.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/apply/apply.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="106" column="128" lean-forward="false" selection-start-line="106" selection-start-column="128" selection-end-line="106" selection-end-column="128" />
+            <state relative-caret-position="342">
+              <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
               <folding>
-                <marker date="1526399343156" expanded="true" signature="676:700" ph="..." />
+                <marker date="1526471350769" expanded="true" signature="675:699" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Apply.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -97,8 +91,18 @@
       <file leaf-file-name="M_Apply.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Apply.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="30" />
+            <state relative-caret-position="1062">
+              <caret line="64" column="58" lean-forward="false" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Apply.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -191,9 +195,9 @@
         <option value="$PROJECT_DIR$/application/models/upgrades/M_CV.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/cv/cv1.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Cv.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" />
         <option value="$PROJECT_DIR$/application/models/upgrades/M_Apply.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" />
       </list>
     </option>
   </component>
@@ -213,8 +217,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="642" />
-    <option name="y" value="34" />
+    <option name="x" value="168" />
+    <option name="y" value="68" />
     <option name="width" value="682" />
     <option name="height" value="733" />
   </component>
@@ -311,140 +315,6 @@
       <recent name="C:\wamp64\www\affirs\Extention\Bootstrap" />
       <recent name="C:\wamp64\www\sust\application\views\app\layout\test" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/desktop.ini</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/Edu.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/desktop.ini</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_Application_Form.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/desktop.ini</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_PUBLICATIONS.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/PUBLICATIONS_PARTS.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/desktop.ini</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_APPLICATION_UNIV_EDU.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_APP_CV_REFERENCES.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_APP_OTHER_EXPRIENCES.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_APP_PROJECTS.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_APP_PUBLICATIONS.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_APP_UNIVERSITIES_EXP.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_PUBLICATIONS_PARTS.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/desktop.ini</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/upgrades/desktop.ini</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -560,7 +430,8 @@
       <workItem from="1525936977149" duration="7742000" />
       <workItem from="1525949757135" duration="591000" />
       <workItem from="1526289168098" duration="8291000" />
-      <workItem from="1526377418329" duration="13853000" />
+      <workItem from="1526377418329" duration="15015000" />
+      <workItem from="1526455511512" duration="10162000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -576,27 +447,34 @@
       <option name="project" value="LOCAL" />
       <updated>1525943084249</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add cv">
+      <created>1526399383290</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1526399383290</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="589967000" />
+    <option name="totallyTimeSpent" value="601291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27685326" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.032526474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861635" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12102874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17473525" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43393147" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -880,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,7 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="155" column="39" lean-forward="true" selection-start-line="155" selection-start-column="39" selection-end-line="155" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -938,15 +814,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="102" column="94" lean-forward="true" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Apply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -957,21 +824,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/apply/apply.php">
+    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Apply.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="106" column="128" lean-forward="false" selection-start-line="106" selection-start-column="128" selection-end-line="106" selection-end-column="128" />
-          <folding>
-            <marker date="1526399343156" expanded="true" signature="676:700" ph="..." />
-          </folding>
+        <state relative-caret-position="1062">
+          <caret line="64" column="58" lean-forward="false" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="61" column="5" lean-forward="false" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="5" />
+        <state relative-caret-position="90">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/apply/apply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="106" column="37" lean-forward="true" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+          <folding>
+            <marker date="1526471350769" expanded="true" signature="675:699" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,4 @@
-<?php $this->load->view('app/layout/parts/top');
-main_header(array('الترقيات'));
-canvas_header(' إستمارة التقديم للترقي ') ?>
+<?php $this->load->view('app/layout/parts/top');main_header(array('الترقيات')); canvas_header(' إستمارة التقديم للترقي ') ?>
 
 
     <div class="row">
@@ -47,6 +45,7 @@ canvas_header(' إستمارة التقديم للترقي ') ?>
                         <div class="col-md-4">
                             <label>الكلية</label>
                             <input type="text" class="form-control" value="<?php echo  $emp_details->LOC_NAME ?>">
+
                         </div>
 
 
@@ -65,7 +64,16 @@ canvas_header(' إستمارة التقديم للترقي ') ?>
                 </div>
 
                 <div class="tab-pane fade" id="profile">
+
+
+                    <input type="hidden" value="<?php echo $emp_info->EMP_NO?>" name="EMP_NO">
+                    <input type="hidden" value="<?php echo date('Y')?>" name="YEAR_ID">
+                    <input type="hidden" value="<?php echo $emp_info->MERITAL?>" name="MERITAL">
+                    <input type="hidden" value="<?php echo $emp_grades->EMP_TYPE?>" name="EMP_TYPE">
+
+
                     <div class="row">
+
                         <div class=" form-group col-md-6">
                             <label>الاسم </label>
                             <input type="text" class="form-control" value="<?php echo  iconv('windows-1256','utf-8',$emp_info->EMP_NAME)?>">
@@ -74,14 +82,14 @@ canvas_header(' إستمارة التقديم للترقي ') ?>
 
                         <div class=" form-group col-md-6">
                             <label> رقم الهاتف  </label>
-                            <input type="text" class="form-control" value="<?php echo $emp_info->REL_PHONE?>">
+                            <input type="text" class="form-control" value="<?php echo $emp_info->REL_PHONE?>" name="REL_PHONE">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class=" form-group col-md-4">
                             <label>تاريخ التعيين بالجامعة  </label>
-                            <input type="text" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->HIRE_DATE))?>" >
+                            <input type="text" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->HIRE_DATE))?>" name="HIRE_DATE">
                         </div>
 
 
@@ -99,12 +107,12 @@ canvas_header(' إستمارة التقديم للترقي ') ?>
                     <div class="row">
                         <div class="form-group col-md-4">
                             <label>الدرجة الحالية  </label>
-                            <input type="text" class="form-control" value="<?php echo  iconv('windows-1256','utf-8',$emp_grades->GRADE_NAME)?>">
+                            <input type="text" class="form-control" value="<?php echo  iconv('windows-1256','utf-8',$emp_grades->GRADE_NAME)?>" name="CURRENT_GRD_ID">
                         </div>
 
                         <div class="form-group col-md-4">
                             <label>تاريخ الترقي لها   </label>
-                            <input type="date" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->APP_DATE))?>" >
+                            <input type="date" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->APP_DATE))?>"  name="GRD_DATE">
                         </div>
 
                         <div class="form-group col-md-4">
@@ -141,10 +149,23 @@ canvas_header(' إستمارة التقديم للترقي ') ?>
                 <div class="tab-pane fade" id="holiday">
 
                     <div class="row">
-                        <div class="form-group col-md-12">
-                            <label > في إجازة بدون راتب إعتبارا من  </label>
-                            <input  type="date" class="form-control">
+                        <?php  if($emp_holiday < 0 ) { ?>
+
+                            <div class="form-group col-md-12">
+                                <p class="secondary-color">   ليست في إجازة </p>
+                            </div>
+
+                       <?php }else{  ?>
+                        <div class="form-group col-md-6">
+                            <label > تاريخ بداية الإجازة   </label>
+                            <input  type="date" class="form-control" value="<?php  echo $emp_holidays->START_HOLYDAY ?>" name="VACATION_START">
                         </div>
+
+                            <div class="form-group col-md-6">
+                                <label > تاريخ نهاية  الإجازة   </label>
+                                <input  type="date" class="form-control" value="<?php  echo $emp_holidays->END_HOLYDAY ?>" name="VACATION_END">
+                            </div>
+                       <?php }  ?>
                     </div>
 
                 </div>
@@ -154,7 +175,7 @@ canvas_header(' إستمارة التقديم للترقي ') ?>
                     <div class="row">
                        <div class="form-group col-md-12">
                            <label > طريقة الترقي </label>
-                           <select name="" class="form-control" style="width:100%" >
+                           <select name="UPGRAD_ID" class="form-control" style="width:100%" >
                                    <option value="1"> بالبحث العلمي المتميز </option>
                                    <option value="2">بالمساهمة في التدريس والبحث والخبرة المهنية </option>
                                    <option value="3">بالخدمة الطويلة الممتازة </option>

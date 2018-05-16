@@ -35,9 +35,13 @@ class Apply  extends CI_Controller
 
     public function create()
     {
-        $data['emp_details'] = $this->apply->empDetails('2000003');
-        $data['emp_info'] = $this->apply->empInfo('2000003');
-        $data['emp_grades'] = $this->apply->empGrades('2000003');
+        $data['emp_details'] = $this->apply->empDetails('1000069');
+        $data['emp_info'] = $this->apply->empInfo('1000069');
+        $data['emp_grades'] = $this->apply->empGrades('1000069');
+        $data['emp_holidays'] =  $this->apply->empHoliday('1000069');
+        $data['emp_holiday'] =  $this->dateDiff($this->apply->empHoliday('1000069')->END_HOLYDAY);
+
+
         $this->load->view('upgrades/apply/apply',$data);
     }
 
@@ -46,11 +50,16 @@ class Apply  extends CI_Controller
         var_dump($this->input->post());
     }
 
+    /**
+     * @package  test and
+     */
     public function t()
     {
-        $d = $this->apply->empHoliday('1000069');
 
-       $this->dateDiff($d->END_HOLYDAY);
+        $data['emp_holiday'] = $this->apply->empHoliday('1000069');
+        $data['emp_info'] = $this->apply->empInfo('1000069');
+        $data['emp_grades'] = $this->apply->empGrades('1000069');
+        var_dump($data);
 
 
     }
@@ -61,7 +70,7 @@ class Apply  extends CI_Controller
     public function dateDiff($date)
     {
         $diff = date_diff( date_create(date('Y-m-d')),date_create(date('Y-m-d', strtotime($date))));
-        echo $diff->format("%R%a days");
+        return $diff->format("%R%a");
     }
 
 }
