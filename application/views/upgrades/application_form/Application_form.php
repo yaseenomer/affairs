@@ -3,7 +3,7 @@ main_header(array('الترقيات'));
 canvas_header('السيرة الذاتية /CV ') ?>
 
     <div class="row">
-        <?php echo form_open(base_url('upgrades/Apply/insert'))?>
+        <?php // echo form_open(base_url('upgrades/Apply/insert'))?>
         <div class="col-md-3 col-sm-3 col-xs-3">
             <ul class="nav nav-tabs tabs-left">
                 <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> المعلومات الشخصية  </a></li>
@@ -85,7 +85,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <!----- EMP_LANGUAGES-->
                     <div class="row">
                         <div class="col-md-6">
-                            <label> اللغات التي تتقنها / Languages</label>
+                            <label> اللغات التي تتقنها </label>
 
                          <!--   <input type="checkbox" name="EMP_LANGUAGES" value="عربي" class="form-control">عربي
                             <input type="checkbox" name="EMP_LANGUAGES" value="انجليزي" class="form-control">انجليزي
@@ -97,14 +97,14 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
 
                         <div class="col-md-6">
-                            <label> رقم هاتف المنزل/ home phone number </label>
+                            <label> رقم هاتف المنزل </label>
                             <input type="text"  name="HOME_PHONE" class="form-control">
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>أرفق  ملف السيرة الذاتية/Attach the CV file</label>
+                            <label>أرفق  ملف السيرة الذاتية</label>
                             <input type="file"  name="FILE_BATH" class="form-control">
                         </div>
 
@@ -124,7 +124,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <form name="form2" action="<?= base_url('upgrades/Edu/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
                         <div class=" form-group col-md-6">
-                            <label>  المراحل الدراسية /School Grade </label>
+                            <label>  المراحل الدراسية  </label>
                             <select name="PRE_EDU_TYPE"class="form-control">
                                 <option value=""></option>
                                 <option value="ابتدائي">ابتدائي</option>
@@ -136,13 +136,13 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         </div>
 
                         <div class=" form-group col-md-6">
-                            <label> اسم المدرسة / School Name  </label>
+                            <label> اسم المدرسة   </label>
                             <input type="text"  name="SCHOOL_NAME" class="form-control">
                         </div>
                     </div>
                         <br>
                         <div class="row" class=" form-group col-md-6">
-                            <label for="item">الدولة / Country</label>
+                            <label for="item">الدولة </label>
                             <select name="COUNTRY_NO"  class="form-control"  style="width:60%"  id="lev1">
                                 <option>اختار من القائمة </option>
 
@@ -162,13 +162,15 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class="row">
                         <div class=" form-group col-md-4">
                             <label> من عام </label>
-                            <input type="date" class="form-control" name="PRE_EDU_START">
+                            <input type="text" class="form-control" name="PRE_EDU_START" id="PRE_EDU_START" value="<?php echo set_value('PRE_EDU_START'); ?>" >
+                            <?php echo form_error('PRE_EDU_START','<span class='.'error'.'>','</span>') ?>
                         </div>
 
 
                         <div class=" form-group col-md-4">
                             <label> الى عام    </label>
-                            <input type="date" class="form-control" name="PRE_EDU_END">
+                            <input type="text" class="form-control" name="PRE_EDU_END" id="PRE_EDU_END" value="<?php echo set_value('PRE_EDU_END'); ?>">
+                            <?php echo form_error('PRE_EDU_END','<span class='.'error'.'>','</span>') ?>
                         </div>
 
                         <div class=" form-group col-md-4">
@@ -668,8 +670,24 @@ canvas_header('السيرة الذاتية /CV ') ?>
             </div>
 
         </div>
-        <?php echo form_close()?>
+        <?php //echo form_close()?>
     </div>
 
 <?php canvas_footer();
 $this->load->view('app/layout/parts/footer'); ?>
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#PRE_EDU_START').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#PRE_EDU_END').datetimepicker(dateoptions);
+</script>
+

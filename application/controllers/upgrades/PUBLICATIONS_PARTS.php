@@ -12,7 +12,7 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         parent::__construct();
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
-
+        $this->load->model('upgrades/M_PUBLICATIONS_PARTS');
     }
 
     /**
@@ -35,12 +35,12 @@ class PUBLICATIONS_PARTS  extends CI_Controller
 
     public function insert()
     {
-        var_dump($this->input->post());
+        //var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
         $items = array(
-
-            'APP_ID' => $this->input->post('APP_ID')  ,
+            'APP_ID' => 113  ,
+           // 'APP_ID' => $this->input->post('APP_ID')  ,
             'PUB_SER' => $this->input->post('PUB_SER')  ,
             'PUB_PRT_SER' => $this->input->post('PUB_PRT_SER')  ,
             'FRT_NAME_AR' => $this->input->post('FRT_NAME_AR')  ,
@@ -60,7 +60,7 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_PUBLICATIONS_PARTS->AddData($items);
-        return redirect('/PUBLICATIONS_PARTS');
+        return redirect('upgrades/PUBLICATIONS_PARTS');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

@@ -12,6 +12,7 @@ class APP_CV_REFERENCES  extends CI_Controller
         parent::__construct();
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
+        $this->load->model('upgrades/M_APP_CV_REFERENCES');
 
     }
 
@@ -39,8 +40,8 @@ class APP_CV_REFERENCES  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
         $items = array(
-
-            'APP_ID' => $this->input->post('APP_ID')  ,
+            'APP_ID' => 113  ,
+           // 'APP_ID' => $this->input->post('APP_ID')  ,
             'EXP_SER' => $this->input->post('EXP_SER')  ,
             'EMP_NAME' => $this->input->post('EMP_NAME')  ,
             'ADDRESS' => $this->input->post('ADDRESS')  ,
@@ -57,7 +58,7 @@ class APP_CV_REFERENCES  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_CV_REFERENCES->AddData($items);
-        return redirect('/APP_CV_REFERENCES');
+        return redirect('upgrades/APP_CV_REFERENCES');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

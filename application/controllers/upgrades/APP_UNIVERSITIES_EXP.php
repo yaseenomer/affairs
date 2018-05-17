@@ -12,7 +12,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         parent::__construct();
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
-
+        $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
     }
 
     /**
@@ -35,12 +35,12 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
 
     public function insert()
     {
-        var_dump($this->input->post());
+       // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
         $items = array(
-
-            'APP_ID' => $this->input->post('APP_ID')  ,
+            'APP_ID' => 113  ,
+           // 'APP_ID' => $this->input->post('APP_ID')  ,
             'UNI_SER' => $this->input->post('UNI_SER')  ,
             'UNI_EXP_TYPE' => $this->input->post('UNI_EXP_TYPE')  ,
             'UNI_EXP_SUB_TYPE' => $this->input->post('UNI_EXP_SUB_TYPE')  ,
@@ -62,7 +62,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_UNIVERSITIES_EXP->AddData($items);
-        return redirect('/APP_UNIVERSITIES_EXP');
+        return redirect('upgrades/APP_UNIVERSITIES_EXP');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

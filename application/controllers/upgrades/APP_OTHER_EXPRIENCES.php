@@ -12,7 +12,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         parent::__construct();
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
-
+        $this->load->model('upgrades/M_APP_OTHER_EXPRIENCES');
     }
 
     /**
@@ -39,8 +39,8 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
         $items = array(
-
-            'APP_ID' => $this->input->post('APP_ID')  ,
+            'APP_ID' => 113  ,
+            //'APP_ID' => $this->input->post('APP_ID')  ,
             'EXP_SER' => $this->input->post('EXP_SER')  ,
             'EXP_TYPE' => $this->input->post('EXP_TYPE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
@@ -57,7 +57,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_OTHER_EXPRIENCES->AddData($items);
-        return redirect('/APP_OTHER_EXPRIENCES');
+        return redirect('upgrades/APP_OTHER_EXPRIENCES');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

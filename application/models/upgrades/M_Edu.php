@@ -11,7 +11,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class M_Edu extends CI_Model
 {
 
-
+    public function getAccounts(){
+        return $this->db->get('COUNTRIES')->result();
+    }
+/************************************/
+    public function maxid()
+    {
+        $this->db->select_max('APP_ID');
+        return $this->db->get('APPLICATION_FORM')->row()->APP_ID ;
+    }//end of method
+    /*************************************/
    /* public function insert($data)
     {
 

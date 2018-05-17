@@ -3,7 +3,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class M_Edu  extends CI_Controller
+class Edu  extends CI_Controller
 {
     protected $file;
 
@@ -12,9 +12,9 @@ class M_Edu  extends CI_Controller
         parent::__construct();
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
-        $this->load->model('UniversitiesModel');
+       // $this->load->model('UniversitiesModel');
         $this->load->model('GeneralModel');
-
+        $this->load->model('upgrades/M_Edu');
     }
 
     /**
@@ -26,8 +26,9 @@ class M_Edu  extends CI_Controller
         $data['addcon'] = $this->session->flashdata('addcon');
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
-        $data['levels'] = $this->UniversitiesModel->getLevels();
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['levels'] = $this->M_Edu->getAccounts();
+        //var_dump($data);
+        $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
 
@@ -38,13 +39,16 @@ class M_Edu  extends CI_Controller
 
     public function insert()
     {
-        var_dump($this->input->post());
+       // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
         $items = array(
-
-            'APP_ID' => $this->input->post('APP_ID')  ,
-            'PRE_EDU_SER' => $this->input->post('PRE_EDU_SER')  ,
+            'APP_ID' => 113  ,
+            'PRE_EDU_SER' => 1  ,
+            //$x=$this->M_Edu->maxid();
+            //$PRE_EDU_SER=$x+1;
+            //'APP_ID' => $this->input->post('APP_ID')  ,
+            //'PRE_EDU_SER' => $this->input->post('PRE_EDU_SER')  ,
             'PRE_EDU_TYPE' => $this->input->post('PRE_EDU_TYPE')  ,
             'SCHOOL_NAME' => $this->input->post('SCHOOL_NAME')  ,
             'COUNTRY_NO' => $this->input->post('COUNTRY_NO')  ,
@@ -60,7 +64,7 @@ class M_Edu  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_Edu->AddData($items);
-        return redirect('/Edu');
+        return redirect('upgrades/Edu');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)
