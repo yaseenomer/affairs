@@ -13,6 +13,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
+        $this->load->model('upgrades/M_Edu');
     }
 
     /**
@@ -24,7 +25,10 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
         $data['addcon'] = $this->session->flashdata('addcon');
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $data['levels'] = $this->M_Edu->getAccounts();
+       // var_dump($data);
+       $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
 

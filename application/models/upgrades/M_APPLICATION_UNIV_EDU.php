@@ -5,7 +5,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class M_APPLICATION_UNIV_EDU extends CI_Model
 {
-
+    /**********************************/
+    public function Getuniversity()
+    {
+        return  $query = $this->db->get('UNIVERSITIES')->result();
+    }
+    /**********************************/
 
    /* public function insert($data)
     {

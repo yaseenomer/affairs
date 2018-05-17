@@ -202,12 +202,12 @@ canvas_header('السيرة الذاتية /CV ') ?>
                 <div class="tab-pane fade" id="unv">
                 <form name="form3" action="<?= base_url('upgrades/APPLICATION_UNIV_EDU/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                 <div class="row">
-                        <div class=" form-group col-md-4">
+                        <div class=" form-group col-md-6">
                             <label> نوع المؤهل  </label>
                             <select name="UNIV_EDU_TYPE"class="form-control">
                                 <option value=""></option>
                                 <option value="دبلوم  سنتين">دبلوم  سنتين</option>
-                                <option value="دبلوم 3 سنة">ديلوم 3 سنة</option>
+                                <option value="دبلوم 3 سنة">دبلوم 3 سنة</option>
                                 <option value="بكالوريوس 4 سنة">بكالوريوس 4 سنة</option>
                                 <option value="بكالوريوس 5 سنة">بكالوريوس 5 سنة</option>
                                 <option value="دبلوم عالي">دبلوم عالي</option>
@@ -218,20 +218,45 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             </select>
                         </div>
 
-                        <div class=" form-group col-md-4">
+                        <div class=" form-group col-md-6">
                             <label>  الجامعة </label>
                             <select name="UNV_ID"class="form-control">
-                                <option value=""></option>
+                                <option>اختار من القائمة </option>
+
+                                <?php
+                                if(!empty($uni))
+                                {
+                                    foreach($uni as $each)
+                                    {
+                                        ?>
+                                        <option value="<?php echo  $each->UNV_ID ?>"><?php echo $each->UNV_ARAB_NAME ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
                                 
 
                             </select>
                         </div>
-                        <div class=" form-group col-md-4">
-                            <label>  الدولة </label>
-                            <select name="COUNTRY_NO"class="form-control">
-                                <option value=""></option>
-                                
 
+                    </div>
+                    <div class="row">
+                        <div class=" form-group col-md-6">
+                            <label>  الدولة </label>
+                            <select name="COUNTRY_NO"  class="form-control"  style="width:60%"  id="lev1">
+                                <option>اختار من القائمة </option>
+
+                                <?php
+                                if(!empty($levels))
+                                {
+                                    foreach($levels as $each)
+                                    {
+                                        ?>
+                                        <option value="<?php echo  $each->COUNTRY_NO ?>"><?php echo iconv("windows-1256","utf-8",$each->COUNTRY_NAME )?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </select>
                         </div>
                     </div>

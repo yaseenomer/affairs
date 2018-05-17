@@ -14,6 +14,7 @@ class Application_Form  extends CI_Controller
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_Application_Form');
         $this->load->model('upgrades/M_Edu');
+        $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
 
     }
 
@@ -27,6 +28,7 @@ class Application_Form  extends CI_Controller
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
         $data['levels'] = $this->M_Edu->getAccounts();
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
         $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
