@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php" />
+    <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="add page en">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,21 +72,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application_form.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Application_form.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3454">
-              <caret line="157" column="13" lean-forward="false" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+            <state relative-caret-position="252">
+              <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application_form_EN.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application_form_EN.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-69">
+              <caret line="651" column="54" lean-forward="false" selection-start-line="651" selection-start-column="54" selection-end-line="651" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -131,7 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/views/app/layout/parts/footer.php" />
         <option value="$PROJECT_DIR$/assets/js/ajax.js" />
         <option value="$PROJECT_DIR$/assets/css/myStyle.css" />
         <option value="$PROJECT_DIR$/application/helpers/some_helper.php" />
@@ -182,6 +182,7 @@
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/../affirs_test/application/controllers/apps_report.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php" />
       </list>
     </option>
   </component>
@@ -200,7 +201,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-54" />
     <option name="y" value="20" />
     <option name="width" value="833" />
@@ -426,7 +427,7 @@
       <workItem from="1526366022069" duration="14624000" />
       <workItem from="1526464991722" duration="4790000" />
       <workItem from="1526474682278" duration="624000" />
-      <workItem from="1526539206080" duration="349000" />
+      <workItem from="1526539206080" duration="3127000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -470,18 +471,26 @@
       <option name="project" value="LOCAL" />
       <updated>1526374596083</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add page">
+      <created>1526539566827</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1526539566827</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="602012000" />
+    <option name="totallyTimeSpent" value="604790000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08472012" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31164902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -493,7 +502,6 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -523,14 +531,15 @@
     <MESSAGE value="update readme" />
     <MESSAGE value="تغير العنوان" />
     <MESSAGE value="add page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add page" />
+    <MESSAGE value="add page en" />
+    <option name="LAST_COMMIT_MESSAGE" value="add page en" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php</url>
-          <line>373</line>
+          <line>374</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -859,18 +868,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php">
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3454">
-          <caret line="157" column="13" lean-forward="false" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
+        <state relative-caret-position="-69">
+          <caret line="651" column="54" lean-forward="false" selection-start-line="651" selection-start-column="54" selection-end-line="651" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php">
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="252">
+          <caret line="53" column="30" lean-forward="true" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
           <folding />
         </state>
       </provider>

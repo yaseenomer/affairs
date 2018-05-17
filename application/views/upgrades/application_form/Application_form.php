@@ -205,12 +205,13 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <select name="UNIV_EDU_TYPE"class="form-control">
                                 <option value=""></option>
                                 <option value="دبلوم  سنتين">دبلوم  سنتين</option>
-                                <option value="ديلوم 3 سنة">ديلوم 3 سنة</option>
-                                <option value="بكلاريوس 4 سنة">بكلاريوس 4 سنة</option>
-                                <option value="بكلاريوس 5 سنة">بكلاريوس 5 سنة</option>
+                                <option value="دبلوم 3 سنة">ديلوم 3 سنة</option>
+                                <option value="بكالوريوس 4 سنة">بكالوريوس 4 سنة</option>
+                                <option value="بكالوريوس 5 سنة">بكالوريوس 5 سنة</option>
+                                <option value="دبلوم عالي">دبلوم عالي</option>
                                 <option value="ماجستير">ماجستير</option>
                                 <option value="دكتوراة">دكتوراة</option>
-                                <option value="دبلوم عالي">دبلوم عالي</option>
+
 
                             </select>
                         </div>
