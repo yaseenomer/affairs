@@ -102,7 +102,7 @@ if ( ! function_exists('user')) {
             $CI =& get_instance();
             if ( ! $CI->session->userdata('user'))
             {
-                redirect(base_url()."authi/getSignIn");
+                redirect(base_url()."auth/auth/getSignIn");
             }
         }
 

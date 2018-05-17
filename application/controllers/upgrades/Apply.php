@@ -33,36 +33,21 @@ class Apply  extends CI_Controller
 
     }
 
-    public function create()
+    public function create($id = '1000069')
     {
-        $data['emp_details'] = $this->apply->empDetails('1000069');
-        $data['emp_info'] = $this->apply->empInfo('1000069');
-        $data['emp_grades'] = $this->apply->empGrades('1000069');
-        $data['emp_holidays'] =  $this->apply->empHoliday('1000069');
-        $data['emp_holiday'] =  $this->dateDiff($this->apply->empHoliday('1000069')->END_HOLYDAY);
 
-
+        $data = $this->empDataAll($id);
         $this->load->view('upgrades/apply/apply',$data);
     }
 
+    /**
+     *  @array Insert Into Application_Form table
+     */
     public function insert()
     {
-        var_dump($this->input->post());
+        $this->apply->insert($this->dataMerage());
     }
 
-    /**
-     * @package  test and
-     */
-    public function t()
-    {
-
-        $data['emp_holiday'] = $this->apply->empHoliday('1000069');
-        $data['emp_info'] = $this->apply->empInfo('1000069');
-        $data['emp_grades'] = $this->apply->empGrades('1000069');
-        var_dump($data);
-
-
-    }
 
     /**
      * @param $date
@@ -72,5 +57,50 @@ class Apply  extends CI_Controller
         $diff = date_diff( date_create(date('Y-m-d')),date_create(date('Y-m-d', strtotime($date))));
         return $diff->format("%R%a");
     }
+
+    public function dataMerage()
+    {
+        $data1 = array(
+            'APP_ID' => $this->apply->maxAppId() + 1,
+            'APP_DATE' => date('d-M-y'),
+            'APP_STATUS' => 0,
+            'ENTRY_DATE' => date('d-M-y'),
+            'UPDATE_DATE' => date('d-M-y'),
+            'YEAR_ID' => date('Y'),
+            'USR_NO' => user()->USR_NO
+        );
+        $data2 = $this->input->post();
+        $data = array_merge($data1,$data2);
+        return $data;
+    }
+
+    /**
+     * @param $id
+     * @return mixed
+     */
+    public function empDataAll($id)
+    {
+        $data['emp_details'] = $this->apply->empDetails($id);
+        $data['emp_info'] = $this->apply->empInfo($id);
+        $data['emp_grades'] = $this->apply->empGrades($id);
+        $data['emp_holidays'] = $this->apply->empHoliday($id);
+        $data['emp_holiday'] = $this->dateDiff($this->apply->empHoliday($id)->END_HOLYDAY);
+        return $data;
+    }
+
+    public function t()
+    {
+
+
+
+//        $data['emp_holiday'] = $this->apply->empHoliday('1000069');
+//        $data['emp_info'] = $this->apply->empInfo('1000069');
+//        $data['emp_grades'] = $this->apply->empGrades('1000069');
+//        var_dump($data);
+
+
+    }
+
+
 
 }

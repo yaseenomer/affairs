@@ -1,10 +1,10 @@
 <?php
-class authi extends CI_Controller
+class auth extends CI_Controller
 {
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('auth_model');
+        $this->load->model('auth/auth_model','auth_model');
         $this->load->helper(array('url', 'form'));
         $this->load->library('session');
 
@@ -42,7 +42,7 @@ class authi extends CI_Controller
 
         if (!$auth) {
 
-            return redirect('/authi/getSignIn');
+            return redirect('auth/auth/getSignIn');
 
         }
        
@@ -117,23 +117,23 @@ class authi extends CI_Controller
                 $y=$this->auth_model->check_username_exist($this->input->post('logname'));
                 if($y==true){
                     $this->session->set_flashdata('exist', 'إسم المستخدم موجود مسبقاً ');
-                    redirect(base_url().'authi/view_user');
+                    redirect(base_url().'auth/view_user');
                 }else{
                     $this->auth_model->saveuser($x);
                     $this->session->set_flashdata('add', 'تمت إضافة مستخدم بنجاح ');
-                    redirect(base_url().'authi/view_user');
+                    redirect(base_url().'auth/view_user');
                 }
             }else
             {
                 $this->session->set_flashdata('error', 'كلمة المرور غير مطابقة أو الحقول لم يتم ملؤها بطريقة صحيحة');
-                redirect(base_url().'authi/view_user');
+                redirect(base_url().'auth/view_user');
             }
         }
     }
 	
 	 public function delete($id){
         $this->auth_model->remove($id);
-        redirect(base_url().'authi/view_user');
+        redirect(base_url().'auth/view_user');
     }
 
 //========================= End cpanel for users ==================================================================

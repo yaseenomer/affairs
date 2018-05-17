@@ -27,7 +27,7 @@ class Auth_model extends CI_Model
     public function logout()
     {
         $this->session->unset_userdata('user');
-        return redirect('/authi/getSignIn');
+        return redirect('auth/auth/getSignIn');
     }
 
    
@@ -49,7 +49,7 @@ class Auth_model extends CI_Model
     {
         if ( ! $this->session->userdata('user'))
         {
-            redirect(base_url()."authi/getSignIn", "refresh");
+            redirect(base_url()."auth/auth/getSignIn", "refresh");
         }
     }
 

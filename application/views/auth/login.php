@@ -3,7 +3,7 @@
         <img src="<?php echo base_url(); ?>assets/img/sudanun2.png">
     </div>
 
-    <?php echo form_open(base_url().'authi/postSignIn'); ?>
+    <?php echo form_open(base_url().'auth/auth/postSignIn'); ?>
 
         <div class="form-group field-login">
             <label for="login" class="control-label">اسم المستخدم  </label>

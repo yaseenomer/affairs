@@ -98,7 +98,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?=user()->USR_NAME ?>  <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="<?=base_url('authi/logout')?>">تسجيل خروج </a></li>
+                        <li><a href="<?=base_url('auth/auth/logout')?>">تسجيل خروج </a></li>
 
                     </ul>
                 </li>

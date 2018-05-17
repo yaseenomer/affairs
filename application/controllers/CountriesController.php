@@ -58,7 +58,7 @@ public function ShowCountries($id){
         $this->load->view('Countries/EditCountries', $data);
         }
          else {
-            return redirect('/authi');
+            return redirect('/auth');
          }
     }
     /*****************************************/

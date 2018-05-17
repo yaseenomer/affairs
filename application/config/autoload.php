@@ -20,4 +20,4 @@ $autoload['config'] = array();
 $autoload['language'] = array();
 
 
-$autoload['model'] = array('auth_model');
+$autoload['model'] = array('auth/auth_model');

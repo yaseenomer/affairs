@@ -73,9 +73,17 @@ class M_Apply extends CI_Model
      */
     public function insert($data)
     {
-
         $this->db->insert('APPLICATION_FORM', $data);
+    }
 
+
+    /**
+     * @return CI_DB_result
+     */
+    public function maxAppId()
+    {
+        $this->db->select_max('APP_ID','id');
+        return $this->db->get('APPLICATION_FORM')->row()->id;
     }
 
 

@@ -67,9 +67,10 @@
 
 
                     <input type="hidden" value="<?php echo $emp_info->EMP_NO?>" name="EMP_NO">
-                    <input type="hidden" value="<?php echo date('Y')?>" name="YEAR_ID">
+                    <input type="hidden" value="<?php echo (int) date('Y')?>" name="YEAR_ID">
                     <input type="hidden" value="<?php echo $emp_info->MERITAL?>" name="MERITAL">
                     <input type="hidden" value="<?php echo $emp_grades->EMP_TYPE?>" name="EMP_TYPE">
+                    <input type="hidden" value="<?php echo $emp_grades->GRADE_NO?>" name="CURRENT_GRD_ID">
 
 
                     <div class="row">
@@ -89,7 +90,9 @@
                     <div class="row">
                         <div class=" form-group col-md-4">
                             <label>تاريخ التعيين بالجامعة  </label>
-                            <input type="text" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->HIRE_DATE))?>" name="HIRE_DATE">
+                            <input type="text" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->HIRE_DATE))?>" >
+                            <input type="hidden"  value="<?php echo date('d-M-y',strtotime($emp_info->HIRE_DATE))?>" name="HIRE_DATE" >
+
                         </div>
 
 
@@ -107,12 +110,13 @@
                     <div class="row">
                         <div class="form-group col-md-4">
                             <label>الدرجة الحالية  </label>
-                            <input type="text" class="form-control" value="<?php echo  iconv('windows-1256','utf-8',$emp_grades->GRADE_NAME)?>" name="CURRENT_GRD_ID">
+                            <input type="text" class="form-control" value="<?php echo  iconv('windows-1256','utf-8',$emp_grades->GRADE_NAME)?>" >
                         </div>
 
                         <div class="form-group col-md-4">
                             <label>تاريخ الترقي لها   </label>
-                            <input type="date" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->APP_DATE))?>"  name="GRD_DATE">
+                            <input type="date" class="form-control" value="<?php echo date('Y-m-d',strtotime($emp_info->APP_DATE))?>" >
+                            <input type="hidden"  value="<?php echo date('d-M-y',strtotime($emp_info->APP_DATE))?>"  name="GRD_DATE">
                         </div>
 
                         <div class="form-group col-md-4">
@@ -153,6 +157,7 @@
 
                             <div class="form-group col-md-12">
                                 <p class="secondary-color">   ليست في إجازة </p>
+                                <input type="hidden" value="0" name="EMP_STATUS">
                             </div>
 
                        <?php }else{  ?>
@@ -165,6 +170,7 @@
                                 <label > تاريخ نهاية  الإجازة   </label>
                                 <input  type="date" class="form-control" value="<?php  echo $emp_holidays->END_HOLYDAY ?>" name="VACATION_END">
                             </div>
+                            <input type="hidden" value="1" name="EMP_STATUS">
                        <?php }  ?>
                     </div>
 
