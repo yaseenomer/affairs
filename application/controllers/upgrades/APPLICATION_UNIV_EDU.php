@@ -44,8 +44,9 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,
-           // 'APP_ID' => $this->input->post('APP_ID')  ,
-            'UNIV_EDU_SER' => $this->input->post('UNIV_EDU_SER')  ,
+            'UNIV_EDU_SER' =>1,
+            // 'APP_ID' => $this->input->post('APP_ID')  ,
+            //'UNIV_EDU_SER' => $this->input->post('UNIV_EDU_SER')  ,
             'UNIV_EDU_TYPE' => $this->input->post('UNIV_EDU_TYPE')  ,
             'UNV_ID' => $this->input->post('UNV_ID')  ,
             'COUNTRY_NO' => $this->input->post('COUNTRY_NO')  ,

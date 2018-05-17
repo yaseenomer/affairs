@@ -4,8 +4,6 @@
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
-      <change beforePath="$PROJECT_DIR$/application/models/upgrades/M_APPLICATION_UNIV_EDU.php" afterPath="$PROJECT_DIR$/application/models/upgrades/M_APPLICATION_UNIV_EDU.php" />
       <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
@@ -74,14 +72,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application_form.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application_form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="231" column="117" lean-forward="false" selection-start-line="231" selection-start-column="117" selection-end-line="231" selection-end-column="117" />
+            <state relative-caret-position="301">
+              <caret line="277" column="45" lean-forward="false" selection-start-line="277" selection-start-column="45" selection-end-line="277" selection-end-column="45" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -93,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APPLICATION_UNIV_EDU.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="APPLICATION_UNIV_EDU.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
+            <state relative-caret-position="143">
+              <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -232,8 +229,8 @@
         <option value="$PROJECT_DIR$/application/models/upgrades/M_Application_Form.php" />
         <option value="$PROJECT_DIR$/application/models/upgrades/M_APPLICATION_UNIV_EDU.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
       </list>
     </option>
   </component>
@@ -633,7 +630,7 @@
       <workItem from="1526366022069" duration="14624000" />
       <workItem from="1526464991722" duration="4790000" />
       <workItem from="1526474682278" duration="624000" />
-      <workItem from="1526539206080" duration="12830000" />
+      <workItem from="1526539206080" duration="13394000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -691,11 +688,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526552677213</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="insert q">
+      <created>1526555675206</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1526555675206</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="614493000" />
+    <option name="totallyTimeSpent" value="615057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -745,14 +749,15 @@
     <MESSAGE value="تغير العنوان" />
     <MESSAGE value="add page" />
     <MESSAGE value="add page en" />
-    <option name="LAST_COMMIT_MESSAGE" value="add page en" />
+    <MESSAGE value="insert q" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert q" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php</url>
-          <line>401</line>
+          <line>402</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -1121,21 +1126,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="15" column="45" lean-forward="false" selection-start-line="15" selection-start-column="45" selection-end-line="15" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="231" column="117" lean-forward="false" selection-start-line="231" selection-start-column="117" selection-end-line="231" selection-end-column="117" />
+        <state relative-caret-position="301">
+          <caret line="277" column="45" lean-forward="false" selection-start-line="277" selection-start-column="45" selection-end-line="277" selection-end-column="45" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -1143,6 +1139,14 @@
             <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#8;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -275,7 +275,8 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="form-group col-md-5">
                             <label>تاريخ الحصول عليه </label>
-                            <input type="date" class="form-control" name="DATE_OF_ISSUED">
+                            <input type="text" class="form-control" name="DATE_OF_ISSUED" id="DATE_OF_ISSUED"value="<?php echo set_value('DATE_OF_ISSUED'); ?>" >
+                            <?php echo form_error('DATE_OF_ISSUED','<span class='.'error'.'>','</span>') ?>
                         </div>
 
 
@@ -714,5 +715,13 @@ $this->load->view('app/layout/parts/footer'); ?>
         format:'d-M-y'
     };
     $('#PRE_EDU_END').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#DATE_OF_ISSUED').datetimepicker(dateoptions);
 </script>
 
