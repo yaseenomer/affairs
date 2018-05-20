@@ -43,7 +43,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $this->session->user->USR_NAME ?>  <span class="caret"></span></a>
                     <ul class="dropdown-menu">
 
-                        <li><a href="<?php echo base_url('auth/auth/logout') ?>"> تسجيل خروج </a></li>
+                        <li><a href="<?php echo base_url('auth/logout') ?>"> تسجيل خروج </a></li>
                     </ul>
                 </li>
             </ul>

@@ -27,7 +27,7 @@ class Auth_model extends CI_Model
     public function logout()
     {
         $this->session->unset_userdata('user');
-        return redirect('auth/auth/getSignIn');
+        return redirect('auth/getSignIn');
     }
 
    

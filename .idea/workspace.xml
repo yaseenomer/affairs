@@ -3,11 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" />
-      <change beforePath="$PROJECT_DIR$/application/models/upgrades/M_APP_CV_REFERENCES.php" afterPath="$PROJECT_DIR$/application/models/upgrades/M_APP_CV_REFERENCES.php" />
-      <change beforePath="$PROJECT_DIR$/application/models/upgrades/M_APP_OTHER_EXPRIENCES.php" afterPath="$PROJECT_DIR$/application/models/upgrades/M_APP_OTHER_EXPRIENCES.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/auth/auth.php" afterPath="$PROJECT_DIR$/application/controllers/auth.php" />
+      <change beforePath="$PROJECT_DIR$/application/models/auth/auth_model.php" afterPath="$PROJECT_DIR$/application/models/auth/auth_model.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/app/layout/parts/navbar.php" afterPath="$PROJECT_DIR$/application/views/app/layout/parts/navbar.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/auth/login.php" afterPath="$PROJECT_DIR$/application/views/auth/login.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -58,14 +57,7 @@
         <item name="affires" type="feb32156:DbDataSourceImpl" />
         <item name="ACD_AFF: schema" type="ac44c5e0:OracleImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="APPLICATION_FORM: table" type="be4db629:OracleImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="affires" type="feb32156:DbDataSourceImpl" />
-        <item name="ACD_AFF: schema" type="ac44c5e0:OracleImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="SCHOLARSHIPS_EXPENSES: table" type="be4db629:OracleImplModel$Table" />
+        <item name="EMP_USER_ACCOUNTS: table" type="be4db629:OracleImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -75,49 +67,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application_form.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php">
+      <file leaf-file-name="EmpAccounts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/auth/EmpAccounts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="713" column="47" lean-forward="false" selection-start-line="713" selection-start-column="42" selection-end-line="713" selection-end-column="47" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="APP_CV_REFERENCES.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="162">
+              <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="M_APP_CV_REFERENCES.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_APP_CV_REFERENCES.php">
+      <file leaf-file-name="auth.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/auth.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="25" />
+            <state relative-caret-position="252">
+              <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="APP_OTHER_EXPRIENCES.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php">
+      <file leaf-file-name="auth_model.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/models/auth/auth_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="67" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="71" />
+            <state relative-caret-position="162">
+              <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/auth/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="first.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/app/layout/parts/first.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.1.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/app/layout/parts/navbar.1.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="571">
+              <caret line="100" column="55" lean-forward="false" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="55" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/app/layout/parts/navbar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -146,14 +160,15 @@
       <find>th</find>
       <find>getSchol</find>
       <find>getCollages</find>
-      <find>iconv</find>
       <find>upda</find>
       <find>insert</find>
       <find>Schol</find>
       <find>getAttachereType</find>
       <find>ProcessBuilder</find>
-      <find>APPLICATION_FORM_CD</find>
-      <find>APPLICATION_PRE_EDU</find>
+      <find>iconv</find>
+      <find>select_m</find>
+      <find>icon</find>
+      <find>ic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,6 +178,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Extention/Bootstarp.php" />
+        <option value="$PROJECT_DIR$/application/libraries/Bootstrap.php" />
+        <option value="$PROJECT_DIR$/Extention/Bootstrap/Bootstarp.php" />
+        <option value="$PROJECT_DIR$/Extention/Bootstrap/Text.php" />
+        <option value="$PROJECT_DIR$/Extention/Bootstrap/Select.php" />
+        <option value="$PROJECT_DIR$/Extention/Bootstrap/Bootstrap.php" />
         <option value="$PROJECT_DIR$/application/helpers/canvas_helper.php" />
         <option value="$PROJECT_DIR$/application/helpers/upload_helper.php" />
         <option value="$PROJECT_DIR$/application/controllers/Scholarships_ext_con.php" />
@@ -177,7 +198,6 @@
         <option value="$PROJECT_DIR$/application/models/affirs/Model.php" />
         <option value="$PROJECT_DIR$/application/models/affirs/My_Model.php" />
         <option value="$PROJECT_DIR$/application/models/affirs/countries.php" />
-        <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/views/Scholarship/index.php" />
         <option value="$PROJECT_DIR$/application/views/Scholarship/course.php" />
         <option value="$PROJECT_DIR$/application/models/affirs/M_Scholarship_expenses.php" />
@@ -188,32 +208,27 @@
         <option value="$PROJECT_DIR$/application/views/mainview.php" />
         <option value="$PROJECT_DIR$/application/views/Scholarship/test/trr.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/application/models/upgrades/M_Apply.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/Cv.php" />
         <option value="$PROJECT_DIR$/application/models/upgrades/M_CV.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/cv/cv1.php" />
-        <option value="$PROJECT_DIR$/application/config/config.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/Cv.php" />
+        <option value="$PROJECT_DIR$/application/models/upgrades/M_Apply.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/apply/apply.php" />
-        <option value="$PROJECT_DIR$/application/config/database.php" />
-        <option value="$PROJECT_DIR$/../affirs_test/application/controllers/apps_report.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" />
-        <option value="$PROJECT_DIR$/application/models/upgrades/M_Application_Form.php" />
-        <option value="$PROJECT_DIR$/application/models/upgrades/M_APPLICATION_UNIV_EDU.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
-        <option value="$PROJECT_DIR$/application/models/upgrades/M_Edu.php" />
-        <option value="$PROJECT_DIR$/application/models/upgrades/M_APP_UNIVERSITIES_EXP.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_PUBLICATIONS.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/PUBLICATIONS_PARTS.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php" />
-        <option value="$PROJECT_DIR$/application/models/upgrades/M_APP_OTHER_EXPRIENCES.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" />
-        <option value="$PROJECT_DIR$/application/models/upgrades/M_APP_CV_REFERENCES.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php" />
+        <option value="$PROJECT_DIR$/application/helpers/auth_helper.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
+        <option value="$PROJECT_DIR$/application/views/app/layout/parts/navbar.1.php" />
+        <option value="$PROJECT_DIR$/application/views/auth/emp_accounts/login.php" />
+        <option value="$PROJECT_DIR$/application/models/auth/M_EmpAccounts.php" />
+        <option value="$PROJECT_DIR$/application/views/auth/emp_accounts/signin.php" />
+        <option value="$PROJECT_DIR$/application/views/auth/emp_accounts/details.php" />
+        <option value="$PROJECT_DIR$/application/views/auth/emp_accounts/register.php" />
+        <option value="$PROJECT_DIR$/application/controllers/auth/EmpAccounts.php" />
+        <option value="$PROJECT_DIR$/application/controllers/auth/auth.php" />
+        <option value="$PROJECT_DIR$/application/config/routes.php" />
+        <option value="$PROJECT_DIR$/application/controllers/auth.php" />
+        <option value="$PROJECT_DIR$/application/views/auth/login.php" />
+        <option value="$PROJECT_DIR$/application/views/app/layout/parts/navbar.php" />
+        <option value="$PROJECT_DIR$/application/models/auth/auth_model.php" />
       </list>
     </option>
   </component>
@@ -233,10 +248,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-54" />
-    <option name="y" value="20" />
-    <option name="width" value="833" />
-    <option name="height" value="736" />
+    <option name="x" value="168" />
+    <option name="y" value="68" />
+    <option name="width" value="682" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -270,6 +285,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -287,33 +303,36 @@
               <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="parts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -328,21 +347,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="SearchEverywhereHistoryKey" value="auth&#9;FILE&#9;file://C:/wamp64/www/affairs/application/models/auth/auth_model.php&#10;M_sc&#9;FILE&#9;file://C:/wamp64/www/affairs/application/models/affirs/M_Scholarship.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\affairs\application\views\auth\emp_accounts" />
+      <recent name="C:\wamp64\www\affairs\application\models\auth" />
+      <recent name="C:\wamp64\www\affairs\application\controllers\auth" />
+      <recent name="C:\wamp64\www\affairs\application\controllers" />
+      <recent name="C:\wamp64\www\affirs\application\models\upgrades" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\affairs\application\controllers" />
+      <recent name="C:\wamp64\www\affairs\application\models\auth" />
+      <recent name="C:\wamp64\www\affairs\application\controllers\auth" />
       <recent name="C:\wamp64\www\affirs\application\controllers\affirs\zip" />
       <recent name="C:\wamp64\www\affirs\application\controllers\affirs" />
-      <recent name="C:\wamp64\www\affirs\application\controllers" />
-      <recent name="C:\wamp64\www\affirs\Extention\Bootstrap" />
-      <recent name="C:\wamp64\www\sust\application\views\app\layout\test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\affairs\application\views\upgrades\application_form" />
-      <recent name="C:\wamp64\www\affairs\application\models\upgrades" />
-      <recent name="C:\wamp64\www\affairs\application\controllers\upgrades" />
-      <recent name="C:\wamp64\www\affairs\application\views\upgrades\apply" />
-      <recent name="C:\wamp64\www\affirs\application\models\upgrades" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -360,17 +380,19 @@
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/config/autoload.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/config/routes.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/CountriesController.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/Apply.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/helpers/auth_helper.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_PUBLICATIONS.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/upgrades/PUBLICATIONS_PARTS.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/teachermodel.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_Apply.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/app/layout/parts/navbar.1.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/app/layout/parts/navbar.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_APP_CV_REFERENCES.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_APP_OTHER_EXPRIENCES.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/upgrades/M_Edu.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/auth/login.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/upgrades/apply/apply.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/auth/register.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -378,13 +400,714 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/auth/EmpAccounts.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/auth/auth.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/auth/M_EmpAccounts.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/auth/auth_model.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/auth/emp_accounts/details.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/auth/emp_accounts/register.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/views/auth/emp_accounts/signin.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/css/bootstrap.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/css/custom.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/css/font-awesome.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/FontAwesome.otf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/fontawesome-webfont.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/fontawesome-webfont.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/fontawesome-webfont.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/fontawesome-webfont.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/fonts/glyphicons-halflings-regular.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/fonts/glyphicons-halflings-regular.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/fonts/glyphicons-halflings-regular.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/fonts/glyphicons-halflings-regular.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/3.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/4.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/find_user.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/custom.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/dataTables/dataTables.bootstrap.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/dataTables/dataTables.bootstrap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/dataTables/jquery.dataTables.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/jquery-1.10.2.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/jquery.metisMenu.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/morris/morris-0.4.3.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/morris/morris.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/morris/raphael-2.1.0.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/animate.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap-rtl.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap-rtl.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap-rtl.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/dataTables.bootstrap.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/js/bootstrap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/js/bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/js/npm.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/components-md-rtl.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/custom-rtl.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/dataTables.bootstrap-rtl.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/dt.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/font-awesome.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/CHANGELOG.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/bower.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/banner.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/custom.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/icheck.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/arrow-bottom.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/arrow-top.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/header-line.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-fork.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-github.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-lab.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-options.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-star.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-bold.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-bold.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-bold.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-bold.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-regular.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-regular.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-regular.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-regular.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/normalize.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/js/custom.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/js/jquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/js/zepto.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/icheck.jquery.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/icheck.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/icheck.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/all.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/_all.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/aero.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/aero.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/aero@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/blue.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/blue.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/blue@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/flat.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/flat.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/flat@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/green.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/green.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/green@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/grey.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/grey.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/grey@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/orange.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/orange.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/orange@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/pink.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/pink.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/pink@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/purple.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/purple.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/purple@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/red.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/red.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/red@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/yellow.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/yellow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/yellow@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/futurico/futurico.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/futurico/futurico.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/futurico/futurico@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/_all.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/aero.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/blue.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/green.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/grey.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/line.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/line.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/line@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/orange.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/pink.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/purple.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/red.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/yellow.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/_all.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/aero.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/aero.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/aero@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/blue.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/blue.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/blue@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/green.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/green.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/green@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/grey.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/grey.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/grey@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/minimal.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/minimal.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/minimal@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/orange.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/orange.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/orange@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/pink.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/pink.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/pink@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/purple.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/purple.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/purple@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/red.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/red.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/red@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/yellow.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/yellow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/yellow@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/polaris/polaris.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/polaris/polaris.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/polaris/polaris@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/_all.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/aero.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/aero.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/aero@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/blue.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/blue.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/blue@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/green.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/green.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/green@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/grey.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/grey.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/grey@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/orange.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/orange.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/orange@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/pink.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/pink.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/pink@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/purple.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/purple.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/purple@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/red.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/red.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/red@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/square.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/square.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/square@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/yellow.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/yellow.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/yellow@2x.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.structure.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.structure.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.theme.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.theme.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery.datetimepicker.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery.steps.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/layout-rtl.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/main.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/myStyle.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/normalize.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/plugins-md-rtl.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/select2.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/License.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/Readme.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.dev.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/icons-lte-ie7.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/simple-line-icons.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/simple-line-icons.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/css/tasks-rtl.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/fonts/FontAwesome.otf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.eot</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.svg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.ttf</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.woff</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.woff2</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/Sorting icons.psd</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/back_disabled.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/back_enabled.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/back_enabled_hover.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/favicon.ico</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/forward_disabled.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/forward_enabled.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/forward_enabled_hover.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_asc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_asc_disabled.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_both.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_desc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_desc_disabled.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/accordion-plusminus.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/ajax-loading.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/ajax-modal-loading.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/datatable-row-openclose.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ad.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ae.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/af.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ag.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ai.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/al.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/am.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/an.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ao.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ar.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/as.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/at.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/au.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/aw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ax.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/az.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ba.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bb.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bd.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/be.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bh.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bi.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bj.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/br.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bs.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bt.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bv.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/by.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ca.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/catalonia.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cd.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ch.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ci.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ck.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/co.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cs.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cu.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cv.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cx.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/de.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/dj.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/dk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/dm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/do.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/dz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ec.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ee.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/eg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/eh.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/england.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/er.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/es.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/et.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/europeanunion.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fam.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fi.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fj.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ga.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gb.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gd.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ge.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gh.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gi.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gp.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gq.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gs.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gt.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gu.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ht.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hu.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/id.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ie.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/il.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/in.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/io.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/iq.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ir.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/is.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/it.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/jm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/jo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/jp.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ke.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kh.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ki.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/km.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kp.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ky.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/la.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lb.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/li.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ls.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lt.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lu.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lv.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ly.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ma.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/md.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/me.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mh.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ml.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mp.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mq.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ms.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mt.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mu.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mv.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mx.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/my.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/na.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ne.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ng.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ni.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/no.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/np.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nu.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/om.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pa.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pe.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ph.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ps.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pt.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/py.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/qa.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/re.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/readme.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ro.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/rs.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ru.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/rw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sa.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sb.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/scotland.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sd.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/se.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sh.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/si.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sj.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/so.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/st.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sv.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/td.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/th.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tj.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tl.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/to.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tt.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tv.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ua.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ug.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/um.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/us.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/uy.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/uz.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/va.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vc.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ve.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vi.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vn.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vu.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/wales.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/wf.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ws.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ye.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/yt.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/za.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/zm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/zw.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/input-spinner.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/loading-spinner-blue.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/loading-spinner-default.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/loading-spinner-grey.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/loading.gif</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/overlay-icon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-collapse-icon-white.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-collapse-icon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-config-icon-white.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-config-icon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-expand-icon-white.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-expand-icon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-reload-icon-white.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-reload-icon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-remove-icon-white.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-remove-icon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/remove-icon-small.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/Thumbs.db</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/aboutme.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/amazon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/behance.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/blogger.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/deviantart.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/dribbble.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/dropbox.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/evernote.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/facebook.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/flickr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/forrst.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/foursquare.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/github.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/googleplus.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/gravatar.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/instagram.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/jolicloud.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/klout.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/last-fm.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/linkedin.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/myspace.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/picasa.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/pintrest.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/quora.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/reddit.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/rss.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/skype.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/spotify.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/stumbleupon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/tumblr.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/twitter.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/vimeo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/vk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/wordpress.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/xing.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/yahoo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/social/youtube.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/sudan.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/sudanun2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/syncfusion-icons-white.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/img/syncfusion-icons.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/1494409281.jpeg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/92a0ec6b-85e7-4763-a755-b10660d5ec17.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/____________ ___________2_350x0.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/imag.jpeg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/imag.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/images.jpeg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/promotion_31_350x0.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/promotion_675992_large.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/resize.php.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/imag1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/1.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/41RnlUqw.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/images70.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/الابتعاث-بعد-الثانوي،-الخارجي-والداخلي،-الشروط-والتخصصات..jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/الابتعاث.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/DCPRO-CITREP_Banner1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/DCPRO.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/TR1_fundraising_appeal.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/group_training.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/training-2.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/training.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/trainingcomputers.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/videotraining.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/ajax.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/cheque.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/cheque1.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/dataTables.bootstrap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/dataTables.bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/demo.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/dt.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/icheck.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-1.10.2.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-1.11.1.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-1.9.1.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-migrate.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-ui.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-ui.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.cookie-1.3.1.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.dataTables.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.datetimepicker.full.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.flot.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.flot.resize.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.steps.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.steps.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.ui.datepicker.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/layout.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/metronic.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/modernizr-2.6.2.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/myScript.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/myvue.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/pie_chart.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/respond.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/select2.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/js/table-managed.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-grid.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-grid.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-grid.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-grid.min.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-reboot.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-reboot.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-reboot.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-reboot.min.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap.min.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap.min.css.map</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/js/bootstrap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/js/bootstrap.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/css/my-login.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/img/logo.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/js/jquery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/login/js/my-login.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/CSS/css-login.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/CSS/formoid-default.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/CSS/niceforms-default.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/formoid-default.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/formoid-defaults.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/html5.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/jquery.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/niceforms.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/arrowsub.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/download.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/favour.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/hsep.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/mainbk.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/news.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/register.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/samples.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/service.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/check-radio-bg.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/Database_ora.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/STDAFFAIRS_VIEW(1).txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/auth.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/conn_ora.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/database.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/db.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/student_affairs.sql</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/user.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/db/user_data.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/down.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/images/footer.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/images/logo.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/css/style.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/del.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/download.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/images.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/key_icon.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/magnifier.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/page_white_edit.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/publish_r.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/register.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/update.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/jq/jquery.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/jq/styletable.jquery.plugin.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/assets/std/table/subject.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/controler/Emp_name.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/controler/Emp_no.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/controler/au_tech_con.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/controler/authi.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/controler/main2Controller.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/controler/mainController.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/controler/mainController3.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/model/auth_model.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/model/teachermodel.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/LICENSE</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/README.md</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/empno.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/forgot.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/index.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/register.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/reset.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/change_password.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/create_group.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/create_user.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/deactivate_user.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/edit_group.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/edit_user.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/email/activate.tpl.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/email/forgot_password.tpl.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/email/new_password.tpl.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/fail.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/footer.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/forgot_password.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/header.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/index.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/login.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/register.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/reset_password.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/auth/success.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/emp_account/Add.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/emp_account/Addacount.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/emp_account/EmployeesInfo.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/yassinnn/madule users/view/emp_account/Employees_NO.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -392,8 +1115,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/controllers/authi.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/application/models/auth_model.php</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -586,16 +1307,13 @@
       <workItem from="1525589164195" duration="10490000" />
       <workItem from="1525683521994" duration="11771000" />
       <workItem from="1525847362593" duration="13532000" />
-      <workItem from="1525936977149" duration="4764000" />
-      <workItem from="1525944187552" duration="2967000" />
-      <workItem from="1526193286884" duration="11781000" />
-      <workItem from="1526280911839" duration="705000" />
-      <workItem from="1526290306798" duration="414000" />
-      <workItem from="1526294122666" duration="1504000" />
-      <workItem from="1526366022069" duration="14624000" />
-      <workItem from="1526464991722" duration="4790000" />
-      <workItem from="1526474682278" duration="624000" />
-      <workItem from="1526539206080" duration="13434000" />
+      <workItem from="1525936977149" duration="7742000" />
+      <workItem from="1525949757135" duration="591000" />
+      <workItem from="1526289168098" duration="8291000" />
+      <workItem from="1526377418329" duration="15015000" />
+      <workItem from="1526455511512" duration="13923000" />
+      <workItem from="1526552227268" duration="13341000" />
+      <workItem from="1526807263314" duration="1882000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -604,153 +1322,99 @@
       <option name="project" value="LOCAL" />
       <updated>1525865663041</updated>
     </task>
-    <task id="LOCAL-00002" summary="تغير العنوان">
-      <created>1525945255701</created>
+    <task id="LOCAL-00002" summary="Add cv">
+      <created>1525943084249</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1525945255701</updated>
+      <updated>1525943084249</updated>
     </task>
-    <task id="LOCAL-00003" summary="add page">
-      <created>1526206252760</created>
+    <task id="LOCAL-00003" summary="Add cv">
+      <created>1526399383290</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1526206252760</updated>
+      <updated>1526399383290</updated>
     </task>
-    <task id="LOCAL-00004" summary="add page">
-      <created>1526294474166</created>
+    <task id="LOCAL-00004" summary="add name in input (apply view)">
+      <created>1526471519407</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1526294474166</updated>
+      <updated>1526471519407</updated>
     </task>
-    <task id="LOCAL-00005" summary="add page">
-      <created>1526366484955</created>
+    <task id="LOCAL-00005" summary="update auth Module">
+      <created>1526562060880</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1526366484955</updated>
+      <updated>1526562060880</updated>
     </task>
-    <task id="LOCAL-00006" summary="add page">
-      <created>1526374596083</created>
+    <task id="LOCAL-00006" summary="add emp module">
+      <created>1526567934014</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1526374596083</updated>
+      <updated>1526567934014</updated>
     </task>
-    <task id="LOCAL-00007" summary="add page">
-      <created>1526539566827</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1526539566827</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add page en">
-      <created>1526552677213</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1526552677213</updated>
-    </task>
-    <task id="LOCAL-00009" summary="insert q">
-      <created>1526555675206</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1526555675206</updated>
-    </task>
-    <task id="LOCAL-00010" summary="insert q">
-      <created>1526556222351</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1526556222351</updated>
-    </task>
-    <task id="LOCAL-00011" summary="modual users in folder name yassennn">
-      <created>1526799498283</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1526799498283</updated>
-    </task>
-    <task id="LOCAL-00012" summary="add new code">
-      <created>1526804037578</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1526804037578</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="622157000" />
+    <option name="totallyTimeSpent" value="620275000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19288956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21709532" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31164902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22617246" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49429038" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43393147" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.50570965" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.76345843" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6786297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16263238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31164902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16263238" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.76345843" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43393147" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6786297" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31164902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11270802" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49429038" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.50570965" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -769,413 +1433,387 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update readme" />
-    <MESSAGE value="تغير العنوان" />
-    <MESSAGE value="add page" />
-    <MESSAGE value="add page en" />
-    <MESSAGE value="insert q" />
-    <MESSAGE value="modual users in folder name yassennn" />
-    <MESSAGE value="add new code" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new code" />
+    <MESSAGE value="Add cv" />
+    <MESSAGE value="add name in input (apply view)" />
+    <MESSAGE value="update auth Module" />
+    <MESSAGE value="add emp module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add emp module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php</url>
-          <line>416</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php</url>
-          <line>314</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="das://view:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.EMP_VIEW">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://view:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.DEPARTMENTS_VIEWS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/Scholarship/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="102" column="94" lean-forward="true" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://view:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.EMP_HOLYDAIES_VIEW">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/affirs/Scholarship.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1995">
-          <caret line="69" column="58" lean-forward="true" selection-start-line="69" selection-start-column="58" selection-end-line="69" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Committees_member_con.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Academic_degreesModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="25" column="22" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="36" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/views/Scholarship/course.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/Scholarship_decis_con.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/Academic_Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="81" column="14" lean-forward="true" selection-start-line="75" selection-start-column="8" selection-end-line="86" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/CommitteesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-441">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="177">
+          <caret line="225" column="24" lean-forward="false" selection-start-line="225" selection-start-column="22" selection-end-line="225" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/affirs/M_Scholarship.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1542">
-          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="267">
+          <caret line="203" column="7" lean-forward="true" selection-start-line="203" selection-start-column="7" selection-end-line="203" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/views/Universities/AddUniversities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="19" selection-start-column="39" selection-end-line="34" selection-end-column="13" />
+    <entry file="das://table:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.APPLICATION_FORM">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/config.php">
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/apply/apply.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="172" column="77" lean-forward="false" selection-start-line="172" selection-start-column="77" selection-end-line="172" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="-486">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        <state relative-caret-position="-784">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/views/Applican/create.php" />
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/apps_report.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="42" column="34" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        <state relative-caret-position="-766">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_PUBLICATIONS.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="651" column="54" lean-forward="false" selection-start-line="651" selection-start-column="54" selection-end-line="651" selection-end-column="54" />
+        <state relative-caret-position="-486">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Scholarship/Scholarship_mod.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-712">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-468">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-910">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="306">
+          <caret line="62" column="23" lean-forward="false" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/models/affirs/M_Scholarship.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Cv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/desktop.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/UniversitiesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/views/candidates/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2819">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/views/Courses/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1009">
-          <caret line="108" column="17" lean-forward="true" selection-start-line="107" selection-start-column="7" selection-end-line="112" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/models/UniversitiesModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/affirs/Scholarship.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6729">
-          <caret line="317" column="0" lean-forward="true" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/views/Courses/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11">
-          <caret line="79" column="46" lean-forward="true" selection-start-line="79" selection-start-column="46" selection-end-line="79" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/models/AppModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="61" column="23" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="63" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/app_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="120" column="18" lean-forward="false" selection-start-line="119" selection-start-column="8" selection-end-line="120" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_APP_PUBLICATIONS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-1036">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Application_Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Apply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_CV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_PUBLICATIONS_PARTS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Edu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/madule users/controler/Emp_name.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs/application/models/teachermodel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/madule users/controler/au_tech_con.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2797">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/madule users/controler/Emp_no.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3193">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_APP_UNIVERSITIES_EXP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="76" lean-forward="false" selection-start-line="26" selection-start-column="76" selection-end-line="26" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_APP_PROJECTS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_PUBLICATIONS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="42" column="26" lean-forward="false" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/PUBLICATIONS_PARTS.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Edu.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_CV.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/auth_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1890">
+          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_APPLICATION_UNIV_EDU.php">
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="12" selection-end-column="40" />
+        <state relative-caret-position="396">
+          <caret line="22" column="46" lean-forward="true" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/users/UsersGroups.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="70" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/users/submenus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/users/Permissions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/users/MainMenus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1396">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/users/GroupPermissions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1684">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Apply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="82" column="30" lean-forward="true" selection-start-line="82" selection-start-column="30" selection-end-line="82" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.EMP_USER_ACCOUNTS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ROWID" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.E">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+          <column-attributes>
+            <column name="ROWID" enabled="false" />
+          </column-attributes>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://index:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.EMP_USER_ACCOUNTS.EMPSURACC_UNQ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/EmpAccounts/auth.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/Scholarship/Scholarship.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1401">
+          <caret line="305" column="25" lean-forward="true" selection-start-line="305" selection-start-column="25" selection-end-line="305" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/Scholarship/create3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="51" column="94" lean-forward="false" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/Scholarship/course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://view:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.EMPLOYEES_DETAILS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/auth/emp_accounts/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_APP_OTHER_EXPRIENCES.php">
+    <entry file="file://$PROJECT_DIR$/application/views/auth/emp_accounts/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="35" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="18" selection-end-column="40" />
+        <state relative-caret-position="270">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php">
+    <entry file="file://$PROJECT_DIR$/application/config/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="67" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="71" />
+        <state relative-caret-position="72">
+          <caret line="4" column="47" lean-forward="true" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/auth/EmpAccounts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="713" column="47" lean-forward="false" selection-start-line="713" selection-start-column="42" selection-end-line="713" selection-end-column="47" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_APP_CV_REFERENCES.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="25" />
+        <state relative-caret-position="162">
+          <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php">
+    <entry file="file://$PROJECT_DIR$/application/models/auth/M_EmpAccounts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="72">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/auth/emp_accounts/details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="51" column="38" lean-forward="true" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/auth/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/app/layout/parts/first.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/app/layout/parts/navbar.1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="100" column="55" lean-forward="false" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/app/layout/parts/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/auth.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/auth/auth_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="29" column="42" lean-forward="true" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding />
         </state>
       </provider>
