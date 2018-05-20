@@ -13,6 +13,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_OTHER_EXPRIENCES');
+        $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
     }
 
     /**
@@ -24,7 +25,8 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $data['addcon'] = $this->session->flashdata('addcon');
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
 
@@ -40,8 +42,9 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,
+            'EXP_SER' =>1,
             //'APP_ID' => $this->input->post('APP_ID')  ,
-            'EXP_SER' => $this->input->post('EXP_SER')  ,
+            //'EXP_SER' => $this->input->post('EXP_SER')  ,
             'EXP_TYPE' => $this->input->post('EXP_TYPE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'EXP_START_DATE' => $this->input->post('EXP_START_DATE')  ,

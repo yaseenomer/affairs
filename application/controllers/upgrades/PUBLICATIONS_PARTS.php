@@ -24,7 +24,7 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         $data['addcon'] = $this->session->flashdata('addcon');
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
-        $this->load->view('upgrades/application_form/Application_form');
+        $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
 
@@ -40,9 +40,11 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,
+            'PUB_SER' =>  1 ,
+            'PUB_PRT_SER' => 1  ,
            // 'APP_ID' => $this->input->post('APP_ID')  ,
-            'PUB_SER' => $this->input->post('PUB_SER')  ,
-            'PUB_PRT_SER' => $this->input->post('PUB_PRT_SER')  ,
+            //'PUB_SER' => $this->input->post('PUB_SER')  ,
+            //'PUB_PRT_SER' => $this->input->post('PUB_PRT_SER')  ,
             'FRT_NAME_AR' => $this->input->post('FRT_NAME_AR')  ,
             'SND_NAME_AR' => $this->input->post('SND_NAME_AR')  ,
             'THR_NAME_AR' => $this->input->post('THR_NAME_AR')  ,

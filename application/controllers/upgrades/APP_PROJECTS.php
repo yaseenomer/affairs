@@ -24,7 +24,7 @@ class APP_PROJECTS  extends CI_Controller
         $data['addcon'] = $this->session->flashdata('addcon');
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
-        $this->load->view('upgrades/application_form/Application_form');
+        $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
 
@@ -40,9 +40,10 @@ class APP_PROJECTS  extends CI_Controller
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,
+            'PRO_SER' =>1 ,
             //'APP_ID' => $this->input->post('APP_ID')  ,
-          'PRO_SER' => $this->input->post('PRO_SER')  ,
-           // 'PRO_SER' =>1 ,
+          //'PRO_SER' => $this->input->post('PRO_SER')  ,
+
             'DATE_OF_PRO' => $this->input->post('DATE_OF_PRO')  ,
             'PRO_TITLE' => $this->input->post('PRO_TITLE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,

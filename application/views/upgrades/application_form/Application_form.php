@@ -12,7 +12,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                 <li class=""><a href="#unv" data-toggle="tab"><i class="fa fa-graduation-cap"></i>المؤهلات الجامعية وفوق الجامعية   </a></li>
 
-                <li class=""><a href="#exp" data-toggle="tab"><i class="fa fa-graduation-cap"></i>   التدريسية / الاشرافية \ الخبرات الجامعية</a></li>
+                <li class=""><a href="#exp" data-toggle="tab"><i class="fa fa-graduation-cap"></i>  الخبرات الجامعية/ التدريسية / الاشرافية  </a></li>
 
                 <li class=""><a href="#prosearch" data-toggle="tab"><i class="fa fa-graduation-cap"></i>    المشروعات البحثية</a></li>
 
@@ -329,22 +329,26 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <label> نوع المؤهل  </label>
                             <select name="UNI_EXP_SUB_TYPE"class="form-control">
                                 <option value=""></option>
-                                <option value="دبلوم  ">  دبلوم</option>
-                                <option value="بكالوريوس">بكالوريوس </option>
-                                <option value="ماجستير">ماجستير</option>
-                                <option value="دكتوراة">دكتوراة</option>
+                                <option value="1">دكتوراة</option>
+                                <option value="2">ماجستير</option>
+                                <option value="3">دبلوم عالي</option>
+                                <option value="5">بكالوريوس </option>
+                                <option value="0">  دبلوم</option>
+
 
                             </select>
                         </div>
 
                         <div class="form-group col-md-4">
                             <label > تاريخ البداية  </label>
-                            <input  type="date" class="form-control" name="START_DATE">
+                            <input  type="text" class="form-control" name="START_DATE" id="START_DATE" value="<?php echo set_value('START_DATE'); ?>">
+                            <?php echo form_error('START_DATE','<span class='.'error'.'>','</span>') ?>
                         </div>
 
                         <div class="form-group col-md-4">
                             <label > تاريخ النهاية </label>
-                            <input  type="date" class="form-control" name="END_DATE">
+                            <input  type="text" class="form-control" name="END_DATE" id="END_DATE" value="<?php echo set_value('END_DATE'); ?>">
+                            <?php echo form_error('END_DATE','<span class='.'error'.'>','</span>') ?>
                         </div>
                     </div>
                     <br>
@@ -352,8 +356,18 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class=" form-group col-md-6">
                             <label>  الجامعة </label>
                             <select name="UNV_ID"class="form-control">
-                                <option value=""></option>
-                                
+                                <option>اختار من القائمة </option>
+                                <?php
+                                if(!empty($uni))
+                                {
+                                    foreach($uni as $each)
+                                    {
+                                        ?>
+                                        <option value="<?php echo  $each->UNV_ID ?>"><?php echo $each->UNV_ARAB_NAME ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
 
                             </select>
                         </div>
@@ -404,7 +418,8 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label > تاريخ المشروع   </label>
-                            <input  type="date" class="form-control" name="DATE_OF_PRO">
+                            <input  type="text" class="form-control" name="DATE_OF_PRO" id="DATE_OF_PRO" value="<?php echo set_value('DATE_OF_PRO'); ?>">
+                            <?php echo form_error('DATE_OF_PRO','<span class='.'error'.'>','</span>') ?>
                         </div>
 
                         <div class="form-group col-md-6">
@@ -466,7 +481,8 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label > التاريخ    </label>
-                                <input  type="date" class="form-control" name="DATE_OF_PUB">
+                                <input  type="text" class="form-control" name="DATE_OF_PUB" id="DATE_OF_PUB"value="<?php echo set_value('DATE_OF_PUB'); ?>">
+                                <?php echo form_error('DATE_OF_PUB','<span class='.'error'.'>','</span>') ?>
                             </div>
 
                             <div class="form-group col-md-6">
@@ -598,12 +614,14 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label > تاريخ البداية    </label>
-                                <input  type="date" class="form-control" name="EXP_START_DATE">
+                                <input  type="text" class="form-control" name="EXP_START_DATE" id="EXP_START_DATE" value="<?php echo set_value('EXP_START_DATE'); ?>">
+                                <?php echo form_error('EXP_START_DATE','<span class='.'error'.'>','</span>') ?>
                             </div>
 
                                 <div class="form-group col-md-6">
                                     <label > تاريخ النهاية    </label>
-                                    <input  type="date" class="form-control" name="EXP_END_DATE">
+                                    <input  type="text" class="form-control" name="EXP_END_DATE" id="EXP_END_DATE" value="<?php echo set_value('EXP_END_DATE'); ?>">
+                                    <?php echo form_error('EXP_END_DATE','<span class='.'error'.'>','</span>') ?>
                                 </div>
                         </div>
                         <div class="row">
@@ -616,7 +634,18 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <div class=" form-group col-md-6">
                                 <label>  الجامعة </label>
                                 <select name="UNV_ID"class="form-control">
-                                    <option value=""></option>
+                                    <option>اختار من القائمة </option>
+                                    <?php
+                                    if(!empty($uni))
+                                    {
+                                        foreach($uni as $each)
+                                        {
+                                            ?>
+                                            <option value="<?php echo  $each->UNV_ID ?>"><?php echo $each->UNV_ARAB_NAME ?></option>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
 
                                 </select>
                             </div>
@@ -723,5 +752,54 @@ $this->load->view('app/layout/parts/footer'); ?>
         format:'d-M-y'
     };
     $('#DATE_OF_ISSUED').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#START_DATE').datetimepicker(dateoptions);
+</script>
+
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#END_DATE').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#DATE_OF_PRO').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#DATE_OF_PUB').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#EXP_END_DATE').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#EXP_START_DATE').datetimepicker(dateoptions);
 </script>
 

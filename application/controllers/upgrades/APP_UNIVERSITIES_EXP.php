@@ -13,6 +13,8 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
+
+
     }
 
     /**
@@ -24,7 +26,8 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $data['addcon'] = $this->session->flashdata('addcon');
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
 
@@ -40,8 +43,9 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,
+            'UNI_SER' =>1,
            // 'APP_ID' => $this->input->post('APP_ID')  ,
-            'UNI_SER' => $this->input->post('UNI_SER')  ,
+           // 'UNI_SER' => $this->input->post('UNI_SER')  ,
             'UNI_EXP_TYPE' => $this->input->post('UNI_EXP_TYPE')  ,
             'UNI_EXP_SUB_TYPE' => $this->input->post('UNI_EXP_SUB_TYPE')  ,
             'START_DATE' => $this->input->post('START_DATE')  ,
@@ -62,6 +66,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_UNIVERSITIES_EXP->AddData($items);
+
         return redirect('upgrades/APP_UNIVERSITIES_EXP');
     }
     /***********************************/
