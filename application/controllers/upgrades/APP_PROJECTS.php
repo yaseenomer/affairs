@@ -37,8 +37,8 @@ class APP_PROJECTS  extends CI_Controller
     {
        // var_dump($this->input->post());
         //$str = substr($str, 1); first charachters
-        $x=$this->M_APP_PROJECTS->maxid();
-        $PRO_SER=$x+1;
+        $maxid=$this->M_APP_PROJECTS->maxid(113);
+        $PRO_SER=$maxid+1;
         $items = array(
             'APP_ID' => 113  ,
             //'PRO_SER' =>1 ,

@@ -40,8 +40,9 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
     public function insert()
     {
        // var_dump($this->input->post());
-        $x=$this->M_APPLICATION_UNIV_EDU->maxid();
-        $UNIV_EDU_SER=$x+1;
+        //$APP_ID=
+        $maxid=$this->M_APPLICATION_UNIV_EDU->maxid(113);
+        $UNIV_EDU_SER=$maxid+1;
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,

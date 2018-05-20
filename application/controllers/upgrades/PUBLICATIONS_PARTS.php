@@ -39,8 +39,8 @@ class PUBLICATIONS_PARTS  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
 
-        $x=$this->M_PUBLICATIONS_PARTS->maxid();
-        $PUB_PRT_SER=$x+1;
+        $maxid=$this->M_PUBLICATIONS_PARTS->maxid(113);
+        $PUB_PRT_SER=$maxid+1;
 
         $items = array(
             'APP_ID' => 113  ,

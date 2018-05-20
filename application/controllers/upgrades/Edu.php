@@ -40,8 +40,8 @@ class Edu  extends CI_Controller
     public function insert()
     {
        // var_dump($this->input->post());
-        $x=$this->M_Edu->maxid();
-        $PRE_EDU_SER=$x+1;
+        $maxid=$this->M_Edu->maxid(113);
+        $PRE_EDU_SER=$maxid+1;
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,

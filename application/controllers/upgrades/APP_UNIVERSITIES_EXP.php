@@ -41,8 +41,8 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
-        $x=$this->M_APP_UNIVERSITIES_EXP->maxid();
-        $UNI_SER=$x+1;
+        $maxid=$this->M_APP_UNIVERSITIES_EXP->maxid(113);
+        $UNI_SER=$maxid+1;
         $items = array(
             'APP_ID' => 113  ,
            // 'UNI_SER' =>1,
