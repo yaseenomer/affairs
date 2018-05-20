@@ -36,14 +36,14 @@ class APP_PROJECTS  extends CI_Controller
     public function insert()
     {
        // var_dump($this->input->post());
-
         //$str = substr($str, 1); first charachters
+        $x=$this->M_APP_PROJECTS->maxid();
+        $PRO_SER=$x+1;
         $items = array(
             'APP_ID' => 113  ,
-            'PRO_SER' =>1 ,
+            //'PRO_SER' =>1 ,
             //'APP_ID' => $this->input->post('APP_ID')  ,
-          //'PRO_SER' => $this->input->post('PRO_SER')  ,
-
+            'PRO_SER' =>$PRO_SER,// $this->input->post('PRO_SER')  ,
             'DATE_OF_PRO' => $this->input->post('DATE_OF_PRO')  ,
             'PRO_TITLE' => $this->input->post('PRO_TITLE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,

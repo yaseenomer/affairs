@@ -11,7 +11,14 @@ class M_APP_PROJECTS extends CI_Model
     {
 
     }*/
-
+    /**********************************/
+    public function maxid($id)
+    {
+        $this->db->select_max('PRO_SER');
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_PROJECTS')->row()->PRO_SER ;
+    }//end of method
+    /*************************************/
     /**********************************/
     public function GetData()
     {

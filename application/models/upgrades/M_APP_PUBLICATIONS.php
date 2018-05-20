@@ -11,7 +11,14 @@ class M_APP_PUBLICATIONS extends CI_Model
     {
 
     }*/
-
+    /**********************************/
+    public function maxid($id)
+    {
+        $this->db->select_max('PUB_SER');
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_PUBLICATIONS')->row()->PUB_SER ;
+    }//end of method
+    /*************************************/
     /**********************************/
     public function GetData()
     {

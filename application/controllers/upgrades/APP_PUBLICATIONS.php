@@ -38,11 +38,15 @@ class APP_PUBLICATIONS  extends CI_Controller
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
+
+        $x=$this->M_APP_PUBLICATIONS->maxid();
+        $PUB_SER=$x+1;
         $items = array(
             'APP_ID' => 113  ,
-            'PUB_SER' =>1,
+
+           // 'PUB_SER' =>1,
             //'APP_ID' => $this->input->post('APP_ID')  ,
-           // 'PUB_SER' => $this->input->post('PUB_SER')  ,
+           'PUB_SER' => $PUB_SER,//$this->input->post('PUB_SER')  ,
             'PUB_TYP' => $this->input->post('PUB_TYP')  ,
             'DATE_OF_PUB' => $this->input->post('DATE_OF_PUB')  ,
             'PLACE_OF_PUB' => $this->input->post('PLACE_OF_PUB')  ,
