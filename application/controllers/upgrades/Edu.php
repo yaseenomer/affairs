@@ -40,15 +40,15 @@ class Edu  extends CI_Controller
     public function insert()
     {
        // var_dump($this->input->post());
-
+        $x=$this->M_Edu->maxid();
+        $PRE_EDU_SER=$x+1;
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,
-            'PRE_EDU_SER' => 1  ,
-            //$x=$this->M_Edu->maxid();
-            //$PRE_EDU_SER=$x+1;
+           // 'PRE_EDU_SER' => 1  ,
+
             //'APP_ID' => $this->input->post('APP_ID')  ,
-            //'PRE_EDU_SER' => $this->input->post('PRE_EDU_SER')  ,
+            'PRE_EDU_SER' =>$PRE_EDU_SER, //$this->input->post('PRE_EDU_SER')  ,
             'PRE_EDU_TYPE' => $this->input->post('PRE_EDU_TYPE')  ,
             'SCHOOL_NAME' => $this->input->post('SCHOOL_NAME')  ,
             'COUNTRY_NO' => $this->input->post('COUNTRY_NO')  ,

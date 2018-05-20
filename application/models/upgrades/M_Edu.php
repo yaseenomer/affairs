@@ -17,9 +17,9 @@ class M_Edu extends CI_Model
 /************************************/
     public function maxid($id)
     {
-        $this->db->select_max('APP_ID');
+        $this->db->select_max('PRE_EDU_SER');
         $this->db->where('APP_ID', $id);
-        return $this->db->get('APPLICATION_FORM')->row()->APP_ID ;
+        return $this->db->get('APPLICATION_PRE_EDU')->row()->PRE_EDU_SER ;
     }//end of method
     /*************************************/
    /* public function insert($data)

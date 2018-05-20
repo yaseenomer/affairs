@@ -11,7 +11,14 @@ class M_APP_UNIVERSITIES_EXP extends CI_Model
     {
 
     }*/
-
+    /**********************************/
+    public function maxid($id)
+    {
+        $this->db->select_max('UNI_SER');
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_UNIVERSITIES_EXP')->row()->UNI_SER ;
+    }//end of method
+    /*************************************/
     /**********************************/
     public function GetData()
     {

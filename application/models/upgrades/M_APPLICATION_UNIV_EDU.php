@@ -11,7 +11,13 @@ class M_APPLICATION_UNIV_EDU extends CI_Model
         return  $query = $this->db->get('UNIVERSITIES')->result();
     }
     /**********************************/
-
+    public function maxid($id)
+    {
+        $this->db->select_max('UNIV_EDU_SER');
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APPLICATION_UNIV_EDU')->row()->UNIV_EDU_SER ;
+    }//end of method
+    /*************************************/
    /* public function insert($data)
     {
 
