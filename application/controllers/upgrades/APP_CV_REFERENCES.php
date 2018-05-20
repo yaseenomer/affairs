@@ -42,7 +42,7 @@ class APP_CV_REFERENCES  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
 
-        $x=$this->M_APP_CV_REFERENCES->maxid();
+        $x=$this->M_APP_CV_REFERENCES->maxid(113);
         $EXP_SER=$x+1;
 
         $items = array(
