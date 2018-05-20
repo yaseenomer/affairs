@@ -19,7 +19,7 @@ class TeacherModel extends CI_Model {
     public function get_degree()
     {
 
-        return $this->db->get('ACADEMIC_DEGREES')->result();
+        return $this->db->get('ACADEMIC_DEGREES_NEXT')->result();
 
     } //end of method 
 	

@@ -11,26 +11,26 @@
        <img src="<?php echo base_url(); ?>assets/img/sudanun2.png">
     </div>
 	
-	 <?php echo form_open(base_url().'auth/pCreate_user'); ?>
+	 <?php echo form_open(base_url().'authi/pCreate_user'); ?>
 
 	<div class="form-group field-login">
-            <label for="name" class="control-label"> я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜    </label>
+            <label for="name" class="control-label"> ╟с╟╙у ╚╟с▀╟ус    </label>
             <input name="name" id="name" class="form-control" required="required" autofocus="autofocus" type="text">
         </div>
 
 	 <div class="form-group field-login">
-            <label for="number" class="control-label"> я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜    </label>
+            <label for="number" class="control-label"> ╤▐у ╟су▄▄▄ц┘▌    </label>
             <input name="number" id="number" class="form-control" required="required" autofocus="autofocus" type="text">
         </div>
 	<div class="form-group field-login">
-            <label for="login" class="control-label"> я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜   </label>
+            <label for="login" class="control-label"> ╟╙у ╟с╧╬цс   </label>
             <input name="login" id="login" class="form-control" required="required" autofocus="autofocus" type="text">
         </div>
 
     <div class="form-group field-password">
-            <label for="password" class="control-label">я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ </label>
+            <label for="password" class="control-label">▀су╔ ╟су╤ц╤ </label>
             <input name="password" id="password" class="form-control" required="required" autocomplete="current-password" maxlength="4096" type="password">
     </div>
-        <button type="submit" class="btn btn-primary"> я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜я┐╜ </button>
+        <button type="submit" class="btn btn-primary"> ├ф╘▄▄╟┴ ╟с═╙▄▄╟╚ ссу╙╩╬╧у </button>
         </div>
 </form>
