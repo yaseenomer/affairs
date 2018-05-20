@@ -12,6 +12,14 @@ class M_APP_CV_REFERENCES extends CI_Model
 
     }*/
     /**********************************/
+    public function maxid($id)
+    {
+        $this->db->select_max('EXP_SER');
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_CV_REFERENCES')->row()->EXP_SER ;
+    }//end of method
+    /*************************************/
+    /**********************************/
     public function GetACADEMIC_DEGREES_NEXT()
     {
         return  $query = $this->db->get('ACADEMIC_DEGREES_NEXT')->result();

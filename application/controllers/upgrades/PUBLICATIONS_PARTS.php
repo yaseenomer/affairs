@@ -38,13 +38,17 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         //var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
+
+        $x=$this->M_PUBLICATIONS_PARTS->maxid();
+        $PUB_PRT_SER=$x+1;
+
         $items = array(
             'APP_ID' => 113  ,
             'PUB_SER' =>  1 ,
-            'PUB_PRT_SER' => 1  ,
+            //'PUB_PRT_SER' => 1  ,
            // 'APP_ID' => $this->input->post('APP_ID')  ,
             //'PUB_SER' => $this->input->post('PUB_SER')  ,
-            //'PUB_PRT_SER' => $this->input->post('PUB_PRT_SER')  ,
+            'PUB_PRT_SER' =>$PUB_PRT_SER,// $this->input->post('PUB_PRT_SER')  ,
             'FRT_NAME_AR' => $this->input->post('FRT_NAME_AR')  ,
             'SND_NAME_AR' => $this->input->post('SND_NAME_AR')  ,
             'THR_NAME_AR' => $this->input->post('THR_NAME_AR')  ,

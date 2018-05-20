@@ -38,14 +38,18 @@ class APP_CV_REFERENCES  extends CI_Controller
 
     public function insert()
     {
-        var_dump($this->input->post());
+       // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
+
+        $x=$this->M_APP_CV_REFERENCES->maxid();
+        $EXP_SER=$x+1;
+
         $items = array(
             'APP_ID' => 113  ,
-            'EXP_SER' =>1,
+            //'EXP_SER' =>1,
            // 'APP_ID' => $this->input->post('APP_ID')  ,
-            //'EXP_SER' => $this->input->post('EXP_SER')  ,
+            'EXP_SER' =>$EXP_SER,// $this->input->post('EXP_SER')  ,
             'EMP_NAME' => $this->input->post('EMP_NAME')  ,
             'ADDRESS' => $this->input->post('ADDRESS')  ,
             'REL_PHONE' => $this->input->post('REL_PHONE')  ,

@@ -40,11 +40,14 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
+        $x=$this->M_APP_OTHER_EXPRIENCES->maxid();
+        $EXP_SER=$x+1;
+
         $items = array(
             'APP_ID' => 113  ,
-            'EXP_SER' =>1,
+           // 'EXP_SER' =>1,
             //'APP_ID' => $this->input->post('APP_ID')  ,
-            //'EXP_SER' => $this->input->post('EXP_SER')  ,
+            'EXP_SER' => $EXP_SER,//$this->input->post('EXP_SER')  ,
             'EXP_TYPE' => $this->input->post('EXP_TYPE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'EXP_START_DATE' => $this->input->post('EXP_START_DATE')  ,

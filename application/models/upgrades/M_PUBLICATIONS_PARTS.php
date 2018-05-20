@@ -14,9 +14,9 @@ class M_PUBLICATIONS_PARTS extends CI_Model
     /**********************************/
     public function maxid($id)
     {
-        $this->db->select_max('PUB_SER');
+        $this->db->select_max('PUB_PRT_SER');
         $this->db->where('APP_ID', $id);
-        return $this->db->get('PUBLICATIONS_PARTS')->row()->PUB_SER ;
+        return $this->db->get('PUBLICATIONS_PARTS')->row()->PUB_PRT_SER ;
     }//end of method
     /*************************************/
     /**********************************/
