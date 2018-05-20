@@ -636,9 +636,9 @@ canvas_header('السيرة الذاتية /CV ') ?>
                                 <select name="UNV_ID"class="form-control">
                                     <option>اختار من القائمة </option>
                                     <?php
-                                    if(!empty($uni))
+                                    if(!empty($univ))
                                     {
-                                        foreach($uni as $each)
+                                        foreach($univ as $each)
                                         {
                                             ?>
                                             <option value="<?php echo  $each->UNV_ID ?>"><?php echo $each->UNV_ARAB_NAME ?></option>
@@ -709,7 +709,20 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class="form-group col-md-6">
                             <label> الدرجة العلمية    </label>
                             <select name="CURRENT_DEG" >
-                                <option></option>
+                                <option>اختار من القائمة </option>
+                                <?php
+                                if(!empty($qual))
+                                {
+                                    foreach($qual as $q)
+                                    {
+                                        ?>
+                                        <option value="<?php echo  $q->DEG_ID ?>"><?php echo $q->DEG_ARAB_NAME ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+
+
                             </select>
                         </div>
                     </div>

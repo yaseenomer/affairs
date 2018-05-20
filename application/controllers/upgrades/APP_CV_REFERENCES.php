@@ -25,7 +25,9 @@ class APP_CV_REFERENCES  extends CI_Controller
         $data['addcon'] = $this->session->flashdata('addcon');
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['qual'] = $this->M_APP_CV_REFERENCES->GetACADEMIC_DEGREES_NEXT();
+       // var_dump($data);
+        $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
 
@@ -41,8 +43,9 @@ class APP_CV_REFERENCES  extends CI_Controller
         //$str = substr($str, 1); first charachters
         $items = array(
             'APP_ID' => 113  ,
+            'EXP_SER' =>1,
            // 'APP_ID' => $this->input->post('APP_ID')  ,
-            'EXP_SER' => $this->input->post('EXP_SER')  ,
+            //'EXP_SER' => $this->input->post('EXP_SER')  ,
             'EMP_NAME' => $this->input->post('EMP_NAME')  ,
             'ADDRESS' => $this->input->post('ADDRESS')  ,
             'REL_PHONE' => $this->input->post('REL_PHONE')  ,

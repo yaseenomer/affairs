@@ -13,7 +13,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_OTHER_EXPRIENCES');
-        $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
+
     }
 
     /**
@@ -25,7 +25,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $data['addcon'] = $this->session->flashdata('addcon');
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
-        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $data['univ'] = $this->M_APP_OTHER_EXPRIENCES->Getuniversity();
         $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
@@ -37,7 +37,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
 
     public function insert()
     {
-        var_dump($this->input->post());
+       // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
         $items = array(

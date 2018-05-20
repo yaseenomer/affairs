@@ -11,7 +11,12 @@ class M_APP_OTHER_EXPRIENCES extends CI_Model
     {
 
     }*/
-
+    /**********************************/
+    public function Getuniversity()
+    {
+        return  $query = $this->db->get('UNIVERSITIES')->result();
+    }
+    /**********************************/
     /**********************************/
     public function GetData()
     {
