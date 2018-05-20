@@ -15,9 +15,10 @@ class M_Edu extends CI_Model
         return $this->db->get('COUNTRIES')->result();
     }
 /************************************/
-    public function maxid()
+    public function maxid($id)
     {
         $this->db->select_max('APP_ID');
+        $this->db->where('APP_ID', $id);
         return $this->db->get('APPLICATION_FORM')->row()->APP_ID ;
     }//end of method
     /*************************************/
