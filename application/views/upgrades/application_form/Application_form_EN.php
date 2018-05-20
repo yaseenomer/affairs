@@ -162,13 +162,15 @@ canvas_header('CV ') ?>
                         <div class="row">
                         <div class=" form-group col-md-4">
                             <label>  YEAR </label>
-                            <input type="date" class="form-control" name="PRE_EDU_START">
+                            <input type="text" class="form-control" name="PRE_EDU_START" id="PRE_EDU_START" value="<?php echo set_value('PRE_EDU_START'); ?>" >
+                            <?php echo form_error('PRE_EDU_START','<span class='.'error'.'>','</span>') ?>
                         </div>
 
 
                         <div class=" form-group col-md-4">
                             <label> TO YEAR    </label>
-                            <input type="date" class="form-control" name="PRE_EDU_END">
+                            <input type="text" class="form-control" name="PRE_EDU_END" id="PRE_EDU_END" value="<?php echo set_value('PRE_EDU_END'); ?>">
+                            <?php echo form_error('PRE_EDU_END','<span class='.'error'.'>','</span>') ?>
                         </div>
 
                         <div class=" form-group col-md-4">
@@ -225,11 +227,22 @@ canvas_header('CV ') ?>
                         </div>
                         <div class=" form-group col-md-4">
                             <label>  Country </label>
-                            <select name="COUNTRY_NO"class="form-control">
-                                <option value=""></option>
-                                
+                            <select name="COUNTRY_NO"  class="form-control"  style="width:60%"  id="lev1">
+                                <option>اختار من القائمة </option>
 
+                                <?php
+                                if(!empty($levels))
+                                {
+                                    foreach($levels as $each)
+                                    {
+                                        ?>
+                                        <option value="<?php echo  $each->COUNTRY_NO ?>"><?php echo iconv("windows-1256","utf-8",$each->COUNTRY_NAME )?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
                             </select>
+
                         </div>
                     </div>
                     <div class="row">
@@ -247,9 +260,9 @@ canvas_header('CV ') ?>
                     <div class="row">
                         <div class="form-group col-md-5">
                             <label> Received Date </label>
-                            <input type="date" class="form-control" name="DATE_OF_ISSUED">
+                            <input type="text" class="form-control" name="DATE_OF_ISSUED" id="DATE_OF_ISSUED"value="<?php echo set_value('DATE_OF_ISSUED'); ?>" >
+                            <?php echo form_error('DATE_OF_ISSUED','<span class='.'error'.'>','</span>') ?>
                         </div>
-
 
                         <div class="form-group col-md-5">
                             <label> Estimation </label>
@@ -299,23 +312,28 @@ canvas_header('CV ') ?>
                          <div class=" form-group col-md-4">
                             <label> Type of Experience </label>
                             <select name="UNI_EXP_SUB_TYPE"class="form-control">
+
                                 <option value=""></option>
-                                <option value="Diploma">  Diploma</option>
-                                <option value="Bachelor">Bachelor </option>
-                                <option value="Master">Master</option>
-                                <option value="Ph.D">Ph.D</option>
+                                <option value="1">Ph.D</option>
+                                <option value="2">Master</option>
+                                <option value="3">High Diploma</option>
+                                <option value="5">Bachelor </option>
+                                <option value="0">  Diploma</option>
 
                             </select>
+
                         </div>
 
                         <div class="form-group col-md-4">
                             <label > Start Date  </label>
-                            <input  type="date" class="form-control" name="START_DATE">
+                            <input  type="text" class="form-control" name="START_DATE" id="START_DATE" value="<?php echo set_value('START_DATE'); ?>">
+                            <?php echo form_error('START_DATE','<span class='.'error'.'>','</span>') ?>
                         </div>
 
                         <div class="form-group col-md-4">
                             <label > End date </label>
-                            <input  type="date" class="form-control" name="END_DATE">
+                            <input  type="text" class="form-control" name="END_DATE" id="END_DATE" value="<?php echo set_value('END_DATE'); ?>">
+                            <?php echo form_error('END_DATE','<span class='.'error'.'>','</span>') ?>
                         </div>
                     </div>
                     <br>
@@ -323,8 +341,18 @@ canvas_header('CV ') ?>
                         <div class=" form-group col-md-6">
                             <label>  University </label>
                             <select name="UNV_ID"class="form-control">
-                                <option value=""></option>
-                                
+                                <option>اختار من القائمة </option>
+                                <?php
+                                if(!empty($uni))
+                                {
+                                    foreach($uni as $each)
+                                    {
+                                        ?>
+                                        <option value="<?php echo  $each->UNV_ID ?>"><?php echo $each->UNV_ENG_NAME ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
 
                             </select>
                         </div>
@@ -375,7 +403,8 @@ canvas_header('CV ') ?>
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label > Date of the Project   </label>
-                            <input  type="date" class="form-control" name="DATE_OF_PRO">
+                            <input  type="text" class="form-control" name="DATE_OF_PRO" id="DATE_OF_PRO" value="<?php echo set_value('DATE_OF_PRO'); ?>">
+                            <?php echo form_error('DATE_OF_PRO','<span class='.'error'.'>','</span>') ?>
                         </div>
 
                         <div class="form-group col-md-6">
@@ -437,7 +466,8 @@ canvas_header('CV ') ?>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label > Date    </label>
-                                <input  type="date" class="form-control" name="DATE_OF_PUB">
+                                <input  type="text" class="form-control" name="DATE_OF_PUB" id="DATE_OF_PUB"value="<?php echo set_value('DATE_OF_PUB'); ?>">
+                                <?php echo form_error('DATE_OF_PUB','<span class='.'error'.'>','</span>') ?>
                             </div>
 
                             <div class="form-group col-md-6">
@@ -569,12 +599,14 @@ canvas_header('CV ') ?>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label > Start Date    </label>
-                                <input  type="date" class="form-control" name="EXP_START_DATE">
+                                <input  type="text" class="form-control" name="EXP_START_DATE" id="EXP_START_DATE" value="<?php echo set_value('EXP_START_DATE'); ?>">
+                                <?php echo form_error('EXP_START_DATE','<span class='.'error'.'>','</span>') ?>
                             </div>
 
                                 <div class="form-group col-md-6">
                                     <label > End date    </label>
-                                    <input  type="date" class="form-control" name="EXP_END_DATE">
+                                    <input  type="text" class="form-control" name="EXP_END_DATE" id="EXP_END_DATE" value="<?php echo set_value('EXP_END_DATE'); ?>">
+                                    <?php echo form_error('EXP_END_DATE','<span class='.'error'.'>','</span>') ?>
                                 </div>
                         </div>
                         <div class="row">
@@ -587,7 +619,18 @@ canvas_header('CV ') ?>
                             <div class=" form-group col-md-6">
                                 <label>  University </label>
                                 <select name="UNV_ID"class="form-control">
-                                    <option value=""></option>
+                                    <option>اختار من القائمة </option>
+                                    <?php
+                                    if(!empty($univ))
+                                    {
+                                        foreach($univ as $each)
+                                        {
+                                            ?>
+                                            <option value="<?php echo  $each->UNV_ID ?>"><?php echo $each->UNV_ENG_NAME ?></option>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
 
                                 </select>
                             </div>
@@ -651,7 +694,20 @@ canvas_header('CV ') ?>
                         <div class="form-group col-md-6">
                             <label> scientific degree     </label>
                             <select name="CURRENT_DEG" >
-                                <option></option>
+                                <option>اختار من القائمة </option>
+                                <?php
+                                if(!empty($qual))
+                                {
+                                    foreach($qual as $q)
+                                    {
+                                        ?>
+                                        <option value="<?php echo  $q->DEG_ID ?>"><?php echo $q->DEG_ENG_NAME ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+
+
                             </select>
                         </div>
                     </div>
@@ -672,3 +728,78 @@ canvas_header('CV ') ?>
 
 <?php canvas_footer();
 $this->load->view('app/layout/parts/footer'); ?>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#PRE_EDU_START').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#PRE_EDU_END').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#DATE_OF_ISSUED').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#START_DATE').datetimepicker(dateoptions);
+</script>
+
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#END_DATE').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#DATE_OF_PRO').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#DATE_OF_PUB').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#EXP_END_DATE').datetimepicker(dateoptions);
+</script>
+
+<script type="text/javascript">
+    var dateoptions = {
+        timepicker:false,
+        format:'d-M-y'
+    };
+    $('#EXP_START_DATE').datetimepicker(dateoptions);
+</script>
+
+
