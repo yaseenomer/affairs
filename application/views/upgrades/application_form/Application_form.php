@@ -3,7 +3,7 @@ main_header(array('الترقيات'));
 canvas_header('السيرة الذاتية /CV ') ?>
 
     <div class="row">
-        <?php // echo form_open(base_url('upgrades/Apply/insert'))?>
+        <?php  echo form_open(base_url('upgrades/APP_FORM'))?>
         <div class="col-md-3 col-sm-3 col-xs-3">
             <ul class="nav nav-tabs tabs-left">
                 <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> المعلومات الشخصية  </a></li>
@@ -738,7 +738,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
             </div>
 
         </div>
-        <?php //echo form_close()?>
+        <?php echo form_close()?>
     </div>
 
 <?php canvas_footer();
