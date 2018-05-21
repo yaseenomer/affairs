@@ -105,7 +105,7 @@ canvas_header('CV ') ?>
                     <div class="row">
                         <div class="col-md-6">
                             <label>Attach the CV File</label>
-                            <input type="file"  name="FILE_BATH" class="form-control">
+                            <input type="file"  name="FILE_BATH[]" class="form-control">
                         </div>
 
                     </div>
@@ -184,7 +184,7 @@ canvas_header('CV ') ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label>Attach The Certificate </label>
-                            <input type="file"  name="FILE_BATH" class="form-control">
+                            <input type="file"  name="FILE_BATH[]" class="form-control">
                         </div>
 
                     </div>
@@ -280,7 +280,7 @@ canvas_header('CV ') ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label> Attach the search file </label>
-                            <input type="file"  name="FILE_BATH" class="form-control">
+                            <input type="file"  name="FILE_BATH[]" class="form-control">
                         </div>
 
                     </div>
@@ -426,7 +426,7 @@ canvas_header('CV ') ?>
                      <div class="row">
                         <div class="col-md-4">
                             <label>Attach the Project File</label>
-                            <input type="file"  name="FILE_BATH" class="form-control">
+                            <input type="file"  name="FILE_BATH[]" class="form-control">
                         </div>
 
                     </div>
@@ -493,7 +493,7 @@ canvas_header('CV ') ?>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Attach the Publication File </label>
-                                <input type="file"  name="FILE_BATH" class="form-control">
+                                <input type="file"  name="FILE_BATH[]" class="form-control">
                             </div>
 
                         </div>
@@ -638,7 +638,7 @@ canvas_header('CV ') ?>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>Attach the Certificate </label>
-                                <input type="file"  name="FILE_BATH" class="form-control">
+                                <input type="file"  name="FILE_BATH[]" class="form-control">
                             </div>
 
                         </div>
