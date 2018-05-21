@@ -105,7 +105,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="col-md-6">
                             <label>أرفق  ملف السيرة الذاتية</label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control">
+                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>
@@ -184,7 +184,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label>أرفق  الشهادة </label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control">
+                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>
@@ -296,7 +296,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label>أرفق  ملف البحث  </label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control">
+                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>
@@ -441,7 +441,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                      <div class="row">
                         <div class="col-md-4">
                             <label>أرفق  ملف المشروع</label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control">
+                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>
@@ -508,7 +508,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>أرفق  ملف المنشور </label>
-                                <input type="file"  name="FILE_BATH[]" class="form-control">
+                                <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                             </div>
 
                         </div>
@@ -653,7 +653,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>أرفق  الشهادة  </label>
-                                <input type="file"  name="FILE_BATH[]" class="form-control">
+                                <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                             </div>
 
                         </div>
