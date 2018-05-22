@@ -13,6 +13,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
+        $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
 
 
     }
@@ -33,7 +34,12 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
 
     public function create()
     {
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $this->load->view('upgrades/application_form/Supervisory_Experience',$data);
     }
 
     public function insert()

@@ -34,7 +34,13 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
 
     public function create()
     {
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $data['levels'] = $this->M_Edu->getAccounts();
+        $this->load->view('upgrades/application_form/University_Qualifications',$data);
     }
 
     public function insert()

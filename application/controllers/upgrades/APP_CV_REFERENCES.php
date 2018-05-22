@@ -33,7 +33,8 @@ class APP_CV_REFERENCES  extends CI_Controller
 
     public function create()
     {
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['qual'] = $this->M_APP_CV_REFERENCES->GetACADEMIC_DEGREES_NEXT();
+        $this->load->view('upgrades/application_form/Peoples',$data);
     }
 
     public function insert()

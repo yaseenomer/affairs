@@ -35,9 +35,12 @@ class Application_Form  extends CI_Controller
 
     public function create()
     {
-        $this->load->view('upgrades/application_form/Application_form');
+        $this->load->view('upgrades/application_form/Personal_Information');
     }
 
+    /*********************************************/
+
+    /*********************************************/
     public function insert()
     {
        // var_dump($this->input->post());

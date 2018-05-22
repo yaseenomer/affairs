@@ -30,7 +30,11 @@ class APP_PROJECTS  extends CI_Controller
 
     public function create()
     {
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $this->load->view('upgrades/application_form/Research_Projects',$data);
     }
 
     public function insert()
