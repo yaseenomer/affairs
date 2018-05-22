@@ -32,9 +32,24 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
 
     public function create()
     {
-        $this->load->view('upgrades/application_form/Application_form');
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $data['univ'] = $this->M_APP_OTHER_EXPRIENCES->Getuniversity();
+        $this->load->view('upgrades/application_form/Administrative_Experience',$data);
     }
-
+/***************************************************/
+    public function create_en()
+    {
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $data['univ'] = $this->M_APP_OTHER_EXPRIENCES->Getuniversity();
+        $this->load->view('upgrades/application_form/Administrative_Experience_en',$data);
+    }
+/**************************************************/
     public function insert()
     {
        // var_dump($this->input->post());

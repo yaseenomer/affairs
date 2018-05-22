@@ -41,7 +41,17 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
         $this->load->view('upgrades/application_form/Supervisory_Experience',$data);
     }
-
+/********************************************/
+    public function create_en()
+    {
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $this->load->view('upgrades/application_form/Supervisory_Experience_en',$data);
+    }
+/*******************************************/
     public function insert()
     {
        // var_dump($this->input->post());

@@ -36,7 +36,16 @@ class APP_PUBLICATIONS  extends CI_Controller
         $data['deletecon'] = $this->session->flashdata('deletecon');
         $this->load->view('upgrades/application_form/Publications',$data);
     }
-
+/****************************************/
+    public function create_en()
+    {
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $this->load->view('upgrades/application_form/Publications_en',$data);
+    }
+/****************************************/
     public function insert()
     {
        // var_dump($this->input->post());

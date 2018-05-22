@@ -42,6 +42,18 @@ class Edu  extends CI_Controller
         $this->load->view('upgrades/application_form/Pre-University_Education',$data);
     }
 
+    /**************************************/
+    public function create_en()
+    {
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $data['levels'] = $this->M_Edu->getAccounts();
+        $this->load->view('upgrades/application_form/Pre-University_Education_en',$data);
+    }
+    /*************************************/
+
     public function insert()
     {
        // var_dump($this->input->post());

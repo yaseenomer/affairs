@@ -36,7 +36,14 @@ class APP_CV_REFERENCES  extends CI_Controller
         $data['qual'] = $this->M_APP_CV_REFERENCES->GetACADEMIC_DEGREES_NEXT();
         $this->load->view('upgrades/application_form/Peoples',$data);
     }
+/*********************************************/
 
+    public function create_en()
+    {
+        $data['qual'] = $this->M_APP_CV_REFERENCES->GetACADEMIC_DEGREES_NEXT();
+        $this->load->view('upgrades/application_form/Peoples_en',$data);
+    }
+/********************************************/
     public function insert()
     {
        // var_dump($this->input->post());

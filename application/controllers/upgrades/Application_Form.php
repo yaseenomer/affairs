@@ -32,13 +32,29 @@ class Application_Form  extends CI_Controller
         $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
+/***********************************************/
+    public function index_en()
+    {
+        $data['approve'] = $this->session->flashdata('approve');
+        $data['addcon'] = $this->session->flashdata('addcon');
+        $data['editcon'] = $this->session->flashdata('editcon');
+        $data['deletecon'] = $this->session->flashdata('deletecon');
+        $data['levels'] = $this->M_Edu->getAccounts();
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $this->load->view('upgrades/application_form/Application_form_en',$data);
 
+    }
+/**********************************************/
     public function create()
     {
         $this->load->view('upgrades/application_form/Personal_Information');
     }
 
     /*********************************************/
+    public function create_en()
+    {
+        $this->load->view('upgrades/application_form/Personal_Information_en');
+    }
 
     /*********************************************/
     public function insert()
