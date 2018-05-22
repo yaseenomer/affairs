@@ -3,7 +3,7 @@ main_header(array('الترقيات'));
 canvas_header('السيرة الذاتية /CV ') ?>
 
     <div class="row">
-        <?php  echo form_open(base_url('upgrades/APP_FORM'))?>
+
         <div class="col-md-3 col-sm-3 col-xs-3">
             <ul class="nav nav-tabs tabs-left">
 
@@ -15,11 +15,11 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
             <div class="tab-content">
 
-
     <!------------------------------------------------------->
 
                 <div class="tab-pane fade active in" id="edu">
-                    <form name="form2" action="<?= base_url('upgrades/Edu/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+
+                        <?php echo form_open_multipart( base_url('upgrades/Edu/insert'))?>
                     <div class="row">
                         <div class=" form-group col-md-6">
                             <label>  المراحل الدراسية  </label>
@@ -82,7 +82,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label>أرفق  الشهادة </label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>
@@ -103,7 +103,6 @@ canvas_header('السيرة الذاتية /CV ') ?>
             </div>
 
         </div>
-        <?php echo form_close()?>
     </div>
 
 <?php canvas_footer();

@@ -56,6 +56,8 @@ class Edu  extends CI_Controller
 
     public function insert()
     {
+       $attach =  handle_attache('113');
+
        // var_dump($this->input->post());
         $maxid=$this->M_Edu->maxid(113);
         $PRE_EDU_SER=$maxid+1;
@@ -72,11 +74,12 @@ class Edu  extends CI_Controller
             'PRE_EDU_START' => $this->input->post('PRE_EDU_START')  ,
             'PRE_EDU_END' => $this->input->post('PRE_EDU_END')  ,
             'PRE_EDU_GRADE' => $this->input->post('PRE_EDU_GRADE')  ,
-            'FILE_BATH' => $this->input->post('FILE_BATH')  ,
+            'FILE_BATH' => $attach[0]['file_name'] ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
         );
+        var_dump($items);exit();
 
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 

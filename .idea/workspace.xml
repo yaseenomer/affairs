@@ -2,15 +2,180 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Peoples_en.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Publications_en.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Academic_deg_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Academic_degreesController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/CommitteesController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Committees_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Committees_me_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Committees_meetingController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Committees_memberController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Committees_member_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/CountriesController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Countries_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Course_attachment_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Course_instruct_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Courses_candicate_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Courses_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Departments_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Emp_name.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Emp_no.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Employees_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Exprinces_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Instructors_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Other_universities_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Program_typesController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Program_types_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Programs_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Publications_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Scholarship_attach_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Scholarship_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Scholarship_decis_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Scholarships_Expenses_cont.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Scholarships_deti_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Scholarships_ext_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Specialties_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/UniversitiesController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Universities_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" />
+      <change beforePath="$PROJECT_DIR$/application/helpers/upload_helper.php" afterPath="$PROJECT_DIR$/application/helpers/upload_helper.php" />
+      <change beforePath="$PROJECT_DIR$/application/models/Academic_degreesModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/CommitteesModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/Committees_meetingModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/Committees_memberModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/CountriesModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/EmpNameModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/EmpNoModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/EmployeesModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/Program_typesModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/models/UniversitiesModel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Academic_degrees/Academic_degrees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Academic_degrees/Academic_degreesShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Academic_degrees/AddAcademic_degrees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Academic_degrees/EditAcademic_degrees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Academic_degrees/ShowAcademic_degrees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees/AddCommittees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees/Committees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees/CommitteesShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees/EditCommittees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees/ShowCommittees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/AddCommittees_meeting.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Committees_meeting.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Committees_meetingShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/EditCommittees_meeting.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/ShowCommittees_meeting.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/build/jQuery.Steps.1.1.0.nupkg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/build/jquery.steps-1.1.0.zip" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/build/jquery.steps.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/build/jquery.steps.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/css/jquery.steps.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/css/main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/css/normalize.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/lib/jquery-1.10.2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/lib/jquery-1.11.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/lib/jquery-1.9.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/lib/jquery.cookie-1.3.1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_meeting/Tab-jquery/lib/modernizr-2.6.2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_member.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_member/AddCommittees_member.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_member/Committees_member.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_member/Committees_memberShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_member/EditCommittees_member.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Committees_member/ShowCommittees_member.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Countries/AddCountries.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Countries/Countries.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Countries/CountriesShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Countries/EditCountries.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Countries/ShowCountries.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Course_attachment.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Course_instruct.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Course_instruct/Course_instructAdd.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Course_instruct/Course_instructEdit.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Course_instruct/Course_instructInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Course_instruct/Course_instructShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Courses/Courses.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Courses/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Courses/edit.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Courses/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Courses/show.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Courses_candicate.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Departments/DepartmentAdd.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Departments/DepartmentEdit.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Departments/DepartmentShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Departments/Departments.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Employees/Employees.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Employees/EmployeesInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Employees/Employees_NO.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Employees/Employees_name.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Exprinces.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Instructors/Inst_show.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Instructors/Instructors.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Instructors/edit_Inst.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Instructors/show_instDetails.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Instructors/show_istDetails.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Instructors/x.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Other_universities.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Program_types/AddProgram_types.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Program_types/EditProgram_types.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Program_types/Program_types.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Program_types/Program_typesShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Program_types/ShowProgram_types.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Programs/Programs.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Programs/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Programs/edit.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Programs/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Programs/show.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Publications/Publications.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholar_Expenses_view/Scholar_Expenses_Add.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholar_Expenses_view/Scholar_Expenses_Update.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholar_Expenses_view/Scholar_Expenses_get.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholar_Expenses_view/Scholar_Expenses_show.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/Scholarship.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/course.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/create1.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/create2.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/create3.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/create3_2.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/create3_3.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/create4.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/create44.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/emp.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/show.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/test.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/test/test.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship/test/trr.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship_attach.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarship_decis.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarships_deti.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarships_ext.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarships_extend_view/Scholar_extend_Add.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarships_extend_view/Scholar_extend_get.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Scholarships_extend_view/Scholar_extend_show.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Specialties/Specialties.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Specialties/SpecialtiesAdd.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Specialties/SpecialtiesEdit.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Specialties/SpecialtiesShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Universities/AddUniversities.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Universities/EditUniversities.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Universities/ShowUniversities.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Universities/Universities.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/Universities/UniversitiesShow.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidates/Show.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidates/Showcand.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidates/create.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidates/edit.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidates/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidates/index_committ.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidates/show_candidate.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/candidates/show_candidate_lock.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,21 +243,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Application_form_EN.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="24" column="109" lean-forward="false" selection-start-line="24" selection-start-column="106" selection-end-line="24" selection-end-column="112" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="University_Qualifications_en.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="University_Qualifications_en.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -131,8 +286,38 @@
       <file leaf-file-name="Pre-University_Education_en.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="51" column="123" lean-forward="false" selection-start-line="51" selection-start-column="123" selection-end-line="51" selection-end-column="123" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Pre-University_Education.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2046">
+              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edu.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload_helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/helpers/upload_helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-539">
+              <caret line="81" column="39" lean-forward="false" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -141,8 +326,8 @@
       <file leaf-file-name="Personal_Information_en.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="308">
+              <caret line="101" column="93" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -150,16 +335,6 @@
       </file>
       <file leaf-file-name="Peoples_en.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Peoples_en.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Administrative_Experience_en.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -202,6 +377,7 @@
       <find>insert3</find>
       <find>file</find>
       <find>get_details</find>
+      <find>attach</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,9 +387,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/models/affirs/countries.php" />
-        <option value="$PROJECT_DIR$/application/config/autoload.php" />
-        <option value="$PROJECT_DIR$/application/views/Scholarship/index.php" />
         <option value="$PROJECT_DIR$/application/views/Scholarship/course.php" />
         <option value="$PROJECT_DIR$/application/models/affirs/M_Scholarship_expenses.php" />
         <option value="$PROJECT_DIR$/application/models/affirs/M_Scholarship.php" />
@@ -248,13 +421,11 @@
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Peoples.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Publications.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
@@ -262,6 +433,11 @@
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
+        <option value="$PROJECT_DIR$/application/helpers/upload_helper.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" />
       </list>
     </option>
   </component>
@@ -328,61 +504,13 @@
             <path>
               <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="affirs" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application_form" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="attach" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -543,7 +671,7 @@
       <workItem from="1526474682278" duration="624000" />
       <workItem from="1526539206080" duration="13434000" />
       <workItem from="1526884591597" duration="4937000" />
-      <workItem from="1526970712915" duration="7227000" />
+      <workItem from="1526970712915" duration="11395000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -713,11 +841,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526977703235</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="create sub pages en">
+      <created>1526977975069</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1526977975069</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="640505000" />
+    <option name="totallyTimeSpent" value="644673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -804,7 +939,8 @@
     <MESSAGE value="add new page controller" />
     <MESSAGE value="add" />
     <MESSAGE value="create sub pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="create sub pages" />
+    <MESSAGE value="create sub pages en" />
+    <option name="LAST_COMMIT_MESSAGE" value="create sub pages en" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -813,20 +949,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Application_Form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_Apply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_CV.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -970,14 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="877">
-          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Peoples.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -1030,14 +1144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="52" column="80" lean-forward="false" selection-start-line="52" selection-start-column="80" selection-end-line="52" selection-end-column="80" />
           <folding />
         </state>
       </provider>
@@ -1130,22 +1236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Publications_en.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1180,8 +1270,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="101" column="93" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Course_attachment_con.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="51" column="123" lean-forward="false" selection-start-line="51" selection-start-column="123" selection-end-line="51" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/upload_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-539">
+          <caret line="81" column="39" lean-forward="false" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
           <folding />
         </state>
       </provider>

@@ -62,7 +62,7 @@ if ( ! function_exists('attache_loop'))
 
 if ( ! function_exists('error_upload'))
 {
-    function  error_upload($uploadData,$url)
+    function  error_upload($uploadData,$url='')
     {
         if (empty($uploadData))
         {
@@ -79,7 +79,7 @@ if ( ! function_exists('error_upload'))
 
 if ( ! function_exists('handle_attache'))
 {
-    function  handle_attache($id,$url)
+    function  handle_attache($id,$url='')
     {
 
         if (!empty($_FILES['attachs']['name'])) {
@@ -119,7 +119,5 @@ if ( ! function_exists('upload_attache_schol'))
 
 
 }
-
-
 
 
