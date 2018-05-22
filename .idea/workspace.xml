@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="" />
+    <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -68,50 +70,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pre-University_Education.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Pre-University_Education_en.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="92" column="32" lean-forward="false" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="100" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Publications.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Publications.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="148" column="90" lean-forward="false" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="90" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Publications_en.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Publications_en.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1474">
-              <caret line="152" column="101" lean-forward="false" selection-start-line="152" selection-start-column="101" selection-end-line="152" selection-end-column="101" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Peoples_en.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Peoples_en.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Peoples_en.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20">
+            <state relative-caret-position="176">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -120,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="University_Qualifications_en.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="University_Qualifications_en.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="550">
               <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -202,7 +164,6 @@
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_FORM.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Publications.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
@@ -213,8 +174,6 @@
         <option value="$PROJECT_DIR$/application/helpers/upload_helper.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Publications_en.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Peoples.php" />
@@ -227,6 +186,9 @@
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Peoples_en.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Publications_en.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Publications.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
       </list>
     </option>
   </component>
@@ -449,7 +411,7 @@
       <workItem from="1526474682278" duration="624000" />
       <workItem from="1526539206080" duration="13434000" />
       <workItem from="1526884591597" duration="4937000" />
-      <workItem from="1526970712915" duration="16457000" />
+      <workItem from="1526970712915" duration="16780000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -661,15 +623,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526988952075</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="update line in form en">
+      <created>1526989207165</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1526989207165</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="649735000" />
+    <option name="totallyTimeSpent" value="650058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15431164" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -679,7 +647,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -757,7 +725,8 @@
     <MESSAGE value="add page english subpages" />
     <MESSAGE value="add attach folders" />
     <MESSAGE value="delete user folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete user folder" />
+    <MESSAGE value="update line in form en" />
+    <option name="LAST_COMMIT_MESSAGE" value="update line in form en" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1058,40 +1027,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="92" column="32" lean-forward="false" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Publications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="148" column="90" lean-forward="false" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="90" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -1140,16 +1075,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Publications_en.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1474">
-          <caret line="152" column="101" lean-forward="false" selection-start-line="152" selection-start-column="101" selection-end-line="152" selection-end-column="101" />
+        <state relative-caret-position="262">
+          <caret line="162" column="6" lean-forward="false" selection-start-line="162" selection-start-column="6" selection-end-line="162" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Publications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="158" column="6" lean-forward="false" selection-start-line="158" selection-start-column="6" selection-end-line="158" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="103" column="8" lean-forward="false" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Peoples_en.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
+        <state relative-caret-position="176">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
