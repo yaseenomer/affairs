@@ -2,11 +2,721 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/helpers/upload_upgrades_helper.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/auth/EmpAccounts.php" afterPath="$PROJECT_DIR$/application/controllers/EmpAccounts.php" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
+      <change beforePath="$PROJECT_DIR$/application/helpers/upload_helper.php" afterPath="$PROJECT_DIR$/application/helpers/upload_helper.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/auth/emp_accounts/details.php" afterPath="$PROJECT_DIR$/application/views/auth/emp_accounts/details.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/auth/emp_accounts/signin.php" afterPath="$PROJECT_DIR$/application/views/auth/emp_accounts/signin.php" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/css/custom.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/css/font-awesome.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/img/find_user.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/custom.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/dataTables/dataTables.bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/dataTables/dataTables.bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/dataTables/jquery.dataTables.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/jquery-1.10.2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/jquery.metisMenu.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/morris/morris-0.4.3.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/morris/morris.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/Dashboard/js/morris/raphael-2.1.0.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/animate.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap-rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap-rtl.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap-rtl.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/css/dataTables.bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/bootstrap/js/npm.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/components-md-rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/custom-rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/dataTables.bootstrap-rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/dt.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/CHANGELOG.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/bower.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/banner.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/custom.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/icheck.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/arrow-bottom.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/arrow-top.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/header-line.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-fork.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-github.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-lab.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-options.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/ie/icon-star.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-bold.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-bold.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-bold.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-bold.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/montserrat-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/css/normalize.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/js/custom.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/js/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/demo/js/zepto.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/icheck.jquery.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/icheck.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/icheck.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/all.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/_all.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/aero.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/aero.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/aero@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/blue.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/blue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/blue@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/flat.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/flat.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/flat@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/green.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/green.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/green@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/grey.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/grey.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/grey@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/orange.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/orange.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/orange@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/pink.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/pink.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/pink@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/purple.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/purple.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/purple@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/red.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/red.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/red@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/yellow.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/yellow.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/flat/yellow@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/futurico/futurico.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/futurico/futurico.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/futurico/futurico@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/_all.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/aero.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/blue.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/green.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/grey.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/line.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/line.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/line@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/orange.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/pink.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/purple.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/red.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/line/yellow.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/_all.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/aero.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/aero.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/aero@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/blue.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/blue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/blue@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/green.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/green.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/green@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/grey.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/grey.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/grey@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/minimal.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/minimal.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/minimal@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/orange.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/orange.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/orange@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/pink.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/pink.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/pink@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/purple.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/purple.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/purple@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/red.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/red.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/red@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/yellow.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/yellow.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/minimal/yellow@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/polaris/polaris.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/polaris/polaris.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/polaris/polaris@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/_all.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/aero.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/aero.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/aero@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/blue.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/blue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/blue@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/green.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/green.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/green@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/grey.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/grey.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/grey@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/orange.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/orange.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/orange@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/pink.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/pink.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/pink@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/purple.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/purple.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/purple@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/red.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/red.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/red@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/square.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/square.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/square@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/yellow.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/yellow.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/icheck/skins/square/yellow@2x.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.structure.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.structure.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery-ui.theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery.datetimepicker.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/jquery.steps.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/layout-rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/main.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/myStyle.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/normalize.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/plugins-md-rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/select2.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/License.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/Readme.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.dev.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/fonts/Simple-Line-Icons.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/icons-lte-ie7.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/simple-line-icons.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/simple-line-icons/simple-line-icons.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/css/tasks-rtl.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/fonts/FontAwesome.otf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/fonts/fontawesome-webfont.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/Sorting icons.psd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/back_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/back_enabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/back_enabled_hover.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/forward_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/forward_enabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/forward_enabled_hover.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_asc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_asc_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_both.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_desc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/images/sort_desc_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/accordion-plusminus.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/ajax-loading.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/ajax-modal-loading.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/datatable-row-openclose.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ad.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ae.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/af.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ag.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ai.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/al.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/am.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/an.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ao.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ar.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/as.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/at.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/au.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/aw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ax.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/az.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ba.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bd.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/be.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bh.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bj.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/br.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bv.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/by.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/bz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ca.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/catalonia.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cd.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ch.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ci.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ck.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cl.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/co.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cu.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cv.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cx.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/cz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/de.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/dj.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/dk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/dm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/do.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/dz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ec.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ee.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/eg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/eh.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/england.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/er.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/es.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/et.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/europeanunion.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fam.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fj.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/fr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ga.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gd.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ge.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gh.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gl.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gq.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gu.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/gy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ht.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/hu.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/id.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ie.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/il.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/in.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/io.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/iq.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ir.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/is.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/it.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/jm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/jo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/jp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ke.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kh.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ki.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/km.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ky.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/kz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/la.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/li.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ls.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lu.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/lv.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ly.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ma.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/md.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/me.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mh.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ml.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mp.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mq.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ms.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mu.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mv.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mx.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/my.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/mz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/na.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ne.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ng.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ni.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nl.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/no.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/np.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nu.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/nz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/om.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pa.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pe.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ph.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pl.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ps.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/pw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/py.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/qa.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/re.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/readme.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ro.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/rs.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ru.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/rw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sa.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/scotland.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sd.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/se.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sh.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/si.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sj.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sl.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/so.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/st.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sv.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/sz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/td.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/th.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tj.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tl.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/to.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tv.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/tz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ua.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ug.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/um.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/us.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/uy.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/uz.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/va.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ve.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/vu.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/wales.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/wf.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ws.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/ye.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/yt.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/za.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/zm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/flags/zw.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/input-spinner.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/loading-spinner-blue.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/loading-spinner-default.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/loading-spinner-grey.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/loading.gif" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/overlay-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-collapse-icon-white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-collapse-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-config-icon-white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-config-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-expand-icon-white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-expand-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-reload-icon-white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-reload-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-remove-icon-white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/portlet-remove-icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/remove-icon-small.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/Thumbs.db" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/aboutme.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/amazon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/behance.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/blogger.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/deviantart.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/dribbble.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/dropbox.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/evernote.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/facebook.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/flickr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/forrst.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/foursquare.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/github.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/googleplus.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/gravatar.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/instagram.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/jolicloud.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/klout.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/last-fm.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/linkedin.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/myspace.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/picasa.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/pintrest.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/quora.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/reddit.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/rss.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/skype.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/spotify.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/stumbleupon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/tumblr.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/twitter.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/vimeo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/vk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/wordpress.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/xing.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/yahoo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/social/youtube.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/sudan.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/sudanun2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/syncfusion-icons-white.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/img/syncfusion-icons.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/1494409281.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/92a0ec6b-85e7-4763-a755-b10660d5ec17.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/____________ ___________2_350x0.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/imag.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/imag.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/images.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/promotion_31_350x0.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/promotion_675992_large.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/applican/resize.php.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/imag1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/41RnlUqw.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/images70.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/الابتعاث-بعد-الثانوي،-الخارجي-والداخلي،-الشروط-والتخصصات..jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/scholar/الابتعاث.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/DCPRO-CITREP_Banner1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/DCPRO.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/TR1_fundraising_appeal.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/group_training.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/training-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/training.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/trainingcomputers.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/imges/tranning/videotraining.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/ajax.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/cheque.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/cheque1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/dataTables.bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/dataTables.bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/demo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/dt.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/icheck.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/index.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-1.10.2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-1.11.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-1.9.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-migrate.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-ui.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery-ui.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.cookie-1.3.1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.dataTables.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.datetimepicker.full.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.flot.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.flot.resize.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.steps.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.steps.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/jquery.ui.datepicker.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/layout.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/metronic.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/modernizr-2.6.2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/myScript.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/myvue.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/pie_chart.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/respond.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/select2.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/js/table-managed.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-grid.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-grid.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-reboot.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-reboot.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/css/my-login.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/img/logo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/js/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/login/js/my-login.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/CSS/css-login.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/CSS/formoid-default.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/CSS/niceforms-default.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/formoid-default.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/formoid-defaults.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/html5.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/JQ/niceforms.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/arrowsub.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/download.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/favour.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/hsep.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/mainbk.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/news.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/register.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/samples.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/service.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/Menus_files/css3menu1/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/check-radio-bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/Database_ora.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/STDAFFAIRS_VIEW(1).txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/auth.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/conn_ora.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/database.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/db.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/student_affairs.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/user.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/db/user_data.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/images/footer.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/images/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/del.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/download.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/images.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/key_icon.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/magnifier.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/page_white_edit.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/publish_r.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/register.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/images/update.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/jq/jquery.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/jq/styletable.jquery.plugin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/assets/std/table/subject.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/controler/Emp_name.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/controler/Emp_no.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/controler/au_tech_con.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/controler/authi.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/controler/main2Controller.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/controler/mainController.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/controler/mainController3.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/model/auth_model.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/model/teachermodel.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/LICENSE" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/empno.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/forgot.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/register.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/Teacher/reset.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/change_password.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/create_group.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/create_user.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/deactivate_user.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/edit_group.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/edit_user.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/email/activate.tpl.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/email/forgot_password.tpl.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/email/new_password.tpl.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/fail.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/footer.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/forgot_password.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/header.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/index.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/login.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/register.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/reset_password.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/auth/success.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/emp_account/Add.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/emp_account/Addacount.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/emp_account/EmployeesInfo.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/yassinnn/madule users/view/emp_account/Employees_NO.php" afterPath="" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,31 +784,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Research_Projects_en.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php">
+      <file leaf-file-name="EmpAccounts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/EmpAccounts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Publications_en.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Publications_en.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Edu.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="51" column="51" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="51" />
+            <state relative-caret-position="292">
+              <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -107,28 +797,48 @@
       <file leaf-file-name="upload_helper.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/helpers/upload_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="81" column="39" lean-forward="false" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
+            <state relative-caret-position="161">
+              <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Personal_Information_en.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
+      <file leaf-file-name="upload_upgrades_helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/helpers/upload_upgrades_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="101" column="93" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="100" />
+            <state relative-caret-position="324">
+              <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Peoples_en.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Peoples_en.php">
+      <file leaf-file-name="Apply.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="91" column="19" lean-forward="false" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/auth/emp_accounts/signin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/auth/emp_accounts/details.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="47" column="60" lean-forward="false" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -178,6 +888,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/application/views/Scholarship/course.php" />
+        <option value="$PROJECT_DIR$/application/models/affirs/M_Scholarship_expenses.php" />
+        <option value="$PROJECT_DIR$/application/models/affirs/M_Scholarship.php" />
         <option value="$PROJECT_DIR$/application/controllers/affirs/Scholarship.php" />
         <option value="$PROJECT_DIR$/application/views/Scholarship/show.php" />
         <option value="$PROJECT_DIR$/application/views/Scholarship/test/test.php" />
@@ -185,7 +898,6 @@
         <option value="$PROJECT_DIR$/application/views/Scholarship/test/trr.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/application/models/upgrades/M_Apply.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Cv.php" />
         <option value="$PROJECT_DIR$/application/models/upgrades/M_CV.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/cv/cv1.php" />
@@ -222,13 +934,11 @@
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
         <option value="$PROJECT_DIR$/application/helpers/upload_helper.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
       </list>
     </option>
   </component>
@@ -247,11 +957,11 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-54" />
-    <option name="y" value="20" />
-    <option name="width" value="833" />
-    <option name="height" value="736" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="168" />
+    <option name="y" value="68" />
+    <option name="width" value="682" />
+    <option name="height" value="733" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -285,6 +995,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,56 +1004,10 @@
               <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="application_form" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
-              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,7 +1161,7 @@
       <workItem from="1526474682278" duration="624000" />
       <workItem from="1526539206080" duration="13434000" />
       <workItem from="1526884591597" duration="4937000" />
-      <workItem from="1526970712915" duration="14195000" />
+      <workItem from="1526970712915" duration="11395000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -672,46 +1338,50 @@
       <option name="project" value="LOCAL" />
       <updated>1526977975069</updated>
     </task>
-    <task id="LOCAL-00026" summary="issue upload">
-      <created>1526983512944</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1526983512944</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="647473000" />
+    <option name="totallyTimeSpent" value="646378000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18078668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23903178" sideWeight="0.49429038" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31164902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20196672" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49429038" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6411093" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25718608" sideWeight="0.50570965" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.76345843" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6786297" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1762481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31164902" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -771,31 +1441,22 @@
     <MESSAGE value="add" />
     <MESSAGE value="create sub pages" />
     <MESSAGE value="create sub pages en" />
-    <MESSAGE value="issue upload" />
-    <option name="LAST_COMMIT_MESSAGE" value="issue upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="create sub pages en" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php</url>
+          <line>15</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/application/models/upgrades/M_CV.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/madule users/controler/Emp_name.php" />
-    <entry file="file://$PROJECT_DIR$/../affirs/application/models/teachermodel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/madule users/controler/au_tech_con.php" />
     <entry file="file://$USER_HOME$/Desktop/madule users/controler/Emp_no.php" />
     <entry file="file://$PROJECT_DIR$/application/controllers/auth.php">
@@ -872,31 +1533,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs/application/views/Scholarship/create4.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4334">
-          <caret line="202" column="10" lean-forward="false" selection-start-line="202" selection-start-column="10" selection-end-line="202" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/affirs/Scholarship.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3059">
-          <caret line="153" column="28" lean-forward="true" selection-start-line="153" selection-start-column="28" selection-end-line="153" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../affirs/application/views/Scholarship/create4.php" />
+    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/affirs/Scholarship.php" />
     <entry file="file://$PROJECT_DIR$/application/models/affirs/M_Scholarship.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-165">
           <caret line="402" column="33" lean-forward="false" selection-start-line="402" selection-start-column="20" selection-end-line="402" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,7 +1549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="59" column="52" lean-forward="false" selection-start-line="59" selection-start-column="39" selection-end-line="59" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,7 +1556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="655" column="49" lean-forward="false" selection-start-line="655" selection-start-column="45" selection-end-line="655" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -920,7 +1563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="100" column="28" lean-forward="false" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,7 +1570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
           <caret line="78" column="40" lean-forward="true" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="95" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,7 +1577,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
           <caret line="110" column="85" lean-forward="true" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="99" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="122" column="84" lean-forward="true" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="99" />
         </state>
       </provider>
     </entry>
@@ -944,7 +1591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
           <caret line="54" column="28" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="95" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -952,7 +1598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
           <caret line="148" column="90" lean-forward="false" selection-start-line="148" selection-start-column="31" selection-end-line="148" selection-end-column="90" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -960,7 +1605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
           <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,7 +1612,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="53" column="81" lean-forward="false" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -976,7 +1626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -984,15 +1633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
           <caret line="55" column="76" lean-forward="false" selection-start-line="55" selection-start-column="76" selection-end-line="55" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1000,7 +1640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="45" column="68" lean-forward="false" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1008,7 +1647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="45" column="73" lean-forward="false" selection-start-line="45" selection-start-column="73" selection-end-line="45" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,7 +1654,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="43" column="63" lean-forward="false" selection-start-line="43" selection-start-column="63" selection-end-line="43" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,7 +1661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="51" column="78" lean-forward="false" selection-start-line="51" selection-start-column="78" selection-end-line="51" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1032,7 +1668,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,7 +1675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,55 +1682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="24" column="109" lean-forward="false" selection-start-line="24" selection-start-column="106" selection-end-line="24" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="101" column="93" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Course_attachment_con.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/upload_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
-          <caret line="81" column="39" lean-forward="false" selection-start-line="81" selection-start-column="39" selection-end-line="81" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="51" column="51" lean-forward="false" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1104,54 +1689,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="92" column="32" lean-forward="true" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="47" column="36" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3212">
-          <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="53" column="81" lean-forward="false" selection-start-line="53" selection-start-column="81" selection-end-line="53" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="113" column="89" lean-forward="false" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="101" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="76" column="0" lean-forward="true" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="109" lean-forward="false" selection-start-line="24" selection-start-column="106" selection-end-line="24" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="101" column="93" lean-forward="false" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Course_attachment_con.php" />
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="51" column="123" lean-forward="false" selection-start-line="51" selection-start-column="123" selection-end-line="51" selection-end-column="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="66" column="35" lean-forward="true" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/auth/emp_accounts/details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="47" column="60" lean-forward="false" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/auth/emp_accounts/signin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="61" lean-forward="false" selection-start-line="5" selection-start-column="61" selection-end-line="5" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/upload_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/helpers/upload_upgrades_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="91" column="19" lean-forward="false" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
           <folding />
         </state>
       </provider>

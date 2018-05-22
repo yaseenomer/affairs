@@ -94,30 +94,6 @@ if ( ! function_exists('handle_attache'))
 
 }
 
-if ( ! function_exists('upload_attache_schol'))
-{
-    function upload_attache_schol($id, $uploadData,$type)
-    {
-        $CI =& get_instance();
-        $x =  count($uploadData);
-        for ($i = 0; $i < $x; $i++) {
 
-            $data_for_attach = array(
-                'SCHOLAR_ID' => $id,
-                'ATT_SER' => rand(1, 99999),
-                'FILE_BATH' => $uploadData[$i]['file_name'],
-                ' ATT_TYPE' => $type, # att_type == 1   Certificates, courses and skills  main attache
-                'ENTRY_DATE' => date('d-M-y'),
-                'UPDATE_DATE' => date('d-M-y'),
-                'USR_NO' => user()->USR_NO,
-            );
-            $CI->load->model('affirs/M_Scholarship', 'schol');
-
-            $CI->schol->upload($data_for_attach);
-        }
-    }
-
-
-}
 
 

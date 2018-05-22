@@ -3,7 +3,7 @@
         <img src="<?php echo base_url(); ?>assets/img/sudanun2.png">
     </div>
 
-    <?php echo form_open(base_url().'auth/EmpAccounts/getEmp'); ?>
+    <?php echo form_open(base_url().'EmpAccounts/getEmp'); ?>
 
         <div class="form-group field-login">
             <label for="login" class="control-label"> ادخل الرقم الوظيفي   </label>
