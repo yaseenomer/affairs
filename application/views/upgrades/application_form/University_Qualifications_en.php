@@ -67,7 +67,7 @@ canvas_header('CV ') ?>
                                     foreach($levels as $each)
                                     {
                                         ?>
-                                        <option value="<?php echo  $each->COUNTRY_NO ?>"><?php echo $each->COUNTRY_NAME_EN?></option>
+                                        <option value="<?php echo  $each->COUNTRY_NO ?>"><?php echo $each->COUNTRY_NAME_ENG?></option>
                                         <?php
                                     }
                                 }

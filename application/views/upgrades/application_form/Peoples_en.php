@@ -20,12 +20,12 @@ canvas_header('CV ') ?>
                     <form name="form9" action="<?= base_url('upgrades/APP_CV_REFERENCES/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label> The Name   </label>
+                            <label class="pull-right"> The Name   </label>
                             <input type="text"class="form-control" name="EMP_NAME">
                         </div>
 
                         <div class="form-group col-md-6">
-                            <label> Current Address  </label>
+                            <label class="pull-right"> Current Address  </label>
                             <input type="text"class="form-control" name="ADDRESS">
                         </div>
                     </div>
@@ -37,25 +37,26 @@ canvas_header('CV ') ?>
                         </div>
 
                         <div class="form-group col-md-6">
-                            <label>E-mail     </label>
+                            <label class="pull-right">E-mail     </label>
                             <input type="text"class="form-control" name="E_MAIL">
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label>Job   </label>
+                            <label class="pull-right">Job   </label>
                             <input type="text"class="form-control" name="REF_JOB">
                         </div>
 
                         <div class="form-group col-md-6">
-                            <label>Workplace      </label>
+                            <label class="pull-right">Workplace      </label>
                             <input type="text"class="form-control" name="WORK_PLC">
                         </div>
-                        <div class="form-group col-md-6">
-                            <label> scientific degree     </label>
-                            <select name="CURRENT_DEG" >
-                                <option>اختار من القائمة </option>
+
+                        <div  class="form-group col-md-12  "  >
+                            <label class="pull-right"> scientific degree     </label>
+                            <select name="CURRENT_DEG" class="form-group col-md-12  " >
+                                <option  dir="rtl">Select from the menu </option>
                                 <?php
                                 if(!empty($qual))
                                 {
@@ -73,8 +74,8 @@ canvas_header('CV ') ?>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="form-group col-md-12">
+                    <div class="row" >
+                        <div class="form-group col-md-12" >
                             <input type="submit" class="btn btn-success" value="Save">
                         </div>
                     </div>
