@@ -1,6 +1,6 @@
 <?php $this->load->view('app/layout/parts/top');
 main_header(array('الترقيات'));
-canvas_header('CV ') ?>
+canvas_header('CV') ?>
 
     <div class="row">
 
