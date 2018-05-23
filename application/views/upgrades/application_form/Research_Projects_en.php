@@ -16,8 +16,9 @@ canvas_header('CV ') ?>
             <div class="tab-content">
 
                 <div class="tab-pane fade active in" id="prosearch">
-                 <form name="form5" action="<?= base_url('upgrades/APP_PROJECTS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                    <div class="row">
+                     <?php echo form_open_multipart(base_url('upgrades/APP_PROJECTS/insert'));  ?>
+
+                     <div class="row">
                         <div class="form-group col-md-6">
                             <label class="pull-right"> Date of the Project   </label>
                             <input  type="text" class="form-control" name="DATE_OF_PRO" id="DATE_OF_PRO" value="<?php echo set_value('DATE_OF_PRO'); ?>">
@@ -47,7 +48,7 @@ canvas_header('CV ') ?>
                          </div>
                         <div class="form-group col-md-6">
                             <label class="pull-right">Attach the Project File</label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>

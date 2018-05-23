@@ -83,7 +83,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                 <!------------------------------------------------------->
                 <div class="tab-pane fade" id="pubmember">
-                    <form name="form7" action="<?= base_url('upgrades/PUBLICATIONS_PARTS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                        <?php echo form_open_multipart(base_url('upgrades/PUBLICATIONS_PARTS/insert'));  ?>
                         <div class="row">
 
                             <div class="col-md-3">

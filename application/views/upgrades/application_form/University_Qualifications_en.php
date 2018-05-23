@@ -17,8 +17,9 @@ canvas_header('CV ') ?>
 
     <!------------------------------------------------------->
                 <div class="tab-pane fade active in"  id="unv">
-                <form name="form3" action="<?= base_url('upgrades/APPLICATION_UNIV_EDU/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                <div class="row">
+                    <?php echo form_open_multipart(base_url('upgrades/APPLICATION_UNIV_EDU/insert'));  ?>
+
+                    <div class="row">
 
                     <div class=" form-group col-md-12">
                         <label class="pull-right">  Country </label>
@@ -124,7 +125,7 @@ canvas_header('CV ') ?>
                         <div class="col-md-6">
 
                             <label class="pull-right"> Attach the search file </label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>

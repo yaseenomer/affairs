@@ -18,8 +18,8 @@ canvas_header('CV ') ?>
 
               <!------------------------------------------------------->
                 <div class="tab-pane fade active in" id="publication">
-                    <form name="form6" action="<?= base_url('upgrades/APP_PUBLICATIONS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                    <div class="row">
+                        <?php echo form_open_multipart(base_url('upgrades/APP_PUBLICATIONS/insert'));  ?>
+                        <div class="row">
                         <label class="pull-right"> Type of PUBLICATIONS </label>
                         <input type="radio" name="PUB_TYP" value="1" /> Conference
 
@@ -77,7 +77,7 @@ canvas_header('CV ') ?>
                             </div>
                             <div class="col-md-6">
                                 <label class="pull-right">Attach the Publication File </label>
-                                <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                                <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                             </div>
 
                         </div>

@@ -15,8 +15,9 @@ canvas_header('السيرة الذاتية /CV ') ?>
             <div class="tab-content">
     <!------------------------------------------------------->
                 <div class="tab-pane fade active in" id="unv">
-                <form name="form3" action="<?= base_url('upgrades/APPLICATION_UNIV_EDU/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                <div class="row">
+                    <?php echo form_open_multipart(base_url('upgrades/APPLICATION_UNIV_EDU/insert'));  ?>
+
+                    <div class="row">
                         <div class=" form-group col-md-6">
                             <label> نوع المؤهل  </label>
                             <select name="UNIV_EDU_TYPE"class="form-control">
@@ -111,7 +112,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label>أرفق  ملف البحث  </label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>

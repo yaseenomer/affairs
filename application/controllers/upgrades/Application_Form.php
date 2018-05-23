@@ -62,14 +62,15 @@ class Application_Form  extends CI_Controller
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
+
+        $APP_ID=105;
+        $EMP_NO=1000857;
         $items = array(
-
-           /* 'APP_ID' => $this->input->post('APP_ID')  ,
-            'EMP_NO' => $this->input->post('EMP_NO')  ,*/
-
-            'APP_ID' => 113  ,
-            'EMP_NO' => 1000857 ,
             /*********************************************/
+            /********************************************/
+
+            'APP_ID' => $APP_ID  ,
+            'EMP_NO' => $EMP_NO ,
             'FRT_NAME_AR' =>$this->input->post('FRT_NAME_AR')  ,
             'SND_NAME_AR' =>$this->input->post('SND_NAME_AR')  ,
             'THR_NAME_AR' =>$this->input->post('THR_NAME_AR')  ,
@@ -80,21 +81,17 @@ class Application_Form  extends CI_Controller
             'LST_NAME_ENG' =>$this->input->post('LST_NAME_ENG')  ,
             'EMP_LANGUAGES' =>$this->input->post('EMP_LANGUAGES')  ,
             'HOME_PHONE' =>$this->input->post('HOME_PHONE')  ,
-            'FILE_BATH' =>$this->input->post('FILE_BATH')  ,
+            'FILE_BATH' =>attache($APP_ID,'CV')  ,
             'ENTRY_DATE' =>date('d-M-y') ,
             //'UPDATE_DATE' => date('d-M-y')  ,
             'USR_NO' =>user()->USR_NO
         );
 
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
-        var_dump($items);
+        //var_dump($items);
         $this->M_Application_Form->AddData($items);
         return redirect('upgrades/Application_Form');
     }
     /***********************************/
-  /*  public function delete_attache_from_path($id , $name)
-    {
-        $this->file->remove(APPPATH . '/uploads/' . $id . '/' . $name);
-        return redirect('/affirs/Scholarship/show/'.$id);
-    }*/
+
 }

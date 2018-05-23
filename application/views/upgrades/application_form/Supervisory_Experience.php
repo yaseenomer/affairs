@@ -15,8 +15,9 @@ canvas_header('السيرة الذاتية /CV ') ?>
             <div class="tab-content">
                 <!------------------------------------------------------->
                 <div class="tab-pane fade active in" id="exp">
-                <form name="form4" action="<?= base_url('upgrades/APP_UNIVERSITIES_EXP/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                     <br>
+                    <?php echo form_open_multipart(base_url('upgrades/APP_UNIVERSITIES_EXP/insert'));  ?>
+
+                    <br>
                     <div class="row">
                     <label> نوع الخبرة  </label>
                        <input type="radio" name="UNI_EXP_TYPE" value="1" /> تدريس

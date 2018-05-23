@@ -14,7 +14,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
             <div class="tab-content">
 
                 <div class="tab-pane fade active in" id="personal">
-                    <form name="form1" action="<?= base_url('upgrades/Application_Form/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                    <?php echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
                     <div class="row">
 
                         <div class="col-md-3">
@@ -89,7 +89,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="col-md-6">
                             <label>أرفق  ملف السيرة الذاتية</label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>
