@@ -13,7 +13,7 @@ class EmpAccounts extends CI_Controller
     }
 	public function index()
 	{
-		$this->view('auth/emp_accounts/signin');
+	   $this->view('auth/emp_accounts/signin');
 	}
 
     private function view($page, $data=false) {
@@ -37,6 +37,10 @@ class EmpAccounts extends CI_Controller
     public function save()
     {
         var_dump($this->input->post());
+    }
+
+    public function t(){
+        echo $this->emp->get($this->session->emp_no);
     }
 
 

@@ -10,12 +10,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Apply  extends CI_Controller
 {
-    protected $file;
 
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
 
         /* load Model*/
@@ -45,7 +43,7 @@ class Apply  extends CI_Controller
      */
     public function insert()
     {
-        $this->apply->insert($this->dataMerage());
+       $this->apply->insert($this->dataMerage());
     }
 
 
@@ -85,22 +83,23 @@ class Apply  extends CI_Controller
         $data['emp_grades'] = $this->apply->empGrades($id);
         $data['emp_holidays'] = $this->apply->empHoliday($id);
         $data['emp_holiday'] = $this->dateDiff($this->apply->empHoliday($id)->END_HOLYDAY);
+
         return $data;
+    }
+
+    public function tr()
+    {
+        $this->load->view('upgrades/apply/test');
     }
 
     public function t()
     {
-
-
-
-//        $data['emp_holiday'] = $this->apply->empHoliday('1000069');
-//        $data['emp_info'] = $this->apply->empInfo('1000069');
-//        $data['emp_grades'] = $this->apply->empGrades('1000069');
-//        var_dump($data);
-
+        var_dump(attache(113,'cv'));
 
     }
 
-
-
+    public function folder($folder)
+    {
+        return FCPATH.'uploads'.DIRECTORY_SEPARATOR.'attach'.DIRECTORY_SEPARATOR.$folder;
+    }
 }

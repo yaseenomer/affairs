@@ -9,12 +9,10 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 
-if ( ! function_exists('attache_loop'))
+if ( ! function_exists('atta_loop'))
 {
-    function  attache_loop($filesCount, $id)
-
+    function  atta_loop($filesCount, $id , $folder)
     {
-
         $CI =& get_instance();
 
         for ($i = 0; $i < $filesCount; $i++) {
@@ -27,8 +25,7 @@ if ( ! function_exists('attache_loop'))
             // create folder  attachment for this user
 
             $userFile = '\\' . $id;
-            $upload_path = realpath(APPPATH.'/uploads' );
-
+            $upload_path =FCPATH.'uploads'.DIRECTORY_SEPARATOR.'attach'.DIRECTORY_SEPARATOR.$folder;
             $bath = $upload_path . $userFile;
 
             if (!file_exists($bath)) {
@@ -60,33 +57,17 @@ if ( ! function_exists('attache_loop'))
 }
 
 
-if ( ! function_exists('error_upload'))
+
+
+if ( ! function_exists('attache'))
 {
-    function  error_upload($uploadData,$url)
-    {
-        if (empty($uploadData))
-        {
-            $this->session->set_flashdata('error', 'لم يتم رفع الملف ');
-            return redirect($url);
-        }
-
-
-
-    }
-
-
-}
-
-if ( ! function_exists('handle_attache'))
-{
-    function  handle_attache($id,$url)
+    function  attache($id,$folder)
     {
 
         if (!empty($_FILES['attachs']['name'])) {
             $filesCount = count($_FILES['attachs']['name']);
-            $uploadData = attache_loop($filesCount, $id);
-            error_upload($uploadData,$url);
-            return $uploadData;
+            $uploadData = atta_loop($filesCount, $id,$folder);
+            return $uploadData[0]['file_name'];
 
         }
     }
@@ -94,30 +75,6 @@ if ( ! function_exists('handle_attache'))
 
 }
 
-if ( ! function_exists('upload_attache_schol'))
-{
-    function upload_attache_schol($id, $uploadData,$type)
-    {
-        $CI =& get_instance();
-        $x =  count($uploadData);
-        for ($i = 0; $i < $x; $i++) {
 
-            $data_for_attach = array(
-                'SCHOLAR_ID' => $id,
-                'ATT_SER' => rand(1, 99999),
-                'FILE_BATH' => $uploadData[$i]['file_name'],
-                ' ATT_TYPE' => $type, # att_type == 1   Certificates, courses and skills  main attache
-                'ENTRY_DATE' => date('d-M-y'),
-                'UPDATE_DATE' => date('d-M-y'),
-                'USR_NO' => user()->USR_NO,
-            );
-            $CI->load->model('affirs/M_Scholarship', 'schol');
-
-            $CI->schol->upload($data_for_attach);
-        }
-    }
-
-
-}
 
 
