@@ -4,7 +4,6 @@
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,38 +84,28 @@
       <file leaf-file-name="Supervisory_Experience_en.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-198">
-              <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="57" />
+            <state relative-caret-position="242">
+              <caret line="29" column="75" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="75" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Administrative_Experience_en.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Administrative_Experience_en.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="385">
+              <caret line="31" column="88" lean-forward="false" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="University_Qualifications_en.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php">
+      <file leaf-file-name="APP_OTHER_EXPRIENCES.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CountriesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/CountriesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="39" column="78" lean-forward="false" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -193,7 +182,6 @@
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Application_form_EN.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_PUBLICATIONS.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php" />
@@ -215,8 +203,9 @@
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Publications_en.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php" />
-        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" />
+        <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php" />
       </list>
     </option>
   </component>
@@ -458,7 +447,7 @@
       <workItem from="1526539206080" duration="13434000" />
       <workItem from="1526884591597" duration="4937000" />
       <workItem from="1526970712915" duration="16903000" />
-      <workItem from="1527055041506" duration="7839000" />
+      <workItem from="1527055041506" duration="9222000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -684,11 +673,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527061705608</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="changes desigen form en">
+      <created>1527062912785</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1527062912785</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="658020000" />
+    <option name="totallyTimeSpent" value="659403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -781,7 +777,8 @@
     <MESSAGE value="add attach folders" />
     <MESSAGE value="delete user folder" />
     <MESSAGE value="update line in form en" />
-    <option name="LAST_COMMIT_MESSAGE" value="update line in form en" />
+    <MESSAGE value="changes desigen form en" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes desigen form en" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -909,13 +906,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -1053,14 +1043,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/CountriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Peoples_en.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1101,22 +1083,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-198">
-          <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Research_Projects_en.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1129,6 +1095,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/CountriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="39" column="78" lean-forward="false" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="29" column="75" lean-forward="false" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Administrative_Experience_en.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="31" column="88" lean-forward="false" selection-start-line="31" selection-start-column="88" selection-end-line="31" selection-end-column="88" />
           <folding />
         </state>
       </provider>
