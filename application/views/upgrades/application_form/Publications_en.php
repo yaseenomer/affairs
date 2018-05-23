@@ -4,15 +4,15 @@ canvas_header('CV ') ?>
 
     <div class="row">
 
-        <div class="col-md-3 col-sm-3 col-xs-3">
-            <ul class="nav nav-tabs tabs-left">
+        <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
+            <ul class="nav nav-tabs tabs-right">
 
-                <li class="active"><a href="#publication" data-toggle="tab"><i class="fa fa-graduation-cap"></i> Publications,Conferences & Research  </a></li>
-                <li class=""><a href="#pubmember" data-toggle="tab"><i class="fa fa-graduation-cap"></i> Participants in The Publication  </a></li>
+                <li class="active"><a href="#publication" data-toggle="tab"> Publications,Conferences & Research  <i class="fa fa-graduation-cap"></i></a></li>
+                <li class=""><a href="#pubmember" data-toggle="tab"> Participants in The Publication  <i class="fa fa-graduation-cap"></i></a></li>
 
             </ul>
         </div>
-        <div class="col-md-9 col-sm-9 col-xs-9">
+        <div class="col-md-9 col-sm-9 col-xs-9 pull-left">
 
             <div class="tab-content">
 
@@ -20,7 +20,7 @@ canvas_header('CV ') ?>
                 <div class="tab-pane fade active in" id="publication">
                     <form name="form6" action="<?= base_url('upgrades/APP_PUBLICATIONS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
-                        <label> Type of PUBLICATIONS </label>
+                        <label class="pull-right"> Type of PUBLICATIONS </label>
                         <input type="radio" name="PUB_TYP" value="1" /> Conference
 
                         <input type="radio" name="PUB_TYP" value="2" />Activity
@@ -41,34 +41,42 @@ canvas_header('CV ') ?>
                     </div>
                         <div class="row">
                             <div class="form-group col-md-6">
-                                <label > Date    </label>
+                                <label class="pull-right"> Date    </label>
                                 <input  type="text" class="form-control" name="DATE_OF_PUB" id="DATE_OF_PUB"value="<?php echo set_value('DATE_OF_PUB'); ?>">
                                 <?php echo form_error('DATE_OF_PUB','<span class='.'error'.'>','</span>') ?>
                             </div>
 
                             <div class="form-group col-md-6">
-                                <label>Place  </label>
+                                <label class="pull-right">Place  </label>
                                 <input type="text" class="form-control" name="PLACE_OF_PUB">
                             </div>
                         </div>
+                        <div class="row">
                         <div class="form-group col-md-6">
-                            <label>The language  </label>
+                            <label class="pull-right">The language  </label>
                             <input type="text" class="form-control" name="PUB_LANGUGE">
                         </div>
                         <div class="form-group col-md-6">
-                            <label>Address  </label>
+                            <label class="pull-right">Address  </label>
                             <!--<textarea class="form-control" name="TITLE"></textarea>-->
                             <input type="text"class="form-control" name="TITLE">
                         </div>
-
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label></label>
+                            </div>
                         <div class="form-group col-md-6">
-                            <label>The Description  </label>
+                            <label class="pull-right">The Description  </label>
                             <textarea class="form-control" name="DESCRIPTION"></textarea>
                         </div>
-
+                        </div>
                         <div class="row">
-                            <div class="col-md-4">
-                                <label>Attach the Publication File </label>
+                            <div class="col-md-6">
+                                <label></label>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="pull-right">Attach the Publication File </label>
                                 <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                             </div>
 
@@ -91,22 +99,22 @@ canvas_header('CV ') ?>
                         <div class="row">
 
                             <div class="col-md-3">
-                                <label>Fourth Name</label>
+                                <label class="pull-right">Fourth Name</label>
                                 <input type="text"  name="LST_NAME_ENG" class="form-control">
                             </div>
 
                             <div class="col-md-3">
-                                <label>Third Name</label>
+                                <label class="pull-right">Third Name</label>
                                 <input type="text"  name="THR_NAME_ENG" class="form-control">
                             </div>
 
                             <div class="col-md-3">
-                                <label>Second Name</label>
+                                <label class="pull-right">Second Name</label>
                                 <input type="text"  name="SND_NAME_ENG" class="form-control">
                             </div>
 
                             <div class="col-md-3">
-                                <label>First Name</label>
+                                <label class="pull-right">First Name</label>
                                 <input type="text"  name="FRT_NAME_ENG" class="form-control">
                             </div>
 

@@ -4,90 +4,19 @@ canvas_header('CV ') ?>
 
     <div class="row">
 
-        <div class="col-md-3 col-sm-3 col-xs-3">
-            <ul class="nav nav-tabs tabs-left">
+        <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
+            <ul class="nav nav-tabs tabs-right">
 
                 <li class="active"><a href="#siminars" data-toggle="tab"><i class="fa fa-graduation-cap"></i> Professional & Administrative Experience  </a></li>
 
             </ul>
         </div>
-        <div class="col-md-9 col-sm-9 col-xs-9">
+        <div class="col-md-9 col-sm-9 col-xs-9 pull-left">
 
             <div class="tab-content">
 
-
                 <!------------------------------------------------------->
 
-                <div class="tab-pane fade" id="pubmember">
-                    <form name="form7" action="<?= base_url('upgrades/PUBLICATIONS_PARTS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                        <div class="row">
-
-                            <div class="col-md-3">
-                                <label>Fourth Name</label>
-                                <input type="text"  name="LST_NAME_ENG" class="form-control">
-                            </div>
-
-                            <div class="col-md-3">
-                                <label>Third Name</label>
-                                <input type="text"  name="THR_NAME_ENG" class="form-control">
-                            </div>
-
-                            <div class="col-md-3">
-                                <label>Second Name</label>
-                                <input type="text"  name="SND_NAME_ENG" class="form-control">
-                            </div>
-
-                            <div class="col-md-3">
-                                <label>First Name</label>
-                                <input type="text"  name="FRT_NAME_ENG" class="form-control">
-                            </div>
-
-
-                        </div>
-                        <br>
-                        <!----- names  arabic-->
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label>الأسم الأول </label>
-                                <input type="text"  name="FRT_NAME_AR" class="form-control">
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <label>الأسم الثاني </label>
-                                <input type="text"  name="SND_NAME_AR" class="form-control">
-                            </div>
-
-
-                            <div class="col-md-3">
-                                <label>الأسم الثالث </label>
-                                <input type="text"  name="THR_NAME_AR" class="form-control">
-                            </div>
-
-                            <div class="col-md-3">
-                                <label>الأسم الرابع </label>
-                                <input type="text"  name="LST_NAME_AR" class="form-control">
-                            </div>
-
-                        </div>
-                        <br>
-                      <!--  <div class="row">
-                            <div class="col-md-4">
-                                <label>أرفق  الملف </label>
-                                <input type="file"  name="FILE_BATH" class="form-control">
-                            </div>
-
-                        </div>-->
-                        <br>  <br>
-                    <div class="row">
-                        <div class="form-group col-md-12">
-                            <input type="submit" class="btn btn-success" value="Save">
-                        </div>
-                    </div>
-                    </form>
-                </div>
-
-                <!------------------------------------------------------->
                 <!------------------------------------------------------->
 
                 <div class="tab-pane fade" id="siminars">

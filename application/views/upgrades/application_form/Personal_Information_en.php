@@ -4,13 +4,13 @@ canvas_header('CV ') ?>
 
     <div class="row">
 
-        <div class="col-md-3 col-sm-3 col-xs-3">
-            <ul class="nav nav-tabs tabs-left">
-                <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> Personal Information  </a></li>
+        <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
+            <ul class="nav nav-tabs tabs-right">
+                <li class="active"><a href="#personal" data-toggle="tab"> Personal Information <i class="fa fa-user-o"> </i> </a></li>
 
             </ul>
         </div>
-        <div class="col-md-9 col-sm-9 col-xs-9">
+        <div class="col-md-9 col-sm-9 col-xs-9 pull-left">
 
             <div class="tab-content">
 
@@ -19,22 +19,22 @@ canvas_header('CV ') ?>
                     <div class="row">
 
                         <div class="col-md-3">
-                            <label>Fourth Name</label>
+                            <label class="pull-right">Fourth Name</label>
                             <input type="text"  name="LST_NAME_ENG" class="form-control">
                         </div>
 
                         <div class="col-md-3">
-                            <label>Third Name</label>
+                            <label class="pull-right">Third Name</label>
                             <input type="text"  name="THR_NAME_ENG" class="form-control">
                         </div>
 
                         <div class="col-md-3">
-                            <label>Second Name</label>
+                            <label class="pull-right">Second Name</label>
                             <input type="text"  name="SND_NAME_ENG" class="form-control">
                         </div>
 
                         <div class="col-md-3">
-                            <label>First Name</label>
+                            <label class="pull-right">First Name</label>
                             <input type="text"  name="FRT_NAME_ENG" class="form-control">
                         </div>
 
@@ -68,28 +68,39 @@ canvas_header('CV ') ?>
                     </div>
                     <br>
                     <!----- EMP_LANGUAGES-->
+
                     <div class="row">
                         <div class="col-md-6">
-                            <label> Languages you know</label>
+                            <label></label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="pull-right"> Languages you know</label>
 
                          <!--   <input type="checkbox" name="EMP_LANGUAGES" value="عربي" class="form-control">عربي
                             <input type="checkbox" name="EMP_LANGUAGES" value="انجليزي" class="form-control">انجليزي
                             <input type="checkbox" name="EMP_LANGUAGES" value="لغات اخرى" class="form-control">لغات اخرى-->
                             <input type="text"  name="EMP_LANGUAGES" class="form-control">
                         </div>
+
                     </div>
                     <br>
-                    <div class="row">
 
+                    <div class="row">
                         <div class="col-md-6">
-                            <label >  Home Phone Number </label>
+                            <label></label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="pull-right">  Home Phone Number </label>
                             <input type="text"  name="HOME_PHONE" class="form-control">
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-md-6">
-                            <label>Attach the CV File</label>
+                            <label></label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="pull-right">Attach the CV File</label>
                             <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                         </div>
 

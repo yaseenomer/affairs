@@ -4,14 +4,14 @@ canvas_header('CV ') ?>
 
     <div class="row">
 
-        <div class="col-md-3 col-sm-3 col-xs-3">
-            <ul class="nav nav-tabs tabs-left">
+        <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
+            <ul class="nav nav-tabs tabs-right">
 
-                <li class="active"><a href="#edu" data-toggle="tab"><i class="fa fa-graduation-cap"></i>   Pre-University Education </a></li>
+                <li class="active"><a href="#edu" data-toggle="tab">   Pre-University Education <i class="fa fa-graduation-cap"></i></a></li>
 
             </ul>
         </div>
-        <div class="col-md-9 col-sm-9 col-xs-9">
+        <div class="col-md-9 col-sm-9 col-xs-9 pull-left">
 
             <div class="tab-content">
 
@@ -21,7 +21,7 @@ canvas_header('CV ') ?>
                     <form name="form2" action="<?= base_url('upgrades/Edu/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
                         <div class=" form-group col-md-6">
-                            <label>  School Grade </label>
+                            <label class="pull-right">  School Grade </label>
                             <select name="PRE_EDU_TYPE"class="form-control">
                                 <option value=""></option>
                                 <option value="Basis">Basis</option>
@@ -33,14 +33,15 @@ canvas_header('CV ') ?>
                         </div>
 
                         <div class=" form-group col-md-6">
-                            <label>  School Name  </label>
+                            <label class="pull-right">  School Name  </label>
                             <input type="text"  name="SCHOOL_NAME" class="form-control">
                         </div>
                     </div>
                         <br>
-                        <div class="row" class=" form-group col-md-6">
-                            <label for="item"> Country</label>
-                            <select name="COUNTRY_NO"  class="form-control"  style="width:60%"  id="lev1">
+                        <div class="row form-group col-md-12 pull-right">
+
+                            <label for="item" class="pull-right"> Country</label>
+                            <select name="COUNTRY_NO"  class="form-control form-group col-md-12  "   id="lev1">
                                 <option>Select from the menu </option>
 
                                 <?php
@@ -49,38 +50,42 @@ canvas_header('CV ') ?>
                                     foreach($levels as $each)
                                     {
                                         ?>
-                                        <option value="<?php echo  $each->COUNTRY_NO ?>"><?php echo $each->COUNTRY_NAME_EN ?></option>
+                                        <option value="<?php echo  $each->COUNTRY_NO ?>"><?php echo $each->COUNTRY_NAME_ENG ?></option>
                                         <?php
                                     }
                                 }
                                 ?>
                             </select>
+                        </div>
                             <br> <br> <br>
                         <div class="row">
-                        <div class=" form-group col-md-4">
-                            <label>  YEAR </label>
+                            <div class=" form-group col-md-4">
+                                <label class="pull-right"> Rating / Percentage </label>
+                                <input type="TEXT" class="form-control" name="PRE_EDU_GRADE">
+                            </div>
+
+                            <div class=" form-group col-md-4">
+                                <label class="pull-right"> TO YEAR    </label>
+                                <input type="text" class="form-control" name="PRE_EDU_END" id="PRE_EDU_END" value="<?php echo set_value('PRE_EDU_END'); ?>">
+                                <?php echo form_error('PRE_EDU_END','<span class='.'error'.'>','</span>') ?>
+                            </div>
+
+                            <div class=" form-group col-md-4">
+                            <label class="pull-right">  YEAR </label>
                             <input type="text" class="form-control" name="PRE_EDU_START" id="PRE_EDU_START" value="<?php echo set_value('PRE_EDU_START'); ?>" >
                             <?php echo form_error('PRE_EDU_START','<span class='.'error'.'>','</span>') ?>
+                            </div>
+
                         </div>
 
-
-                        <div class=" form-group col-md-4">
-                            <label> TO YEAR    </label>
-                            <input type="text" class="form-control" name="PRE_EDU_END" id="PRE_EDU_END" value="<?php echo set_value('PRE_EDU_END'); ?>">
-                            <?php echo form_error('PRE_EDU_END','<span class='.'error'.'>','</span>') ?>
-                        </div>
-
-                        <div class=" form-group col-md-4">
-                            <label> Rating / Percentage </label>
-                            <input type="TEXT" class="form-control" name="PRE_EDU_GRADE">
-                        </div>
-                    </div>
-                        </div>
                     
                     <br>
                     <div class="row">
-                        <div class="col-md-4">
-                            <label>Attach The Certificate </label>
+                        <div class="col-md-6">
+                            <label></label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="pull-right">Attach The Certificate </label>
                             <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
                         </div>
 
