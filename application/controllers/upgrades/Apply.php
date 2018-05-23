@@ -87,8 +87,19 @@ class Apply  extends CI_Controller
         return $data;
     }
 
+    public function tr()
+    {
+        $this->load->view('upgrades/apply/test');
+    }
+
     public function t()
     {
-        echo FCPATH;
+        var_dump(attache(113,'cv'));
+
+    }
+
+    public function folder($folder)
+    {
+        return FCPATH.'uploads'.DIRECTORY_SEPARATOR.'attach'.DIRECTORY_SEPARATOR.$folder;
     }
 }
