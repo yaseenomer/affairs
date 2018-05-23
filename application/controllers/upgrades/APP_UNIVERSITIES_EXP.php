@@ -57,13 +57,14 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
-        $maxid=$this->M_APP_UNIVERSITIES_EXP->maxid(113);
+        $APP_ID=105;
+       // $EMP_NO=1000857;
+
+        $maxid=$this->M_APP_UNIVERSITIES_EXP->maxid($APP_ID);
         $UNI_SER=$maxid+1;
         $items = array(
-            'APP_ID' => 113  ,
-           // 'UNI_SER' =>1,
-           // 'APP_ID' => $this->input->post('APP_ID')  ,
-           'UNI_SER' =>$UNI_SER,// $this->input->post('UNI_SER')  ,
+            'APP_ID' => $APP_ID  ,
+            'UNI_SER' =>$UNI_SER,
             'UNI_EXP_TYPE' => $this->input->post('UNI_EXP_TYPE')  ,
             'UNI_EXP_SUB_TYPE' => $this->input->post('UNI_EXP_SUB_TYPE')  ,
             'START_DATE' => $this->input->post('START_DATE')  ,

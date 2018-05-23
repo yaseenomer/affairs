@@ -56,25 +56,24 @@ class Edu  extends CI_Controller
 
     public function insert()
     {
-       $attach =  handle_attache('113');
+        /*********************************************/
+        $APP_ID=105;
 
-       // var_dump($this->input->post());
-        $maxid=$this->M_Edu->maxid(113);
+        /********************************************/
+
+        $maxid=$this->M_Edu->maxid($APP_ID);
         $PRE_EDU_SER=$maxid+1;
         //$str = substr($str, 1); first charachters
         $items = array(
-            'APP_ID' => 113  ,
-           // 'PRE_EDU_SER' => 1  ,
-
-            //'APP_ID' => $this->input->post('APP_ID')  ,
-            'PRE_EDU_SER' =>$PRE_EDU_SER, //$this->input->post('PRE_EDU_SER')  ,
+            'APP_ID' => $APP_ID  ,
+            'PRE_EDU_SER' =>$PRE_EDU_SER,
             'PRE_EDU_TYPE' => $this->input->post('PRE_EDU_TYPE')  ,
             'SCHOOL_NAME' => $this->input->post('SCHOOL_NAME')  ,
             'COUNTRY_NO' => $this->input->post('COUNTRY_NO')  ,
             'PRE_EDU_START' => $this->input->post('PRE_EDU_START')  ,
             'PRE_EDU_END' => $this->input->post('PRE_EDU_END')  ,
             'PRE_EDU_GRADE' => $this->input->post('PRE_EDU_GRADE')  ,
-            'FILE_BATH' => $attach[0]['file_name'] ,
+            'FILE_BATH' => attache($APP_ID,'PRE_EDU')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO

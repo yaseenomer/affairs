@@ -52,21 +52,20 @@ class APP_PUBLICATIONS  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
 
-        $maxid=$this->M_APP_PUBLICATIONS->maxid(113);
+        $APP_ID=105;
+        $maxid=$this->M_APP_PUBLICATIONS->maxid($APP_ID);
         $PUB_SER=$maxid+1;
-        $items = array(
-            'APP_ID' => 113  ,
 
-           // 'PUB_SER' =>1,
-            //'APP_ID' => $this->input->post('APP_ID')  ,
-           'PUB_SER' => $PUB_SER,//$this->input->post('PUB_SER')  ,
+        $items = array(
+            'APP_ID' => $APP_ID  ,
+            'PUB_SER' => $PUB_SER,
             'PUB_TYP' => $this->input->post('PUB_TYP')  ,
             'DATE_OF_PUB' => $this->input->post('DATE_OF_PUB')  ,
             'PLACE_OF_PUB' => $this->input->post('PLACE_OF_PUB')  ,
             'TITLE' => $this->input->post('TITLE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'PUB_LANGUGE' => $this->input->post('PUB_LANGUGE')  ,
-            'FILE_BATH' => $this->input->post('FILE_BATH')  ,
+            'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')    ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO

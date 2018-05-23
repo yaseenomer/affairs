@@ -55,21 +55,21 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
-        $maxid=$this->M_APP_OTHER_EXPRIENCES->maxid(113);
+
+        $APP_ID=105;
+        $maxid=$this->M_APP_OTHER_EXPRIENCES->maxid($APP_ID);
         $EXP_SER=$maxid+1;
 
         $items = array(
-            'APP_ID' => 113  ,
-           // 'EXP_SER' =>1,
-            //'APP_ID' => $this->input->post('APP_ID')  ,
-            'EXP_SER' => $EXP_SER,//$this->input->post('EXP_SER')  ,
+            'APP_ID' => $APP_ID  ,
+            'EXP_SER' => $EXP_SER,
             'EXP_TYPE' => $this->input->post('EXP_TYPE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'EXP_START_DATE' => $this->input->post('EXP_START_DATE')  ,
             'EXP_END_DATE' => $this->input->post('EXP_END_DATE')  ,
             'EXP_PLACE' => $this->input->post('EXP_PLACE')  ,
             'UNV_ID' => $this->input->post('UNV_ID')  ,
-            'FILE_BATH' => $this->input->post('FILE_BATH')  ,
+            'FILE_BATH' => attache($APP_ID,'EXPERINCES')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO

@@ -57,16 +57,16 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
     public function insert()
     {
        // var_dump($this->input->post());
-        //$APP_ID=
-        $maxid=$this->M_APPLICATION_UNIV_EDU->maxid(113);
+        /*********************************************/
+        $APP_ID=105;
+
+        /********************************************/
+        $maxid=$this->M_APPLICATION_UNIV_EDU->maxid($APP_ID);
         $UNIV_EDU_SER=$maxid+1;
         //$str = substr($str, 1); first charachters
         $items = array(
-            'APP_ID' => 113  ,
-            //'UNIV_EDU_SER' =>1,
-
-            // 'APP_ID' => $this->input->post('APP_ID')  ,
-            'UNIV_EDU_SER' =>$UNIV_EDU_SER,// $this->input->post('UNIV_EDU_SER')  ,
+            'APP_ID' => $APP_ID  ,
+            'UNIV_EDU_SER' =>$UNIV_EDU_SER,
             'UNIV_EDU_TYPE' => $this->input->post('UNIV_EDU_TYPE')  ,
             'UNV_ID' => $this->input->post('UNV_ID')  ,
             'COUNTRY_NO' => $this->input->post('COUNTRY_NO')  ,
@@ -75,7 +75,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
             'DATE_OF_ISSUED' => $this->input->post('DATE_OF_ISSUED')  ,
             'UNIV_EDU_GRADE' => $this->input->post('UNIV_EDU_GRADE')  ,
             'THESIS_TITLE' => $this->input->post('THESIS_TITLE')  ,
-            'FILE_BATH' => $this->input->post('FILE_BATH')  ,
+            'FILE_BATH' => attache($APP_ID,'UNI_EDU')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
