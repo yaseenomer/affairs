@@ -32,7 +32,12 @@ class Application_Form  extends CI_Controller
         $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
-/***********************************************/
+    /*************************************************/
+public function language(){
+    $this->load->view('upgrades/application_form/check');
+
+}
+    /************************************************/
     public function index_en()
     {
         $data['approve'] = $this->session->flashdata('approve');
