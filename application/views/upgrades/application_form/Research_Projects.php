@@ -45,7 +45,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                      <div class="row">
                         <div class="col-md-4">
                             <label>أرفق  ملف المشروع</label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>

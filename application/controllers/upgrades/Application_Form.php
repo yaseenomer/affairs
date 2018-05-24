@@ -70,7 +70,7 @@ public function language(){
 
         //$str = substr($str, 1); first charachters
         $LAN = $this->session->language;
-        $APP_ID=109;
+        $APP_ID=120;
         $EMP_NO=1000857;
         /*********************************************/
         /********************************************/
@@ -89,15 +89,28 @@ public function language(){
             'LST_NAME_ENG' =>$this->input->post('LST_NAME_ENG')  ,
             'EMP_LANGUAGES' =>$this->input->post('EMP_LANGUAGES')  ,
             'HOME_PHONE' =>$this->input->post('HOME_PHONE')  ,
-            'FILE_BATH' =>attache($APP_ID,'CV')  ,
+           // 'FILE_BATH' =>attache($APP_ID,'CV')  ,
             'ENTRY_DATE' =>date('d-M-y') ,
             //'UPDATE_DATE' => date('d-M-y')  ,
             'USR_NO' =>user()->USR_NO
         );
 
-        $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+
+
+
         //var_dump($items);
-        $this->M_Application_Form->AddData($items);
+       $this->M_Application_Form->AddData($items);
+
+       if($this->M_Application_Form->checkAppIdExist($APP_ID)){
+           $item = array(
+               'FILE_BATH' =>attache($APP_ID,'CV')  ,
+               'UPDATE_DATE' => date('d-M-y')  ,
+               'USR_NO' =>user()->USR_NO
+           );
+           $this->M_Application_Form->Updatedata($APP_ID,$item) ;
+           $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+       }
+
         if($LAN==1) {
             return redirect('upgrades/Edu/create');
         }
@@ -106,5 +119,9 @@ public function language(){
         }
     }
     /***********************************/
+    public  function  t()
 
+    {
+        var_dump($this->M_Application_Form->checkAppIdExist(12));
+    }
 }
