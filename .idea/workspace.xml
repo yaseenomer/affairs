@@ -505,7 +505,7 @@
       <workItem from="1526539206080" duration="13434000" />
       <workItem from="1526884591597" duration="4937000" />
       <workItem from="1526970712915" duration="16780000" />
-      <workItem from="1527148358349" duration="4898000" />
+      <workItem from="1527148358349" duration="5865000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -724,11 +724,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526989207165</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update line in form en">
+      <created>1527153270101</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1527153270101</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="663797000" />
+    <option name="totallyTimeSpent" value="664764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
