@@ -3,16 +3,31 @@
         <img src="<?php echo base_url(); ?>assets/img/sudanun2.png">
     </div>
 
-    <?php echo form_open(base_url() . 'auth/EmpAccounts/save'); ?>
+    <?php echo form_open(base_url() . 'EmpAccounts/save'); ?>
+
+    <input type="hidden" name="EMP_NO" value="<?php echo $emp->EMP_NO?>">
+    <input type="hidden" name="LOC_NO" value="<?php echo $emp->COL_NO?>">
+    <input type="hidden" name="DEP_ID" value="<?php echo $emp->DEP_NO?>">
+
+    <input type="hidden" name="ENTRY_DATE" value="<?php echo date('d-M-y')?>">
+    <input type="hidden" name="UPDATE_DATE" value="<?php echo date('d-M-y')?>">
+    <input type="hidden" name="USR_NO" value="1">
+    <input type="hidden" name="GROUP_ID" value="1">
 
     <div class="form-group field-login">
-        <label for="login" class="control-label"> البريد الإلكتروني </label>
-        <input name="email" class="form-control" required="required" autofocus="autofocus" type="email">
+        <label for="login" class="control-label">  إسم المستخدم  </label>
+        <input name="USR_NAME" class="form-control" required="required" autofocus="autofocus" type="text">
     </div>
 
     <div class="form-group field-login">
+        <label for="login" class="control-label"> البريد الإلكتروني </label>
+        <input name="EMAIL" class="form-control" required="required" autofocus="autofocus" type="email">
+    </div>
+
+
+    <div class="form-group field-login">
         <label for="login" class="control-label"> كلمة المرور  </label>
-        <input name="password" class="form-control" required="required" autofocus="autofocus" type="password">
+        <input name="PASSWORD" class="form-control" required="required" autofocus="autofocus" type="password">
     </div>
 
     <button type="submit" class="btn btn-primary">إنشاء حـــساب </button>

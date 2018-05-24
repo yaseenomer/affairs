@@ -41,20 +41,15 @@
     </div>
 
     <div class="row">
-        <?php form_open(base_url('EmpAccounts/save')) ?>
 
-        <input type="hidden" value="<?php echo $emp->EMP_NO?>" name="EMP_NO">
-        <input type="hidden" value="<?php echo  iconv('windows-1256', 'utf-8', $emp->EMP_NAME)?>" name="">
-        <input type="hidden" value="<?php echo $emp->LOC_NAME?>">
-        <input type="hidden" value="<?php echo $emp->DEP_NAME?>">
-        <input type="hidden" value="<?php echo $emp->DEP_NAME?>">
+
 
         <div class="col-md-12">
-            <button type="submit" class="btn btn-success"> إنشاء حساب  </button>
+            <a href="<?php echo base_url('EmpAccounts/register')?>" class="btn btn-success" > إنشاء حساب </a>
 
-            <a  href="<?php echo base_url('EmpAccounts')?>" type="submit" class="btn btn-primary">  رجوع   </a>
+            <a  href="<?php echo base_url('EmpAccounts')?>" class="btn btn-primary">  رجوع   </a>
         </div>
-        <?php echo form_close()?>
+
     </div>
 
 

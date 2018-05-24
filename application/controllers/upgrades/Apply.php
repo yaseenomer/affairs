@@ -94,7 +94,7 @@ class Apply  extends CI_Controller
 
     public function t()
     {
-        var_dump(attache(113,'cv'));
+        var_dump( $this->session->user);
 
     }
 

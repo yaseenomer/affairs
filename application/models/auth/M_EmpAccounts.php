@@ -45,17 +45,16 @@ class M_EmpAccounts extends CI_Model
 
    
 
-    public function check_username_exist($username = '')
+    public function check_username_exist($id)
     {
-
-        if (empty($username))
-        {
-            return FALSE;
-        }
-
-        return $this->db->where('USR_NAME', $username)
+        return $this->db->where('EMP_NO', $id)
                 ->limit(1)
-                ->count_all_results('CREW') > 0;
+                ->count_all_results('EMP_USER_ACCOUNTS') > 0;
+    }
+
+    public function create($data)
+    {
+        $this->db->insert('EMP_USER_ACCOUNTS',$data);
     }
 
     public function middlewareAuth()

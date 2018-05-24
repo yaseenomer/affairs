@@ -8,20 +8,31 @@ class EmpAccounts extends CI_Controller
         $this->load->model('auth/M_EmpAccounts','emp');
         $this->load->helper(array('url', 'form'));
         $this->load->library('session');
-
-
     }
-	public function index()
+
+    /**
+     *
+     */
+    public function index()
 	{
 	   $this->view('auth/emp_accounts/signin');
 	}
 
-    private function view($page, $data=false) {
+    /**
+     * @param $page
+     * @param bool $data
+     */
+    private function view($page, $data=false)
+    {
+
         $this->load->view("auth/header.php");
         $this->load->view($page, $data);
         $this->load->view("auth/footer.php");
     }
 
+    /**
+     *
+     */
     public function getEmp()
     {
         $this->session->set_userdata('emp_no', $this->input->post('emp_no'));
@@ -30,19 +41,55 @@ class EmpAccounts extends CI_Controller
         $this->view('auth/emp_accounts/details',$data);
     }
 
+    /**
+     *
+     */
     public function register()
     {
-        $this->view('auth/emp_accounts/register');
+        $data['emp'] = $this->emp->get($this->session->emp_no);
+        $this->view('auth/emp_accounts/register',$data);
     }
+
+    /**
+     *
+     */
     public function save()
     {
-        var_dump($this->input->post());
+        if (! $this->emp->check_username_exist(1000857))
+        {
+
+
+        }
+           echo 'allrady exist';
+
     }
 
+    /**
+     *
+     */
     public function t(){
-        echo $this->emp->get($this->session->emp_no);
+        var_dump( $this->session->user);
     }
 
+    /**
+     * @return array
+     */
+    public function data()
+    {
+        $data = array(
+            'EMP_NO' => $this->input->post('EMP_NO'),
+            'USR_NAME' => $this->input->post('USR_NAME'),
+            'PASSWORD' => password_hash($this->input->post('PASSWORD'), PASSWORD_DEFAULT),
+            'LOC_NO' => $this->input->post('LOC_NO'),
+            'DEP_ID' => $this->input->post('DEP_ID'),
+            'EMAIL' => $this->input->post('EMAIL'),
+            'ENTRY_DATE' => $this->input->post('ENTRY_DATE'),
+            'UPDATE_DATE' => $this->input->post('UPDATE_DATE'),
+            'USR_NO' => 1,
+            'GROUP_ID' => 1,
+        );
+        return $data;
+    }
 
 
 }

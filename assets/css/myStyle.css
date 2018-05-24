@@ -23,6 +23,12 @@ body {
 input[type=text]:focus {
     border: 1px solid #1daf9a;
 }
+input[type=email]:focus {
+    border: 1px solid #1daf9a;
+}
+input[type=password]:focus {
+    border: 1px solid #1daf9a;
+}
 
 textarea:focus {
     border: 1px solid #1daf9a !important;
