@@ -57,8 +57,10 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
+        /*********************************************/
         $APP_ID=105;
-       // $EMP_NO=1000857;
+        $LAN = $this->session->language;
+        /********************************************/
 
         $maxid=$this->M_APP_UNIVERSITIES_EXP->maxid($APP_ID);
         $UNI_SER=$maxid+1;
@@ -85,8 +87,13 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_UNIVERSITIES_EXP->AddData($items);
-
-        return redirect('upgrades/APP_UNIVERSITIES_EXP');
+        if($LAN==1) {
+            return redirect('upgrades/APP_PROJECTS/create');
+        }
+        else {
+            return redirect('upgrades/APP_PROJECTS/create_en');
+        }
+       // return redirect('upgrades/APP_UNIVERSITIES_EXP');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

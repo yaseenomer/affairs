@@ -56,7 +56,10 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
 
+        /*********************************************/
         $APP_ID=105;
+        $LAN = $this->session->language;
+        /********************************************/
         $maxid=$this->M_APP_OTHER_EXPRIENCES->maxid($APP_ID);
         $EXP_SER=$maxid+1;
 
@@ -78,7 +81,13 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_OTHER_EXPRIENCES->AddData($items);
-        return redirect('upgrades/APP_OTHER_EXPRIENCES');
+        if($LAN==1) {
+            return redirect('upgrades/APP_CV_REFERENCES/create');
+        }
+        else {
+            return redirect('upgrades/APP_CV_REFERENCES/create_en');
+        }
+       // return redirect('upgrades/APP_OTHER_EXPRIENCES');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

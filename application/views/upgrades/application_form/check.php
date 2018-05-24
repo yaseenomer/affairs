@@ -20,12 +20,12 @@
                     <div class="row">
                         <div class="col-md-4">
 
-                            <a href="<?php echo base_url()?>upgrades/Application_Form/create">اللغة العربية</a>
+                            <a href="<?php echo base_url()?>upgrades/Application_Form/create/1">اللغة العربية</a>
                         </div>
 
                         <div class="col-md-4">
 
-                            <a href="<?php echo base_url()?>upgrades/Application_Form/create_en">اللغة الانجليزية</a>
+                            <a href="<?php echo base_url()?>upgrades/Application_Form/create_en/2">اللغة الانجليزية</a>
                         </div>
                     </div>
                 </div>

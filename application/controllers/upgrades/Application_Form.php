@@ -50,14 +50,16 @@ public function language(){
 
     }
 /**********************************************/
-    public function create()
+    public function create($LAN)
     {
+        $this->session->set_userdata('language',$LAN);
         $this->load->view('upgrades/application_form/Personal_Information');
     }
 
     /*********************************************/
-    public function create_en()
+    public function create_en($LAN)
     {
+        $this->session->set_userdata('language',$LAN);
         $this->load->view('upgrades/application_form/Personal_Information_en');
     }
 
@@ -67,8 +69,8 @@ public function language(){
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
-
-        $APP_ID=105;
+        $LAN = $this->session->language;
+        $APP_ID=109;
         $EMP_NO=1000857;
         /*********************************************/
         /********************************************/
@@ -96,7 +98,12 @@ public function language(){
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
         //var_dump($items);
         $this->M_Application_Form->AddData($items);
-        return redirect('upgrades/Application_Form');
+        if($LAN==1) {
+            return redirect('upgrades/Edu/create');
+        }
+        else {
+            return redirect('upgrades/Edu/create_en');
+        }
     }
     /***********************************/
 

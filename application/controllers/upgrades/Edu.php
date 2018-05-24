@@ -58,7 +58,7 @@ class Edu  extends CI_Controller
     {
         /*********************************************/
         $APP_ID=105;
-
+        $LAN = $this->session->language;
         /********************************************/
 
         $maxid=$this->M_Edu->maxid($APP_ID);
@@ -78,12 +78,19 @@ class Edu  extends CI_Controller
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
         );
-        var_dump($items);exit();
+        //var_dump($items);exit();
 
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_Edu->AddData($items);
-        return redirect('upgrades/Edu');
+
+        if($LAN==1) {
+            return redirect('upgrades/APPLICATION_UNIV_EDU/create');
+        }
+        else {
+            return redirect('upgrades/APPLICATION_UNIV_EDU/create_en');
+        }
+
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

@@ -51,7 +51,11 @@ class APP_PROJECTS  extends CI_Controller
        // var_dump($this->input->post());
         //$str = substr($str, 1); first charachters
 
+        /*********************************************/
         $APP_ID=105;
+        $LAN = $this->session->language;
+        /********************************************/
+
         $maxid=$this->M_APP_PROJECTS->maxid($APP_ID);
         $PRO_SER=$maxid+1;
 
@@ -72,7 +76,14 @@ class APP_PROJECTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_PROJECTS->AddData($items);
-        return redirect('upgrades/APP_PROJECTS');
+
+        if($LAN==1) {
+            return redirect('upgrades/APP_PUBLICATIONS/create');
+        }
+        else {
+            return redirect('upgrades/APP_PUBLICATIONS/create_en');
+        }
+        //return redirect('upgrades/APP_PROJECTS');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

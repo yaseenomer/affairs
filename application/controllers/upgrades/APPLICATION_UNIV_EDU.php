@@ -59,7 +59,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
        // var_dump($this->input->post());
         /*********************************************/
         $APP_ID=105;
-
+        $LAN = $this->session->language;
         /********************************************/
         $maxid=$this->M_APPLICATION_UNIV_EDU->maxid($APP_ID);
         $UNIV_EDU_SER=$maxid+1;
@@ -84,7 +84,14 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APPLICATION_UNIV_EDU->AddData($items);
-        return redirect('upgrades/APPLICATION_UNIV_EDU');
+
+        if($LAN==1) {
+            return redirect('upgrades/APP_UNIVERSITIES_EXP/create');
+        }
+        else {
+            return redirect('upgrades/APP_UNIVERSITIES_EXP/create_en');
+        }
+       //return redirect('upgrades/APPLICATION_UNIV_EDU');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

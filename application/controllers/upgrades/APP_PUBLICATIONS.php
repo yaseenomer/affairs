@@ -52,7 +52,10 @@ class APP_PUBLICATIONS  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
 
+        /*********************************************/
         $APP_ID=105;
+        $LAN = $this->session->language;
+        /********************************************/
         $maxid=$this->M_APP_PUBLICATIONS->maxid($APP_ID);
         $PUB_SER=$maxid+1;
 
@@ -74,7 +77,13 @@ class APP_PUBLICATIONS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_PUBLICATIONS->AddData($items);
-        return redirect('upgrades/APP_PUBLICATIONS');
+        if($LAN==1) {
+            return redirect('upgrades/APP_OTHER_EXPRIENCES/create');
+        }
+        else {
+            return redirect('upgrades/APP_OTHER_EXPRIENCES/create_en');
+        }
+       // return redirect('upgrades/APP_PUBLICATIONS');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)
