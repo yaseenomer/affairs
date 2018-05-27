@@ -56,6 +56,11 @@ class M_APP_CV_REFERENCES extends CI_Model
         return  $this->db->delete('APP_CV_REFERENCES', array('APP_ID' => $APP_ID));
     }
     /**********************************/
-
-
+    public function checkAppIdExist($id)
+    {
+        return $this->db->where('APP_ID', $id)
+                ->limit(1)
+                ->count_all_results('APP_CV_REFERENCES') > 0;
+    }
+    /**********************************/
 }

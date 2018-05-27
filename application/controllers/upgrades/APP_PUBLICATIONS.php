@@ -68,7 +68,7 @@ class APP_PUBLICATIONS  extends CI_Controller
             'TITLE' => $this->input->post('TITLE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'PUB_LANGUGE' => $this->input->post('PUB_LANGUGE')  ,
-            'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')    ,
+            //'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')    ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
@@ -77,6 +77,17 @@ class APP_PUBLICATIONS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_PUBLICATIONS->AddData($items);
+        /*********************************/
+        if($this->M_APP_PUBLICATIONS->checkAppIdExist($APP_ID)){
+            $item = array(
+                'FILE_BATH' =>attache($APP_ID,'PUBLICATIONS')  ,
+                'UPDATE_DATE' => date('d-M-y')  ,
+                'USR_NO' =>user()->USR_NO
+            );
+            $this->M_APP_PUBLICATIONS->Updatedata($APP_ID,$item) ;
+            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+        }
+        /***********************************/
         if($LAN==1) {
             return redirect('upgrades/APP_OTHER_EXPRIENCES/create');
         }

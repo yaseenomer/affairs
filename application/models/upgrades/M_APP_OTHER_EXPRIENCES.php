@@ -57,5 +57,11 @@ class M_APP_OTHER_EXPRIENCES extends CI_Model
     }
     /**********************************/
 
-
+    public function checkAppIdExist($id)
+    {
+        return $this->db->where('APP_ID', $id)
+                ->limit(1)
+                ->count_all_results('APP_OTHER_EXPRIENCES') > 0;
+    }
+    /**********************************/
 }

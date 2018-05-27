@@ -58,6 +58,11 @@ class M_Edu extends CI_Model
         return  $this->db->delete('APPLICATION_PRE_EDU', array('APP_ID' => $APP_ID));
     }
     /**********************************/
-
+    public function checkAppIdExist($id)
+    {
+        return $this->db->where('APP_ID', $id)
+                ->limit(1)
+                ->count_all_results('APPLICATION_PRE_EDU') > 0;
+    }
 
 }

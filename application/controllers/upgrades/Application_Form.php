@@ -96,11 +96,14 @@ public function language(){
         );
 
 
+        if(!$this->M_Application_Form->checkAppIdExist($APP_ID)) {
 
-
-        //var_dump($items);
-       $this->M_Application_Form->AddData($items);
-
+            $this->M_Application_Form->AddData($items);
+        }
+        else {
+            $this->session->set_flashdata('addcon', ' رقم الاستمارة مدخل من قبل  ');
+        }
+/*********************************/
        if($this->M_Application_Form->checkAppIdExist($APP_ID)){
            $item = array(
                'FILE_BATH' =>attache($APP_ID,'CV')  ,
@@ -110,7 +113,7 @@ public function language(){
            $this->M_Application_Form->Updatedata($APP_ID,$item) ;
            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
        }
-
+/***********************************/
         if($LAN==1) {
             return redirect('upgrades/Edu/create');
         }

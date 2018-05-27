@@ -75,7 +75,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
             'DATE_OF_ISSUED' => $this->input->post('DATE_OF_ISSUED')  ,
             'UNIV_EDU_GRADE' => $this->input->post('UNIV_EDU_GRADE')  ,
             'THESIS_TITLE' => $this->input->post('THESIS_TITLE')  ,
-            'FILE_BATH' => attache($APP_ID,'UNI_EDU')  ,
+           // 'FILE_BATH' => attache($APP_ID,'UNI_EDU')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
@@ -84,7 +84,17 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APPLICATION_UNIV_EDU->AddData($items);
-
+        /*********************************/
+        if($this->M_APPLICATION_UNIV_EDU->checkAppIdExist($APP_ID)){
+            $item = array(
+                'FILE_BATH' =>attache($APP_ID,'UNI_EDU')  ,
+                'UPDATE_DATE' => date('d-M-y')  ,
+                'USR_NO' =>user()->USR_NO
+            );
+            $this->M_APPLICATION_UNIV_EDU->Updatedata($APP_ID,$item) ;
+            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+        }
+        /***********************************/
         if($LAN==1) {
             return redirect('upgrades/APP_UNIVERSITIES_EXP/create');
         }

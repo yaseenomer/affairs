@@ -67,7 +67,7 @@ class APP_PROJECTS  extends CI_Controller
             'PRO_TITLE' => $this->input->post('PRO_TITLE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'RESEARCHER_NAME' => $this->input->post('RESEARCHER_NAME')  ,
-            'FILE_BATH' => attache($APP_ID,'RESEARCH')  ,
+            //'FILE_BATH' => attache($APP_ID,'RESEARCH')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
@@ -76,7 +76,17 @@ class APP_PROJECTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_PROJECTS->AddData($items);
-
+        /*********************************/
+        if($this->M_APP_PROJECTS->checkAppIdExist($APP_ID)){
+            $item = array(
+                'FILE_BATH' =>attache($APP_ID,'RESEARCH')  ,
+                'UPDATE_DATE' => date('d-M-y')  ,
+                'USR_NO' =>user()->USR_NO
+            );
+            $this->M_APP_PROJECTS->Updatedata($APP_ID,$item) ;
+            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+        }
+        /***********************************/
         if($LAN==1) {
             return redirect('upgrades/APP_PUBLICATIONS/create');
         }

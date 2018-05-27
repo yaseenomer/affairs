@@ -6,17 +6,120 @@ canvas_header('CV ') ?>
 
         <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
             <ul class="nav nav-tabs tabs-right">
+                <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> Personal Information   </a></li>
 
-                <li class="active"><a href="#unv" data-toggle="tab"> University Qualifications & University Degree  <i class="fa fa-graduation-cap"></i> </a></li>
+                <li class=""><a href="#edu" data-toggle="tab">   Pre-University Education <i class="fa fa-graduation-cap"></i></a></li>
+
+                <li class=""><a href="#unv" data-toggle="tab"> University Qualifications & University Degree  <i class="fa fa-graduation-cap"></i> </a></li>
 
             </ul>
         </div>
         <div class="col-md-9 col-sm-9 col-xs-9 pull-right">
 
             <div class="tab-content">
+                <div class="tab-pane fade active in" id="personal">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
 
-    <!------------------------------------------------------->
-                <div class="tab-pane fade active in"  id="unv">
+                        <table class="table table-bordered table-advance" >
+
+                            <tr>
+                                <td><?php //echo $find->LOC_NAME ?></td>
+                                <th>Name in Arabic</th>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <th >Name in English</th>
+                            </tr>
+                            <tr>
+
+                                <td><?php //echo iconv('windows-1256', 'utf-8', $find->EMP_NAME)?> </td>
+                                <th>Languages you know </th>
+                            </tr>
+                            <tr>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <th>Home Phone Number</th>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>  <br>
+
+
+                    <!-- </form>-->
+                </div>
+                <!------------------------------------------------------->
+                <!------------------------------------------------------->
+                <div class="tab-pane fade " id="edu">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
+
+                        <table class="table table-bordered table-advance">
+
+                            <tr>
+                                <th>School Grade</th>
+                                <th>School Name   </th>
+                                <th>Country </th>
+                                <th>YEAR</th>
+                                <th>TO YEAR </th>
+                                <th> Rating / Percentage</th>
+                                <th>Certificate</th>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <th>Basis </th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+
+                            </tr>
+                            <tr>
+                                <th>Primary </th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th>Intermediate </th>
+
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th> Secondary</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>  <br>
+
+
+                    <!-- </form>-->
+                </div>
+                <!------------------------------------------------------->
+                <!------------------------------------------------------->
+                <div class="tab-pane fade "  id="unv">
                     <?php echo form_open_multipart(base_url('upgrades/APPLICATION_UNIV_EDU/insert'));  ?>
 
                     <div class="row">

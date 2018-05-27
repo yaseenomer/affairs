@@ -54,6 +54,11 @@ class M_APPLICATION_UNIV_EDU extends CI_Model
         return  $this->db->delete('APPLICATION_UNIV_EDU', array('APP_ID' => $APP_ID));
     }
     /**********************************/
-
+    public function checkAppIdExist($id)
+    {
+        return $this->db->where('APP_ID', $id)
+                ->limit(1)
+                ->count_all_results('APPLICATION_UNIV_EDU') > 0;
+    }
 
 }
