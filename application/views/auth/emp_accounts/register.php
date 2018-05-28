@@ -1,11 +1,16 @@
 <div class="col-md-6 col-md-offset-3 o_database_list">
+    <div class="row">
+        <div class="col-md-12">
+            <?php flash($error,'danger') ?>
+        </div>
+    </div>
     <div class="text-center">
         <img src="<?php echo base_url(); ?>assets/img/sudanun2.png">
     </div>
 
     <?php echo form_open(base_url() . 'EmpAccounts/save'); ?>
 
-    <input type="hidden" name="EMP_NO" value="<?php echo $emp->EMP_NO?>">
+    <input type="text" name="EMP_NO" value="<?php echo $emp->EMP_NO?>">
     <input type="hidden" name="LOC_NO" value="<?php echo $emp->COL_NO?>">
     <input type="hidden" name="DEP_ID" value="<?php echo $emp->DEP_NO?>">
 
@@ -31,6 +36,7 @@
     </div>
 
     <button type="submit" class="btn btn-primary">إنشاء حـــساب </button>
+    <a  href="<?php echo base_url('EmpAccounts') ?>" class="btn btn-default"> رجوع </a>
     </form>
 
 

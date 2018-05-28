@@ -21,11 +21,11 @@
                         <li class="active main-header"><a href="#"> الشئون العلمية<span class="sr-only">(current)</span></a></li>
 
 
-               <?php  getMenuItems($this->session->user->GROUP_ID); ?>
+               <?php if (isset($this->session->user))  getMenuItems($this->session->user->GROUP_ID) ?>
 				</li>
 			</ul>
             <ul class="nav navbar-nav navbar-right">
-              <?php  if(user()->GROUP_ID == 1) {  ?>
+              <?php if (isset($this->session->user))  if(user()->GROUP_ID == 1) {  ?>
              <li class="dropdown">
             
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -40,10 +40,29 @@
                 </li>
               <?php } ?>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo $this->session->user->USR_NAME ?>  <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <?php if (isset($this->session->user)) {
+
+                            echo $this->session->user->USR_NAME;
+
+                        }elseif (isset($this->session->empAccount)){
+
+                            echo $this->session->empAccount->USR_NAME;
+                        }
+                        ?>
+                        <span class="caret"></span>
+                    </a>
                     <ul class="dropdown-menu">
+                        <?php if (isset($this->session->user)) { ?>
 
                         <li><a href="<?php echo base_url('auth/logout') ?>"> تسجيل خروج </a></li>
+
+                        <?php }elseif (isset($this->session->empAccount)) { ?>
+
+                        <li><a href="<?php echo base_url('EmpAccounts/logout') ?>"> <i class="fa fa-sign-out"></i> تسجيل خروج </a></li>
+
+                        <?php } ?>
+
                     </ul>
                 </li>
             </ul>

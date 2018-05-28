@@ -23,4 +23,4 @@ $autoload['config'] = array();
 $autoload['language'] = array();
 
 
-$autoload['model'] = array('auth/auth_model');
+$autoload['model'] = array('auth/auth_model','auth/M_EmpAccounts');

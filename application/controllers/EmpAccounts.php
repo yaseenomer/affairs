@@ -8,6 +8,7 @@ class EmpAccounts extends CI_Controller
         $this->load->model('auth/M_EmpAccounts','emp');
         $this->load->helper(array('url', 'form'));
         $this->load->library('session');
+
     }
 
     /**
@@ -15,8 +16,51 @@ class EmpAccounts extends CI_Controller
      */
     public function index()
 	{
-	   $this->view('auth/emp_accounts/signin');
+        $data['notTeacher'] = $this->session->flashdata('notTeacher');
+	   $this->load->view('auth/emp_accounts/main',$data);
 	}
+
+    public function emp()
+    {
+        $this->view('auth/emp_accounts/signin');
+    }
+
+    public function checkTeacher($id)
+    {
+        if ($this->emp->checkTeacher($id)){
+            redirect(base_url('EmpAccounts/upgradeType/').$id);
+        }
+        $this->session->set_flashdata('notTeacher','عزرا الترقيات لفئة الاساتذة فقط');
+        redirect(base_url('EmpAccounts'));
+    }
+
+    public function upgradeType($id)
+    {
+        $data['id'] = $id;
+
+        $data['notConfirm'] = $this->session->flashdata('notConfirm');
+
+        $this->load->view('auth/emp_accounts/upgrade_type',$data);
+    }
+
+    /**
+     * this function check
+     */
+    public function checkType()
+    {
+        $query = $this->emp->checkType($this->input->post('emp_no'), $this->input->post('type'));
+
+        if ($query){
+
+            redirect(base_url('upgrades/Application_Form/language'));
+        }
+
+        $this->session->set_flashdata('notConfirm','لم تستوفي المدة الزمنية المطلوبة  للترقية تلك  ');
+
+
+        redirect('EmpAccounts/upgradeType/'.$this->input->post('emp_no'));
+    }
+
 
     /**
      * @param $page
@@ -46,6 +90,7 @@ class EmpAccounts extends CI_Controller
      */
     public function register()
     {
+        $data['error'] = $this->session->flashdata('error');
         $data['emp'] = $this->emp->get($this->session->emp_no);
         $this->view('auth/emp_accounts/register',$data);
     }
@@ -55,13 +100,46 @@ class EmpAccounts extends CI_Controller
      */
     public function save()
     {
-        if (! $this->emp->check_username_exist(1000857))
-        {
+        if (! $this->emp->checkEmpNoExist($this->input->post('EMP_NO'))){
 
+            $this->emp->create($this->data());
+
+        }else{
+            $this->session->set_flashdata('error', 'هذا المستخدم موجود مسبقا  ');
+
+            redirect('EmpAccounts/register');
+        }
+    }
+
+    public function getSignIn()
+    {
+        $this->view('auth/emp_accounts/signin2');
+    }
+
+
+    /**
+     *
+     */
+    public function postSignIn()
+    {
+
+        $auth = $this->emp->attempt(
+            $this->input->post("username"),
+            $this->input->post("password")
+        );
+
+        if (!$auth) {
+
+            return redirect('EmpAccounts/getSignIn');
 
         }
-           echo 'allrady exist';
 
+        return redirect('/EmpAccounts');
+
+    }
+    public function logout()
+    {
+        $this->emp->logout();
     }
 
     /**
@@ -85,7 +163,7 @@ class EmpAccounts extends CI_Controller
             'EMAIL' => $this->input->post('EMAIL'),
             'ENTRY_DATE' => $this->input->post('ENTRY_DATE'),
             'UPDATE_DATE' => $this->input->post('UPDATE_DATE'),
-            'USR_NO' => 1,
+            'USR_NO' => 26,
             'GROUP_ID' => 1,
         );
         return $data;
