@@ -24,7 +24,7 @@
     <div class="text-center">
         <button type="submit" class="btn btn-primary">دخـــول المستخدمين</button>
 
-        <a href="<?php echo base_url(); ?>EmpAccounts" class="btn btn-default">دخول الاساتذة   </a>
+        <a href="<?php echo base_url(); ?>EmpAccounts/getSignIn" class="btn btn-default">دخول الاساتذة   </a>
         
     </div>
 </div>
