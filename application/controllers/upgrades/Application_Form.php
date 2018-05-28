@@ -32,7 +32,6 @@ class Application_Form  extends CI_Controller
     {
         $LAN = $this->session->language;
         $data['detail'] = $this->M_Application_Form->GetDataWhere($id);
-        $data['levels'] = $this->M_Edu->getAccounts();
         $data['error'] = $this->session->flashdata('error');
         $data['success'] = $this->session->flashdata('success');
 
