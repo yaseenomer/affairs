@@ -17,38 +17,25 @@ canvas_header('CV ') ?>
 
             <div class="tab-content">
                 <div class="tab-pane fade active in" id="personal">
-                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
-                    <div class="row">
+                    <?php
+                    if(!empty($detail)){
+                        foreach ($detail as $find) { ?>
+                        <table class="table  table-advance table-bordered" >
+                            <tr><td><?php echo $find->FRT_NAME_AR ." ". $find->SND_NAME_AR." ".$find->THR_NAME_AR." ".$find->LST_NAME_AR ?></td></tr>
+                                <thead><tr><th>Name in Arabic</th></tr></thead>
 
-                        <table class="table table-bordered table-advance" >
+                                <thead><tr> <th >Name in English</th></tr></thead>
+                            <tr> <td><?php echo $find->FRT_NAME_ENG." ". $find->SND_NAME_ENG." ". $find->THR_NAME_ENG." ". $find->LST_NAME_ENG ?></td></tr>
 
-                            <tr>
-                                <td><?php //echo $find->LOC_NAME ?></td>
-                                <th>Name in Arabic</th>
-                            </tr>
+                                <thead><tr> <th>Languages you know </th></tr></thead>
+                            <tr> <td><?php echo $find->EMP_LANGUAGES ?> </td></tr>
 
-                            <tbody>
-                            <tr>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <th >Name in English</th>
-                            </tr>
-                            <tr>
-
-                                <td><?php //echo iconv('windows-1256', 'utf-8', $find->EMP_NAME)?> </td>
-                                <th>Languages you know </th>
-                            </tr>
-                            <tr>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <th>Home Phone Number</th>
-
-                            </tr>
-                            </tbody>
+                                <thead><tr> <th>Home Phone Number</th></tr></thead>
+                            <tr> <td><?php echo $find->HOME_PHONE ?></td></tr>
                         </table>
+                        <?php } }?>
                     </div>
-                    <br>  <br>
 
-
-                   <!-- </form>-->
                 </div>
     <!------------------------------------------------------->
     <!------------------------------------------------------->

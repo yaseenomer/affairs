@@ -17,36 +17,43 @@ canvas_header('السيرة الذاتية /CV ') ?>
             <div class="tab-content">
                 <!------------------------------------------------------->
                 <div class="tab-pane fade active in" id="personal">
-                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <form action=" <?php(base_url('upgrades/Edu/show/109'));  ?>" name="" method="post">
+
                     <div class="row">
 
-                        <table class="table table-bordered table-advance">
-
+                        <table class="table  table-advance table-bordered ">
+                            <?php
+                            if(!empty($detail)){
+                            foreach ($detail as $find) { ?>
+                            <thead>
                             <tr>
                                 <th>الاسم باللغة العربية</th>
-                                <td><?php //echo $find->LOC_NAME ?></td>
                             </tr>
-
-                            <tbody>
+                            </thead>
+                            <tr><td><?php echo $find->FRT_NAME_AR ." ". $find->SND_NAME_AR." ".$find->THR_NAME_AR." ".$find->LST_NAME_AR ?></td></tr>
+                            <thead>
                             <tr>
                                 <th>الاسم باللغة الانجليزية</th>
-                                <td><?php //echo $find->DEP_NAME ?></td>
                             </tr>
+                            </thead>
+                               <tr> <td><?php echo $find->FRT_NAME_ENG." ". $find->SND_NAME_ENG." ". $find->THR_NAME_ENG." ". $find->LST_NAME_ENG ?></td></tr>
+                            <thead>
                             <tr>
-                                <th>اللغات التي تتقنها </th>
-                                <td><?php //echo iconv('windows-1256', 'utf-8', $find->EMP_NAME)?> </td>
-                            </tr>
+                                <th>اللغات التي تتقنها </th></tr>
+                            </thead>
+                               <tr> <td><?php echo $find->EMP_LANGUAGES ?> </td></tr>
+                            <thead>
                             <tr>
-                                <th>رقم هاتف المنزل</th>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                            </tr>
-                            </tbody>
+                                <th>رقم هاتف المنزل</th></tr>
+                            </thead>
+                               <tr> <td><?php echo $find->HOME_PHONE ?></td></tr>
+                          <?php } }?>
                         </table>
                     </div>
                     <br>  <br>
 
 
-                   <!-- </form>-->
+                   </form>
                 </div>
     <!------------------------------------------------------->
 

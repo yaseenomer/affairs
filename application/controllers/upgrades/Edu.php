@@ -102,7 +102,26 @@ class Edu  extends CI_Controller
         }
 
     }
+    /************************************/
+    public function show($id)
+    {
+        $LAN = $this->session->language;
+        $data['detail'] = $this->M_Edu->GetDataWhere($id);
+        $data['error'] = $this->session->flashdata('error');
+        $data['success'] = $this->session->flashdata('success');
+
+        if ($LAN==1) {
+            $this->load->view('upgrades/application_form/Pre-University_Education', $data);
+        }
+        else
+        {
+            $this->load->view('upgrades/application_form/Pre-University_Education_en', $data);
+        }
+    }
+
     /***********************************/
+
+
   /*  public function delete_attache_from_path($id , $name)
     {
         $this->file->remove(APPPATH . '/uploads/' . $id . '/' . $name);
@@ -115,4 +134,5 @@ class Edu  extends CI_Controller
         $data2['levels'] = $this->UniversitiesModel->getLevels();
         $this->load->view('Universities/AddUniversities', $data2 );
     }*/
+
 }

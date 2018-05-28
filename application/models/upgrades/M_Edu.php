@@ -37,7 +37,7 @@ class M_Edu extends CI_Model
     public function GetDataWhere($id)
     {
         $this->db->where('APP_ID', $id);
-        return $this->db->get('APPLICATION_PRE_EDU')->result();
+        return $this->db->get('APPLICATION_FORM_CD')->result();
     }
     /**********************************/
 
