@@ -56,35 +56,51 @@ class Edu  extends CI_Controller
 
     public function insert()
     {
-       $attach =  handle_attache('113');
+        /*********************************************/
+        $APP_ID=105;
+        $LAN = $this->session->language;
+        /********************************************/
 
-       // var_dump($this->input->post());
-        $maxid=$this->M_Edu->maxid(113);
+        $maxid=$this->M_Edu->maxid($APP_ID);
         $PRE_EDU_SER=$maxid+1;
         //$str = substr($str, 1); first charachters
         $items = array(
-            'APP_ID' => 113  ,
-           // 'PRE_EDU_SER' => 1  ,
-
-            //'APP_ID' => $this->input->post('APP_ID')  ,
-            'PRE_EDU_SER' =>$PRE_EDU_SER, //$this->input->post('PRE_EDU_SER')  ,
+            'APP_ID' => $APP_ID  ,
+            'PRE_EDU_SER' =>$PRE_EDU_SER,
             'PRE_EDU_TYPE' => $this->input->post('PRE_EDU_TYPE')  ,
             'SCHOOL_NAME' => $this->input->post('SCHOOL_NAME')  ,
             'COUNTRY_NO' => $this->input->post('COUNTRY_NO')  ,
             'PRE_EDU_START' => $this->input->post('PRE_EDU_START')  ,
             'PRE_EDU_END' => $this->input->post('PRE_EDU_END')  ,
             'PRE_EDU_GRADE' => $this->input->post('PRE_EDU_GRADE')  ,
-            'FILE_BATH' => $attach[0]['file_name'] ,
+           // 'FILE_BATH' => attache($APP_ID,'PRE_EDU')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
         );
-        var_dump($items);exit();
+        //var_dump($items);exit();
 
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_Edu->AddData($items);
-        return redirect('upgrades/Edu');
+        /*********************************/
+        if($this->M_Edu->checkAppIdExist($APP_ID)){
+            $item = array(
+                'FILE_BATH' =>attache($APP_ID,'PRE_EDU')  ,
+                'UPDATE_DATE' => date('d-M-y')  ,
+                'USR_NO' =>user()->USR_NO
+            );
+            $this->M_Edu->Updatedata($APP_ID,$item) ;
+            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+        }
+        /***********************************/
+        if($LAN==1) {
+            return redirect('upgrades/APPLICATION_UNIV_EDU/create');
+        }
+        else {
+            return redirect('upgrades/APPLICATION_UNIV_EDU/create_en');
+        }
+
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

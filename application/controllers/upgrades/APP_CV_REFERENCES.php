@@ -50,14 +50,16 @@ class APP_CV_REFERENCES  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
 
-        $x=$this->M_APP_CV_REFERENCES->maxid(113);
+        /*********************************************/
+        $APP_ID=105;
+
+        /********************************************/
+        $x=$this->M_APP_CV_REFERENCES->maxid($APP_ID);
         $EXP_SER=$x+1;
 
         $items = array(
-            'APP_ID' => 113  ,
-            //'EXP_SER' =>1,
-           // 'APP_ID' => $this->input->post('APP_ID')  ,
-            'EXP_SER' =>$EXP_SER,// $this->input->post('EXP_SER')  ,
+            'APP_ID' => $APP_ID  ,
+            'EXP_SER' =>$EXP_SER,
             'EMP_NAME' => $this->input->post('EMP_NAME')  ,
             'ADDRESS' => $this->input->post('ADDRESS')  ,
             'REL_PHONE' => $this->input->post('REL_PHONE')  ,

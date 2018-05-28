@@ -43,6 +43,12 @@ class M_Application_Form extends CI_Model
         return  $this->db->delete('APPLICATION_FORM_CD', array('APP_ID' => $APP_ID));
     }
     /**********************************/
+    public function checkAppIdExist($id)
+    {
+                return $this->db->where('APP_ID', $id)
+                ->limit(1)
+                ->count_all_results('APPLICATION_FORM_CD') > 0;
+    }
 
 
 }

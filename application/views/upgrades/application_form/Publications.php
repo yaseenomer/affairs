@@ -6,7 +6,18 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
         <div class="col-md-3 col-sm-3 col-xs-3">
             <ul class="nav nav-tabs tabs-left">
-                <li class="active"><a href="#publication" data-toggle="tab"><i class="fa fa-graduation-cap"></i> النشرات والمؤتمرات والبحوث  </a></li>
+
+                <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> المعلومات الشخصية  </a></li>
+
+                <li class=""><a href="#edu" data-toggle="tab"><i class="fa fa-graduation-cap"></i>   التعليم قبل الجامعي</a></li>
+
+                <li class=""><a href="#unv" data-toggle="tab"><i class="fa fa-graduation-cap"></i>المؤهلات الجامعية وفوق الجامعية   </a></li>
+
+                <li class=""><a href="#exp" data-toggle="tab"><i class="fa fa-graduation-cap"></i>  الخبرات الجامعية/ التدريسية / الاشرافية  </a></li>
+
+                <li class=""><a href="#prosearch" data-toggle="tab"><i class="fa fa-graduation-cap"></i>    المشروعات البحثية</a></li>
+
+                <li class=""><a href="#publication" data-toggle="tab"><i class="fa fa-graduation-cap"></i> النشرات والمؤتمرات والبحوث  </a></li>
                 <li class=""><a href="#pubmember" data-toggle="tab"><i class="fa fa-graduation-cap"></i> المشاركون في النشر  </a></li>
 
             </ul>
@@ -15,7 +26,237 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
             <div class="tab-content">
                 <!------------------------------------------------------->
-                <div class="tab-pane fade active in" id="publication">
+                <!------------------------------------------------------->
+                <div class="tab-pane fade active in" id="personal">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
+
+                        <table class="table table-bordered table-advance">
+
+                            <tr>
+                                <th>الاسم باللغة العربية</th>
+                                <td><?php //echo $find->LOC_NAME ?></td>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <th>الاسم باللغة الانجليزية</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th>اللغات التي تتقنها </th>
+                                <td><?php //echo iconv('windows-1256', 'utf-8', $find->EMP_NAME)?> </td>
+                            </tr>
+                            <tr>
+                                <th>رقم هاتف المنزل</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>  <br>
+
+
+                    <!-- </form>-->
+                </div>
+                <!------------------------------------------------------->
+                <div class="tab-pane fade " id="edu">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
+
+                        <table class="table table-bordered table-advance">
+
+                            <tr>
+                                <th>المراحل الدراسية</th>
+                                <th>اسم المدرسة </th>
+                                <th>الدولة </th>
+                                <th>من عام </th>
+                                <th> الى عام</th>
+                                <th> التقدير \ النسبة</th>
+                                <th> المرفق</th>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <th>ابتدائي </th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+
+                            </tr>
+                            <tr>
+                                <th>اساس </th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th>متوسط </th>
+
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th> ثانوي</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>  <br>
+
+
+                    <!-- </form>-->
+                </div>
+                <!------------------------------------------------------->
+                <div class="tab-pane fade" id="unv">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
+
+                        <table class="table table-bordered table-advance">
+
+                            <tr>
+                                <th>نوع المؤهل</th>
+                                <td><?php ?></td>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <th>الجامعة</th>
+                                <td><?php ?></td>
+                            </tr>
+                            <tr>
+                                <th> الدولة </th>
+                                <td><?php ?> </td>
+                            </tr>
+                            <tr>
+                                <th> الكلية</th>
+                                <td><?php ?></td>
+                            </tr>
+                            <tr>
+                                <th> التخصص</th>
+                                <td><?php ?></td>
+                            </tr>
+                            <tr>
+                                <th> تاريخ الحصول عليه </th>
+                                <td><?php ?></td>
+                            </tr>
+                            <tr>
+                                <th> التقدير</th>
+                                <td><?php ?></td>
+                            </tr>
+                            <tr>
+                                <th> عنوان الاطروحة / البحث</th>
+                                <td><?php ?></td>
+                            </tr>
+                            <tr>
+                                <th> ملف البحث</th>
+                                <td><?php ?></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!------------------------------------------------------->
+                <div class="tab-pane fade " id="exp">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
+
+                        <table class="table table-bordered table-advance">
+
+                            <tr>
+                                <th>نوع الخبرة</th>
+                                <td><?php ?></td>
+                                <th>نوع المؤهل</th>
+                                <td><?php ?></td>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <th>تاريخ البداية </th>
+                                <td><?php ?> </td>
+                                <th> تاريخ النهاية</th>
+                                <td><?php  ?></td>
+                            </tr>
+
+                            <tr>
+                                <th> الجامعة </th>
+                                <td><?php  ?></td>
+                                <th> الكلية </th>
+                                <td><?php  ?></td>
+                            </tr>
+
+                            <tr>
+                                <th> القسم </th>
+                                <td><?php  ?></td>
+                                <th> التخصص </th>
+                                <td><?php  ?></td>
+                            </tr>
+                            <tr>
+                                <th> الكورسات التى درسها </th>
+                                <td><?php  ?></td>
+                            </tr>
+                            <tr>
+                                <th> عدد المشاريع المشرف عليها </th>
+                                <td><?php  ?></td>
+                            </tr>
+                            <tr>
+                                <th> ملاحظات </th>
+                                <td><?php  ?></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!------------------------------------------------------->
+                <div class="tab-pane fade " id="prosearch">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
+
+                        <table class="table table-bordered table-advance">
+                            <tbody>
+                            <tr>
+                                <th>تاريخ المشروع </th>
+                                <td><?php ?></td>
+                            </tr>
+                            <tr>
+                                <th>أسم الباحث الرئيسي </th>
+                                <td><?php  ?></td>
+                            </tr>
+                            <tr>
+                                <th> العنوان</th>
+                                <td><?php ?> </td>
+                            </tr>
+                            <tr>
+                                <th>الوصف</th>
+                                <td><?php ?></td>
+                            </tr>
+                            <tr>
+                                <th>ملف المشروع</th>
+                                <td><?php ?></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!------------------------------------------------------->
+                <div class="tab-pane fade " id="publication">
                     <form name="form6" action="<?= base_url('upgrades/APP_PUBLICATIONS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
                         <label> نوع النشرات  </label>
@@ -67,7 +308,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                         <div class="row">
                             <div class="col-md-4">
                                 <label>أرفق  ملف المنشور </label>
-                                <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                                <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                             </div>
 
                         </div>
@@ -83,7 +324,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                 <!------------------------------------------------------->
                 <div class="tab-pane fade" id="pubmember">
-                    <form name="form7" action="<?= base_url('upgrades/PUBLICATIONS_PARTS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                        <?php echo form_open_multipart(base_url('upgrades/PUBLICATIONS_PARTS/insert'));  ?>
                         <div class="row">
 
                             <div class="col-md-3">

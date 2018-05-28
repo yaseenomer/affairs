@@ -38,15 +38,16 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         //var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
+        /*********************************************/
+        $APP_ID=105;
 
-        $maxid=$this->M_PUBLICATIONS_PARTS->maxid(113);
+        /********************************************/
+        $maxid=$this->M_PUBLICATIONS_PARTS->maxid($APP_ID);
         $PUB_PRT_SER=$maxid+1;
 
         $items = array(
-            'APP_ID' => 113  ,
+            'APP_ID' => $APP_ID  ,
             'PUB_SER' =>  1 ,
-            //'PUB_PRT_SER' => 1  ,
-           // 'APP_ID' => $this->input->post('APP_ID')  ,
             //'PUB_SER' => $this->input->post('PUB_SER')  ,
             'PUB_PRT_SER' =>$PUB_PRT_SER,// $this->input->post('PUB_PRT_SER')  ,
             'FRT_NAME_AR' => $this->input->post('FRT_NAME_AR')  ,
@@ -57,7 +58,7 @@ class PUBLICATIONS_PARTS  extends CI_Controller
             'SND_NAME_ENG' => $this->input->post('SND_NAME_ENG')  ,
             'THR_NAME_ENG' => $this->input->post('THR_NAME_ENG')  ,
             'LST_NAME_ENG' => $this->input->post('LST_NAME_ENG')  ,
-            'FILE_BATH' => $this->input->post('FILE_BATH')  ,
+           // 'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
@@ -66,6 +67,17 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_PUBLICATIONS_PARTS->AddData($items);
+        /*********************************/
+        if($this->M_PUBLICATIONS_PARTS->checkAppIdExist($APP_ID)){
+            $item = array(
+                'FILE_BATH' =>attache($APP_ID,'PUBLICATIONS')  ,
+                'UPDATE_DATE' => date('d-M-y')  ,
+                'USR_NO' =>user()->USR_NO
+            );
+            $this->M_PUBLICATIONS_PARTS->Updatedata($APP_ID,$item) ;
+            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+        }
+        /***********************************/
         return redirect('upgrades/PUBLICATIONS_PARTS');
     }
     /***********************************/

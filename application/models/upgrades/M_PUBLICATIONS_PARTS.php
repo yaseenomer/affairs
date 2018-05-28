@@ -50,6 +50,11 @@ class M_PUBLICATIONS_PARTS extends CI_Model
         return  $this->db->delete('PUBLICATIONS_PARTS', array('APP_ID' => $APP_ID));
     }
     /**********************************/
-
+    public function checkAppIdExist($id)
+    {
+        return $this->db->where('APP_ID', $id)
+                ->limit(1)
+                ->count_all_results('PUBLICATIONS_PARTS') > 0;
+    }
 
 }

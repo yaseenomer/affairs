@@ -55,21 +55,24 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
        // var_dump($this->input->post());
 
         //$str = substr($str, 1); first charachters
-        $maxid=$this->M_APP_OTHER_EXPRIENCES->maxid(113);
+
+        /*********************************************/
+        $APP_ID=105;
+        $LAN = $this->session->language;
+        /********************************************/
+        $maxid=$this->M_APP_OTHER_EXPRIENCES->maxid($APP_ID);
         $EXP_SER=$maxid+1;
 
         $items = array(
-            'APP_ID' => 113  ,
-           // 'EXP_SER' =>1,
-            //'APP_ID' => $this->input->post('APP_ID')  ,
-            'EXP_SER' => $EXP_SER,//$this->input->post('EXP_SER')  ,
+            'APP_ID' => $APP_ID  ,
+            'EXP_SER' => $EXP_SER,
             'EXP_TYPE' => $this->input->post('EXP_TYPE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'EXP_START_DATE' => $this->input->post('EXP_START_DATE')  ,
             'EXP_END_DATE' => $this->input->post('EXP_END_DATE')  ,
             'EXP_PLACE' => $this->input->post('EXP_PLACE')  ,
             'UNV_ID' => $this->input->post('UNV_ID')  ,
-            'FILE_BATH' => $this->input->post('FILE_BATH')  ,
+           // 'FILE_BATH' => attache($APP_ID,'EXPERINCES')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
@@ -78,7 +81,24 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_OTHER_EXPRIENCES->AddData($items);
-        return redirect('upgrades/APP_OTHER_EXPRIENCES');
+        /*********************************/
+        if($this->M_APP_OTHER_EXPRIENCES->checkAppIdExist($APP_ID)){
+            $item = array(
+                'FILE_BATH' =>attache($APP_ID,'EXPERINCES')  ,
+                'UPDATE_DATE' => date('d-M-y')  ,
+                'USR_NO' =>user()->USR_NO
+            );
+            $this->M_APP_OTHER_EXPRIENCES->Updatedata($APP_ID,$item) ;
+            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+        }
+        /********************************/
+        if($LAN==1) {
+            return redirect('upgrades/APP_CV_REFERENCES/create');
+        }
+        else {
+            return redirect('upgrades/APP_CV_REFERENCES/create_en');
+        }
+       // return redirect('upgrades/APP_OTHER_EXPRIENCES');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

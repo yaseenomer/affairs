@@ -6,17 +6,119 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
         <div class="col-md-3 col-sm-3 col-xs-3">
             <ul class="nav nav-tabs tabs-left">
+                <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> المعلومات الشخصية  </a></li>
 
-                <li class="active"><a href="#unv" data-toggle="tab"><i class="fa fa-graduation-cap"></i>المؤهلات الجامعية وفوق الجامعية   </a></li>
+                <li class=""><a href="#edu" data-toggle="tab"><i class="fa fa-graduation-cap"></i>   التعليم قبل الجامعي</a></li>
+
+                <li class=""><a href="#unv" data-toggle="tab"><i class="fa fa-graduation-cap"></i>المؤهلات الجامعية وفوق الجامعية   </a></li>
 
         </div>
         <div class="col-md-9 col-sm-9 col-xs-9">
 
             <div class="tab-content">
-    <!------------------------------------------------------->
-                <div class="tab-pane fade active in" id="unv">
-                <form name="form3" action="<?= base_url('upgrades/APPLICATION_UNIV_EDU/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                <div class="row">
+                <!------------------------------------------------------->
+                <div class="tab-pane fade active in" id="personal">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
+
+                        <table class="table table-bordered table-advance">
+
+                            <tr>
+                                <th>الاسم باللغة العربية</th>
+                                <td><?php //echo $find->LOC_NAME ?></td>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <th>الاسم باللغة الانجليزية</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th>اللغات التي تتقنها </th>
+                                <td><?php //echo iconv('windows-1256', 'utf-8', $find->EMP_NAME)?> </td>
+                            </tr>
+                            <tr>
+                                <th>رقم هاتف المنزل</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>  <br>
+
+
+                    <!-- </form>-->
+                </div>
+                <!------------------------------------------------------->
+                <div class="tab-pane fade " id="edu">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
+
+                        <table class="table table-bordered table-advance">
+
+                            <tr>
+                                <th>المراحل الدراسية</th>
+                                <th>اسم المدرسة </th>
+                                <th>الدولة </th>
+                                <th>من عام </th>
+                                <th> الى عام</th>
+                                <th> التقدير \ النسبة</th>
+                                <th> المرفق</th>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <th>ابتدائي </th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+
+                            </tr>
+                            <tr>
+                                <th>اساس </th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th>متوسط </th>
+
+                            <td><?php //echo $find->DEP_NAME ?></td>
+                            <td><?php //echo $find->DEP_NAME ?></td>
+                            <td><?php //echo $find->DEP_NAME ?></td>
+                            <td><?php //echo $find->DEP_NAME ?></td>
+                            <td><?php //echo $find->DEP_NAME ?></td>
+                            <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th> ثانوي</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>  <br>
+
+
+                    <!-- </form>-->
+                </div>
+               <!------------------------------------------------------->
+                <div class="tab-pane fade" id="unv">
+                    <?php echo form_open_multipart(base_url('upgrades/APPLICATION_UNIV_EDU/insert'));  ?>
+
+                    <div class="row">
                         <div class=" form-group col-md-6">
                             <label> نوع المؤهل  </label>
                             <select name="UNIV_EDU_TYPE"class="form-control">
@@ -111,7 +213,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                     <div class="row">
                         <div class="col-md-4">
                             <label>أرفق  ملف البحث  </label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>
@@ -126,8 +228,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                      </form>
                 </div>
 
-               </div>
-
+            </div>
         </div>
 
     </div>

@@ -6,18 +6,51 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
         <div class="col-md-3 col-sm-3 col-xs-3">
             <ul class="nav nav-tabs tabs-left">
+                <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> المعلومات الشخصية  </a></li>
 
-                <li class="active"><a href="#edu" data-toggle="tab"><i class="fa fa-graduation-cap"></i>   التعليم قبل الجامعي</a></li>
+                <li class=""><a href="#edu" data-toggle="tab"><i class="fa fa-graduation-cap"></i>   التعليم قبل الجامعي</a></li>
 
             </ul>
         </div>
         <div class="col-md-9 col-sm-9 col-xs-9">
 
             <div class="tab-content">
+                <!------------------------------------------------------->
+                <div class="tab-pane fade active in" id="personal">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
 
+                        <table class="table table-bordered table-advance">
+
+                            <tr>
+                                <th>الاسم باللغة العربية</th>
+                                <td><?php //echo $find->LOC_NAME ?></td>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <th>الاسم باللغة الانجليزية</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            <tr>
+                                <th>اللغات التي تتقنها </th>
+                                <td><?php //echo iconv('windows-1256', 'utf-8', $find->EMP_NAME)?> </td>
+                            </tr>
+                            <tr>
+                                <th>رقم هاتف المنزل</th>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>  <br>
+
+
+                   <!-- </form>-->
+                </div>
     <!------------------------------------------------------->
 
-                <div class="tab-pane fade active in" id="edu">
+                <div class="tab-pane fade" id="edu">
 
                         <?php echo form_open_multipart( base_url('upgrades/Edu/insert'))?>
                     <div class="row">

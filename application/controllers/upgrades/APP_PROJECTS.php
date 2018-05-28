@@ -50,18 +50,24 @@ class APP_PROJECTS  extends CI_Controller
     {
        // var_dump($this->input->post());
         //$str = substr($str, 1); first charachters
-        $maxid=$this->M_APP_PROJECTS->maxid(113);
+
+        /*********************************************/
+        $APP_ID=105;
+        $LAN = $this->session->language;
+        /********************************************/
+
+        $maxid=$this->M_APP_PROJECTS->maxid($APP_ID);
         $PRO_SER=$maxid+1;
+
+
         $items = array(
-            'APP_ID' => 113  ,
-            //'PRO_SER' =>1 ,
-            //'APP_ID' => $this->input->post('APP_ID')  ,
-            'PRO_SER' =>$PRO_SER,// $this->input->post('PRO_SER')  ,
+            'APP_ID' => $APP_ID  ,
+            'PRO_SER' =>$PRO_SER,
             'DATE_OF_PRO' => $this->input->post('DATE_OF_PRO')  ,
             'PRO_TITLE' => $this->input->post('PRO_TITLE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'RESEARCHER_NAME' => $this->input->post('RESEARCHER_NAME')  ,
-            'FILE_BATH' => $this->input->post('FILE_BATH')  ,
+            //'FILE_BATH' => attache($APP_ID,'RESEARCH')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => user()->USR_NO
@@ -70,7 +76,24 @@ class APP_PROJECTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_PROJECTS->AddData($items);
-        return redirect('upgrades/APP_PROJECTS');
+        /*********************************/
+        if($this->M_APP_PROJECTS->checkAppIdExist($APP_ID)){
+            $item = array(
+                'FILE_BATH' =>attache($APP_ID,'RESEARCH')  ,
+                'UPDATE_DATE' => date('d-M-y')  ,
+                'USR_NO' =>user()->USR_NO
+            );
+            $this->M_APP_PROJECTS->Updatedata($APP_ID,$item) ;
+            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+        }
+        /***********************************/
+        if($LAN==1) {
+            return redirect('upgrades/APP_PUBLICATIONS/create');
+        }
+        else {
+            return redirect('upgrades/APP_PUBLICATIONS/create_en');
+        }
+        //return redirect('upgrades/APP_PROJECTS');
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

@@ -7,17 +7,53 @@ canvas_header('CV ') ?>
         <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
             <ul class="nav nav-tabs tabs-right">
 
-                <li class="active"><a href="#edu" data-toggle="tab">   Pre-University Education <i class="fa fa-graduation-cap"></i></a></li>
+                <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> Personal Information   </a></li>
+
+                <li class=""><a href="#edu" data-toggle="tab">   Pre-University Education <i class="fa fa-graduation-cap"></i></a></li>
 
             </ul>
         </div>
         <div class="col-md-9 col-sm-9 col-xs-9 pull-left">
 
             <div class="tab-content">
+                <div class="tab-pane fade active in" id="personal">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
 
+                        <table class="table table-bordered table-advance" >
+
+                            <tr>
+                                <td><?php //echo $find->LOC_NAME ?></td>
+                                <th>Name in Arabic</th>
+                            </tr>
+
+                            <tbody>
+                            <tr>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <th >Name in English</th>
+                            </tr>
+                            <tr>
+
+                                <td><?php //echo iconv('windows-1256', 'utf-8', $find->EMP_NAME)?> </td>
+                                <th>Languages you know </th>
+                            </tr>
+                            <tr>
+                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <th>Home Phone Number</th>
+
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>  <br>
+
+
+                   <!-- </form>-->
+                </div>
+    <!------------------------------------------------------->
     <!------------------------------------------------------->
 
-                <div class="tab-pane fade active in" id="edu">
+                <div class="tab-pane fade" id="edu">
                     <form name="form2" action="<?= base_url('upgrades/Edu/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
                         <div class=" form-group col-md-6">
