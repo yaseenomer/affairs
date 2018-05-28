@@ -17,10 +17,34 @@ class Application_Form  extends CI_Controller
         $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
 
     }
+/*********************************/
+    public function show_all()
+    {
 
-    /**
-     *
-     */
+        $data['alls'] = $this->M_Application_Form->getallup();
+        $data['insert'] = $this->session->flashdata('insert');
+        $data['update'] = $this->session->flashdata('update');
+        //var_dump($data);
+       $this->load->view('upgrades/application_form/index', $data);
+    }
+    /************************************/
+    public function show($id)
+    {
+        $LAN = $this->session->language;
+        $data['detail'] = $this->M_Application_Form->GetDataWhere($id);
+        $data['error'] = $this->session->flashdata('error');
+        $data['success'] = $this->session->flashdata('success');
+
+        if ($LAN==1) {
+            $this->load->view('upgrades/application_form/Pre-University_Education', $data);
+        }
+        else
+        {
+            $this->load->view('upgrades/application_form/Pre-University_Education_en', $data);
+        }
+    }
+
+    /***********************************/
     public function index()
     {
         $data['approve'] = $this->session->flashdata('approve');
@@ -93,7 +117,9 @@ public function language(){
            // 'FILE_BATH' =>attache($APP_ID,'CV')  ,
             'ENTRY_DATE' =>date('d-M-y') ,
             //'UPDATE_DATE' => date('d-M-y')  ,
-            'USR_NO' =>user()->USR_NO
+            'USR_NO' =>user()->USR_NO,
+            'CV_LANG' =>$LAN,
+
         );
 
 

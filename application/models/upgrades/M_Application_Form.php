@@ -11,7 +11,18 @@ class M_Application_Form extends CI_Model
     {
 
     }*/
+    /**********************************/
 
+    /**********************************/
+    public function getallup()
+    {
+        $this->db->select('*');
+        $this->db->from('APPLICATION_FORM');
+        $this->db->order_by('APP_ID','desc');
+        $this->db->join('EMPLOYEES_INFO', 'EMPLOYEES_INFO.EMP_NO = APPLICATION_FORM.EMP_NO');
+       return $this->db->get()->result();
+      //  return $this->db->get()->row();
+    }
     /**********************************/
     public function GetData()
     {
