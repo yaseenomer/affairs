@@ -57,6 +57,7 @@ canvas_header('CV ') ?>
                     <!-- </form>-->
                 </div>
                 <!------------------------------------------------------->
+
                 <!------------------------------------------------------->
                 <div class="tab-pane fade " id="edu">
                     <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
