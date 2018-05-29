@@ -25,6 +25,20 @@ class M_APP_OTHER_EXPRIENCES extends CI_Model
         return  $query = $this->db->get('UNIVERSITIES')->result();
     }
     /**********************************/
+    /*************************************/
+    public function GetData_PUB($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_PUBLICATIONS')->result();
+    }
+    /**********************************/
+    /*************************************/
+    public function GetData_Pepole($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('PUBLICATIONS_PARTS')->result();
+    }
+    /**********************************/
     /**********************************/
     public function GetData()
     {

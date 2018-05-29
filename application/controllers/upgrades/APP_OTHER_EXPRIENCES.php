@@ -13,6 +13,10 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_OTHER_EXPRIENCES');
+        $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
+        $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
+        $this->load->model('upgrades/M_APP_PROJECTS');
+        $this->load->model('upgrades/M_APP_PUBLICATIONS');
 
     }
 
@@ -29,7 +33,30 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
+    /************************************/
+    public function show($id)
+    {
+        $LAN = $this->session->language;
+        $data['UnivData'] = $this->M_APP_UNIVERSITIES_EXP->GetData_UNIV($id);
+        $data['pre'] = $this->M_APPLICATION_UNIV_EDU->GetData_PRE($id);
+        $data['person'] = $this->M_APPLICATION_UNIV_EDU->GetData_PERSONAL($id);
+        $data['EXP'] = $this->M_APP_PROJECTS->GetData_EXP($id);
+        $data['PRO'] = $this->M_APP_PUBLICATIONS->GetData_PRO($id);
+        $data['PUB'] = $this->M_APP_OTHER_EXPRIENCES->GetData_PUB($id);
+        $data['PEPOLE'] = $this->M_APP_OTHER_EXPRIENCES->GetData_Pepole($id);
+        $data['error'] = $this->session->flashdata('error');
+        $data['success'] = $this->session->flashdata('success');
 
+        if ($LAN==1) {
+            $this->load->view('upgrades/application_form/Administrative_Experience', $data);
+        }
+        else
+        {
+            $this->load->view('upgrades/application_form/Administrative_Experience_en', $data);
+        }
+    }
+
+    /***********************************/
     public function create()
     {
         $data['approve'] = $this->session->flashdata('approve');
