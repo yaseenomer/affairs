@@ -71,11 +71,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Refrences.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Refrences.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Refrences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="187">
+              <caret line="463" column="0" lean-forward="true" selection-start-line="463" selection-start-column="0" selection-end-line="463" selection-end-column="0" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
@@ -85,6 +85,7 @@
                 <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#8;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                <marker date="1527593931828" expanded="true" signature="22368:22385" ph="..." />
               </folding>
             </state>
           </provider>
@@ -100,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application_Form.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Application_Form.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="232">
@@ -452,7 +453,7 @@
       <workItem from="1527140450883" duration="13770000" />
       <workItem from="1527406218278" duration="11801000" />
       <workItem from="1527485533029" duration="17426000" />
-      <workItem from="1527577661891" duration="12812000" />
+      <workItem from="1527577661891" duration="13802000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -769,11 +770,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527587257383</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="show function English">
+      <created>1527592927223</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1527592927223</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="723463000" />
+    <option name="totallyTimeSpent" value="724453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1288,23 +1296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Refrences.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/affirs/Scholarship.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1563">
@@ -1334,6 +1325,24 @@
         <state relative-caret-position="232">
           <caret line="65" column="24" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Refrences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="463" column="0" lean-forward="true" selection-start-line="463" selection-start-column="0" selection-end-line="463" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+            <marker date="1527593931828" expanded="true" signature="22368:22385" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
