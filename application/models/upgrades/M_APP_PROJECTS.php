@@ -26,6 +26,14 @@ class M_APP_PROJECTS extends CI_Model
     }
     /**********************************/
 
+
+    /**********************************/
+    public function GetData_EXP($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return  $query = $this->db->get('APP_UNIVERSITIES_EXP')->result();
+    }
+    /**********************************/
     public function GetDataWhere($id)
     {
         $this->db->where('APP_ID', $id);

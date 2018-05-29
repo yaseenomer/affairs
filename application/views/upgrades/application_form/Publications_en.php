@@ -30,30 +30,23 @@ canvas_header('CV ') ?>
                     <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
                     <div class="row">
 
-                        <table class="table table-bordered table-advance" >
+                        <?php
+                        if(!empty($person)){
+                            foreach ($person as $find) { ?>
+                                <table class="table  table-advance table-bordered" >
+                                    <tr><td><?php echo $find->FRT_NAME_AR ." ". $find->SND_NAME_AR." ".$find->THR_NAME_AR." ".$find->LST_NAME_AR ?></td></tr>
+                                    <thead><tr><th>Name in Arabic</th></tr></thead>
 
-                            <tr>
-                                <td><?php //echo $find->LOC_NAME ?></td>
-                                <th>Name in Arabic</th>
-                            </tr>
+                                    <thead><tr> <th >Name in English</th></tr></thead>
+                                    <tr> <td><?php echo $find->FRT_NAME_ENG." ". $find->SND_NAME_ENG." ". $find->THR_NAME_ENG." ". $find->LST_NAME_ENG ?></td></tr>
 
-                            <tbody>
-                            <tr>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <th >Name in English</th>
-                            </tr>
-                            <tr>
+                                    <thead><tr> <th>Languages you know </th></tr></thead>
+                                    <tr> <td><?php echo $find->EMP_LANGUAGES ?> </td></tr>
 
-                                <td><?php //echo iconv('windows-1256', 'utf-8', $find->EMP_NAME)?> </td>
-                                <th>Languages you know </th>
-                            </tr>
-                            <tr>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <th>Home Phone Number</th>
-
-                            </tr>
-                            </tbody>
-                        </table>
+                                    <thead><tr> <th>Home Phone Number</th></tr></thead>
+                                    <tr> <td><?php echo $find->HOME_PHONE ?></td></tr>
+                                </table>
+                            <?php } }?>
                     </div>
                     <br>  <br>
 
@@ -67,7 +60,7 @@ canvas_header('CV ') ?>
                     <div class="row">
 
                         <table class="table table-bordered table-advance">
-
+                            <thead>
                             <tr>
                                 <th>School Grade</th>
                                 <th>School Name   </th>
@@ -77,47 +70,23 @@ canvas_header('CV ') ?>
                                 <th> Rating / Percentage</th>
                                 <th>Certificate</th>
                             </tr>
-
+                            </thead>
                             <tbody>
-                            <tr>
-                                <th>Basis </th>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
+                            <?php
+                            if(!empty($pre)){
+                                foreach ($pre as $find) { ?>
+                                    <tr>
+                                        <th><?php echo $find->PRE_EDU_TYPE ?> </th>
+                                        <td><?php echo $find->SCHOOL_NAME ?></td>
+                                        <td><?php echo $find->COUNTRY_NO ?></td>
+                                        <td><?php echo $find->PRE_EDU_START ?></td>
+                                        <td><?php echo $find->PRE_EDU_END ?></td>
+                                        <td><?php echo $find->PRE_EDU_GRADE ?></td>
+                                        <td><?php echo "uploads/attach/PRE_EDU/".$APP_ID.$find->FILE_BATH ?></td>
 
-                            </tr>
-                            <tr>
-                                <th>Primary </th>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                            </tr>
-                            <tr>
-                                <th>Intermediate </th>
+                                    </tr>
 
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                            </tr>
-                            <tr>
-                                <th> Secondary</th>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                            </tr>
-
+                                <?php } }?>
                             </tbody>
                         </table>
                     </div>
@@ -135,111 +104,82 @@ canvas_header('CV ') ?>
                         <table class="table table-bordered table-advance">
 
                             <tbody>
-
+                            <thead>
                             <tr>
-                                <td><?php ?></td>
+                                <th>search file </th>
+                                <th>Thesis Title / Research</th>
+                                <th>  Received Date </th>
+                                <th> Estimation</th>
+                                <th> College</th>
+                                <th> Specialization </th>
+                                <th> Country</th>
+                                <th> University</th>
                                 <th> Type of Qualification </th>
 
                             </tr>
-                            <tr>
-                                <td><?php ?></td>
-                                <th> University</th>
+                            </thead>
+                            <?php
+                            if(!empty($UnivData)){
+                                foreach ($UnivData as $find) { ?>
+                                    <tr>
+                                        <td><?php echo $find->FILE_BATH?></td>
+                                        <td><?php echo $find->THESIS_TITLE?></td>
+                                        <td><?php echo $find->DATE_OF_ISSUED ?> </td>
+                                        <td><?php echo $find->UNIV_EDU_GRADE?></td>
+                                        <td><?php echo $find->UNIV_EDU_COLLEGE?></td>
+                                        <td><?php echo $find->COUNTRY_NO?></td>
+                                        <td><?php echo $find->COUNTRY_NO?></td>
+                                        <td><?php echo $find->UNV_ID?></td>
+                                        <td><?php echo $find->UNIV_EDU_TYPE ?></td>
 
-                            </tr>
-                            <tr>
-                                <td><?php ?></td>
-                                <th> Country</th>
+                                    </tr>
 
-                            </tr>
-                            <tr>
-                                <td><?php ?></td>
-                                <th> Specialization </th>
-
-                            </tr>
-                            <tr>
-                                <td><?php ?></td>
-                                <th> College</th>
-
-                            </tr>
-                            <tr>
-                                <td><?php ?></td>
-                                <th> Estimation</th>
-
-                            </tr>
-                            <tr>
-                                <td><?php ?> </td>
-                                <th>  Received Date </th>
-
-                            </tr>
-                            <tr>
-                                <td><?php ?></td>
-                                <th>Thesis Title / Research</th>
-
-                            </tr>
-
-                            <tr>
-                                <td><?php ?></td>
-                                <th>search file </th>
-
-                            </tr>
+                                <?php } }?>
                             </tbody>
                         </table>
                     </div>
                 </div>
+                <!------------------------------------------------------->
                 <!------------------------------------------------------->
                 <div class="tab-pane fade " id="exp">
                     <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
                     <div class="row">
 
                         <table class="table table-bordered table-advance">
-
+                            <thead>
                             <tr>
-                                <td><?php ?></td>
-                                <th>Type of experience </th>
-                                <td><?php ?></td>
-                                <th>Type of Experience</th>
-
-                            </tr>
-
-                            <tbody>
-                            <tr>
-                                <td><?php ?> </td>
-                                <th> Start Date </th>
-                                <td><?php  ?></td>
-                                <th> End date</th>
-
-                            </tr>
-
-                            <tr>
-                                <td><?php  ?></td>
-                                <th> University </th>
-                                <td><?php  ?></td>
-                                <th> College </th>
-
-                            </tr>
-
-                            <tr>
-                                <td><?php  ?></td>
-                                <th> Specialization </th>
-                                <td><?php  ?></td>
-                                <th> Department </th>
-
-                            </tr>
-                            <tr>
-                                <td><?php  ?></td>
-                                <th> Number of Projects Supervised  </th>
-
-                            </tr>
-                            <tr>
-                                <td><?php  ?></td>
-                                <th> The Courses he Studied </th>
-
-                            </tr>
-                            <tr>
-                                <td><?php  ?></td>
                                 <th> Notes </th>
-
+                                <th> The Courses he Studied </th>
+                                <th> Number of Projects Supervised  </th>
+                                <th> Department </th>
+                                <th> Specialization </th>
+                                <th> College </th>
+                                <th> University </th>
+                                <th> End date</th>
+                                <th> Start Date </th>
+                                <th>Type of Experience</th>
+                                <th>Type of experience </th>
                             </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            if(!empty($EXP)){
+                                foreach ($EXP as $find) { ?>
+                                    <tr>
+
+                                        <td><?php echo $find->NOTES ?></td>
+                                        <td><?php  echo $find->EXP_COURCES?></td>
+                                        <td><?php echo $find->PROJECTS_NUMBERS ?></td>
+                                        <td><?php  echo $find->UNIV_EXP_DEPART?></td>
+                                        <td><?php echo $find->UNIV_EXP_SPECIAL ?></td>
+                                        <td><?php echo $find->UNIV_EXP_COLLEGE?></td>
+                                        <td><?php echo $find->UNV_ID ?></td>
+                                        <td><?php echo $find->END_DATE ?></td>
+                                        <td><?php echo $find->START_DATE?> </td>
+                                        <td><?php echo $find->UNI_EXP_SUB_TYPE?></td>
+                                        <td><?php echo $find->UNI_EXP_TYPE?></td>
+                                    </tr>
+                                <?php } }?>
                             </tbody>
                         </table>
                     </div>
@@ -251,32 +191,28 @@ canvas_header('CV ') ?>
                     <div class="row">
 
                         <table class="table table-bordered table-advance">
-                            <tbody>
-                            <tr>
-                                <td><?php ?></td>
-                                <th>Date of the Project</th>
 
-                            </tr>
+                            <thead>
                             <tr>
-                                <td><?php  ?></td>
-                                <th>Name of Principal Investigator </th>
-
-                            </tr>
-                            <tr>
-                                <td><?php ?> </td>
-                                <th> Address</th>
-
-                            </tr>
-                            <tr>
-                                <td><?php ?></td>
-                                <th>Description</th>
-
-                            </tr>
-                            <tr>
-                                <td><?php ?></td>
                                 <th> Project File</th>
-
+                                <th>Description</th>
+                                <th> Address</th>
+                                <th>Name of Principal Investigator </th>
+                                <th>Date of the Project</th>
                             </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            if(!empty($PRO)){
+                            foreach ($PRO as $find) { ?>
+                            <tr>
+                                <td><?php echo $find->FILE_BATH?></td>
+                                <td><?php echo $find->DESCRIPTION?></td>
+                                <td><?php echo $find->PRO_TITLE?> </td>
+                                <td><?php echo $find->RESEARCHER_NAME ?></td>
+                                <td><?php echo $find->DATE_OF_PRO?></td>
+                            </tr>
+                            <?php } }?>
                             </tbody>
                         </table>
                     </div>

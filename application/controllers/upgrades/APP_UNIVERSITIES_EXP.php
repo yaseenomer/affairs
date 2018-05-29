@@ -17,10 +17,26 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
 
 
     }
+    /************************************/
+    public function show($id)
+    {
+        $LAN = $this->session->language;
+        $data['UnivData'] = $this->M_APP_UNIVERSITIES_EXP->GetData_UNIV($id);
+        $data['pre'] = $this->M_APPLICATION_UNIV_EDU->GetData_PRE($id);
+        $data['person'] = $this->M_APPLICATION_UNIV_EDU->GetData_PERSONAL($id);
+        $data['error'] = $this->session->flashdata('error');
+        $data['success'] = $this->session->flashdata('success');
 
-    /**
-     *
-     */
+        if ($LAN==1) {
+            $this->load->view('upgrades/application_form/Supervisory_Experience', $data);
+        }
+        else
+        {
+            $this->load->view('upgrades/application_form/Supervisory_Experience_en', $data);
+        }
+    }
+
+    /***********************************/
     public function index()
     {
         $data['approve'] = $this->session->flashdata('approve');
