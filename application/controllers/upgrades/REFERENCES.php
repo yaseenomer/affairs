@@ -21,9 +21,8 @@ class REFERENCES  extends CI_Controller
 
     }
 
-    /**
-     *
-     */
+/**********************************************/
+
     public function index()
     {
         $data['approve'] = $this->session->flashdata('approve');
