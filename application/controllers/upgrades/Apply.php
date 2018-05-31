@@ -31,6 +31,9 @@ class Apply  extends CI_Controller
 
     }
 
+    /**
+     * @param $id
+     */
     public function create($id)
     {
 
@@ -100,21 +103,27 @@ class Apply  extends CI_Controller
     public function nextDegree($id)
     {
         $current =  $this->apply->empGrades($id)->GRADE_NO;
+        
         $next = $current+1;
+        
         $next = $this->db->where('EMP_TYPE',2)->where('GRADE_NO',$next)->get('EMP_GRADES_VIEW')->row()->GRADE_NAME;
+        
         return iconv('windows-1256','utf-8',$next);
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function dismiss($id)
     {
         return $this->db->where('EMP_NO',$id)->get('EMPLOYEES')->row();
     }
 
-    public function tr()
-    {
-        $this->load->view('upgrades/apply/test');
-    }
 
+    /**
+     * This Function To Tests 
+     */
     public function t()
     {
       var_dump($this->db->where('EMP_NO','1000321')->get('EMPLOYEES')->row());
@@ -122,8 +131,5 @@ class Apply  extends CI_Controller
 
     }
 
-    public function folder($folder)
-    {
-        return FCPATH.'uploads'.DIRECTORY_SEPARATOR.'attach'.DIRECTORY_SEPARATOR.$folder;
-    }
+    
 }
