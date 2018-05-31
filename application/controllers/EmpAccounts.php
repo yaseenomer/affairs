@@ -52,7 +52,7 @@ class EmpAccounts extends CI_Controller
 
         if ($query){
 
-            redirect(base_url('upgrades/Application_Form/language'));
+            redirect(base_url('upgrades/Apply/create/'.$this->input->post('emp_no')));
         }
 
         $this->session->set_flashdata('notConfirm','لم تستوفي المدة الزمنية المطلوبة  للترقية تلك  ');

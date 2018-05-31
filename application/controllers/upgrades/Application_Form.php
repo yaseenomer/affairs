@@ -59,7 +59,9 @@ class Application_Form  extends CI_Controller
     /*************************************************/
 public function language(){
 
-    $this->load->view('upgrades/application_form/check');
+    $data['insert_app'] = $this->session->flashdata('insert_app');
+
+    $this->load->view('upgrades/application_form/check',$data);
 
 }
     /************************************************/
