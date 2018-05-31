@@ -79,7 +79,7 @@ canvas_header('CV ') ?>
                             <input type="checkbox" name="EMP_LANGUAGES" value="لغات اخرى" class="form-control">لغات اخرى-->
                             <input type="text"  name="EMP_LANGUAGES[]" class="form-control">
                             <br>
-                            <i class="fa fa-plus-square-o  add_more_button" aria-hidden="true"> </i>
+                            <i class="fa fa-plus-square-o  add_more_button" aria-hidden="true" <?php tip('add new field for language') ?>> </i>
 
                            <!-- <button class="btn btn-sm btn-primary add_more_button">Add More Fields</button>-->
                         </div>

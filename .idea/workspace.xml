@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
+      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,12 +102,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application_Form.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Application_Form.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="28" />
+            <state relative-caret-position="-825">
+              <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Personal_Information_en.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="81" column="132" lean-forward="false" selection-start-line="81" selection-start-column="132" selection-end-line="81" selection-end-column="132" />
+              <folding>
+                <marker date="1527764480181" expanded="true" signature="6682:6710" ph="..." />
+                <marker date="1527764480181" expanded="true" signature="7698:7726" ph="..." />
+                <marker date="1527764480181" expanded="true" signature="8734:8762" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -113,23 +129,29 @@
       <file leaf-file-name="REFERENCES.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/REFERENCES.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
+            <state relative-caret-position="578">
               <caret line="99" column="67" lean-forward="true" selection-start-line="99" selection-start-column="67" selection-end-line="99" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Personal_Information_en.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
+      <file leaf-file-name="Apply.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1281">
-              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-              <folding>
-                <marker date="1527763097976" expanded="true" signature="6639:6667" ph="..." />
-                <marker date="1527763097976" expanded="true" signature="7655:7683" ph="..." />
-                <marker date="1527763097976" expanded="true" signature="8691:8719" ph="..." />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmpAccounts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/EmpAccounts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-968">
+              <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,7 +233,6 @@
         <option value="$PROJECT_DIR$/application/models/upgrades/M_Application_Form.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/index.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
-        <option value="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
         <option value="$PROJECT_DIR$/application/models/upgrades/M_APPLICATION_UNIV_EDU.php" />
         <option value="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" />
@@ -233,6 +254,7 @@
         <option value="$PROJECT_DIR$/application/controllers/upgrades/REFERENCES.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Refrences.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
       </list>
     </option>
   </component>
@@ -342,6 +364,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="SearchEverywhereHistoryKey" value="appl&#9;null&#9;null" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -488,7 +511,7 @@
       <workItem from="1527406218278" duration="11801000" />
       <workItem from="1527485533029" duration="17426000" />
       <workItem from="1527577661891" duration="13821000" />
-      <workItem from="1527743043803" duration="8706000" />
+      <workItem from="1527743043803" duration="11269000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -826,17 +849,24 @@
       <option name="project" value="LOCAL" />
       <updated>1527763100493</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add more details">
+      <created>1527763183387</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1527763183387</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="733178000" />
+    <option name="totallyTimeSpent" value="735741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21255673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.02496218" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5030257" order="12" side_tool="true" content_ui="tabs" />
@@ -957,20 +987,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/views/users/newuser/adduser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="171" column="39" lean-forward="false" selection-start-line="171" selection-start-column="36" selection-end-line="171" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../affirs_test/application/controllers/authi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="229" column="35" lean-forward="true" selection-start-line="229" selection-start-column="7" selection-end-line="229" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/check.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -1301,14 +1317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/REFERENCES.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="99" column="67" lean-forward="true" selection-start-line="99" selection-start-column="67" selection-end-line="99" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Refrences.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1327,23 +1335,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php">
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/REFERENCES.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="20" column="25" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="28" />
+        <state relative-caret-position="578">
+          <caret line="99" column="67" lean-forward="true" selection-start-line="99" selection-start-column="67" selection-end-line="99" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Apply.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/EmpAccounts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="1" column="17" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1281">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="371">
+          <caret line="81" column="132" lean-forward="false" selection-start-line="81" selection-start-column="132" selection-end-line="81" selection-end-column="132" />
           <folding>
-            <marker date="1527763097976" expanded="true" signature="6639:6667" ph="..." />
-            <marker date="1527763097976" expanded="true" signature="7655:7683" ph="..." />
-            <marker date="1527763097976" expanded="true" signature="8691:8719" ph="..." />
+            <marker date="1527764480181" expanded="true" signature="6682:6710" ph="..." />
+            <marker date="1527764480181" expanded="true" signature="7698:7726" ph="..." />
+            <marker date="1527764480181" expanded="true" signature="8734:8762" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-825">
+          <caret line="86" column="7" lean-forward="true" selection-start-line="86" selection-start-column="7" selection-end-line="86" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
