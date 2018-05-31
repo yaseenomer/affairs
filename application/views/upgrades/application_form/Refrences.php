@@ -52,11 +52,17 @@ canvas_header('CV ') ?>
                             <?php } }?>
                     </div>
                     <br>  <br>
-
-
+<!-------------------------add more---------------->
+                    <div class="input_fields_container">
+                        <div><input type="text" name="product_name[]">
+                            <button class="btn btn-sm btn-primary add_more_button">Add More Fields</button>
+                        </div>
+                    </div>
+<!-------------------------add more---------------->
                     <!-- </form>-->
                 </div>
                 <!------------------------------------------------------->
+
                 <!------------------------------------------------------->
                 <div class="tab-pane fade " id="edu">
                     <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
@@ -332,59 +338,38 @@ canvas_header('CV ') ?>
                 <div class="tab-pane fade " id="personnals">
                     <form name="form9" action="<?= base_url('upgrades/APP_CV_REFERENCES/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
-                        <div class="form-group col-md-6">
-                            <label class="pull-right"> The Name   </label>
-                            <input type="text"class="form-control" name="EMP_NAME">
-                        </div>
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                            <tr>
+                                <th>scientific degree </th>
+                                <th>Workplace </th>
+                                <th>Job</th>
+                                <th>E-mail     </th>
+                                <th>Phone  </th>
+                                <th>Current Address </th>
+                                <th>The Name </th>
+                                <th>#</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            $x=1;
+                            if(!empty($REFERENCES)){
+                                foreach ($REFERENCES as $find) { ?>
+                                    <tr>
 
-                        <div class="form-group col-md-6">
-                            <label class="pull-right"> Current Address  </label>
-                            <input type="text"class="form-control" name="ADDRESS">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label class="pull-right">Phone   </label>
-                            <input type="text"class="form-control" name="REL_PHONE">
-                        </div>
-
-                        <div class="form-group col-md-6">
-                            <label class="pull-right">E-mail     </label>
-                            <input type="text"class="form-control" name="E_MAIL">
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="form-group col-md-6">
-                            <label class="pull-right">Job   </label>
-                            <input type="text"class="form-control" name="REF_JOB">
-                        </div>
-
-                        <div class="form-group col-md-6">
-                            <label class="pull-right">Workplace      </label>
-                            <input type="text"class="form-control" name="WORK_PLC">
-                        </div>
-
-                        <div  class="form-group col-md-12  "  >
-                            <label class="pull-right"> scientific degree     </label>
-                            <select name="CURRENT_DEG" class="form-group col-md-12  " >
-                                <option  dir="rtl">Select from the menu </option>
-                                <?php
-                                if(!empty($qual))
-                                {
-                                    foreach($qual as $q)
-                                    {
-                                        ?>
-                                        <option value="<?php echo  $q->DEG_ID ?>"><?php echo $q->DEG_ENG_NAME ?></option>
-                                        <?php
-                                    }
-                                }
-                                ?>
-
-
-                            </select>
-                        </div>
+                                        <td><?php echo $find->CURRENT_DEG ?></td>
+                                        <td><?php echo $find->WORK_PLC ?></td>
+                                        <td><?php echo $find->REF_JOB ?></td>
+                                        <td><?php echo $find->E_MAIL?> </td>
+                                        <td><?php echo $find->REL_PHONE ?></td>
+                                        <td><?php echo $find->ADDRESS ?></td>
+                                        <td><?php echo $find->EMP_NAME ?></td>
+                                        <td><?php echo $x++ ?></td>
+                                    </tr>
+                                <?php } }?>
+                            </tbody>
+                        </table>
                     </div>
 
                     <div class="row" >
@@ -477,4 +462,20 @@ $this->load->view('app/layout/parts/footer'); ?>
     $('#EXP_START_DATE').datetimepicker(dateoptions);
 </script>
 
+<script>
+    $(document).ready(function() {
+        var max_fields_limit      = 10; //set limit for maximum input fields
+        var x = 1; //initialize counter for text box
+        $('.add_more_button').click(function(e){ //click event on add more fields button having class add_more_button
+            e.preventDefault();
+            if(x < max_fields_limit){ //check conditions
+                x++; //counter increment
+                $('.input_fields_container').append('<div><input type="text" name="product_name[]"/><a href="#" class="remove_field" style="margin-left:10px;">Remove</a></div>'); //add input field
+            }
+        });
+        $('.input_fields_container').on("click",".remove_field", function(e){ //user click on remove text links
+            e.preventDefault(); $(this).parent('div').remove(); x--;
+        })
+    });
+</script>
 

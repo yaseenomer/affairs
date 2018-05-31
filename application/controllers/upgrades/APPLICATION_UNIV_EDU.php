@@ -35,16 +35,18 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
     public function show($id)
     {
         $LAN = $this->session->language;
-        $data['detail'] = $this->M_Application_Form->GetDataWhere($id);
+       // $data['detail'] = $this->M_Application_Form->GetDataWhere($id);
+        $data['pre'] = $this->M_APPLICATION_UNIV_EDU->GetData_PRE($id);
+        $data['person'] = $this->M_APPLICATION_UNIV_EDU->GetData_PERSONAL($id);
         $data['error'] = $this->session->flashdata('error');
         $data['success'] = $this->session->flashdata('success');
 
         if ($LAN==1) {
-            $this->load->view('upgrades/application_form/Pre-University_Education', $data);
+            $this->load->view('upgrades/application_form/University_Qualifications', $data);
         }
         else
         {
-            $this->load->view('upgrades/application_form/Pre-University_Education_en', $data);
+            $this->load->view('upgrades/application_form/University_Qualifications_en', $data);
         }
     }
 

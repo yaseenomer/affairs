@@ -25,7 +25,14 @@ class M_APP_UNIVERSITIES_EXP extends CI_Model
         return  $query = $this->db->get('APP_UNIVERSITIES_EXP')->result();
     }
     /**********************************/
+    public function GetData_UNIV($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APPLICATION_UNIV_EDU')->result();
+    }
+    /**********************************/
 
+    /**********************************/
     public function GetDataWhere($id)
     {
         $this->db->where('APP_ID', $id);

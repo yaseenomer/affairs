@@ -19,6 +19,11 @@ class M_APP_PUBLICATIONS extends CI_Model
         return $this->db->get('APP_PUBLICATIONS')->row()->PUB_SER ;
     }//end of method
     /*************************************/
+    public function GetData_PRO($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_PROJECTS')->result();
+    }
     /**********************************/
     public function GetData()
     {

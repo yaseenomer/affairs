@@ -3,7 +3,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class APP_CV_REFERENCES  extends CI_Controller
+class REFERENCES  extends CI_Controller
 {
     protected $file;
 
@@ -21,9 +21,8 @@ class APP_CV_REFERENCES  extends CI_Controller
 
     }
 
-    /**
-     *
-     */
+/**********************************************/
+
     public function index()
     {
         $data['approve'] = $this->session->flashdata('approve');
@@ -52,11 +51,11 @@ class APP_CV_REFERENCES  extends CI_Controller
         $data['success'] = $this->session->flashdata('success');
 
         if ($LAN==1) {
-            $this->load->view('upgrades/application_form/Peoples', $data);
+            $this->load->view('upgrades/application_form/Refrences', $data);
         }
         else
         {
-            $this->load->view('upgrades/application_form/Peoples_en', $data);
+            $this->load->view('upgrades/application_form/Refrences', $data);
         }
     }
 

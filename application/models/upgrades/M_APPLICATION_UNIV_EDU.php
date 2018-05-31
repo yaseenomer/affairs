@@ -22,7 +22,20 @@ class M_APPLICATION_UNIV_EDU extends CI_Model
     {
 
     }*/
-
+    /**********************************/
+    public function GetData_PRE($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return  $query = $this->db->get('APPLICATION_PRE_EDU')->result();
+    }
+    /**********************************/
+    /**********************************/
+    public function GetData_PERSONAL($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return  $query = $this->db->get('APPLICATION_FORM_CD')->result();
+    }
+    /**********************************/
     /**********************************/
     public function GetData()
     {

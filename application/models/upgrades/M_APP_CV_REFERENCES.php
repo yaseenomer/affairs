@@ -25,6 +25,18 @@ class M_APP_CV_REFERENCES extends CI_Model
         return  $query = $this->db->get('ACADEMIC_DEGREES_NEXT')->result();
     }
     /**********************************/
+    /*************************************/
+    public function GetData_EXPER($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_OTHER_EXPRIENCES')->result();
+    }
+    /**********************************/
+    public function GetData_REFERENCES($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_CV_REFERENCES')->result();
+    }
     /**********************************/
     public function GetData()
     {

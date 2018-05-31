@@ -22,8 +22,8 @@ canvas_header('CV ') ?>
                     <div class="row">
 
                         <?php
-                        if(!empty($detail)){
-                            foreach ($detail as $find) { ?>
+                        if(!empty($person)){
+                            foreach ($person as $find) { ?>
                                 <table class="table  table-advance table-bordered" >
                                     <tr><td><?php echo $find->FRT_NAME_AR ." ". $find->SND_NAME_AR." ".$find->THR_NAME_AR." ".$find->LST_NAME_AR ?></td></tr>
                                     <thead><tr><th>Name in Arabic</th></tr></thead>
@@ -63,45 +63,21 @@ canvas_header('CV ') ?>
                             </tr>
 
                             <tbody>
+                            <?php
+                            if(!empty($pre)){
+                                foreach ($pre as $find) { ?>
                             <tr>
-                                <th>Basis </th>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
+                                <th><?php echo $find->PRE_EDU_TYPE ?> </th>
+                                <td><?php echo $find->SCHOOL_NAME ?></td>
+                                <td><?php echo $find->COUNTRY_NO ?></td>
+                                <td><?php echo $find->PRE_EDU_START ?></td>
+                                <td><?php echo $find->PRE_EDU_END ?></td>
+                                <td><?php echo $find->PRE_EDU_GRADE ?></td>
+                                <td><?php echo "uploads/attach/PRE_EDU/".$APP_ID.$find->FILE_BATH ?></td>
 
                             </tr>
-                            <tr>
-                                <th>Primary </th>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                            </tr>
-                            <tr>
-                                <th>Intermediate </th>
 
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                            </tr>
-                            <tr>
-                                <th> Secondary</th>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                                <td><?php //echo $find->DEP_NAME ?></td>
-                            </tr>
-
+                            <?php } }?>
                             </tbody>
                         </table>
                     </div>
