@@ -1,5 +1,9 @@
 <?php $this->load->view('app/layout/parts/top');main_header(array('الترقيات')); canvas_header(' CV/السيرة الذاتية') ?>
-
+      <div class="row">
+          <div class="col-md-12">
+              <?php flash($insert_app) ?>
+          </div>
+      </div>
     <div class="row">
 
         <div class="col-md-3 col-sm-3 col-xs-3">
