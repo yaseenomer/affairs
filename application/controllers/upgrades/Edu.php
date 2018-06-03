@@ -10,7 +10,7 @@ class Edu  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
+       // $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
        // $this->load->model('UniversitiesModel');
         $this->load->model('GeneralModel');
@@ -80,9 +80,11 @@ class Edu  extends CI_Controller
         );
         //var_dump($items);exit();
 
-        $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+       
 
         $this->M_Edu->AddData($items);
+         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+         redirect('upgrades/APPLICATION_UNIV_EDU/show/'.$APP_ID);
         /*********************************/
         if($this->M_Edu->checkAppIdExist($APP_ID)){
             $item = array(
@@ -94,12 +96,12 @@ class Edu  extends CI_Controller
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
         }
         /***********************************/
-        if($LAN==1) {
+       /* if($LAN==1) {
             return redirect('upgrades/APPLICATION_UNIV_EDU/create');
         }
         else {
             return redirect('upgrades/APPLICATION_UNIV_EDU/create_en');
-        }
+        }*/
 
     }
     /************************************/

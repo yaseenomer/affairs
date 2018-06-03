@@ -10,7 +10,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
+       // $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_OTHER_EXPRIENCES');
         $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
@@ -46,7 +46,8 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $data['PEPOLE'] = $this->M_APP_OTHER_EXPRIENCES->GetData_Pepole($id);
         $data['error'] = $this->session->flashdata('error');
         $data['success'] = $this->session->flashdata('success');
-
+        $data['univ'] = $this->M_APP_OTHER_EXPRIENCES->Getuniversity();
+        
         if ($LAN==1) {
             $this->load->view('upgrades/application_form/Administrative_Experience', $data);
         }
@@ -117,14 +118,15 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
             );
             $this->M_APP_OTHER_EXPRIENCES->Updatedata($APP_ID,$item) ;
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
+            redirect('upgrades/APP_CV_REFERENCES/show/'.$APP_ID);
         }
         /********************************/
-        if($LAN==1) {
+      /*  if($LAN==1) {
             return redirect('upgrades/APP_CV_REFERENCES/create');
         }
         else {
             return redirect('upgrades/APP_CV_REFERENCES/create_en');
-        }
+        }*/
        // return redirect('upgrades/APP_OTHER_EXPRIENCES');
     }
     /***********************************/

@@ -15,30 +15,35 @@ canvas_header('CV ') ?>
         </div>
         <div class="col-md-9 col-sm-9 col-xs-9 pull-left">
 
-            <div class="tab-content">
-                <div class="tab-pane fade active in" id="personal">
-                    <?php
-                    if(!empty($detail)){
-                        foreach ($detail as $find) { ?>
-                        <table class="table  table-advance table-bordered" >
-                            <tr><td><?php echo $find->FRT_NAME_AR ." ". $find->SND_NAME_AR." ".$find->THR_NAME_AR." ".$find->LST_NAME_AR ?></td></tr>
-                                <thead><tr><th>Name in Arabic</th></tr></thead>
+            <div class="tab-pane fade active in" id="personal">
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
+                    <div class="row">
 
-                                <thead><tr> <th >Name in English</th></tr></thead>
-                            <tr> <td><?php echo $find->FRT_NAME_ENG." ". $find->SND_NAME_ENG." ". $find->THR_NAME_ENG." ". $find->LST_NAME_ENG ?></td></tr>
+                        <?php
+                        if(!empty($person)){
+                            foreach ($person as $find) { ?>
+                                <table class="table  table-advance table-bordered" >
+                                    <tr><td><?php echo $find->FRT_NAME_AR ." ". $find->SND_NAME_AR." ".$find->THR_NAME_AR." ".$find->LST_NAME_AR ?></td></tr>
+                                    <thead><tr><th>Name in Arabic</th></tr></thead>
 
-                                <thead><tr> <th>Languages you know </th></tr></thead>
-                            <tr> <td><?php echo $find->EMP_LANGUAGES ?> </td></tr>
+                                    <thead><tr> <th >Name in English</th></tr></thead>
+                                    <tr> <td><?php echo $find->FRT_NAME_ENG." ". $find->SND_NAME_ENG." ". $find->THR_NAME_ENG." ". $find->LST_NAME_ENG ?></td></tr>
 
-                                <thead><tr> <th>Home Phone Number</th></tr></thead>
-                            <tr> <td><?php echo $find->HOME_PHONE ?></td></tr>
-                        </table>
-                        <?php } }?>
+                                    <thead><tr> <th>Languages you know </th></tr></thead>
+                                    <tr> <td><?php echo $find->EMP_LANGUAGES ?> </td></tr>
+
+                                    <thead><tr> <th>Home Phone Number</th></tr></thead>
+                                    <tr> <td><?php echo $find->HOME_PHONE ?></td></tr>
+                                </table>
+                            <?php } }?>
                     </div>
+                    <br>  <br>
 
+
+                    <!-- </form>-->
                 </div>
-    <!------------------------------------------------------->
-    <!------------------------------------------------------->
+                <!------------------------------------------------------->
+                <!------------------------------------------------------->
 
                 <div class="tab-pane fade" id="edu">
                     <form name="form2" action="<?= base_url('upgrades/Edu/insert') ?>" method="post" enctype="multipart/form-data" role="form">
@@ -117,7 +122,7 @@ canvas_header('CV ') ?>
 
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <input type="submit" class="btn btn-success" value="Save">
+                               
                                 <input type="submit" class="btn btn-success" value="Save & Contiue">
                             </div>
                         </div>
@@ -125,6 +130,14 @@ canvas_header('CV ') ?>
                     </form>
                 </div>
     <!------------------------------------------------------->
+    <div class="row">
+                            <div class="form-group col-md-12">
+                                <form name="form2" action="<?= base_url('upgrades/Edu/create_en') ?>" method="post" enctype="multipart/form-data" role="form">
+                                <input type="submit" class="btn btn-success" value="Add More">
+                                 </form>
+                                
+                            </div>
+                        </div>
 
             </div>
 

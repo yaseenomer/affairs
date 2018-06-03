@@ -10,7 +10,7 @@ class APP_PROJECTS  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
+       // $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_PROJECTS');
         $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
@@ -99,6 +99,8 @@ class APP_PROJECTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_PROJECTS->AddData($items);
+        redirect('upgrades/APP_PUBLICATIONS/show/'.$APP_ID);
+        
         /*********************************/
         if($this->M_APP_PROJECTS->checkAppIdExist($APP_ID)){
             $item = array(
@@ -110,12 +112,12 @@ class APP_PROJECTS  extends CI_Controller
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
         }
         /***********************************/
-        if($LAN==1) {
+       /* if($LAN==1) {
             return redirect('upgrades/APP_PUBLICATIONS/create');
         }
         else {
             return redirect('upgrades/APP_PUBLICATIONS/create_en');
-        }
+        }*/
         //return redirect('upgrades/APP_PROJECTS');
     }
     /***********************************/

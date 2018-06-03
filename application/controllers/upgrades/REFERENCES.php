@@ -10,7 +10,7 @@ class REFERENCES  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
+       // $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_CV_REFERENCES');
         $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
@@ -47,6 +47,7 @@ class REFERENCES  extends CI_Controller
         $data['PEPOLE'] = $this->M_APP_OTHER_EXPRIENCES->GetData_Pepole($id);
         $data['EXPER'] = $this->M_APP_CV_REFERENCES->GetData_EXPER($id);
         $data['REFERENCES'] = $this->M_APP_CV_REFERENCES->GetData_REFERENCES($id);
+        $data['qual'] = $this->M_APP_CV_REFERENCES->GetACADEMIC_DEGREES_NEXT();
         $data['error'] = $this->session->flashdata('error');
         $data['success'] = $this->session->flashdata('success');
 
@@ -104,7 +105,7 @@ class REFERENCES  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_CV_REFERENCES->AddData($items);
-        return redirect('upgrades/APP_CV_REFERENCES');
+        return redirect('upgrades/APP_CV_REFERENCES/show/'.$APP_ID);
     }
     /***********************************/
   /*  public function delete_attache_from_path($id , $name)

@@ -93,18 +93,18 @@ canvas_header('CV ') ?>
 
                         <div class="col-md-6 input_fields_container2">
                             <label class="pull-right">  Home Phone Number </label>
-                            <input type="text"  name="HOME_PHONE" class="form-control">
+                            <input type="text"  name="HOME_PHONE[]" class="form-control">
                             <br>
-                            <i class="fa fa-plus-square-o  add_more_button2" aria-hidden="true"> </i>
+                            <i class="fa fa-plus-square-o  add_more_button2" aria-hidden="true"<?php tip('add new field for Phone') ?>> </i>
 
                         </div>
                     </div>
                     <br>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-md-6">
                             <label></label>
                         </div>
-                        <div class="col-md-6 input_fields_container3">
+                       <div class="col-md-6 input_fields_container3">
                             <label class="pull-right">Attach the CV File</label>
                             <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                             <br>
@@ -113,6 +113,7 @@ canvas_header('CV ') ?>
                         </div>
 
                     </div>
+                    -->
                         <br>  <br>
 
                         <div class="row">

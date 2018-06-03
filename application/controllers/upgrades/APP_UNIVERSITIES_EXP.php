@@ -10,7 +10,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
+       // $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
         $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
@@ -26,6 +26,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $data['person'] = $this->M_APPLICATION_UNIV_EDU->GetData_PERSONAL($id);
         $data['error'] = $this->session->flashdata('error');
         $data['success'] = $this->session->flashdata('success');
+        $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
 
         if ($LAN==1) {
             $this->load->view('upgrades/application_form/Supervisory_Experience', $data);
@@ -103,12 +104,15 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_UNIVERSITIES_EXP->AddData($items);
-        if($LAN==1) {
+        redirect('upgrades/APP_PROJECTS/show/'.$APP_ID);
+       
+        
+      /*  if($LAN==1) {
             return redirect('upgrades/APP_PROJECTS/create');
         }
         else {
             return redirect('upgrades/APP_PROJECTS/create_en');
-        }
+        }*/
        // return redirect('upgrades/APP_UNIVERSITIES_EXP');
     }
     /***********************************/

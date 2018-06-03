@@ -57,11 +57,7 @@ class Application_Form  extends CI_Controller
 
     }
     /*************************************************/
-public function language($emp_no,$app_id){
-
-    $this->session->set_userdata('emp_no',$emp_no);
-
-    $this->session->set_userdata('app_id',$app_id);
+public function language(){
 
     $data['insert_app'] = $this->session->flashdata('insert_app');
 
@@ -80,11 +76,7 @@ public function language($emp_no,$app_id){
         $this->load->view('upgrades/application_form/Application_form_en',$data);
 
     }
-
-
-    /**
-     * @param $LAN
-     */
+/**********************************************/
     public function create($LAN)
     {
         $this->session->set_userdata('language',$LAN);
@@ -105,12 +97,15 @@ public function language($emp_no,$app_id){
 
         //$str = substr($str, 1); first charachters
         $LAN = $this->session->language;
-
+        $APP_ID=120;
+        $EMP_NO=1000857;
+        /*********************************************/
+        /********************************************/
         $items = array(
 
 
-            'APP_ID' => $this->session->app_id  ,
-            'EMP_NO' => $this->session->emp_no ,
+            'APP_ID' => $APP_ID  ,
+            'EMP_NO' => $EMP_NO ,
             'FRT_NAME_AR' =>$this->input->post('FRT_NAME_AR')  ,
             'SND_NAME_AR' =>$this->input->post('SND_NAME_AR')  ,
             'THR_NAME_AR' =>$this->input->post('THR_NAME_AR')  ,
@@ -130,24 +125,24 @@ public function language($emp_no,$app_id){
         );
 
 
-        if(!$this->M_Application_Form->checkAppIdExist($this->session->app_id)) {
+        if(!$this->M_Application_Form->checkAppIdExist($APP_ID)) {
 
             $this->M_Application_Form->AddData($items);
         }
         else {
             $this->session->set_flashdata('addcon', ' رقم الاستمارة مدخل من قبل  ');
         }
-        /*********************************/
-       if($this->M_Application_Form->checkAppIdExist($this->session->app_id)){
+/*********************************/
+       if($this->M_Application_Form->checkAppIdExist($APP_ID)){
            $item = array(
-               'FILE_BATH' =>attache($this->session->app_id,'CV')  ,
+               'FILE_BATH' =>attache($APP_ID,'CV')  ,
                'UPDATE_DATE' => date('d-M-y')  ,
                'USR_NO' =>user()->USR_NO
            );
-           $this->M_Application_Form->Updatedata($this->session->app_id,$item) ;
+           $this->M_Application_Form->Updatedata($APP_ID,$item) ;
            $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
        }
-        /***********************************/
+/***********************************/
         if($LAN==1) {
             return redirect('upgrades/Edu/create');
         }
@@ -155,10 +150,7 @@ public function language($emp_no,$app_id){
             return redirect('upgrades/Edu/create_en');
         }
     }
-
-    /**
-     *
-     */
+    /***********************************/
     public  function  t()
 
     {

@@ -10,7 +10,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
+       // $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
         $this->load->model('upgrades/M_Edu');
@@ -40,6 +40,8 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
         $data['person'] = $this->M_APPLICATION_UNIV_EDU->GetData_PERSONAL($id);
         $data['error'] = $this->session->flashdata('error');
         $data['success'] = $this->session->flashdata('success');
+         $data['uni'] = $this->M_APPLICATION_UNIV_EDU->Getuniversity();
+        $data['levels'] = $this->M_Edu->getAccounts();
 
         if ($LAN==1) {
             $this->load->view('upgrades/application_form/University_Qualifications', $data);
@@ -103,6 +105,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APPLICATION_UNIV_EDU->AddData($items);
+        redirect('upgrades/APP_UNIVERSITIES_EXP/show/'.$APP_ID);
         /*********************************/
         if($this->M_APPLICATION_UNIV_EDU->checkAppIdExist($APP_ID)){
             $item = array(
@@ -114,12 +117,12 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
         }
         /***********************************/
-        if($LAN==1) {
+       /* if($LAN==1) {
             return redirect('upgrades/APP_UNIVERSITIES_EXP/create');
         }
         else {
             return redirect('upgrades/APP_UNIVERSITIES_EXP/create_en');
-        }
+        }*/
        //return redirect('upgrades/APPLICATION_UNIV_EDU');
     }
     /***********************************/

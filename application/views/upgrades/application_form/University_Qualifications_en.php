@@ -205,7 +205,7 @@ canvas_header('CV ') ?>
 
                         <div class="row">
                             <div class="form-group col-md-12">
-                                <input type="submit" class="btn btn-success" value="Save">
+                                <input type="submit" class="btn btn-success" value="Add More">
                                 <input type="submit" class="btn btn-success" value="Save & Contiue">
                             </div>
                         </div>

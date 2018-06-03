@@ -10,7 +10,7 @@ class PUBLICATIONS_PARTS  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
+       // $this->file = new Symfony\Component\Filesystem\Filesystem();
         $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_PUBLICATIONS_PARTS');
     }
@@ -67,6 +67,7 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_PUBLICATIONS_PARTS->AddData($items);
+         // redirect('upgrades/APP_OTHER_EXPRIENCES/show/'.$APP_ID);
         /*********************************/
         if($this->M_PUBLICATIONS_PARTS->checkAppIdExist($APP_ID)){
             $item = array(

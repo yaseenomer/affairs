@@ -7,7 +7,7 @@ canvas_header('CV ') ?>
         <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
             <ul class="nav nav-tabs tabs-right ">
 
-                <li class="active"><a href="#personal" data-toggle="tab"><i class="fa fa-user-o"> </i> Personal Information   </a></li>
+                <li class="active"><a href="#personal" data-toggle="tab"> Personal Information <i class="fa fa-user-o"> </i>  </a></li>
 
                 <li class=""><a href="#edu" data-toggle="tab">   Pre-University Education <i class="fa fa-graduation-cap"></i></a></li>
 
@@ -18,6 +18,7 @@ canvas_header('CV ') ?>
                 <li class=""><a href="#prosearch" data-toggle="tab"> Research Projects <i class="fa fa-graduation-cap"></i> </a></li>
 
                 <li class=""><a href="#publication" data-toggle="tab"> Publications,Conferences & Research  <i class="fa fa-graduation-cap"></i></a></li>
+                
                 <li class=""><a href="#pubmember" data-toggle="tab"> Participants in The Publication  <i class="fa fa-graduation-cap"></i></a></li>
 
                 <li class=""><a href="#siminars" data-toggle="tab"><i class="fa fa-graduation-cap"></i> Professional & Administrative Experience  </a></li>
@@ -38,7 +39,7 @@ canvas_header('CV ') ?>
                             foreach ($person as $find) { ?>
                                 <table class="table  table-advance table-bordered" >
                                     <tr><td><?php echo $find->FRT_NAME_AR ." ". $find->SND_NAME_AR." ".$find->THR_NAME_AR." ".$find->LST_NAME_AR ?></td></tr>
-                                    <thead><tr><th>Name in Arabic</th></tr></thead>
+                                    <thead><th>Name in Arabic</th></thead>
 
                                     <thead><tr> <th >Name in English</th></tr></thead>
                                     <tr> <td><?php echo $find->FRT_NAME_ENG." ". $find->SND_NAME_ENG." ". $find->THR_NAME_ENG." ". $find->LST_NAME_ENG ?></td></tr>
@@ -52,13 +53,7 @@ canvas_header('CV ') ?>
                             <?php } }?>
                     </div>
                     <br>  <br>
-<!-------------------------add more---------------->
-                    <div class="input_fields_container">
-                        <div><input type="text" name="product_name[]">
-                            <button class="btn btn-sm btn-primary add_more_button">Add More Fields</button>
-                        </div>
-                    </div>
-<!-------------------------add more---------------->
+
                     <!-- </form>-->
                 </div>
                 <!------------------------------------------------------->
