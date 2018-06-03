@@ -4,6 +4,7 @@ canvas_header('CV ') ?>
 
     <div class="row">
 
+
         <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
             <ul class="nav nav-tabs tabs-right">
                 <li class="active"><a href="#personal" data-toggle="tab"> Personal Information <i class="fa fa-user-o"> </i> </a></li>
@@ -20,7 +21,7 @@ canvas_header('CV ') ?>
 
                         <div class="col-md-3">
                             <label class="pull-right">Fourth Name</label>
-                            <input type="text"  name="LST_NAME_ENG" class="form-control">
+                            <input type="text"  name="LST_NAME_ENG" class="form-control" >
                         </div>
 
                         <div class="col-md-3">

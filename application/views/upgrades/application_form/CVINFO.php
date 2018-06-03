@@ -12,7 +12,9 @@ $this->load->view('app/layout/parts/top'); ?>
                 <div class="portlet light">
                     <div class="portlet-body">
                         <form action="<?= base_url('CVINFO/') ?>" method="post">
-
+                            <?php
+                            if(!empty($Data)){
+                            foreach ($Data as $D) { ?>
                             <label for="item" class="h-main">	1.	Personal Data</label>
                             <hr style="border:1px solid black">
                             <div class="row">
@@ -59,7 +61,7 @@ $this->load->view('app/layout/parts/top'); ?>
                                     </div>
                                 </div>
                             </div>
-
+<?php }}?>
                             <!-- row end -->
                             <!-- row end -->
                             <label for="item" class="h-main">	2 . Present Address</label>

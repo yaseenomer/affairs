@@ -10,7 +10,7 @@ class Application_Form  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
+
        // $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_Application_Form');
         $this->load->model('upgrades/M_Edu');

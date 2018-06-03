@@ -11,7 +11,7 @@ class Edu  extends CI_Controller
     {
         parent::__construct();
        // $this->file = new Symfony\Component\Filesystem\Filesystem();
-        $this->auth_model->middlewareAuth();
+
        // $this->load->model('UniversitiesModel');
         $this->load->model('GeneralModel');
         $this->load->model('upgrades/M_Edu');
@@ -57,7 +57,7 @@ class Edu  extends CI_Controller
     public function insert()
     {
         /*********************************************/
-        $APP_ID=105;
+        $APP_ID=139;
         $LAN = $this->session->language;
         /********************************************/
 
