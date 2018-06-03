@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c16b1444-369f-4eec-9209-ef8296d83714" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/CVINFO.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/controllers/upgrades/CVINFO.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APPLICATION_UNIV_EDU.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APP_CV_REFERENCES.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APP_OTHER_EXPRIENCES.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APP_PROJECTS.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APP_PUBLICATIONS.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APP_PUBLICATIONS.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/APP_UNIVERSITIES_EXP.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Application_Form.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Apply.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/Edu.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/PUBLICATIONS_PARTS.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/PUBLICATIONS_PARTS.php" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/upgrades/REFERENCES.php" afterPath="$PROJECT_DIR$/application/controllers/upgrades/REFERENCES.php" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/113/استمارة_فحص.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/113/خطوات_واجراءات.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/113/لائحة_الترقيات.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/113/لائحة_الترقيات1.pdf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/50/Capture.PNG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/55/Capture.PNG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/55/Capture1.PNG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/55/Capture2.PNG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/55/Capture3.PNG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/57/Capture.PNG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/60/24761104.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/60/Capture.PNG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/75/24761104.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/75/247611041.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/uploads/76/24761104.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Pre-University_Education_en.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Refrences.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Refrences.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/Supervisory_Experience_en.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/University_Qualifications_en.php" />
-      <change beforePath="$PROJECT_DIR$/application/views/upgrades/desktop.ini" afterPath="$PROJECT_DIR$/application/views/upgrades/desktop.ini" />
+      <change beforePath="$PROJECT_DIR$/application/views/upgrades/application_form/CVINFO.php" afterPath="$PROJECT_DIR$/application/views/upgrades/application_form/CVINFO.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -121,8 +89,28 @@
       <file leaf-file-name="CVINFO.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/CVINFO.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2065">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="2607">
+              <caret line="255" column="89" lean-forward="false" selection-start-line="255" selection-start-column="89" selection-end-line="255" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CVINFO.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/CVINFO.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Edu.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -176,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../affirs_test/application/views/Countries/Countries.php" />
         <option value="$PROJECT_DIR$/../affirs_test/application/views/Countries/AddCountries.php" />
         <option value="$PROJECT_DIR$/../affirs_test/application/views/Countries/ShowCountries.php" />
         <option value="$PROJECT_DIR$/../affirs_test/application/controllers/CountriesController.php" />
@@ -226,6 +213,7 @@
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Refrences.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/Personal_Information_en.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/controllers/upgrades/CVINFO.php" />
         <option value="$PROJECT_DIR$/application/views/upgrades/application_form/CVINFO.php" />
       </list>
     </option>
@@ -301,6 +289,19 @@
               <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
               <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="upgrades" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="affairs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="affairs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="application" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -338,19 +339,19 @@
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\affairs\application\controllers\upgrades" />
-      <recent name="C:\wamp64\www\affairs\application\views\upgrades\application_form" />
-      <recent name="C:\wamp64\www\affairs\application\models\upgrades" />
-      <recent name="C:\wamp64\www\affairs\application\views\upgrades\apply" />
-      <recent name="C:\wamp64\www\affirs\application\models\upgrades" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\affirs\application\controllers\affirs\zip" />
       <recent name="C:\wamp64\www\affirs\application\controllers\affirs" />
       <recent name="C:\wamp64\www\affirs\application\controllers" />
       <recent name="C:\wamp64\www\affirs\Extention\Bootstrap" />
       <recent name="C:\wamp64\www\sust\application\views\app\layout\test" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\affairs\application\controllers\upgrades" />
+      <recent name="C:\wamp64\www\affairs\application\views\upgrades\application_form" />
+      <recent name="C:\wamp64\www\affairs\application\models\upgrades" />
+      <recent name="C:\wamp64\www\affairs\application\views\upgrades\apply" />
+      <recent name="C:\wamp64\www\affirs\application\models\upgrades" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -595,7 +596,7 @@
       <workItem from="1527485533029" duration="17426000" />
       <workItem from="1527577661891" duration="13821000" />
       <workItem from="1527743043803" duration="8706000" />
-      <workItem from="1528012279974" duration="495000" />
+      <workItem from="1528012279974" duration="3411000" />
     </task>
     <task id="LOCAL-00001" summary="update readme">
       <created>1525865663041</created>
@@ -933,11 +934,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527763100493</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="connect page show to page insert">
+      <created>1528012808146</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1528012808146</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="733673000" />
+    <option name="totallyTimeSpent" value="736589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1008,7 +1016,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add new code engish" />
     <MESSAGE value="add new code engish1" />
     <MESSAGE value="add new page controller" />
     <MESSAGE value="add" />
@@ -1033,7 +1040,8 @@
     <MESSAGE value="show function" />
     <MESSAGE value="show function English" />
     <MESSAGE value="add more details" />
-    <option name="LAST_COMMIT_MESSAGE" value="add more details" />
+    <MESSAGE value="connect page show to page insert" />
+    <option name="LAST_COMMIT_MESSAGE" value="connect page show to page insert" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1064,20 +1072,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://table:/9ab6a239/2831445e-3af4-49ee-ac3f-1e51556ec993/ACD_AFF.APPLICATION_FORM_CD">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/auth/auth_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="45" column="5" lean-forward="false" selection-start-line="34" selection-start-column="3" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/PUBLICATIONS_PARTS.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -1178,13 +1172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="49" column="35" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="114" column="9" lean-forward="true" selection-start-line="114" selection-start-column="9" selection-end-line="114" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1441,10 +1428,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Cv.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/Edu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/upgrades/CVINFO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/upgrades/application_form/CVINFO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2065">
-          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="2607">
+          <caret line="255" column="89" lean-forward="false" selection-start-line="255" selection-start-column="89" selection-end-line="255" selection-end-column="89" />
           <folding />
         </state>
       </provider>
