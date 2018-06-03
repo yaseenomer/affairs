@@ -41,12 +41,13 @@ class Apply  extends CI_Controller
      */
     public function insert()
     {
+        var_dump( $this->dataMerage());
 
-        $this->apply->insert($this->dataMerage());
+       // $this->apply->insert($this->dataMerage());
 
-        $this->session->set_flashdata('insert_app',' تم حفظ إستمارة الترقيات بنجـــــاح');
-
-        redirect(base_url('upgrades/Application_Form/language'));
+//        $this->session->set_flashdata('insert_app',' تم حفظ إستمارة الترقيات بنجـــــاح');
+//
+         redirect(base_url('upgrades/Application_Form/language/'.$this->dataMerage()['EMP_NO'].'/'.$this->dataMerage()['APP_ID']));
     }
 
 

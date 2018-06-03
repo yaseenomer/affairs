@@ -57,9 +57,12 @@ class Application_Form  extends CI_Controller
 
     }
     /*************************************************/
-public function language(){
+public function language($emp_no,$app_id){
 
     $data['insert_app'] = $this->session->flashdata('insert_app');
+    $data['emp_no'] = $emp_no;
+    $data['app_id'] = $app_id;
+
 
     $this->load->view('upgrades/application_form/check',$data);
 
@@ -77,17 +80,21 @@ public function language(){
 
     }
 /**********************************************/
-    public function create($LAN)
+    public function create($LAN,$emp_no,$app_id)
     {
+        $data['emp_no'] = $emp_no;
+        $data['app_id'] = $app_id;
         $this->session->set_userdata('language',$LAN);
-        $this->load->view('upgrades/application_form/Personal_Information');
+        $this->load->view('upgrades/application_form/Personal_Information',$data);
     }
 
     /*********************************************/
-    public function create_en($LAN)
+    public function create_en($LAN,$emp_no,$app_id)
     {
+        $data['emp_no'] = $emp_no;
+        $data['app_id'] = $app_id;
         $this->session->set_userdata('language',$LAN);
-        $this->load->view('upgrades/application_form/Personal_Information_en');
+        $this->load->view('upgrades/application_form/Personal_Information_en',$data);
     }
 
     /*********************************************/

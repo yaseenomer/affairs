@@ -22,6 +22,7 @@
     <div>
         <button type="submit" class="btn btn-primary">دخـــول </button>
         <a href="<?php echo base_url(); ?>EmpAccounts/emp" class="btn btn-default"> إنشاء حساب    </a>
+        <a href="<?php echo base_url(); ?>" class="btn btn-success">  رجوع لصفحة دخول المستخدمين     </a>
     </div>
 
 
