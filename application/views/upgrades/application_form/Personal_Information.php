@@ -19,7 +19,9 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                         <div class="col-md-3">
                             <label>Fourth Name</label>
-                            <input type="text"  name="LST_NAME_ENG" class="form-control">
+                            <input type="text"    name="LST_NAME_ENG" class="form-control">
+                            <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
+                            <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
                         </div>
 
                         <div class="col-md-3">

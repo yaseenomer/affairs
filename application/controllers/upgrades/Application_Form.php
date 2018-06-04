@@ -104,8 +104,8 @@ public function language($emp_no,$app_id){
 
         //$str = substr($str, 1); first charachters
         $LAN = $this->session->language;
-        $APP_ID=120;
-        $EMP_NO=1000857;
+        $APP_ID= $this->input->post('app_id');
+        $EMP_NO=$this->input->post('emp_no');
         /*********************************************/
         /********************************************/
         $items = array(

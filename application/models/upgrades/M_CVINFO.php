@@ -7,9 +7,9 @@ class M_CVINFO extends CI_Model
 {
 
     /**********************************/
-   public function GetData($id)
+   public function GetData($EMP_NO)
     {
-        $this->db->where('EMP_NO', $id);
+        $this->db->where('EMP_NO', $EMP_NO);
         return  $query = $this->db->get('EMPLOYEES_TEACHERS')->result();
     }
     /**********************************/

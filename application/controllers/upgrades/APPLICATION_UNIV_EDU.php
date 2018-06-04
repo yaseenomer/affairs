@@ -79,7 +79,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
     {
        // var_dump($this->input->post());
         /*********************************************/
-        $APP_ID=105;
+        $APP_ID= $this->input->post('app_id');
         $LAN = $this->session->language;
         /********************************************/
         $maxid=$this->M_APPLICATION_UNIV_EDU->maxid($APP_ID);

@@ -57,7 +57,7 @@ class Edu  extends CI_Controller
     public function insert()
     {
         /*********************************************/
-        $APP_ID=139;
+        $APP_ID= $this->input->post('app_id');
         $LAN = $this->session->language;
         /********************************************/
 

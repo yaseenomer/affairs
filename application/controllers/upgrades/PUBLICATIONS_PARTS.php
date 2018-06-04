@@ -39,7 +39,7 @@ class PUBLICATIONS_PARTS  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
         /*********************************************/
-        $APP_ID=105;
+        $APP_ID= $this->input->post('app_id');
 
         /********************************************/
         $maxid=$this->M_PUBLICATIONS_PARTS->maxid($APP_ID);

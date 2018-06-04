@@ -75,7 +75,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
 
         //$str = substr($str, 1); first charachters
         /*********************************************/
-        $APP_ID=105;
+        $APP_ID= $this->input->post('app_id');
         $LAN = $this->session->language;
         /********************************************/
 
