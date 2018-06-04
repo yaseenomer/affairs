@@ -69,8 +69,15 @@ class M_Apply extends CI_Model
 
 
     /**
-     * @param $data
+     * @params
+     *  $table => Table name in database
+     * $app_id => APP_ID
+     * $file_bath => FILE_BATH => name of attache
+     * $identifier_column => for example in APPLICATION_PRE_EDU(PRE_EDU_SER)
+     * $identifier_value => value of identifier_column (1,2,3,...etc)
+     * $folder => (CV,EXPERINCES, PRE_EDU,...etc)
      */
+
     public function insert($data)
     {
         $this->db->insert('APPLICATION_FORM', $data);
@@ -84,6 +91,11 @@ class M_Apply extends CI_Model
     {
         $this->db->select_max('APP_ID','id');
         return $this->db->get('APPLICATION_FORM')->row()->id;
+    }
+
+    public function d()
+    {
+        return $this->db->get('APPLICATION_FORM')->result();
     }
 
 

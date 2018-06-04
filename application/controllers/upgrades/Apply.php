@@ -21,9 +21,12 @@ class Apply  extends CI_Controller
      */
     public function index()
     {
+        $this->load->view('upgrades/apply/index');
+    }
 
-
-
+    public function show()
+    {
+        $this->load->view('upgrades/apply/show');
     }
 
     /**
@@ -41,14 +44,13 @@ class Apply  extends CI_Controller
      */
     public function insert()
     {
+        var_dump( $this->dataMerage());
 
-        $this->apply->insert($this->dataMerage());
+       // $this->apply->insert($this->dataMerage());
 
-        $this->session->set_flashdata('insert_app',' تم حفظ إستمارة الترقيات بنجـــــاح');
-
-        $App_id=$this->dataMerage()['APP_ID']- 1;
-
-         redirect(base_url('upgrades/Application_Form/language/'.$this->dataMerage()['EMP_NO'].'/'.$App_id));
+//        $this->session->set_flashdata('insert_app',' تم حفظ إستمارة الترقيات بنجـــــاح');
+//
+         redirect(base_url('upgrades/Application_Form/language/'.$this->dataMerage()['EMP_NO'].'/'.$this->dataMerage()['APP_ID']));
     }
 
 
@@ -123,14 +125,12 @@ class Apply  extends CI_Controller
      */
     public function tr()
     {
-       $this->load->view('upgrades/apply/test');
 
     }
 
-    public function t()
+    public function test()
     {
-     var_dump(attache('777','cv'));
-
+        deleteAttache('APPLICATION_PRE_EDU','140','Capture3.PNG','PRE_EDU_SER','5','pre_edu');
 
     }
 

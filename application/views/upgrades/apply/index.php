@@ -17,52 +17,47 @@
 <body class="main-body">
 <div class="col-md-12">
     <div class="nav-main">
-          <div class="user-info">
+        <div class="user-info">
 
-              <i class="fa fa-user-o u-i"></i><span class="u-i"><?php echo user()->USR_NAME?></span>
+            <i class="fa fa-user-o u-i"></i><span class="u-i"><?php echo user()->USR_NAME?></span>
 
-              <i class="fa fa-cog u-i"></i>
+            <i class="fa fa-cog u-i"></i>
 
-              <i class="fa fa-comments u-i"></i>
+            <i class="fa fa-comments u-i"></i>
 
-              <i class="fa fa-clock-o u-i"></i>
-          </div>
+            <i class="fa fa-clock-o u-i"></i>
+        </div>
     </div>
 </div>
 <div class="container">
     <div class="row">
-           <div class="main-title text-center">
-            الشئون العلمية
+        <div class="main-title text-center">
+           نظام الترقيات
 
-            </div>
+        </div>
 
         <div class="main">
-        <div class="col-md-3 col-md-offset-2">
-            <a href="<?php echo base_url('affirs/Scholarship')?>">
-            <div class="item redk">
-                <i class="fa  fa-university fa-4x icon-item "></i>
-            </div>
-            </a>
-            <div class="main-head">الابتعاث  </div>
-        </div>
+            <div class="col-xs-5 col-md-offset-2">
+                <a href="<?php echo base_url('EmpAccounts/emp')?>">
+                    <div class="item redk">
+                        <i class="fa  fa-university fa-4x icon-item "></i>
+                    </div>
+                    <div class="main-head">تقديم لإستاذ   </div>
+                </a>
 
-        <div class="col-md-3">
-            <a href="<?php echo base_url('upgrades/Apply')?>">
-            <div class="item green1">
-                <i class="fa fa-mortar-board fa-4x icon-item"></i>
             </div>
-            </a>
-            <div class="main-head">الترقيات  </div>
-        </div>
 
-        <div class="col-md-3">
-            <a href="">
-            <div class="item green2">
-                <i class="fa fa-gears fa-4x  icon-item"></i>
+            <div class="col-xs-5">
+                <a href="<?php echo base_url('upgrades/apply/show')?>">
+                    <div class="item green1">
+                        <i class="fa fa-mortar-board fa-4x icon-item"></i>
+                    </div>
+                    <div class="main-head">عرض طلبات    </div>
+                    <div class="main-head">الترقيات    </div>
+                </a>
+
             </div>
-            </a>
-            <div class="main-head">التدريب  </div>
-        </div>
+
         </div>
 
 
