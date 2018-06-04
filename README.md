@@ -45,5 +45,22 @@ function  deleteAttache($table,$app_id,$file_bath,$identifier_column,$identifier
 
 ```
 
+### Usage Instructions
+
+inside your controller for example 
+
+```PHP
+
+class Apply  extends CI_Controller
+{
+  public function test()
+    {
+        deleteAttache('APPLICATION_PRE_EDU','140','Capture3.PNG','PRE_EDU_SER','5','pre_edu');
+    }
+
+}
+
+```
+
 
 
