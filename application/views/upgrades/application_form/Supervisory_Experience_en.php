@@ -140,8 +140,8 @@ canvas_header('CV ') ?>
                         <div class="col-md-6">
                             <label></label>
                         </div>
-                        <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
-                        <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
+                        <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                        <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                         <div class="form-group col-md-6 pull-left">
                            <label class="pull-right">Type of experience </label>
                             <br>
@@ -260,7 +260,7 @@ canvas_header('CV ') ?>
                             </div>
                         </div>
 
-                </form>
+                    <?php echo form_close()?>
 
                 </div>
     <!------------------------------------------------------->

@@ -9,8 +9,8 @@ class APP_FORM  extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->file = new Symfony\Component\Filesystem\Filesystem();
-        $this->auth_model->middlewareAuth();
+        //$this->file = new Symfony\Component\Filesystem\Filesystem();
+       // $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_CV_REFERENCES');
         $this->load->model('upgrades/M_APP_OTHER_EXPRIENCES');
        // $this->load->model('upgrades/M_APP_PROJECTS');

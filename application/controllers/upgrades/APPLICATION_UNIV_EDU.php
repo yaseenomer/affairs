@@ -99,7 +99,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
            // 'FILE_BATH' => attache($APP_ID,'UNI_EDU')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
-            'USR_NO' => user()->USR_NO
+            'USR_NO' =>25
         );
 
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
@@ -111,7 +111,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
             $item = array(
                 'FILE_BATH' =>attache($APP_ID,'UNI_EDU')  ,
                 'UPDATE_DATE' => date('d-M-y')  ,
-                'USR_NO' =>user()->USR_NO
+                'USR_NO' =>25
             );
             $this->M_APPLICATION_UNIV_EDU->Updatedata($APP_ID,$item) ;
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');

@@ -13,8 +13,8 @@ $this->load->view('app/layout/parts/top'); ?>
                 <div class="portlet light">
                     <div class="portlet-body">
                         <form action="<?= base_url('CVINFO/') ?>" method="post">
-                            <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
-                            <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
+                            <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                            <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                             <?php
                             if(!empty($Data)){
                             foreach ($Data as $D) { ?>
@@ -278,7 +278,7 @@ $this->load->view('app/layout/parts/top'); ?>
                                     <input class="btn btn-default" value="رجوع">
                                 </a>
                             </div>
-                        </form>
+                            <?php echo form_close()?>
                     </div>
                 </div>
             </div>

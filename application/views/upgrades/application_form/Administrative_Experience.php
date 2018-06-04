@@ -319,6 +319,8 @@ canvas_header('السيرة الذاتية /CV ') ?>
 
                 <div class="tab-pane fade "  id="siminars">
                     <form name="form8" action="<?= base_url('upgrades/APP_OTHER_EXPRIENCES/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                        <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                        <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                         <div class="row">
                             <label> نوع الخبرة  </label>
                             <input type="radio" name="EXP_TYPE" value="1" /> ادارية

@@ -92,8 +92,8 @@ canvas_header('CV ') ?>
                     <?php echo form_open_multipart(base_url('upgrades/APPLICATION_UNIV_EDU/insert'));  ?>
 
                     <div class="row">
-                        <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
-                        <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
+                        <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                        <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                     <div class=" form-group col-md-12">
                         <label class="pull-right">  Country </label>
                         <select name="COUNTRY_NO"  class="form-control"  style="width:60%"  id="lev1">
@@ -210,7 +210,7 @@ canvas_header('CV ') ?>
                                 <input type="submit" class="btn btn-success" value="Save & Contiue">
                             </div>
                         </div>
-                     </form>
+                    <?php echo form_close()?>
                 </div>
 
     <!------------------------------------------------------->

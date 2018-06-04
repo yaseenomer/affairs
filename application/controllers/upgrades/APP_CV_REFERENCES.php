@@ -82,7 +82,7 @@ class APP_CV_REFERENCES  extends CI_Controller
         //$str = substr($str, 1); first charachters
 
         /*********************************************/
-        $APP_ID=105;
+        $APP_ID= $this->input->post('app_id');
 
         /********************************************/
         $x=$this->M_APP_CV_REFERENCES->maxid($APP_ID);

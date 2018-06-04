@@ -117,8 +117,8 @@ canvas_header('السيرة الذاتية /CV ') ?>
                <!------------------------------------------------------->
                 <div class="tab-pane fade" id="unv">
                     <?php echo form_open_multipart(base_url('upgrades/APPLICATION_UNIV_EDU/insert'));  ?>
-                    <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
-                    <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
+                    <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                    <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                     <div class="row">
                         <div class=" form-group col-md-6">
                             <label> نوع المؤهل  </label>
@@ -226,7 +226,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                                 <input type="submit" class="btn btn-success" value="حفظ و إستمرار">
                             </div>
                         </div>
-                     </form>
+                    <?php echo form_close()?>
                 </div>
 
             </div>

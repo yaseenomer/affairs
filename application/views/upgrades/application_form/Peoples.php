@@ -357,13 +357,14 @@ canvas_header('السيرة الذاتية /CV ') ?>
                   <!------------------------------------------------------->
 
                 <div class="tab-pane fade " id="personnals">
-                    <form name="form9" action="<?= base_url('upgrades/APP_CV_REFERENCES/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                    <div class="row">
+                        <?php echo form_open_multipart(base_url('upgrades/APP_CV_REFERENCES/insert'))?>
+
+                        <div class="row">
                         <div class="form-group col-md-6">
                             <label>الاسم   </label>
                             <input type="text"class="form-control" name="EMP_NAME">
-                            <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
-                            <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
+                            <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                            <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                         </div>
 
                         <div class="form-group col-md-6">
@@ -421,7 +422,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <input type="submit" class="btn btn-success" value="حفظ و إستمرار">
                         </div>
                     </div>
-
+                    <?php echo form_close()?>
                 </div>
 
             </div>

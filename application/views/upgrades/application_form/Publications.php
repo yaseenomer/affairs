@@ -257,10 +257,10 @@ canvas_header('السيرة الذاتية /CV ') ?>
                 </div>
                 <!------------------------------------------------------->
                 <div class="tab-pane fade " id="publication">
-                    <form name="form6" action="<?= base_url('upgrades/APP_PUBLICATIONS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                    <div class="row">
-                        <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
-                        <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
+                        <?php echo form_open_multipart(base_url('upgrades/APP_PUBLICATIONS/insert'))?>
+                        <div class="row">
+                        <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                        <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                         <label> نوع النشرات  </label>
                         <input type="radio" name="PUB_TYP" value="1" /> مؤتمر
 
@@ -321,7 +321,7 @@ canvas_header('السيرة الذاتية /CV ') ?>
                             <input type="submit" class="btn btn-success" value="حفظ و إستمرار">
                         </div>
                     </div>
-                    </form>
+                    <?php echo form_close()?>
                 </div>
 
                 <!------------------------------------------------------->

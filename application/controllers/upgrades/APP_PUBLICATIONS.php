@@ -11,7 +11,7 @@ class APP_PUBLICATIONS  extends CI_Controller
     {
         parent::__construct();
        // $this->file = new Symfony\Component\Filesystem\Filesystem();
-        $this->auth_model->middlewareAuth();
+        //$this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_PUBLICATIONS');
         $this->load->model('upgrades/M_APP_PROJECTS');
         $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
@@ -95,7 +95,7 @@ class APP_PUBLICATIONS  extends CI_Controller
             //'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')    ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
-            'USR_NO' => user()->USR_NO
+            'USR_NO' =>25
         );
 
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
@@ -107,7 +107,7 @@ class APP_PUBLICATIONS  extends CI_Controller
             $item = array(
                 'FILE_BATH' =>attache($APP_ID,'PUBLICATIONS')  ,
                 'UPDATE_DATE' => date('d-M-y')  ,
-                'USR_NO' =>user()->USR_NO
+                'USR_NO' =>25
             );
             $this->M_APP_PUBLICATIONS->Updatedata($APP_ID,$item) ;
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
