@@ -221,6 +221,8 @@ canvas_header('CV ') ?>
               <!------------------------------------------------------->
                 <div class="tab-pane fade " id="publication">
                         <?php echo form_open_multipart(base_url('upgrades/APP_PUBLICATIONS/insert'));  ?>
+                    <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
+                    <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
                         <div class="row">
                         <label class="pull-right"> Type of PUBLICATIONS </label>
                         <input type="radio" name="PUB_TYP" value="1" /> Conference

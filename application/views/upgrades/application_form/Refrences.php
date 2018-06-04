@@ -331,8 +331,11 @@ canvas_header('CV ') ?>
                 <!------------------------------------------------------->
 
                 <div class="tab-pane fade " id="personnals">
+
                     <form name="form9" action="<?= base_url('upgrades/APP_CV_REFERENCES/insert') ?>" method="post" enctype="multipart/form-data" role="form">
-                    <div class="row">
+                        <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
+                        <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
+                        <div class="row">
                         <table class="table table-bordered table-advance">
                             <thead>
                             <tr>

@@ -57,7 +57,7 @@ class Edu  extends CI_Controller
     public function insert()
     {
         /*********************************************/
-        $APP_ID= $this->input->post('app_id');
+         $APP_ID= $this->input->post('app_id');
         $LAN = $this->session->language;
         /********************************************/
 
@@ -76,7 +76,7 @@ class Edu  extends CI_Controller
            // 'FILE_BATH' => attache($APP_ID,'PRE_EDU')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
-            'USR_NO' => user()->USR_NO
+            'USR_NO' => 25//user()->USR_NO
         );
         //var_dump($items);exit();
 
@@ -88,9 +88,9 @@ class Edu  extends CI_Controller
         /*********************************/
         if($this->M_Edu->checkAppIdExist($APP_ID)){
             $item = array(
-                'FILE_BATH' =>attache($APP_ID,'PRE_EDU')  ,
+                'FILE_BATH' =>attache($APP_ID,'PRE_EDU') ,
                 'UPDATE_DATE' => date('d-M-y')  ,
-                'USR_NO' =>user()->USR_NO
+                'USR_NO' =>25
             );
             $this->M_Edu->Updatedata($APP_ID,$item) ;
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');

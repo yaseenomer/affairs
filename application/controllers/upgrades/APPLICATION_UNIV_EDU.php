@@ -11,7 +11,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
     {
         parent::__construct();
        // $this->file = new Symfony\Component\Filesystem\Filesystem();
-        $this->auth_model->middlewareAuth();
+        //$this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
         $this->load->model('upgrades/M_Edu');
     }

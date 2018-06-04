@@ -295,7 +295,8 @@ canvas_header('CV') ?>
                                 <label></label>
                             </div>
 
-
+                            <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
+                            <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
                            <!-- <input type="radio" name="EXP_TYPE" value="1" /> Administrative Experience
 
                             <input type="radio" name="EXP_TYPE" value="2" />Professional Experience

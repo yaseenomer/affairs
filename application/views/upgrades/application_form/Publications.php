@@ -259,6 +259,8 @@ canvas_header('السيرة الذاتية /CV ') ?>
                 <div class="tab-pane fade " id="publication">
                     <form name="form6" action="<?= base_url('upgrades/APP_PUBLICATIONS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
                     <div class="row">
+                        <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
+                        <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
                         <label> نوع النشرات  </label>
                         <input type="radio" name="PUB_TYP" value="1" /> مؤتمر
 

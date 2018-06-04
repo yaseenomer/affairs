@@ -7,11 +7,14 @@ $this->load->view('app/layout/parts/top'); ?>
                 <span class="h-main">CURRICULUM VITAE  /   </span>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="portlet light">
                     <div class="portlet-body">
                         <form action="<?= base_url('CVINFO/') ?>" method="post">
+                            <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
+                            <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
                             <?php
                             if(!empty($Data)){
                             foreach ($Data as $D) { ?>
@@ -22,6 +25,7 @@ $this->load->view('app/layout/parts/top'); ?>
                                     <div class="form-group">
                                         <label for="item">a.	Name	 </label>
                                       <!--  <input type="text" class="form-control" name="usr_name"  value="<?= $info->USR_NAME?>" readonly>-->
+
                                     </div>
                                 </div>
                             </div>

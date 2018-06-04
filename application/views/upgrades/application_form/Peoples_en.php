@@ -335,6 +335,8 @@ canvas_header('CV ') ?>
                         <div class="form-group col-md-6">
                             <label class="pull-right"> The Name   </label>
                             <input type="text"class="form-control" name="EMP_NAME">
+                            <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
+                            <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
                         </div>
 
                         <div class="form-group col-md-6">

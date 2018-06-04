@@ -62,6 +62,11 @@ public function language($emp_no,$app_id){
     $data['insert_app'] = $this->session->flashdata('insert_app');
     $data['emp_no'] = $emp_no;
     $data['app_id'] = $app_id;
+    $this->session->set_userdata('emp_no',$emp_no);
+    $this->session->set_userdata('app_id',$app_id);
+
+    $this->session->emp_no;
+    $this->session->app_id;
 
 
     $this->load->view('upgrades/application_form/check',$data);
@@ -106,6 +111,12 @@ public function language($emp_no,$app_id){
         $LAN = $this->session->language;
         $APP_ID= $this->input->post('app_id');
         $EMP_NO=$this->input->post('emp_no');
+        $EMP_LANGUAGES =  ($this->input->post('EMP_LANGUAGES[]'));
+        $HOME_PHONE =  ($this->input->post('HOME_PHONE[]'));
+        $languuage= implode(",", $EMP_LANGUAGES);
+
+        $phone=implode(",", $HOME_PHONE);
+
         /*********************************************/
         /********************************************/
         $items = array(
@@ -121,12 +132,12 @@ public function language($emp_no,$app_id){
             'SND_NAME_ENG' =>$this->input->post('SND_NAME_ENG')  ,
             'THR_NAME_ENG' =>$this->input->post('THR_NAME_ENG')  ,
             'LST_NAME_ENG' =>$this->input->post('LST_NAME_ENG')  ,
-            'EMP_LANGUAGES' =>$this->input->post('EMP_LANGUAGES')  ,
-            'HOME_PHONE' =>$this->input->post('HOME_PHONE')  ,
+            'EMP_LANGUAGES' =>$languuage,
+            'HOME_PHONE' =>$phone,
            // 'FILE_BATH' =>attache($APP_ID,'CV')  ,
             'ENTRY_DATE' =>date('d-M-y') ,
             //'UPDATE_DATE' => date('d-M-y')  ,
-            'USR_NO' =>user()->USR_NO,
+            'USR_NO' =>25,
             'CV_LANG' =>$LAN,
 
         );

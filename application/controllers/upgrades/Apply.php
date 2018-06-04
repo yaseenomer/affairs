@@ -41,13 +41,14 @@ class Apply  extends CI_Controller
      */
     public function insert()
     {
-        var_dump( $this->dataMerage());
 
-       // $this->apply->insert($this->dataMerage());
+        $this->apply->insert($this->dataMerage());
 
-//        $this->session->set_flashdata('insert_app',' تم حفظ إستمارة الترقيات بنجـــــاح');
-//
-         redirect(base_url('upgrades/Application_Form/language/'.$this->dataMerage()['EMP_NO'].'/'.$this->dataMerage()['APP_ID']));
+        $this->session->set_flashdata('insert_app',' تم حفظ إستمارة الترقيات بنجـــــاح');
+
+        $App_id=$this->dataMerage()['APP_ID']- 1;
+
+         redirect(base_url('upgrades/Application_Form/language/'.$this->dataMerage()['EMP_NO'].'/'.$App_id));
     }
 
 
@@ -120,9 +121,15 @@ class Apply  extends CI_Controller
     /**
      * This Function To Tests 
      */
+    public function tr()
+    {
+       $this->load->view('upgrades/apply/test');
+
+    }
+
     public function t()
     {
-      var_dump($this->db->where('EMP_NO','1000321')->get('EMPLOYEES')->row());
+     var_dump(attache('777','cv'));
 
 
     }

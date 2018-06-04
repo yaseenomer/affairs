@@ -46,8 +46,10 @@ canvas_header('CV ') ?>
                 <!------------------------------------------------------->
 
                 <div class="tab-pane fade" id="edu">
-                    <form name="form2" action="<?= base_url('upgrades/Edu/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                    <?php echo form_open_multipart(base_url('upgrades/Edu/insert'))?>
                     <div class="row">
+                        <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                        <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                         <div class=" form-group col-md-6">
                             <label class="pull-right">  School Grade </label>
                             <select name="PRE_EDU_TYPE"class="form-control">
@@ -114,7 +116,7 @@ canvas_header('CV ') ?>
                         </div>
                         <div class="col-md-6">
                             <label class="pull-right">Attach The Certificate </label>
-                            <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                         </div>
 
                     </div>
@@ -127,7 +129,7 @@ canvas_header('CV ') ?>
                             </div>
                         </div>
 
-                    </form>
+                    <?php echo form_close()?>
                 </div>
     <!------------------------------------------------------->
     <div class="row">

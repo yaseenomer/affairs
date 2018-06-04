@@ -169,7 +169,8 @@ canvas_header('السيرة الذاتية /CV ') ?>
                 <!------------------------------------------------------->
                 <div class="tab-pane fade " id="exp">
                     <?php echo form_open_multipart(base_url('upgrades/APP_UNIVERSITIES_EXP/insert'));  ?>
-
+                    <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
+                    <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
                     <br>
                     <div class="row">
                     <label> نوع الخبرة  </label>
