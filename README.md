@@ -7,7 +7,18 @@ New Features
 --------
 deleteAttache
 
+
+
 ```PHP
+/**
+     * @params
+     *  $table => Table name in database
+     * $app_id => APP_ID
+     * $file_bath => FILE_BATH => name of attache 
+     * $identifier_column => for example in APPLICATION_PRE_EDU(PRE_EDU_SER)
+     * $identifier_value => value of identifier_column (1,2,3,...etc)
+     * $folder => (CV,EXPERINCES, PRE_EDU,...etc)
+     */
 
 function  deleteAttache($table,$app_id,$file_bath,$identifier_column,$identifier_value,$folder)
      {
