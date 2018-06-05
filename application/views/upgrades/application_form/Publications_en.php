@@ -225,6 +225,7 @@ canvas_header('CV ') ?>
                     <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                         <div class="row">
                         <label class="pull-right"> Type of PUBLICATIONS </label>
+                            <br>
                         <input type="radio" name="PUB_TYP" value="1" /> Conference
 
                         <input type="radio" name="PUB_TYP" value="2" />Activity
@@ -281,7 +282,7 @@ canvas_header('CV ') ?>
                             </div>
                             <div class="col-md-6">
                                 <label class="pull-right">Attach the Publication File </label>
-                                <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
+                                <input type="file"  name="attachs[]" class="form-control">
                             </div>
 
                         </div>

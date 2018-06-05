@@ -19,10 +19,10 @@ class CVINFO  extends CI_Controller
      *
      */
 
-    public function index()
+    public function index($EMP_NO,$APP_ID)
     {
-        $APP_ID= $this->input->post('app_id');
-        $EMP_NO=$this->input->post('emp_no');
+        //$APP_ID= $this->input->post('app_id');
+       // $EMP_NO=$this->input->post('emp_no');
         $data['cv']     =     $this->M_CVINFO->GetData_cv($APP_ID);
         $data['pre']    =     $this->M_CVINFO->GetData_PRE($APP_ID);
         $data['univer'] =     $this->M_CVINFO->GetData_univ($APP_ID);
@@ -33,10 +33,11 @@ class CVINFO  extends CI_Controller
         $data['EXPER']  =     $this->M_CVINFO->GetData_EXPER($APP_ID);
         $data['REFERENCES'] = $this->M_CVINFO->GetData_REFERENCES($APP_ID);
        // $data['Empno'] = $this->M_CVINFO->GetEmp_NO($APP_ID);
-        $data['Data'] = $this->M_CVINFO->GetData($APP_ID,$EMP_NO);
-        var_dump($data);exit();
+        $data['Data'] = $this->M_CVINFO->GetData($EMP_NO);
+        //var_dump($data);exit();
         $this->load->view('upgrades/application_form/CVINFO',$data);
 
     }
 
 }
+

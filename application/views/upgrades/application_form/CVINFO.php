@@ -17,14 +17,14 @@ $this->load->view('app/layout/parts/top'); ?>
                             <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                             <?php
                             if(!empty($Data)){
-                            foreach ($Data as $D) { ?>
+                            foreach ($Data as $info) { ?>
                             <label for="item" class="h-main">	1.	Personal Data</label>
                             <hr style="border:1px solid black">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="item">a.	Name	 </label>
-                                      <!--  <input type="text" class="form-control" name="usr_name"  value="<?= $info->USR_NAME?>" readonly>-->
+                                       <input type="text" class="form-control"   value="<?= iconv("WINDOWS-1256","utf-8", $info->EMP_NAME) ?>" readonly>
 
                                     </div>
                                 </div>
@@ -34,7 +34,7 @@ $this->load->view('app/layout/parts/top'); ?>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="item">b.	Place of Birth & Date</label>
-                                       <!-- <input type="text" class="form-control" name="full_name"  value="<?= iconv('windows-1256','utf-8',$info->EMP_TEC_NAME)?>" readonly>-->
+                                      <input type="text" class="form-control"  value="<?= $info->BIRTH_DATE .','.  iconv("windows-1256","utf-8", $info->BIRTH_PLACE )?>" readonly>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@ $this->load->view('app/layout/parts/top'); ?>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="item">c.	Nationality</label>
-                                        <!-- <input type="text" class="form-control" name="full_name"  value="<?= iconv('windows-1256','utf-8',$info->EMP_TEC_NAME)?>" readonly>-->
+                                       <!-- <input type="text" class="form-control"   value="<?= iconv('windows-1256','utf-8',$info->NAT_NAME)?>" readonly>-->
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@ $this->load->view('app/layout/parts/top'); ?>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="item">d.	Religion</label>
-                                        <!-- <input type="text" class="form-control" name="full_name"  value="<?= iconv('windows-1256','utf-8',$info->EMP_TEC_NAME)?>" readonly>-->
+                                         <input type="text" class="form-control"   value="<?= iconv('windows-1256','utf-8',$info->RELIGION_NAME)?>" readonly>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@ $this->load->view('app/layout/parts/top'); ?>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="item">e.	Marital Status</label>
-                                        <!-- <input type="text" class="form-control" name="full_name"  value="<?= iconv('windows-1256','utf-8',$info->EMP_TEC_NAME)?>" readonly>-->
+                                         <input type="text" class="form-control"   value="<?= iconv('windows-1256','utf-8',$info->MERITAL_NAME)?>" readonly>
                                     </div>
                                 </div>
                             </div>

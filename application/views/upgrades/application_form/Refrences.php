@@ -374,8 +374,13 @@ canvas_header('CV ') ?>
                         <div class="form-group col-md-12" >
                             <input type="submit" class="btn btn-success" value="Save">
                         </div>
+                        <div class="form-group col-md-12" >
+                        <a href="<?= base_url().'upgrades/CVINFO/index/' . $this->session->emp_no.'/'.$this->session->app_id;  ?>">
+                            <input class="btn btn-default" value="Show CV">
+                        </a>
+                        </div>
                     </div>
-
+                    </FORM>
                 </div>
 
             </div>

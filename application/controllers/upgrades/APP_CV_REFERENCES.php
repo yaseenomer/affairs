@@ -11,7 +11,7 @@ class APP_CV_REFERENCES  extends CI_Controller
     {
         parent::__construct();
       //  $this->file = new Symfony\Component\Filesystem\Filesystem();
-        $this->auth_model->middlewareAuth();
+       // $this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_APP_CV_REFERENCES');
         $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
         $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
@@ -100,7 +100,7 @@ class APP_CV_REFERENCES  extends CI_Controller
             'CURRENT_DEG' => $this->input->post('CURRENT_DEG')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
-            'USR_NO' => user()->USR_NO
+            'USR_NO' => 25 //user()->USR_NO
         );
 
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');

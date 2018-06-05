@@ -92,7 +92,7 @@ class APP_PUBLICATIONS  extends CI_Controller
             'TITLE' => $this->input->post('TITLE')  ,
             'DESCRIPTION' => $this->input->post('DESCRIPTION')  ,
             'PUB_LANGUGE' => $this->input->post('PUB_LANGUGE')  ,
-            //'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')    ,
+            'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')    ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' =>25

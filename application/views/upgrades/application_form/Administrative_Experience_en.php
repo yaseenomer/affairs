@@ -289,14 +289,15 @@ canvas_header('CV') ?>
                 <!------------------------------------------------------->
                 <!------------------------------------------------------->
                 <div class="tab-pane fade " id="siminars">
-                    <form name="form8" action="<?= base_url('upgrades/APP_OTHER_EXPRIENCES/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                        <?php echo form_open_multipart(base_url('upgrades/APP_OTHER_EXPRIENCES/insert'))?>
+
                         <div class="row ">
                             <div class="col-md-6">
                                 <label></label>
                             </div>
 
-                            <input type="hidden"  name="app_id"  value="<?php echo $app_id ?>" class="form-control">
-                            <input type="hidden"  name="emp_no"  value="<?php echo $emp_no  ?>" class="form-control">
+                            <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                            <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
                            <!-- <input type="radio" name="EXP_TYPE" value="1" /> Administrative Experience
 
                             <input type="radio" name="EXP_TYPE" value="2" />Professional Experience
@@ -368,7 +369,7 @@ canvas_header('CV') ?>
                             </div>
                             <div class="col-md-6">
                                 <label class="pull-right">Attach the Certificate </label>
-                                <input type="file"  name="FILE_BATH[]" class="form-control"multiple="multiple">
+                                <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
                             </div>
 
                         </div>
@@ -379,7 +380,7 @@ canvas_header('CV') ?>
                                 <input type="submit" class="btn btn-success" value="Save & Continue">
                             </div>
                         </div>
-                    </form>
+                    <?php echo form_close()?>
 
 
                 </div>
