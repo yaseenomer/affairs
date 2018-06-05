@@ -116,7 +116,7 @@ canvas_header('CV ') ?>
                         </div>
                         <div class="col-md-6">
                             <label class="pull-right">Attach The Certificate </label>
-                            <input type="file"  name="attachs[]" class="form-control"multiple="multiple">
+                            <input type="file"  name="attachs[]" class="form-control">
                         </div>
 
                     </div>

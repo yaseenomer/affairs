@@ -58,7 +58,7 @@ class Edu  extends CI_Controller
     {
         /*********************************************/
          $APP_ID= $this->input->post('app_id');
-        $LAN = $this->session->language;
+         $LAN = $this->session->language;
         /********************************************/
 
         $maxid=$this->M_Edu->maxid($APP_ID);
@@ -73,12 +73,12 @@ class Edu  extends CI_Controller
             'PRE_EDU_START' => $this->input->post('PRE_EDU_START')  ,
             'PRE_EDU_END' => $this->input->post('PRE_EDU_END')  ,
             'PRE_EDU_GRADE' => $this->input->post('PRE_EDU_GRADE')  ,
-           // 'FILE_BATH' => attache($APP_ID,'PRE_EDU')  ,
+            'FILE_BATH' => attache($APP_ID,'PRE_EDU')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' => 25//user()->USR_NO
         );
-        //var_dump($items);exit();
+     //   var_dump($items);exit();
 
        
 
@@ -86,15 +86,15 @@ class Edu  extends CI_Controller
          $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
          redirect('upgrades/APPLICATION_UNIV_EDU/show/'.$APP_ID);
         /*********************************/
-        if($this->M_Edu->checkAppIdExist($APP_ID)){
-            $item = array(
+       /* if($this->M_Edu->checkAppIdExist($APP_ID)){
+            $item2 = array(
                 'FILE_BATH' =>attache($APP_ID,'PRE_EDU') ,
                 'UPDATE_DATE' => date('d-M-y')  ,
                 'USR_NO' =>25
             );
-            $this->M_Edu->Updatedata($APP_ID,$item) ;
+            $this->M_Edu->Updatedata($APP_ID,$item2) ;
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
-        }
+        }*/
         /***********************************/
        /* if($LAN==1) {
             return redirect('upgrades/APPLICATION_UNIV_EDU/create');

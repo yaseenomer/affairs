@@ -37,9 +37,9 @@ if ( ! function_exists('atta_loop'))
             $uploadPath = $upload_path . $userFile;
             $config['upload_path'] = $uploadPath;
             $config['allowed_types'] = '*';
-            $config['max_size'] = 9000;
-            $config['max_width'] = 9000;
-            $config['max_height'] = 9000;
+            $config['max_size'] = 9000000;
+            $config['max_width'] = 900000;
+            $config['max_height'] = 900000;
 
             $CI->load->library('upload', $config);
             $CI->upload->initialize($config);
@@ -59,8 +59,8 @@ if ( ! function_exists('atta_loop'))
 
 
 
-if ( ! function_exists('attache'))
-{
+//if ( ! function_exists('attache'))
+//{
     function  attache($id,$folder)
     {
 
@@ -72,7 +72,7 @@ if ( ! function_exists('attache'))
         }
     }
 
-}
+//}
 
  if ( ! function_exists('deleteAttache'))
  {

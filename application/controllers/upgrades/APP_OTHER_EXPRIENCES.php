@@ -100,7 +100,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
             'EXP_END_DATE' => $this->input->post('EXP_END_DATE')  ,
             'EXP_PLACE' => $this->input->post('EXP_PLACE')  ,
             'UNV_ID' => $this->input->post('UNV_ID')  ,
-           // 'FILE_BATH' => attache($APP_ID,'EXPERINCES')  ,
+            'FILE_BATH' => attache($APP_ID,'EXPERINCES')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' =>25
@@ -110,7 +110,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
 
         $this->M_APP_OTHER_EXPRIENCES->AddData($items);
         /*********************************/
-        if($this->M_APP_OTHER_EXPRIENCES->checkAppIdExist($APP_ID)){
+       /* if($this->M_APP_OTHER_EXPRIENCES->checkAppIdExist($APP_ID)){
             $item = array(
                 'FILE_BATH' =>attache($APP_ID,'EXPERINCES')  ,
                 'UPDATE_DATE' => date('d-M-y')  ,
@@ -119,7 +119,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
             $this->M_APP_OTHER_EXPRIENCES->Updatedata($APP_ID,$item) ;
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
             redirect('upgrades/APP_CV_REFERENCES/show/'.$APP_ID);
-        }
+        }*/
         /********************************/
       /*  if($LAN==1) {
             return redirect('upgrades/APP_CV_REFERENCES/create');

@@ -103,7 +103,7 @@ class APP_PUBLICATIONS  extends CI_Controller
         $this->M_APP_PUBLICATIONS->AddData($items);
          redirect('upgrades/APP_OTHER_EXPRIENCES/show/'.$APP_ID);
         /*********************************/
-        if($this->M_APP_PUBLICATIONS->checkAppIdExist($APP_ID)){
+      /*  if($this->M_APP_PUBLICATIONS->checkAppIdExist($APP_ID)){
             $item = array(
                 'FILE_BATH' =>attache($APP_ID,'PUBLICATIONS')  ,
                 'UPDATE_DATE' => date('d-M-y')  ,
@@ -111,7 +111,7 @@ class APP_PUBLICATIONS  extends CI_Controller
             );
             $this->M_APP_PUBLICATIONS->Updatedata($APP_ID,$item) ;
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
-        }
+        }*/
         /***********************************/
       /*  if($LAN==1) {
             return redirect('upgrades/APP_OTHER_EXPRIENCES/create');

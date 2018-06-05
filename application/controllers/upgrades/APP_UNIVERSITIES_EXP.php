@@ -95,7 +95,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
             'EXP_COURCES' => $this->input->post('EXP_COURCES')  ,
             'PROJECTS_NUMBERS' => $this->input->post('PROJECTS_NUMBERS')  ,
             'NOTES' => $this->input->post('NOTES')  ,
-            //'FILE_BATH' => $this->input->post('FILE_BATH')  ,
+            'FILE_BATH' =>  attache($APP_ID,'EXPERINCES')     ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' =>25

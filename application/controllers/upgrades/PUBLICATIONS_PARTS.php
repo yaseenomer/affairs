@@ -58,7 +58,7 @@ class PUBLICATIONS_PARTS  extends CI_Controller
             'SND_NAME_ENG' => $this->input->post('SND_NAME_ENG')  ,
             'THR_NAME_ENG' => $this->input->post('THR_NAME_ENG')  ,
             'LST_NAME_ENG' => $this->input->post('LST_NAME_ENG')  ,
-           // 'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')  ,
+            'FILE_BATH' => attache($APP_ID,'PUBLICATIONS')  ,
             'ENTRY_DATE' => date('d-M-y') ,
             //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
             'USR_NO' =>25
@@ -67,9 +67,10 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_PUBLICATIONS_PARTS->AddData($items);
+
          // redirect('upgrades/APP_OTHER_EXPRIENCES/show/'.$APP_ID);
         /*********************************/
-        if($this->M_PUBLICATIONS_PARTS->checkAppIdExist($APP_ID)){
+     /*   if($this->M_PUBLICATIONS_PARTS->checkAppIdExist($APP_ID)){
             $item = array(
                 'FILE_BATH' =>attache($APP_ID,'PUBLICATIONS')  ,
                 'UPDATE_DATE' => date('d-M-y')  ,
@@ -77,8 +78,9 @@ class PUBLICATIONS_PARTS  extends CI_Controller
             );
             $this->M_PUBLICATIONS_PARTS->Updatedata($APP_ID,$item) ;
             $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
-        }
+        }*/
         /***********************************/
+        $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
         return redirect('upgrades/PUBLICATIONS_PARTS');
     }
     /***********************************/
