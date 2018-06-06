@@ -73,5 +73,13 @@ class M_APPLICATION_UNIV_EDU extends CI_Model
                 ->limit(1)
                 ->count_all_results('APPLICATION_UNIV_EDU') > 0;
     }
+    /**************************************/
+    public function UpdateAPP_STATUS($APP_ID,$APP_STATUS)
+    {
+        $this->db->set('APP_STATUS', $APP_STATUS);
+        $this->db->where('APP_ID', $APP_ID);
+        $this->db->update('APPLICATION_FORM_CD');
 
+    }
+    /**************************************/
 }

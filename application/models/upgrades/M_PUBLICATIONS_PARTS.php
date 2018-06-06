@@ -12,6 +12,14 @@ class M_PUBLICATIONS_PARTS extends CI_Model
 
     }*/
     /**********************************/
+    public function Getpubname($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return  $query = $this->db->get('APP_PUBLICATIONS')->result();
+
+    }
+    /**********************************/
+    /**********************************/
     public function maxid($id)
     {
         $this->db->select_max('PUB_PRT_SER');
@@ -56,5 +64,20 @@ class M_PUBLICATIONS_PARTS extends CI_Model
                 ->limit(1)
                 ->count_all_results('PUBLICATIONS_PARTS') > 0;
     }
+    /**************************************/
+    public function UpdateAPP_STATUS($APP_ID,$APP_STATUS)
+    {
+        $this->db->set('APP_STATUS', $APP_STATUS);
+        $this->db->where('APP_ID', $APP_ID);
+        $this->db->update('APPLICATION_FORM_CD');
 
+    }
+    /**************************************/
+    /*************************************/
+    public function GetData_PUB($id)
+    {
+        $this->db->where('APP_ID', $id);
+        return $this->db->get('APP_PUBLICATIONS')->result();
+    }
+    /**********************************/
 }

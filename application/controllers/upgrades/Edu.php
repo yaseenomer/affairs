@@ -15,6 +15,7 @@ class Edu  extends CI_Controller
        // $this->load->model('UniversitiesModel');
         $this->load->model('GeneralModel');
         $this->load->model('upgrades/M_Edu');
+
     }
 
     /**
@@ -31,7 +32,7 @@ class Edu  extends CI_Controller
         $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
-
+    /*************************************/
     public function create()
     {
         $data['approve'] = $this->session->flashdata('approve');
@@ -50,6 +51,7 @@ class Edu  extends CI_Controller
         $data['editcon'] = $this->session->flashdata('editcon');
         $data['deletecon'] = $this->session->flashdata('deletecon');
         $data['levels'] = $this->M_Edu->getAccounts();
+
         $this->load->view('upgrades/application_form/Pre-University_Education_en',$data);
     }
     /*************************************/
@@ -80,9 +82,8 @@ class Edu  extends CI_Controller
         );
      //   var_dump($items);exit();
 
-       
-
-        $this->M_Edu->AddData($items);
+         $this->M_Edu->AddData($items);
+         $this->M_Edu->UpdateAPP_STATUS($APP_ID,200);
          $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
          redirect('upgrades/APPLICATION_UNIV_EDU/show/'.$APP_ID);
         /*********************************/
@@ -111,7 +112,9 @@ class Edu  extends CI_Controller
         $data['detail'] = $this->M_Edu->GetDataWhere($id);
         $data['error'] = $this->session->flashdata('error');
         $data['success'] = $this->session->flashdata('success');
-
+        $data['levels'] = $this->M_Edu->getAccounts();
+      //  $data['person'] = $this->M_Edu->GetData_PERSONAL($id);
+       // var_dump($data);exit();
         if ($LAN==1) {
             $this->load->view('upgrades/application_form/Pre-University_Education', $data);
         }

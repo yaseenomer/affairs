@@ -3,7 +3,11 @@ main_header(array('الترقيات'));
 canvas_header('CV ') ?>
 
     <div class="row">
-
+        <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+        <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
+        <?PHP
+        $APP_ID=$this->session->app_id;
+        ?>
         <div class="col-md-3 col-sm-3 col-xs-3 pull-right">
             <ul class="nav nav-tabs tabs-right ">
 
@@ -86,7 +90,7 @@ canvas_header('CV ') ?>
                                         <td><?php echo $find->PRE_EDU_START ?></td>
                                         <td><?php echo $find->PRE_EDU_END ?></td>
                                         <td><?php echo $find->PRE_EDU_GRADE ?></td>
-                                        <td><?php echo "uploads/attach/PRE_EDU/".$APP_ID.$find->FILE_BATH ?></td>
+                                        <td><A HREF=""> <?php echo "uploads/attach/PRE_EDU/".$APP_ID.$find->FILE_BATH ?></A></td>
 
                                     </tr>
 

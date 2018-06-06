@@ -106,6 +106,7 @@ class APP_CV_REFERENCES  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_CV_REFERENCES->AddData($items);
+        $this->M_APP_CV_REFERENCES->UpdateAPP_STATUS($APP_ID,900);
         return redirect('upgrades/REFERENCES/show/'.$APP_ID);
        
     }

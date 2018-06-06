@@ -61,5 +61,13 @@ class M_Application_Form extends CI_Model
                 ->count_all_results('APPLICATION_FORM_CD') > 0;
     }
 
+    /**************************************/
+    public function UpdateAPP_STATUS($APP_ID,$APP_STATUS)
+    {
+        $this->db->set('APP_STATUS', $APP_STATUS);
+        $this->db->where('APP_ID', $APP_ID);
+        $this->db->update('APPLICATION_FORM_CD');
 
+    }
+    /**************************************/
 }

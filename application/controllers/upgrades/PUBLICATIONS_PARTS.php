@@ -13,6 +13,10 @@ class PUBLICATIONS_PARTS  extends CI_Controller
        // $this->file = new Symfony\Component\Filesystem\Filesystem();
         //$this->auth_model->middlewareAuth();
         $this->load->model('upgrades/M_PUBLICATIONS_PARTS');
+        $this->load->model('upgrades/M_APP_UNIVERSITIES_EXP');
+        $this->load->model('upgrades/M_APPLICATION_UNIV_EDU');
+        $this->load->model('upgrades/M_APP_PROJECTS');
+        $this->load->model('upgrades/M_APP_PUBLICATIONS');
     }
 
     /**
@@ -27,7 +31,30 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         $this->load->view('upgrades/application_form/Application_form',$data);
 
     }
+    /************************************/
+    public function show($id)
+    {
+        $LAN = $this->session->language;
+        $data['UnivData'] = $this->M_APP_UNIVERSITIES_EXP->GetData_UNIV($id);
+        $data['pre'] = $this->M_APPLICATION_UNIV_EDU->GetData_PRE($id);
+        $data['person'] = $this->M_APPLICATION_UNIV_EDU->GetData_PERSONAL($id);
+        $data['EXP'] = $this->M_APP_PROJECTS->GetData_EXP($id);
+        $data['PRO'] = $this->M_APP_PUBLICATIONS->GetData_PRO($id);
+        $data['PUB'] = $this->M_PUBLICATIONS_PARTS->GetData_PUB($id);
+        $data['PUBNAME'] = $this->M_PUBLICATIONS_PARTS->Getpubname($id);
+        $data['error'] = $this->session->flashdata('error');
+        $data['success'] = $this->session->flashdata('success');
 
+        if ($LAN==1) {
+            $this->load->view('upgrades/application_form/part_Publications', $data);
+        }
+        else
+        {
+            $this->load->view('upgrades/application_form/part_Publications_en', $data);
+        }
+    }
+
+    /***********************************/
     public function create()
     {
         $this->load->view('upgrades/application_form/Application_form');
@@ -47,8 +74,8 @@ class PUBLICATIONS_PARTS  extends CI_Controller
 
         $items = array(
             'APP_ID' => $APP_ID  ,
-            'PUB_SER' =>  1 ,
-            //'PUB_SER' => $this->input->post('PUB_SER')  ,
+           // 'PUB_SER' =>  1 ,
+            'PUB_SER' => $this->input->post('PUB_SER')  ,
             'PUB_PRT_SER' =>$PUB_PRT_SER,// $this->input->post('PUB_PRT_SER')  ,
             'FRT_NAME_AR' => $this->input->post('FRT_NAME_AR')  ,
             'SND_NAME_AR' => $this->input->post('SND_NAME_AR')  ,
@@ -67,8 +94,8 @@ class PUBLICATIONS_PARTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_PUBLICATIONS_PARTS->AddData($items);
-
-         // redirect('upgrades/APP_OTHER_EXPRIENCES/show/'.$APP_ID);
+        $this->M_PUBLICATIONS_PARTS->UpdateAPP_STATUS($APP_ID,700);
+          redirect('upgrades/APP_OTHER_EXPRIENCES/show/'.$APP_ID);
         /*********************************/
      /*   if($this->M_PUBLICATIONS_PARTS->checkAppIdExist($APP_ID)){
             $item = array(

@@ -65,4 +65,13 @@ class M_APP_PROJECTS extends CI_Model
                 ->count_all_results('APP_PROJECTS') > 0;
     }
     /**********************************/
+    /**************************************/
+    public function UpdateAPP_STATUS($APP_ID,$APP_STATUS)
+    {
+        $this->db->set('APP_STATUS', $APP_STATUS);
+        $this->db->where('APP_ID', $APP_ID);
+        $this->db->update('APPLICATION_FORM_CD');
+
+    }
+    /**************************************/
 }

@@ -105,6 +105,7 @@ class APPLICATION_UNIV_EDU  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APPLICATION_UNIV_EDU->AddData($items);
+        $this->M_Edu->UpdateAPP_STATUS($APP_ID,300);
         redirect('upgrades/APP_UNIVERSITIES_EXP/show/'.$APP_ID);
         /*********************************/
        /* if($this->M_APPLICATION_UNIV_EDU->checkAppIdExist($APP_ID)){

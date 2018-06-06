@@ -99,6 +99,7 @@ class APP_PROJECTS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_PROJECTS->AddData($items);
+        $this->M_APP_PROJECTS->UpdateAPP_STATUS($APP_ID,500);
         redirect('upgrades/APP_PUBLICATIONS/show/'.$APP_ID);
         
         /*********************************/

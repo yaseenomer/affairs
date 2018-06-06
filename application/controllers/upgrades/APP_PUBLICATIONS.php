@@ -101,7 +101,8 @@ class APP_PUBLICATIONS  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_PUBLICATIONS->AddData($items);
-         redirect('upgrades/APP_OTHER_EXPRIENCES/show/'.$APP_ID);
+        $this->M_APP_PUBLICATIONS->UpdateAPP_STATUS($APP_ID,600);
+         redirect('upgrades/PUBLICATIONS_PARTS/show/'.$APP_ID);
         /*********************************/
       /*  if($this->M_APP_PUBLICATIONS->checkAppIdExist($APP_ID)){
             $item = array(

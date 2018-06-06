@@ -109,6 +109,7 @@ class APP_OTHER_EXPRIENCES  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_OTHER_EXPRIENCES->AddData($items);
+        $this->M_APP_OTHER_EXPRIENCES->UpdateAPP_STATUS($APP_ID,800);
         redirect('upgrades/APP_CV_REFERENCES/show/'.$APP_ID);
         /*********************************/
        /* if($this->M_APP_OTHER_EXPRIENCES->checkAppIdExist($APP_ID)){

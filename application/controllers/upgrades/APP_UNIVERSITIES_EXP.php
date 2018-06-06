@@ -104,6 +104,7 @@ class APP_UNIVERSITIES_EXP  extends CI_Controller
         $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
 
         $this->M_APP_UNIVERSITIES_EXP->AddData($items);
+        $this->M_APP_UNIVERSITIES_EXP->UpdateAPP_STATUS($APP_ID,400);
         redirect('upgrades/APP_PROJECTS/show/'.$APP_ID);
        
         

@@ -18,8 +18,8 @@ canvas_header('CV ') ?>
                 <li class=""><a href="#prosearch" data-toggle="tab"> Research Projects <i class="fa fa-graduation-cap"></i> </a></li>
 
                 <li class=""><a href="#publication" data-toggle="tab"> Publications,Conferences & Research  <i class="fa fa-graduation-cap"></i></a></li>
-               <!-- <li class=""><a href="#pubmember" data-toggle="tab"> Participants in The Publication  <i class="fa fa-graduation-cap"></i></a></li>
--->
+                <li class=""><a href="#pubmember" data-toggle="tab"> Participants in The Publication  <i class="fa fa-graduation-cap"></i></a></li>
+
             </ul>
         </div>
         <div class="col-md-9 col-sm-9 col-xs-9 pull-left">
@@ -220,91 +220,66 @@ canvas_header('CV ') ?>
                 <!------------------------------------------------------->
               <!------------------------------------------------------->
                 <div class="tab-pane fade " id="publication">
-                        <?php echo form_open_multipart(base_url('upgrades/APP_PUBLICATIONS/insert'));  ?>
-                    <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
-                    <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
-                        <div class="row">
-                        <label class="pull-right"> Type of PUBLICATIONS </label>
-                            <br>
-                        <input type="radio" name="PUB_TYP" value="1" /> Conference
-
-                        <input type="radio" name="PUB_TYP" value="2" />Activity
-
-                        <input type="radio" name="PUB_TYP" value="3" />Scientific paper
-
-                        <input type="radio" name="PUB_TYP" value="4" />Semmenar
-
-                        <input type="radio" name="PUB_TYP" value="5" />Published
-
-                        <input type="radio" name="PUB_TYP" value="6" />Book
-
-                        <input type="radio" name="PUB_TYP" value="7" />Magazine
-
-                        <input type="radio" name="PUB_TYP" value="8" />symposium
-
-
-                    </div>
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label class="pull-right"> Date    </label>
-                                <input  type="text" class="form-control" name="DATE_OF_PUB" id="DATE_OF_PUB"value="<?php echo set_value('DATE_OF_PUB'); ?>">
-                                <?php echo form_error('DATE_OF_PUB','<span class='.'error'.'>','</span>') ?>
-                            </div>
-
-                            <div class="form-group col-md-6">
-                                <label class="pull-right">Place  </label>
-                                <input type="text" class="form-control" name="PLACE_OF_PUB">
-                            </div>
-                        </div>
-                        <div class="row">
-                        <div class="form-group col-md-6">
-                            <label class="pull-right">The language  </label>
-                            <input type="text" class="form-control" name="PUB_LANGUGE">
-                        </div>
-                        <div class="form-group col-md-6">
-                            <label class="pull-right">Address  </label>
-                            <!--<textarea class="form-control" name="TITLE"></textarea>-->
-                            <input type="text"class="form-control" name="TITLE">
-                        </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label></label>
-                            </div>
-                        <div class="form-group col-md-6">
-                            <label class="pull-right">The Description  </label>
-                            <textarea class="form-control" name="DESCRIPTION"></textarea>
-                        </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label></label>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="pull-right">Attach the Publication File </label>
-                                <input type="file"  name="attachs[]" class="form-control">
-                            </div>
-
-                        </div>
-                        <br>  <br>
+                    <?php //echo form_open_multipart(base_url('upgrades/Application_Form/insert'));  ?>
                     <div class="row">
-                        <div class="form-group col-md-12">
-                            <input type="submit" class="btn btn-success" value="Save">
-                            <input type="submit" class="btn btn-success" value="Save & Continue">
 
-                        </div>
+                        <table class="table table-bordered table-advance">
+                            <thead>
+                            <tr>
+                                <th>Publication File</th>
+                                <th>The Description </th>
+                                <th>Address</th>
+                                <th>Place</th>
+                                <th> The language </th>
+                                <th>Date</th>
+                                <th> Type of PUBLICATIONS </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <?php
+                            if(!empty($PUB)){
+                                foreach ($PUB as $find) { ?>
+                                    <tr>
+                                        <td><?php  echo $find->FILE_BATH ?></td>
+                                        <td><?php  echo $find->DESCRIPTION?></td>
+                                        <td><?php echo $find->TITLE ?></td>
+                                        <td><?php echo $find->PLACE_OF_PUB ?></td>
+                                        <td><?php echo $find->PUB_LANGUGE ?> </td>
+                                        <td><?php echo $find->DATE_OF_PUB ?></td>
+                                        <td><?php echo $find->PUB_TYP ?></td>
+                                    </tr>
+                                <?php } }?>
+                            </tbody>
+                        </table>
                     </div>
-                    <?php echo form_close()?>
-                    <form method="post" action="<?= base_url('upgrades/PUBLICATIONS_PARTS/insert') ?>">
-                        <input type="submit" class="btn btn-success" value="Add Members">
-                    </form>
                 </div>
 
                 <!------------------------------------------------------->
                 <!------------------------------------------------------->
-             <!--   <div class="col-md-6 input_fields_container">
+
                 <div class="tab-pane fade" id="pubmember">
                     <form name="form7" action="<?= base_url('upgrades/PUBLICATIONS_PARTS/insert') ?>" method="post" enctype="multipart/form-data" role="form">
+                        <div class="row form-group col-md-12 pull-right">
+                            <input type="hidden"  name="app_id"  value="<?php echo $this->session->app_id; ?>" class="form-control">
+                            <input type="hidden"  name="emp_no"  value="<?php echo $this->session->emp_no;  ?>" class="form-control">
+                            <label for="item" class="pull-right"> Name of Publicaion</label>
+                            <select name="PUB_SER"  class="form-control form-group col-md-10 "   id="lev1">
+                                <option>Select from the menu </option>
+
+                                <?php
+                                if(!empty($PUBNAME))
+                                {
+                                    foreach($PUBNAME as $each)
+                                    {
+                                        ?>
+                                        <option value="<?php echo  $each->PUB_SER ?>"><?php echo $each->TITLE ?></option>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                            </select>
+                        </div>
+                        <br> <br> <br>
                         <div class="row">
 
                             <div class="col-md-3">
@@ -331,7 +306,7 @@ canvas_header('CV ') ?>
                         </div>
                         <br>
                         <!----- names  arabic-->
-                       <!-- <div class="row">
+                       <div class="row">
                             <div class="col-md-3">
                                 <label>الأسم الأول </label>
                                 <input type="text"  name="FRT_NAME_AR" class="form-control">
@@ -356,14 +331,14 @@ canvas_header('CV ') ?>
 
                         </div>
                         <br>
-                        <!--  <div class="row">
+                         <div class="row">
                               <div class="col-md-4">
                                   <label>أرفق  الملف </label>
-                                  <input type="file"  name="FILE_BATH" class="form-control">
+                                  <input type="file"  name="attachs[]" class="form-control">
                               </div>
 
-                          </div>-->
-                     <!--   <br>  <br>
+                          </div>
+                       <br>  <br>
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <input type="submit" class="btn btn-success" value="Save">
@@ -372,7 +347,7 @@ canvas_header('CV ') ?>
                         </div>
                     </form>
                 </div>
-                </div>
+
                 <!------------------------------------------------------->
             </div>
 
@@ -391,3 +366,4 @@ $this->load->view('app/layout/parts/footer'); ?>
     $('#DATE_OF_PUB').datetimepicker(dateoptions);
 </script>
 
+        

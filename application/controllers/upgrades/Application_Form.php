@@ -139,6 +139,7 @@ public function language($emp_no,$app_id){
             //'UPDATE_DATE' => date('d-M-y')  ,
             'USR_NO' =>25,
             'CV_LANG' =>$LAN,
+            'APP_STATUS'=>100,
 
         );
 

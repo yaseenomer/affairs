@@ -73,44 +73,6 @@ class REFERENCES  extends CI_Controller
         $data['qual'] = $this->M_APP_CV_REFERENCES->GetACADEMIC_DEGREES_NEXT();
         $this->load->view('upgrades/application_form/Peoples_en',$data);
     }
-/********************************************/
-    public function insert()
-    {
-       // var_dump($this->input->post());
 
-        //$str = substr($str, 1); first charachters
 
-        /*********************************************/
-        $APP_ID= $this->input->post('app_id');
-
-        /********************************************/
-        $x=$this->M_APP_CV_REFERENCES->maxid($APP_ID);
-        $EXP_SER=$x+1;
-
-        $items = array(
-            'APP_ID' => $APP_ID  ,
-            'EXP_SER' =>$EXP_SER,
-            'EMP_NAME' => $this->input->post('EMP_NAME')  ,
-            'ADDRESS' => $this->input->post('ADDRESS')  ,
-            'REL_PHONE' => $this->input->post('REL_PHONE')  ,
-            'E_MAIL' => $this->input->post('E_MAIL')  ,
-            'WORK_PLC' => $this->input->post('WORK_PLC')  ,
-            'REF_JOB' => $this->input->post('REF_JOB')  ,
-            'CURRENT_DEG' => $this->input->post('CURRENT_DEG')  ,
-            'ENTRY_DATE' => date('d-M-y') ,
-            //'UPDATE_DATE' => $this->input->post('UPDATE_DATE')  ,
-            'USR_NO' =>25
-        );
-
-        $this->session->set_flashdata('addcon', ' تمت اضافة البيانات بنجاح  ');
-
-        $this->M_APP_CV_REFERENCES->AddData($items);
-        return redirect('upgrades/APP_CV_REFERENCES/show/'.$APP_ID);
-    }
-    /***********************************/
-  /*  public function delete_attache_from_path($id , $name)
-    {
-        $this->file->remove(APPPATH . '/uploads/' . $id . '/' . $name);
-        return redirect('/affirs/Scholarship/show/'.$id);
-    }*/
 }
