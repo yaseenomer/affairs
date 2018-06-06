@@ -79,8 +79,8 @@ canvas_header('CV ') ?>
                                         <th><?php echo $find->PRE_EDU_TYPE ?> </th>
                                         <td><?php echo $find->SCHOOL_NAME ?></td>
                                         <td><?php echo $find->COUNTRY_NO ?></td>
-                                        <td><?php echo $find->PRE_EDU_START ?></td>
-                                        <td><?php echo $find->PRE_EDU_END ?></td>
+                                        <td><?php echo date("Y-m-d",strtotime($find->PRE_EDU_START)); ?></td>
+                                        <td><?php echo date("Y-m-d",strtotime($find->PRE_EDU_END)); ?></td>
                                         <td><?php echo $find->PRE_EDU_GRADE ?></td>
                                         <td><?php echo "uploads/attach/PRE_EDU/".$APP_ID.$find->FILE_BATH ?></td>
 
@@ -124,7 +124,7 @@ canvas_header('CV ') ?>
                                     <tr>
                                         <td><?php echo $find->FILE_BATH?></td>
                                         <td><?php echo $find->THESIS_TITLE?></td>
-                                        <td><?php echo $find->DATE_OF_ISSUED ?> </td>
+                                        <td><?php echo date("Y-m-d",strtotime($find->DATE_OF_ISSUED)) ?> </td>
                                         <td><?php echo $find->UNIV_EDU_GRADE?></td>
                                         <td><?php echo $find->UNIV_EDU_COLLEGE?></td>
                                         <td><?php echo $find->COUNTRY_NO?></td>
@@ -174,8 +174,8 @@ canvas_header('CV ') ?>
                                         <td><?php echo $find->UNIV_EXP_SPECIAL ?></td>
                                         <td><?php echo $find->UNIV_EXP_COLLEGE?></td>
                                         <td><?php echo $find->UNV_ID ?></td>
-                                        <td><?php echo $find->END_DATE ?></td>
-                                        <td><?php echo $find->START_DATE?> </td>
+                                        <td><?php echo date("Y-m-d",strtotime($find->END_DATE)) ?></td>
+                                        <td><?php echo date("Y-m-d",strtotime($find->START_DATE))?> </td>
                                         <td><?php echo $find->UNI_EXP_SUB_TYPE?></td>
                                         <td><?php echo $find->UNI_EXP_TYPE?></td>
                                     </tr>
@@ -210,7 +210,7 @@ canvas_header('CV ') ?>
                                 <td><?php echo $find->DESCRIPTION?></td>
                                 <td><?php echo $find->PRO_TITLE?> </td>
                                 <td><?php echo $find->RESEARCHER_NAME ?></td>
-                                <td><?php echo $find->DATE_OF_PRO?></td>
+                                <td><?php echo date("Y-m-d",strtotime($find->DATE_OF_PRO))?></td>
                             </tr>
                             <?php } }?>
                             </tbody>
